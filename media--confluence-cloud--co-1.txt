@@ -1,0 +1,9 @@
+Time: 3 minutes. You own support knowledge for the fictional Harbor team. A new colleague must diagnose a delayed demo export without guessing whom to contact. Existing notes say: ‘Exports slow sometimes. Refresh. Ask Morgan.’ Your deliverable is a runbook that a new support analyst can follow using the synthetic training environment.
+
+Before creating content, search the intended knowledge space for an existing export runbook. Compare scope and currency. Update a suitable canonical page through the team’s process rather than leaving two competing instructions. If none exists, identify a parent location where analysts already look for procedures.
+
+Choose a Confluence page for this exercise because the team wants a deliberate publishing checkpoint. Confluence also provides live docs, where changes appear as collaboration happens; do not treat those as unpublished page drafts. Current interface and content options may differ by rollout and subscription.
+
+Worked plan: reader = new support analyst; task = decide whether a demo export is still processing or requires escalation; location = Harbor Support / Runbooks; title = ‘Check a delayed demo export’; owner = Support Knowledge Owner; review trigger = workflow change. These names and locations are fictional.
+
+Now it's your turn. You find an existing current runbook with the same scope. What should you do? Pause the video and make your choice in the activity below.

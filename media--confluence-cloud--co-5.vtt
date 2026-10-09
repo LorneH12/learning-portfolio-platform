@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.237
+Time: 3 minutes.
+
+00:00:01.477 --> 00:00:04.677
+Publication begins a maintenance responsibility.
+
+00:00:04.917 --> 00:00:07.541
+The runbook should name an owner and a review trigger.
+
+00:00:07.781 --> 00:00:12.475
+A review date alone is insufficient when the underlying process changes sooner.
+
+00:00:12.715 --> 00:00:19.435
+In this sample, the owner reviews after any export workflow change and at the next scheduled team knowledge review.
+
+00:00:20.125 --> 00:00:25.671
+Worked change: the training team changes its escalation threshold from 10 minutes to 15.
+
+00:00:25.911 --> 00:00:28.023
+Confirm that the change is authorized.
+
+00:00:28.263 --> 00:00:34.642
+Update every affected reference: Before you start, decision step, worked example, and stop-condition section.
+
+00:00:34.882 --> 00:00:39.298
+Re-run the 6-minute, 12-minute, 15-minute, and Failed-status cases.
+
+00:00:39.538 --> 00:00:43.421
+Record a concise change note so readers understand the new behavior.
+
+00:00:44.111 --> 00:00:48.121
+Pages support version history, which helps investigate what changed.
+
+00:00:48.361 --> 00:00:54.079
+History is evidence of edits, not a substitute for checking that the current procedure is correct.
+
+00:00:54.319 --> 00:01:02.724
+If an earlier version seems preferable, compare its content and seek the appropriate review rather than blindly restoring stale instructions.
+
+00:01:03.414 --> 00:01:09.473
+When the procedure becomes obsolete, follow the space’s approved archive and replacement-link process.
+
+00:01:09.713 --> 00:01:11.803
+Keep the canonical destination clear.
+
+00:01:12.043 --> 00:01:21.601
+The end goal is successful work: a new analyst can find the runbook, follow its decisions, and stop safely without needing the author to fill in missing steps.
+
+00:01:22.291 --> 00:01:23.379
+Now it's your turn.
+
+00:01:23.619 --> 00:01:25.859
+The threshold changes to 15 minutes.
+
+00:01:26.099 --> 00:01:27.656
+Which update plan is best?
+
+00:01:27.896 --> 00:01:31.011
+Pause the video and make your choice in the activity below.
+

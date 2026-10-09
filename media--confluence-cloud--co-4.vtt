@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.237
+Time: 3 minutes.
+
+00:00:01.477 --> 00:00:04.421
+Perform a short usability review before publishing.
+
+00:00:04.661 --> 00:00:08.117
+Give a reviewer the fictional delayed-export packet and the draft.
+
+00:00:08.357 --> 00:00:16.080
+Ask them to identify the next action at 6 minutes, 12 minutes, and Failed status without explaining the procedure verbally.
+
+00:00:16.320 --> 00:00:20.203
+Any point where they must guess is an opportunity to improve the text.
+
+00:00:20.893 --> 00:00:27.655
+Worked review finding: the reviewer cannot identify the support owner because the draft uses a first name only.
+
+00:00:27.895 --> 00:00:32.183
+Replace that with the approved role or stable team contact destination.
+
+00:00:32.423 --> 00:00:37.074
+Check each link and remove placeholder destinations before a production release.
+
+00:00:37.314 --> 00:00:43.629
+In this sample, destinations remain clearly identified as fictional rather than fabricated live links.
+
+00:00:44.319 --> 00:00:51.167
+Publish the page when the authorized review is complete; later edits use the available update or publish action.
+
+00:00:51.407 --> 00:00:55.055
+Check the rendered page, heading order, links, and intended audience.
+
+00:00:55.295 --> 00:01:00.308
+A saved editing session is not evidence that the published page shows the changes.
+
+00:01:00.548 --> 00:01:06.841
+A content status label can explain maturity but does not by itself prove a substantive review occurred.
+
+00:01:07.531 --> 00:01:11.670
+Verify with an intended reader or an approved access-check process.
+
+00:01:11.910 --> 00:01:13.787
+Do not ask for someone’s credentials.
+
+00:01:14.027 --> 00:01:24.267
+A final message should link the canonical page and summarize what changed, using only the audience and communication authorization your organization provides.
+
+00:01:24.957 --> 00:01:26.045
+Now it's your turn.
+
+00:01:26.285 --> 00:01:29.720
+Your edit is saved, but the reader sees the old instructions.
+
+00:01:29.960 --> 00:01:31.304
+What should you check first?
+
+00:01:31.544 --> 00:01:34.659
+Pause the video and make your choice in the activity below.
+

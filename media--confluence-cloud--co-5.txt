@@ -1,0 +1,9 @@
+Time: 3 minutes. Publication begins a maintenance responsibility. The runbook should name an owner and a review trigger. A review date alone is insufficient when the underlying process changes sooner. In this sample, the owner reviews after any export workflow change and at the next scheduled team knowledge review.
+
+Worked change: the training team changes its escalation threshold from 10 minutes to 15. Confirm that the change is authorized. Update every affected reference: Before you start, decision step, worked example, and stop-condition section. Re-run the 6-minute, 12-minute, 15-minute, and Failed-status cases. Record a concise change note so readers understand the new behavior.
+
+Pages support version history, which helps investigate what changed. History is evidence of edits, not a substitute for checking that the current procedure is correct. If an earlier version seems preferable, compare its content and seek the appropriate review rather than blindly restoring stale instructions.
+
+When the procedure becomes obsolete, follow the space’s approved archive and replacement-link process. Keep the canonical destination clear. The end goal is successful work: a new analyst can find the runbook, follow its decisions, and stop safely without needing the author to fill in missing steps.
+
+Now it's your turn. The threshold changes to 15 minutes. Which update plan is best? Pause the video and make your choice in the activity below.

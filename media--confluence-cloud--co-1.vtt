@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.237
+Time: 3 minutes.
+
+00:00:01.477 --> 00:00:04.336
+You own support knowledge for the fictional Harbor team.
+
+00:00:04.576 --> 00:00:10.016
+A new colleague must diagnose a delayed demo export without guessing whom to contact.
+
+00:00:10.256 --> 00:00:13.093
+Existing notes say: ‘Exports slow sometimes.
+
+00:00:13.333 --> 00:00:14.165
+Refresh.
+
+00:00:14.405 --> 00:00:21.616
+Ask Morgan.’ Your deliverable is a runbook that a new support analyst can follow using the synthetic training environment.
+
+00:00:22.306 --> 00:00:27.661
+Before creating content, search the intended knowledge space for an existing export runbook.
+
+00:00:27.901 --> 00:00:29.479
+Compare scope and currency.
+
+00:00:29.719 --> 00:00:36.055
+Update a suitable canonical page through the team’s process rather than leaving two competing instructions.
+
+00:00:36.295 --> 00:00:41.799
+If none exists, identify a parent location where analysts already look for procedures.
+
+00:00:42.489 --> 00:00:48.057
+Choose a Confluence page for this exercise because the team wants a deliberate publishing checkpoint.
+
+00:00:48.297 --> 00:00:56.489
+Confluence also provides live docs, where changes appear as collaboration happens; do not treat those as unpublished page drafts.
+
+00:00:56.729 --> 00:01:01.209
+Current interface and content options may differ by rollout and subscription.
+
+00:01:01.899 --> 00:01:13.260
+Worked plan: reader = new support analyst; task = decide whether a demo export is still processing or requires escalation; location = Harbor Support /
+
+00:01:13.260 --> 00:01:21.953
+Runbooks; title = ‘Check a delayed demo export’; owner = Support Knowledge Owner; review trigger = workflow change.
+
+00:01:22.193 --> 00:01:24.497
+These names and locations are fictional.
+
+00:01:25.187 --> 00:01:26.275
+Now it's your turn.
+
+00:01:26.515 --> 00:01:29.501
+You find an existing current runbook with the same scope.
+
+00:01:29.741 --> 00:01:30.723
+What should you do?
+
+00:01:30.963 --> 00:01:34.077
+Pause the video and make your choice in the activity below.
+

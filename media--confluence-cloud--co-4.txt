@@ -1,0 +1,9 @@
+Time: 3 minutes. Perform a short usability review before publishing. Give a reviewer the fictional delayed-export packet and the draft. Ask them to identify the next action at 6 minutes, 12 minutes, and Failed status without explaining the procedure verbally. Any point where they must guess is an opportunity to improve the text.
+
+Worked review finding: the reviewer cannot identify the support owner because the draft uses a first name only. Replace that with the approved role or stable team contact destination. Check each link and remove placeholder destinations before a production release. In this sample, destinations remain clearly identified as fictional rather than fabricated live links.
+
+Publish the page when the authorized review is complete; later edits use the available update or publish action. Check the rendered page, heading order, links, and intended audience. A saved editing session is not evidence that the published page shows the changes. A content status label can explain maturity but does not by itself prove a substantive review occurred.
+
+Verify with an intended reader or an approved access-check process. Do not ask for someone’s credentials. A final message should link the canonical page and summarize what changed, using only the audience and communication authorization your organization provides.
+
+Now it's your turn. Your edit is saved, but the reader sees the old instructions. What should you check first? Pause the video and make your choice in the activity below.

@@ -1,0 +1,9 @@
+Time: 4 minutes. A clear runbook is useless if the intended analyst cannot read it, and risky if an unintended audience can. Confluence access involves global and space permissions plus content restrictions. Restrictions can narrow access; adding a person to a content-level list does not automatically supply missing space access. Inspect the actual audience and inherited constraints using the tools available to your role.
+
+Worked access case: the draft is under a manager-only parent. The intended Support Analysts group cannot view that location. Copying the link into the team chat does not fix access. Ask the authorized owner to place the content in the approved support hierarchy or correct the relevant access settings under policy, then test with an intended reader. Do not enable public access merely to make a link work.
+
+Use the least access needed for the task. In this sample, analysts need to read the published procedure; a small owner group maintains it. Permission models and restriction controls can vary by plan and configuration. Never assume a screenshot from another tenant represents your controls.
+
+Draft status and an ‘In review’ label are communication cues, not reliable substitutes for access controls. Keep credentials, personal data, and production records out of this public portfolio exercise.
+
+Now it's your turn. An analyst cannot open the page because its parent is restricted. What next? Pause the video and make your choice in the activity below.

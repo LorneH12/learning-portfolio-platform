@@ -1,0 +1,11 @@
+Time: 4 minutes. Use a small set of sections: Purpose; Before you start; Steps; Expected result; Stop and escalate; Owner and review date. Start each step with an action and describe what the reader should observe. Avoid instructions that depend on tribal knowledge such as ‘do the usual fix.’
+
+Worked runbook excerpt: ‘Purpose: check the status of a delayed demo export. Before you start: confirm this is the DEMO training environment and note the job identifier. 1. Open the demo export status view. 2. Match the job identifier. 3. Compare elapsed time with the training threshold of 10 minutes. 4. If Complete, use the approved download route. If Processing under 10 minutes, wait until the threshold and check once more. If Failed or still Processing at 10 minutes, record job ID, status, elapsed time, and the displayed non-sensitive error code; send to the demo support owner. Do not rerun a job unless the approved procedure directs it.’
+
+The threshold and route are invented training policy, not Confluence functionality or operational advice for a real system. No real download or escalation occurs here.
+
+Use descriptive link text, heading hierarchy, and concise steps. Provide text equivalents for meaningful images. Screenshots can age quickly; describe the control’s purpose as well as its label.
+
+Learner-authored practice (3 minutes): Turn these new fictional notes into a 4–6 step mini-runbook: DEMO queue; check correct job ID; Complete means use approved sample download route; Processing under 5 minutes means recheck at 5; Failed or Processing at 5 means stop and contact the Demo Support role; include job ID, elapsed time, status, and non-sensitive error code; never rerun without authorization. Add a purpose and stop condition. This separate exercise uses a 5-minute rule; the main worked case retains its 10-minute rule. Compare your writing with the rubric before continuing.
+
+Now it's your turn. Which instruction best replaces “Ask Morgan”? Pause the video and make your choice in the activity below.

@@ -1,0 +1,83 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.237
+Time: 4 minutes.
+
+00:00:01.477 --> 00:00:09.712
+Use a small set of sections: Purpose; Before you start; Steps; Expected result; Stop and escalate; Owner and review date.
+
+00:00:09.952 --> 00:00:13.771
+Start each step with an action and describe what the reader should observe.
+
+00:00:14.011 --> 00:00:18.469
+Avoid instructions that depend on tribal knowledge such as ‘do the usual fix.’
+
+00:00:19.159 --> 00:00:24.066
+Worked runbook excerpt: ‘Purpose: check the status of a delayed demo export.
+
+00:00:24.306 --> 00:00:30.749
+Before you start: confirm this is the DEMO training environment and note the job identifier. 1.
+
+00:00:30.989 --> 00:00:33.591
+Open the demo export status view. 2.
+
+00:00:33.831 --> 00:00:36.114
+Match the job identifier. 3.
+
+00:00:36.354 --> 00:00:40.258
+Compare elapsed time with the training threshold of 10 minutes. 4.
+
+00:00:40.498 --> 00:00:42.973
+If Complete, use the approved download route.
+
+00:00:43.213 --> 00:00:47.458
+If Processing under 10 minutes, wait until the threshold and check once more.
+
+00:00:47.698 --> 00:00:58.045
+If Failed or still Processing at 10 minutes, record job ID, status, elapsed time, and the displayed non-sensitive error code; send to the demo support owner.
+
+00:00:58.285 --> 00:01:01.911
+Do not rerun a job unless the approved procedure directs it.’
+
+00:01:02.601 --> 00:01:10.239
+The threshold and route are invented training policy, not Confluence functionality or operational advice for a real system.
+
+00:01:10.479 --> 00:01:13.316
+No real download or escalation occurs here.
+
+00:01:14.006 --> 00:01:17.739
+Use descriptive link text, heading hierarchy, and concise steps.
+
+00:01:17.979 --> 00:01:20.731
+Provide text equivalents for meaningful images.
+
+00:01:20.971 --> 00:01:25.729
+Screenshots can age quickly; describe the control’s purpose as well as its label.
+
+00:01:26.419 --> 00:01:35.753
+Learner-authored practice (3 minutes): Turn these new fictional notes into a 4–6 step mini-runbook: DEMO queue; check correct job ID; Complete means use
+
+00:01:35.753 --> 00:01:44.964
+approved sample download route; Processing under 5 minutes means recheck at 5; Failed or Processing at 5 means stop and contact the Demo Support role;
+
+00:01:44.964 --> 00:01:51.208
+include job ID, elapsed time, status, and non-sensitive error code; never rerun without authorization.
+
+00:01:51.448 --> 00:01:53.325
+Add a purpose and stop condition.
+
+00:01:53.565 --> 00:01:59.432
+This separate exercise uses a 5-minute rule; the main worked case retains its 10-minute rule.
+
+00:01:59.672 --> 00:02:02.616
+Compare your writing with the rubric before continuing.
+
+00:02:03.306 --> 00:02:04.394
+Now it's your turn.
+
+00:02:04.634 --> 00:02:07.343
+Which instruction best replaces “Ask Morgan”?
+
+00:02:07.583 --> 00:02:10.698
+Pause the video and make your choice in the activity below.
+

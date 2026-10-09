@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.237
+Time: 4 minutes.
+
+00:00:01.477 --> 00:00:08.304
+A clear runbook is useless if the intended analyst cannot read it, and risky if an unintended audience can.
+
+00:00:08.544 --> 00:00:13.451
+Confluence access involves global and space permissions plus content restrictions.
+
+00:00:13.691 --> 00:00:21.456
+Restrictions can narrow access; adding a person to a content-level list does not automatically supply missing space access.
+
+00:00:21.696 --> 00:00:27.413
+Inspect the actual audience and inherited constraints using the tools available to your role.
+
+00:00:28.103 --> 00:00:31.837
+Worked access case: the draft is under a manager-only parent.
+
+00:00:32.077 --> 00:00:35.597
+The intended Support Analysts group cannot view that location.
+
+00:00:35.837 --> 00:00:39.122
+Copying the link into the team chat does not fix access.
+
+00:00:39.362 --> 00:00:49.346
+Ask the authorized owner to place the content in the approved support hierarchy or correct the relevant access settings under policy, then test with an intended reader.
+
+00:00:49.586 --> 00:00:52.914
+Do not enable public access merely to make a link work.
+
+00:00:53.604 --> 00:00:55.908
+Use the least access needed for the task.
+
+00:00:56.148 --> 00:01:01.695
+In this sample, analysts need to read the published procedure; a small owner group maintains it.
+
+00:01:01.935 --> 00:01:06.820
+Permission models and restriction controls can vary by plan and configuration.
+
+00:01:07.060 --> 00:01:10.985
+Never assume a screenshot from another tenant represents your controls.
+
+00:01:11.675 --> 00:01:18.502
+Draft status and an ‘In review’ label are communication cues, not reliable substitutes for access controls.
+
+00:01:18.742 --> 00:01:24.694
+Keep credentials, personal data, and production records out of this public portfolio exercise.
+
+00:01:25.384 --> 00:01:26.472
+Now it's your turn.
+
+00:01:26.712 --> 00:01:30.509
+An analyst cannot open the page because its parent is restricted.
+
+00:01:30.749 --> 00:01:31.645
+What next?
+
+00:01:31.885 --> 00:01:35.000
+Pause the video and make your choice in the activity below.
+
