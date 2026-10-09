@@ -1,0 +1,315 @@
+{
+  "courseId": "ebitda-foundations",
+  "lessons": [
+    {
+      "lessonId": "e-l1",
+      "panels": [
+        {
+          "id": "e-l1-r01",
+          "title": "Does a bigger metric mean more cash?",
+          "layout": "scenario",
+          "copy": [
+            "Net income: $84,000",
+            "EBITDA: $180,000",
+            "What explains the $96,000 difference?"
+          ],
+          "paragraphs": [
+            1
+          ],
+          "callout": ""
+        },
+        {
+          "id": "e-l1-r02",
+          "title": "Name the measure precisely",
+          "layout": "concept",
+          "copy": [
+            "EBITDA removes interest, income tax, depreciation and amortization from earnings.",
+            "EBIT stops before D&A add-backs."
+          ],
+          "paragraphs": [
+            2,
+            3
+          ],
+          "callout": "In SEC performance reporting, start reconciliation with GAAP net income; extra adjustments require a distinct label."
+        },
+        {
+          "id": "e-l1-r03",
+          "title": "Choose the question before the calculation",
+          "layout": "comparison",
+          "copy": [
+            "Explain earnings adjustments with a bridge.",
+            "Check cash flows and obligations before a spending decision."
+          ],
+          "paragraphs": [
+            4
+          ],
+          "callout": "Adding expenses back does not create a cash receipt."
+        },
+        {
+          "id": "e-l1-r04",
+          "title": "Try the decision, then check your reasoning",
+          "layout": "practice",
+          "copy": [
+            "Choose a response and explain the evidence behind it.",
+            "Read the option-specific feedback, then try the knowledge check."
+          ],
+          "callout": "Practice remains available in both Read and Watch. Selected-response success does not establish production mastery."
+        }
+      ]
+    },
+    {
+      "lessonId": "e-l2",
+      "panels": [
+        {
+          "id": "e-l2-r01",
+          "title": "Start from one consistent quarter",
+          "layout": "workedexample",
+          "copy": [
+            "All figures are synthetic, in USD thousands.",
+            "Revenue 600; operating costs excluding D&A 420; D&A 40."
+          ],
+          "paragraphs": [
+            1
+          ],
+          "callout": ""
+        },
+        {
+          "id": "e-l2-r02",
+          "title": "Trace the bridge both ways",
+          "layout": "workedexample",
+          "copy": [
+            "600 − 420 − 30 − 10 = 140 EBIT",
+            "140 − 20 − 36 = 84 net income",
+            "84 + 20 + 36 + 30 + 10 = 180 EBITDA"
+          ],
+          "paragraphs": [
+            2,
+            3
+          ],
+          "callout": "The 96 difference is an earnings adjustment, not a cash deposit.",
+          "diagramData": {
+            "kind": "signedBridge",
+            "unit": "USD thousands",
+            "start": 84,
+            "steps": [
+              {
+                "label": "Interest",
+                "value": 20
+              },
+              {
+                "label": "Income tax",
+                "value": 36
+              },
+              {
+                "label": "Depreciation",
+                "value": 30
+              },
+              {
+                "label": "Amortization",
+                "value": 10
+              }
+            ],
+            "end": 180
+          }
+        },
+        {
+          "id": "e-l2-r03",
+          "title": "Check the assumptions",
+          "layout": "reveal",
+          "copy": [
+            "Only add back expenses already deducted.",
+            "Handle interest income consistently.",
+            "EBIT need not equal operating income."
+          ],
+          "paragraphs": [
+            4,
+            5
+          ],
+          "callout": "This simplified case has no other operating or non-operating income or expense."
+        },
+        {
+          "id": "e-l2-r04",
+          "title": "Try the decision, then check your reasoning",
+          "layout": "practice",
+          "copy": [
+            "Choose a response and explain the evidence behind it.",
+            "Read the option-specific feedback, then try the knowledge check."
+          ],
+          "callout": "Practice remains available in both Read and Watch. Selected-response success does not establish production mastery."
+        }
+      ]
+    },
+    {
+      "lessonId": "e-l3",
+      "panels": [
+        {
+          "id": "e-l3-r01",
+          "title": "One expense, one add-back",
+          "layout": "comparison",
+          "copy": [
+            "Depreciation can appear in multiple statements.",
+            "Trace the underlying expense before adding it back."
+          ],
+          "paragraphs": [
+            1
+          ],
+          "callout": "Repeated presentation does not mean a second expense."
+        },
+        {
+          "id": "e-l3-r02",
+          "title": "Distinguish expense from payment",
+          "layout": "comparison",
+          "copy": [
+            "A 90 cash machine purchase is not 90 of quarterly depreciation.",
+            "Use income-tax expense, including its sign.",
+            "Loan principal is not interest expense."
+          ],
+          "paragraphs": [
+            2,
+            3
+          ],
+          "callout": "Payroll and property taxes remain operating expenses."
+        },
+        {
+          "id": "e-l3-r03",
+          "title": "Keep the sign and the label",
+          "layout": "workedexample",
+          "copy": [
+            "−10 + 8 − 5 + 12 + 3 = 8 EBITDA",
+            "A tax benefit of 5 is −5 in this bridge.",
+            "Extra exclusions need scrutiny and a distinct measure label."
+          ],
+          "paragraphs": [
+            4,
+            5
+          ],
+          "callout": "A new label does not make an adjustment appropriate."
+        },
+        {
+          "id": "e-l3-r04",
+          "title": "Try the decision, then check your reasoning",
+          "layout": "practice",
+          "copy": [
+            "Choose a response and explain the evidence behind it.",
+            "Read the option-specific feedback, then try the knowledge check."
+          ],
+          "callout": "Practice remains available in both Read and Watch. Selected-response success does not establish production mastery."
+        }
+      ]
+    },
+    {
+      "lessonId": "e-l4",
+      "panels": [
+        {
+          "id": "e-l4-r01",
+          "title": "Follow the cash timing",
+          "layout": "workedexample",
+          "copy": [
+            "Net income 84 + D&A 40 − working-capital use 50 = operating cash flow 74.",
+            "EBITDA remains 180."
+          ],
+          "paragraphs": [
+            1,
+            2
+          ],
+          "callout": "Assumes interest and tax expenses equal cash paid and no other noncash items."
+        },
+        {
+          "id": "e-l4-r02",
+          "title": "Include capital spending",
+          "layout": "workedexample",
+          "copy": [
+            "Operating cash flow 74 − capital expenditure 90 = −16.",
+            "That result still is not the bank balance."
+          ],
+          "paragraphs": [
+            3
+          ],
+          "callout": "This is a deliberately simplified U.S. example, not a universal cash-flow formula."
+        },
+        {
+          "id": "e-l4-r03",
+          "title": "Explain positive EBITDA with a cash shortage",
+          "layout": "scenario",
+          "copy": [
+            "Name one timing issue.",
+            "Name one real cash obligation."
+          ],
+          "paragraphs": [
+            4
+          ],
+          "callout": ""
+        },
+        {
+          "id": "e-l4-r04",
+          "title": "Try the decision, then check your reasoning",
+          "layout": "practice",
+          "copy": [
+            "Choose a response and explain the evidence behind it.",
+            "Read the option-specific feedback, then try the knowledge check."
+          ],
+          "callout": "Practice remains available in both Read and Watch. Selected-response success does not establish production mastery."
+        }
+      ]
+    },
+    {
+      "lessonId": "e-l5",
+      "panels": [
+        {
+          "id": "e-l5-r01",
+          "title": "Challenge the comparison",
+          "layout": "scenario",
+          "copy": [
+            "Dashboard claim: EBITDA rose 20%.",
+            "The current period excludes a recurring expense that the earlier period included."
+          ],
+          "paragraphs": [
+            1
+          ],
+          "callout": "The supplier payment next week still needs cash evidence."
+        },
+        {
+          "id": "e-l5-r02",
+          "title": "Ask for evidence in order",
+          "layout": "process",
+          "copy": [
+            "Align period and definition.",
+            "Separate extra adjustments.",
+            "Check cash information.",
+            "State what remains unknown."
+          ],
+          "paragraphs": [
+            2,
+            3
+          ],
+          "callout": "Use the complete original model response in the example reveal."
+        },
+        {
+          "id": "e-l5-r03",
+          "title": "Write a useful challenge",
+          "layout": "scenario",
+          "copy": [
+            "Request a like-for-like reconciliation.",
+            "Ask one cash question.",
+            "Involve finance for real reporting decisions."
+          ],
+          "paragraphs": [
+            4,
+            5
+          ],
+          "callout": "This sample is not a disclosure-compliance checklist."
+        },
+        {
+          "id": "e-l5-r04",
+          "title": "Try the decision, then check your reasoning",
+          "layout": "practice",
+          "copy": [
+            "Choose a response and explain the evidence behind it.",
+            "Read the option-specific feedback, then try the knowledge check."
+          ],
+          "callout": "Practice remains available in both Read and Watch. Selected-response success does not establish production mastery."
+        }
+      ]
+    }
+  ]
+}

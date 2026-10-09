@@ -1,0 +1,584 @@
+{
+  "id": "adkar-change-foundations",
+  "title": "People Through Change: An ADKAR® Introduction",
+  "summary": "Practice noticing individual change barriers and selecting proportionate support through an original workplace scenario. Independent educational portfolio sample.",
+  "audience": "New managers, team leads and project contributors supporting a workplace process change.",
+  "durationMinutes": 25,
+  "prerequisites": [
+    "Experience working in or alongside a team.",
+    "No Prosci training or certification required."
+  ],
+  "problem": "Teams sometimes prescribe more training for every adoption problem, overlooking unclear purpose, concerns, practical barriers or a lack of follow-through.",
+  "objectives": [
+    {
+      "id": "a-o1",
+      "text": "Distinguish the five ADKAR elements in brief workplace examples.",
+      "bloomLevel": "Understand"
+    },
+    {
+      "id": "a-o2",
+      "text": "Analyze a fictional employee conversation and identify the earliest likely unmet element using stated evidence.",
+      "bloomLevel": "Analyze"
+    },
+    {
+      "id": "a-o3",
+      "text": "Select a support action matched to the observed barrier and explain why an alternative is less useful.",
+      "bloomLevel": "Apply"
+    },
+    {
+      "id": "a-o4",
+      "text": "Draft a small follow-through plan specifying a behavior, support action, observation and review date.",
+      "bloomLevel": "Create"
+    }
+  ],
+  "disclaimer": "Independent educational portfolio sample. ADKAR® and Prosci® are registered trademarks of Prosci, Inc. The model is attributed to Prosci. This course is not produced, endorsed or certified by Prosci, does not reproduce official assessments or licensed training materials, and does not award a Prosci credential. All people, scenarios and practice measures are synthetic.",
+  "resources": [
+    {
+      "id": "a-r1",
+      "title": "Prosci: The ADKAR Model",
+      "url": "https://www.prosci.com/methodology/adkar",
+      "note": "Primary model overview: individual change, five elements and earliest unmet element. Reviewed 2026-10-09."
+    },
+    {
+      "id": "a-r2",
+      "title": "Prosci: Use the ADKAR Model for Change Success",
+      "url": "https://www.prosci.com/blog/adkar-model",
+      "note": "Primary overview with explanations of the five elements. Examples in this sample are independently authored. Reviewed 2026-10-09."
+    },
+    {
+      "id": "a-r3",
+      "title": "Prosci: Overcome Resistance to ERP Systems Changes With ADKAR",
+      "url": "https://www.prosci.com/blog/overcome-resistance-to-erp-systems-changes-with-adkar",
+      "note": "Primary reference for considering employee impacts during system changes. Reviewed 2026-10-09."
+    }
+  ],
+  "jobAid": [
+    "Define the change as a visible behavior in a specific setting.",
+    "Ask what the person understands about the reason, what concerns they have, what they know how to do, what happens in practice and what helps it continue.",
+    "Distinguish direct evidence from your hypothesis. Confirm the hypothesis in a conversation; do not label a person as resistant.",
+    "Match support to the earliest likely unmet element. A purpose gap needs explanation; a concern needs listening; a skill gap needs instruction; a performance barrier needs practice or conditions changed; a sustainment gap needs follow-through.",
+    "Agree on one next action, an owner, an observable sign and a review date. Respect privacy, accessibility and workload.",
+    "Revisit the plan when the workflow or circumstances change. Course completion is not proof of workplace adoption."
+  ],
+  "lessons": [
+    {
+      "id": "a-l1",
+      "title": "A new tool is not yet a new habit",
+      "content": "Fictional Cedar Service is replacing email handoffs with a shared ticket queue. The desired behavior is specific: before ending a shift, each coordinator assigns every open ticket to an owner and records the next action. Installing the tool does not establish that behavior.\n\nProsci’s ADKAR model concerns individual change. Its five elements are Awareness, Desire, Knowledge, Ability and Reinforcement. In brief: understand the reason; choose to engage; learn what to do; demonstrate it; keep it going. The model is one part of a wider change-management approach. Source: a-r1.\n\nThis sample uses original conversations to explore those distinctions. It is not an official diagnostic instrument. Treat a possible barrier as a hypothesis to discuss, rather than a score that defines someone.\n\nWorked example: a coordinator can explain the new handoff steps but has never completed them in the live workflow. You have some evidence of knowledge. You do not yet have evidence that the person can carry out the behavior in realistic conditions. Record exactly what you observed before choosing a response.",
+      "activity": {
+        "type": "decision",
+        "prompt": "Which success statement is most observable for Cedar Service?",
+        "options": [
+          {
+            "id": "a",
+            "text": "People are excited about transformation.",
+            "feedback": "This may matter, but it does not specify a work behavior you can inspect.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Everyone received a launch email.",
+            "feedback": "Message delivery is an activity, not evidence of the new handoff behavior.",
+            "isBest": false
+          },
+          {
+            "id": "c",
+            "text": "At shift end, each open ticket has an owner and a recorded next action.",
+            "feedback": "Best choice. It identifies the action, setting and evidence.",
+            "isBest": true
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "a-k1",
+        "prompt": "Which element concerns carrying out new skills in practice?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Awareness"
+          },
+          {
+            "id": "b",
+            "text": "Ability"
+          },
+          {
+            "id": "c",
+            "text": "Reinforcement"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Ability concerns demonstrated performance. Hearing about a process or recalling it is different evidence.",
+        "objectiveIds": [
+          "a-o1"
+        ]
+      },
+      "durationMinutes": 3,
+      "objectiveIds": [
+        "a-o1"
+      ]
+    },
+    {
+      "id": "a-l2",
+      "title": "Explore purpose and concerns",
+      "content": "Two original conversations, two different needs:\n\nAlex: “Why are we changing? My emails have always worked.” Ask what Alex knows about missed handoffs. Show an anonymized, accurate example and explain how the new queue addresses the problem. Ask Alex to explain the reason back in their own words. The likely gap is Awareness.\n\nPriya: “I understand the missed-handoff problem. I worry the queue will become a public ranking of who works fastest.” Priya has stated a reason for the change and a concern about participating. The likely gap is Desire. Acknowledge the concern, clarify verified data-use rules and invite specific questions. Do not promise that tracking will never be used for performance management unless that is actually approved and true.\n\nAwareness of a rationale does not guarantee willingness. Desire cannot be forced by repeating a slogan. An individual’s concerns may expose a real design issue. Sources for the element distinctions: a-r1 and a-r2; conversations and recommended responses are original.\n\nPractice a 45-second reply to Priya. Include a neutral question and one fact you would verify. Avoid assuming that reluctance means laziness.",
+      "activity": {
+        "type": "scenario",
+        "prompt": "Priya raises the ranking concern. What do you say first?",
+        "options": [
+          {
+            "id": "a",
+            "text": "“You just need the tutorial again.”",
+            "feedback": "A tutorial addresses steps, not the stated concern. Priya may feel unheard.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "“What use of the ticket data concerns you? Let’s check the actual policy before I answer.”",
+            "feedback": "Best choice. You listen, identify the issue and avoid an unsupported promise.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "“Nobody will ever use those numbers for evaluation.”",
+            "feedback": "This assurance could be false. Verify policy and communicate honestly.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "a-k2",
+        "prompt": "Alex cannot explain why the handoff is changing. What is the earliest likely support need?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Explain the reason and check understanding"
+          },
+          {
+            "id": "b",
+            "text": "Schedule a reward ceremony"
+          },
+          {
+            "id": "c",
+            "text": "Assign an advanced keyboard-shortcut exercise"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "The stated evidence points to a purpose gap. Address that before assuming later-stage support is the main need.",
+        "objectiveIds": [
+          "a-o2",
+          "a-o3"
+        ]
+      },
+      "durationMinutes": 4,
+      "objectiveIds": [
+        "a-o1",
+        "a-o2",
+        "a-o3"
+      ]
+    },
+    {
+      "id": "a-l3",
+      "title": "Separate knowing from doing",
+      "content": "Mateo: “I support the queue, but I don’t know when to use Assign versus Transfer.” A short, role-specific demonstration followed by a worked example targets Knowledge. Ask Mateo to explain which action fits a sample ticket and why.\n\nNia: “I can explain every step. In the evening shift my account cannot assign tickets, and I have no cover to practice.” Another slide deck will not fix the permission problem or create practice time. Help resolve authorized access through the proper support route, then provide protected practice and feedback. These conditions block Ability.\n\nThe difference is the evidence: being able to explain a task is not the same as completing it. Observed performance matters. Source: a-r2. These are fictional cases, not Prosci assessment items.\n\nOriginal worked practice: give Mateo a sample ticket with no owner and an unresolved question. Demonstrate assigning an owner and writing a next action once. Then let Mateo complete a new ticket without hints. If the explanation is accurate but the action fails, ask what happened and inspect the environment before prescribing more instruction.\n\nConsider accessibility: the practice route should work with the tools and accommodations the person needs. A system obstacle is not a character flaw.",
+      "activity": {
+        "type": "decision",
+        "prompt": "Nia explains the steps correctly but her account cannot assign tickets. Choose the most useful immediate response.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Repeat the same explanation more slowly.",
+            "feedback": "The evidence points to execution conditions, not a missing explanation.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Escalate the access issue through the approved support route and arrange supported practice.",
+            "feedback": "Correct. Remove the practical barrier before using a realistic demonstration to check performance.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Mark Nia as unwilling.",
+            "feedback": "The observation does not support that conclusion. Avoid attributing motive.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "a-k3",
+        "prompt": "Which is the strongest evidence of Ability for this scenario?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A correct description of the steps"
+          },
+          {
+            "id": "b",
+            "text": "Attendance at training"
+          },
+          {
+            "id": "c",
+            "text": "Completing an accurate handoff in a realistic practice ticket"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "A realistic demonstration supplies direct performance evidence. Description and attendance alone do not.",
+        "objectiveIds": [
+          "a-o1",
+          "a-o2"
+        ]
+      },
+      "durationMinutes": 4,
+      "objectiveIds": [
+        "a-o1",
+        "a-o2",
+        "a-o3"
+      ]
+    },
+    {
+      "id": "a-l4",
+      "title": "Support the behavior after launch",
+      "content": "Cedar’s team uses the queue correctly for a week. Then a supervisor starts accepting email handoffs again because it feels faster. Coordinators follow the supervisor’s example, even though they remember the new steps.\n\nReinforcement concerns sustaining change. Source: a-r1. An original Cedar response is to ask why the shortcut returned, fix any genuine friction, agree on the handoff standard and recognize accurate work. Do not reward raw ticket counts if that encourages rushed or incomplete handoffs.\n\nMeasure the behavior you intended. For this practice case, inspect a small agreed sample of handoffs for an owner and usable next action. Pair the result with a short conversation about obstacles. Training-completion rate measures attendance or completion, not the quality of handoffs.\n\nOriginal follow-through plan: the shift lead checks five agreed sample handoffs on Friday, notes whether both required fields are useful, asks the team what slowed them down and reviews the next step the following Tuesday. The sample size and dates are practice choices, not validated thresholds. Avoid publishing individual rankings or collecting unnecessary personal details.\n\nA drop in use can also signal a new workload, tool or motivation barrier. Ask again rather than assuming the original problem is solved forever.",
+      "activity": {
+        "type": "decision",
+        "prompt": "Correct queue use falls after supervisors accept email again. Which plan is strongest?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Send one celebratory email and close the project.",
+            "feedback": "Celebration alone leaves the mixed signal in place.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Review why email returned, align supervisor behavior and check handoff quality again next week.",
+            "feedback": "Best choice. It examines the cause, changes the environment and checks whether the intended behavior persists.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Publish a lowest-performer list.",
+            "feedback": "Public ranking can harm trust and does not address the conflicting workflow.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "a-k4",
+        "prompt": "Which observation most directly checks the intended outcome?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Number of launch messages sent"
+          },
+          {
+            "id": "b",
+            "text": "Percentage of sampled handoffs with an owner and usable next action"
+          },
+          {
+            "id": "c",
+            "text": "Number of slides in the tutorial"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "The measure directly reflects the desired work behavior. The others measure communication or training inputs.",
+        "objectiveIds": [
+          "a-o3",
+          "a-o4"
+        ]
+      },
+      "durationMinutes": 4,
+      "objectiveIds": [
+        "a-o1",
+        "a-o3",
+        "a-o4"
+      ]
+    },
+    {
+      "id": "a-l5",
+      "title": "Coach the next step",
+      "content": "Integrated original scenario: Jordan understands the reason for the shared queue and wants fewer missed handoffs. Jordan completes the tutorial accurately but cannot finish a real handoff while answering phones. A manager proposes a mandatory repeat of the tutorial.\n\nFirst decision: ask Jordan to walk through a recent handoff. You learn that the phone interrupts every attempt and there is no shift overlap. The earliest evidenced barrier is practical Ability, rather than missing purpose, willingness or procedural knowledge. This is a hypothesis based on the facts given, not a diagnosis of Jordan.\n\nSecond decision: agree a short, covered practice period and investigate a workable handoff interval with the shift lead. Observe the next realistic attempt. If Jordan completes it accurately with coverage, that supports the workload hypothesis. If Jordan cannot choose the right action even with time and access, revisit Knowledge.\n\nThird decision: after initial success, check whether the arrangement survives a busy shift. Sustained success needs follow-through. Source for focusing on the earliest unmet element: a-r1. The scenario sequence and support plan are original.\n\nCreate your own four-part plan: behavior, support, observation and review date. Example: “Jordan records an owner and next action on each open ticket. The shift lead arranges five minutes of coverage. We review one realistic handoff together tomorrow, then discuss whether the approach worked during Friday’s busy shift.” Avoid including real confidential employee information in your practice response.",
+      "activity": {
+        "type": "scenario",
+        "prompt": "Branch decision: after coverage is provided, Jordan completes the practice ticket accurately. What next?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Declare permanent adoption proven.",
+            "feedback": "One successful attempt is useful evidence, but does not establish sustainment.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Check a later realistic handoff and discuss whether coverage remains workable.",
+            "feedback": "Best choice. You have performance evidence; now test whether the support and behavior continue under realistic conditions.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Insist on repeating training anyway.",
+            "feedback": "More of the same training is not supported by the current evidence. Revisit it if a knowledge gap appears.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "a-k5",
+        "prompt": "Which plan is most complete?",
+        "options": [
+          {
+            "id": "a",
+            "text": "“Jordan needs a better attitude.”"
+          },
+          {
+            "id": "b",
+            "text": "“Send everyone the slides.”"
+          },
+          {
+            "id": "c",
+            "text": "“Agree coverage, observe an accurate handoff tomorrow, and review busy-shift use on Friday.”"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "It names support, observable evidence and review timing. A full plan also states the target behavior explicitly.",
+        "objectiveIds": [
+          "a-o2",
+          "a-o3",
+          "a-o4"
+        ]
+      },
+      "durationMinutes": 5,
+      "objectiveIds": [
+        "a-o2",
+        "a-o3",
+        "a-o4"
+      ]
+    }
+  ],
+  "assessment": {
+    "passPercent": 80,
+    "requiredCorrect": 6,
+    "totalQuestions": 7,
+    "estimatedMinutes": 5,
+    "instructions": "Select one answer per question. Pass with at least 6 of 7 correct (85.7%, the first attainable score at or above 80%). Review explanations and retry as needed. This practice result is not a Prosci certification or validated change-readiness assessment.",
+    "questions": [
+      {
+        "id": "a-q1",
+        "prompt": "Sam asks, “What problem is the new process meant to solve?” Which element is most directly implicated?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Awareness"
+          },
+          {
+            "id": "b",
+            "text": "Ability"
+          },
+          {
+            "id": "c",
+            "text": "Reinforcement"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "The question asks about the reason for change.",
+        "objectiveIds": [
+          "a-o1",
+          "a-o2"
+        ]
+      },
+      {
+        "id": "a-q2",
+        "prompt": "Leila understands the reason but worries about a real loss of flexibility. Best first response?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Repeat the launch slogan"
+          },
+          {
+            "id": "b",
+            "text": "Ask about the impact and explore the concern honestly"
+          },
+          {
+            "id": "c",
+            "text": "Assume she does not understand the tutorial"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Listen to the participation concern and verify the facts. More procedural instruction does not address the stated issue.",
+        "objectiveIds": [
+          "a-o2",
+          "a-o3"
+        ]
+      },
+      {
+        "id": "a-q3",
+        "prompt": "Omar wants to use the queue but does not know how to reassign a ticket. Most appropriate support?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Role-specific instruction with a worked example and check"
+          },
+          {
+            "id": "b",
+            "text": "Public recognition for adoption"
+          },
+          {
+            "id": "c",
+            "text": "A reminder of the project name"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "The stated gap is procedural knowledge; instruction and a check target it.",
+        "objectiveIds": [
+          "a-o1",
+          "a-o3"
+        ]
+      },
+      {
+        "id": "a-q4",
+        "prompt": "A colleague explains the steps accurately but an inaccessible control prevents completion. Best response?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Label the colleague unwilling"
+          },
+          {
+            "id": "b",
+            "text": "Ignore the issue because training is complete"
+          },
+          {
+            "id": "c",
+            "text": "Address the accessibility barrier and provide supported practice"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "The barrier is in performing the task under available conditions. Knowledge alone cannot remove it.",
+        "objectiveIds": [
+          "a-o2",
+          "a-o3"
+        ]
+      },
+      {
+        "id": "a-q5",
+        "prompt": "A month after successful use, the team returns to old habits because leaders accept both processes inconsistently. Best next action?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Align expectations, examine friction and check the new behavior again"
+          },
+          {
+            "id": "b",
+            "text": "Send a course-completion certificate"
+          },
+          {
+            "id": "c",
+            "text": "Assume initial knowledge has disappeared"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "This responds to inconsistent reinforcement while checking for other causes.",
+        "objectiveIds": [
+          "a-o1",
+          "a-o3"
+        ]
+      },
+      {
+        "id": "a-q6",
+        "prompt": "Which plan provides the clearest follow-through?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Improve adoption soon"
+          },
+          {
+            "id": "b",
+            "text": "Check morale sometime"
+          },
+          {
+            "id": "c",
+            "text": "Arrange coverage, observe one complete handoff tomorrow and review busy-shift use Friday"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "It specifies support, evidence and timing; connect it to the defined handoff behavior.",
+        "objectiveIds": [
+          "a-o4"
+        ]
+      },
+      {
+        "id": "a-q7",
+        "prompt": "A learner says, “Everyone finished training, so the change has succeeded.” Best evaluation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "True: completion proves sustained performance"
+          },
+          {
+            "id": "b",
+            "text": "Incomplete: observe real behavior and whether it continues, and ask about remaining barriers"
+          },
+          {
+            "id": "c",
+            "text": "False: training never helps"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Completion is an input or learning milestone. Successful work and sustainment need additional evidence.",
+        "objectiveIds": [
+          "a-o2",
+          "a-o3"
+        ]
+      }
+    ]
+  },
+  "durationIsEstimate": true,
+  "durationNote": "Estimated 25 minutes including practice and assessment; not measured with learners. Pilot timing pending.",
+  "version": "1.0.0",
+  "sourceReviewDate": "2026-10-09",
+  "sampleLabel": "Independent portfolio sample",
+  "completionCriteria": "Visit all lessons and score at least 80% on the seven-item assessment (6 correct required). Untimed; retries permitted.",
+  "designNotes": {
+    "analysis": "Audience and performance problem are provisional design assumptions for this portfolio sample, not findings from a conducted client needs analysis. Validate with target learners before organizational rollout.",
+    "design": "Five concise lessons, original worked cases, decision feedback and seven aligned assessment items. Estimated 25 minutes includes learner practice; untimed and self-paced.",
+    "development": "Original text and scenarios; primary-source links reviewed 2026-10-09. JSON and Markdown deliverables share stable IDs. Feedback is explanatory rather than answer-only.",
+    "implementation": "Portfolio demonstration. Provide keyboard-operable options, visible focus, readable feedback and no color-only correctness cue. Display scope and attribution before launch. Course runtime and accessibility require separate platform testing.",
+    "evaluation": "Formative checks offer immediate retry. Summative pass is 6/7. Pilot with 3–5 representative learners, ask them to think aloud, review distractors and timing, then revise. Workplace transfer is not measured by this sample alone.",
+    "alignment": {
+      "a-o1": [
+        "a-q1",
+        "a-q3",
+        "a-q5"
+      ],
+      "a-o2": [
+        "a-q1",
+        "a-q2",
+        "a-q4",
+        "a-q7"
+      ],
+      "a-o3": [
+        "a-q2",
+        "a-q3",
+        "a-q4",
+        "a-q5",
+        "a-q7"
+      ],
+      "a-o4": [
+        "a-q6"
+      ]
+    },
+    "performanceTask": "The create-level a-o4 objective is practiced in the lesson-five written plan. Its multiple-choice assessment items test recognition only. A facilitator can score the plan with one point each for explicit behavior, matched support, observable evidence and review date; 3/4 with behavior present is the suggested practice criterion. No automated claim that the learner has mastered creation."
+  },
+  "qa": {
+    "status": "Content validation complete; platform integration and human pilot pending",
+    "checks": [
+      "All lesson and question IDs unique within course.",
+      "All correct answer IDs point to an available option.",
+      "Every question has one keyed answer and an explanatory rationale.",
+      "Every lesson includes practice and a formative check.",
+      "Estimated lesson time plus summative time equals 25 minutes.",
+      "Synthetic examples and limits stated explicitly.",
+      "Primary references included; no copied proprietary worksheets, graphics or assessment scales.",
+      "No real learner, employee or financial data used."
+    ]
+  }
+}

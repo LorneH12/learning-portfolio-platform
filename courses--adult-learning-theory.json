@@ -1,0 +1,496 @@
+{
+  "id": "adult-learning-theory",
+  "title": "Adult Learning Theory: Design for the People Doing the Work",
+  "summary": "A 25-minute portfolio sample: use adult-learning assumptions to redesign a fictional service-desk rollout, choose appropriate support, and separate learning gaps from work-system barriers.",
+  "audience": "New instructional designers, change practitioners, team leads, and L&D managers responsible for workplace training. Performance problem: a fictional service team completes mandatory training but continues to send incomplete handoffs.",
+  "durationMinutes": 25,
+  "prerequisites": [
+    "No formal prerequisite. Bring one familiar workplace task, or use the fictional service-desk example."
+  ],
+  "objectives": [
+    {
+      "id": "alt-o1",
+      "text": "Given a learner profile, select a design response that treats andragogy as a set of assumptions to investigate rather than universal adult traits.",
+      "bloomLevel": "Apply"
+    },
+    {
+      "id": "alt-o2",
+      "text": "Given a rollout case, distinguish a knowledge or skill gap from a tool, time, or permission barrier.",
+      "bloomLevel": "Analyze"
+    },
+    {
+      "id": "alt-o3",
+      "text": "Select practice and feedback that address a stated handoff performance criterion.",
+      "bloomLevel": "Evaluate"
+    },
+    {
+      "id": "alt-o4",
+      "text": "Choose a transfer-support and evaluation plan that measures work performance without claiming that completion proves impact.",
+      "bloomLevel": "Evaluate"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "alt-l1",
+      "title": "1. Begin with the work, then test your assumptions",
+      "content": "Allow 4 minutes, including the decision and check. Fictional case: Harbor Service Desk is introducing a shared handoff form. A usable handoff contains an issue summary, the next owner, and the next action. Ten sampled handoffs contain four missing owners. The manager requests a presentation about the new process. Before building it, ask what people must do and what prevents them from doing it.\n\nAndragogy, associated with Malcolm Knowles, offers assumptions concerning adults' need to know why, self-direction, experience, readiness, problem orientation, and motivation. These are useful questions for design, not guarantees about each adult. An experienced employee may be a novice with this tool; someone attending a mandatory session may need substantial guidance. Adult learning has multiple theoretical perspectives, and andragogy is not its single universal explanation. See the Penn State readings in Sources.\n\nWorked example: replace “They are adults, so let them explore” with “Can they already locate the owner list and submit a practice handoff?” Observe the task, ask about obstacles, and offer a guided example when needed. In this sample, the instructional goal is a complete handoff. Fixing access to the owner list belongs in the implementation plan too.",
+      "activity": {
+        "type": "decision",
+        "prompt": "A capable new supervisor asks for a step-by-step demonstration before practicing. What should you do?",
+        "options": [
+          {
+            "id": "alt-d1-a",
+            "text": "Remove the demonstration because adults should direct themselves.",
+            "feedback": "Self-direction is an assumption to investigate. Withholding needed support creates an unnecessary obstacle.",
+            "isBest": false
+          },
+          {
+            "id": "alt-d1-b",
+            "text": "Offer a short demonstration, then supported practice and a choice of relevant cases.",
+            "feedback": "Best response. This respects the learner’s request while preserving a chance to perform the task.",
+            "isBest": true
+          },
+          {
+            "id": "alt-d1-c",
+            "text": "Replace all practice with a lecture.",
+            "feedback": "A demonstration can help, but observing alone does not show whether the learner can complete the task.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "alt-k1",
+        "prompt": "Which statement is the most defensible starting point?",
+        "options": [
+          {
+            "id": "alt-k1-a",
+            "text": "All adults need the same amount of independence."
+          },
+          {
+            "id": "alt-k1-b",
+            "text": "Adults never benefit from explicit instruction."
+          },
+          {
+            "id": "alt-k1-c",
+            "text": "Investigate learners’ readiness and experience before deciding how much guidance to provide."
+          }
+        ],
+        "correctOptionId": "alt-k1-c",
+        "rationale": "Design decisions should follow evidence about this audience and task, rather than a rule based only on age."
+      },
+      "durationMinutes": 4
+    },
+    {
+      "id": "alt-l2",
+      "title": "2. Use experience without preserving errors",
+      "content": "Allow 4 minutes. Prior experience is useful evidence, but familiar habits can conflict with a changed workflow. Carnegie Mellon’s learning principles describe prior knowledge as potentially helpful or obstructive. A designer needs to uncover both useful knowledge and inaccurate assumptions.\n\nWorked example: a veteran agent says, “I put the owner’s name in the notes, as we always have.” In the fictional new process, routing reads the Owner field; notes do not trigger assignment. Start by asking the agent to show the old workflow. Identify what remains valid, such as a concise issue summary. Then contrast two handoffs with the same notes but different Owner fields. Have the learner predict which will route correctly and explain why.\n\nAvoid framing the veteran as resistant or assuming tenure equals mastery. The old behavior may have been correct under the previous system. Feedback can acknowledge the reasoning while correcting the action: “Your summary makes the issue clear. Routing now uses the Owner field, so select the owner there before submitting.”\n\nPause for 30 seconds: identify one thing that should stay the same and one thing that must change in a process you know. If using Harbor, preserve the issue summary and change how the owner is assigned.",
+      "activity": {
+        "type": "decision",
+        "prompt": "An experienced agent’s demonstration reveals an outdated shortcut. Choose the strongest response.",
+        "options": [
+          {
+            "id": "alt-d2-a",
+            "text": "Use contrasting old/new examples, explain the consequence, and let the agent retry.",
+            "feedback": "Best response. It uses existing knowledge as a starting point and makes the changed requirement visible.",
+            "isBest": true
+          },
+          {
+            "id": "alt-d2-b",
+            "text": "Tell the agent that past experience is irrelevant.",
+            "feedback": "Discarding all experience loses valid knowledge and gives no precise correction.",
+            "isBest": false
+          },
+          {
+            "id": "alt-d2-c",
+            "text": "Approve the shortcut because the agent has more experience.",
+            "feedback": "Experience is valuable, but the shortcut still needs checking against the current process.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "alt-k2",
+        "prompt": "Which feedback best addresses the actual error?",
+        "options": [
+          {
+            "id": "alt-k2-a",
+            "text": "Try harder next time."
+          },
+          {
+            "id": "alt-k2-b",
+            "text": "Your summary is clear; put the next owner in the Owner field so routing can use it."
+          },
+          {
+            "id": "alt-k2-c",
+            "text": "You are an expert, so your answer is acceptable."
+          }
+        ],
+        "correctOptionId": "alt-k2-b",
+        "rationale": "Specific feedback identifies what was successful, what must change, and why the correction matters."
+      },
+      "durationMinutes": 4
+    },
+    {
+      "id": "alt-l3",
+      "title": "3. Offer relevant choices and the support to succeed",
+      "content": "Allow 4 minutes. Relevance is more than adding a workplace photograph. In this sample, it means practicing the decision that creates a usable handoff. Motivation may include doing useful work, confidence, recognition, or simply meeting an employment requirement. Do not assume everyone arrives enthusiastic or motivated in the same way.\n\nWorked example: replace a long department history with a short opening: “By the end, you will choose an owner and next action for a handoff so another agent can continue the case.” Let learners select a password-reset or order-status case. Both use the same required fields and performance criterion. Offer a text example, optional demonstration, and a readily available checklist. These options support access and task needs; they do not label people as fixed visual, auditory, or kinesthetic learners.\n\nChoice has boundaries. A learner may choose a relevant practice case, but cannot skip a required safety or privacy control. An experienced user may need less explanation, while a novice may need the complete walkthrough. Check performance rather than relying only on confidence ratings.\n\nMini-design task: choose a workplace example for a novice and one for an experienced colleague. Keep the assessed requirement identical. Write one sentence explaining why each example is relevant.",
+      "activity": {
+        "type": "decision",
+        "prompt": "You have novices and experienced agents in one session. Which plan best balances choice and common expectations?",
+        "options": [
+          {
+            "id": "alt-d3-a",
+            "text": "Let experienced staff skip verification based on their confidence.",
+            "feedback": "Confidence alone does not establish performance with the changed process.",
+            "isBest": false
+          },
+          {
+            "id": "alt-d3-b",
+            "text": "Make every learner read every explanation twice.",
+            "feedback": "Uniform repetition ignores what learners already can do.",
+            "isBest": false
+          },
+          {
+            "id": "alt-d3-c",
+            "text": "Offer optional scaffolds and relevant case choices, with the same required performance check.",
+            "feedback": "Best response. Support can vary while the required standard stays clear.",
+            "isBest": true
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "alt-k3",
+        "prompt": "Why provide a text alternative to a demonstration?",
+        "options": [
+          {
+            "id": "alt-k3-a",
+            "text": "To support access and let learners revisit task details."
+          },
+          {
+            "id": "alt-k3-b",
+            "text": "To assign permanent learning-style labels."
+          },
+          {
+            "id": "alt-k3-c",
+            "text": "To eliminate the need for practice."
+          }
+        ],
+        "correctOptionId": "alt-k3-a",
+        "rationale": "A text alternative supports accessibility and flexible use. It does not diagnose a learning style or replace performance practice."
+      },
+      "durationMinutes": 4
+    },
+    {
+      "id": "alt-l4",
+      "title": "4. Make practice resemble the decision",
+      "content": "Allow 4 minutes. A learner who can name the fields may still struggle to use them. Practice should expose the choice that matters, then provide feedback the learner can use in another attempt. Carnegie Mellon’s learning principles emphasize goal-directed practice and targeted feedback.\n\nWorked example: fictional request “A customer cannot access an invoice. The billing system is available, and the account has been verified.” The practice rule says invoice-access cases go to Billing Support; the next action is to check the invoice permission. A complete handoff states the issue, names Billing Support in the Owner field, and records that next action. Show one completed example, then ask the learner to resolve a different case using a short rule card.\n\nAn early attempt can include hints. A later attempt should remove unnecessary help while keeping tools people normally use at work. Explain the consequence of a wrong selection and invite a retry; “Incorrect” alone does not show how to improve.\n\nDecision practice here is deliberately low risk. Use fictional records, not actual customer information. The final multiple-choice assessment samples decisions; it does not verify live-system proficiency. A production rollout would also need observation of representative handoffs.",
+      "activity": {
+        "type": "decision",
+        "prompt": "The objective is to route handoffs using a rule card. Which practice is best aligned?",
+        "options": [
+          {
+            "id": "alt-d4-a",
+            "text": "Memorize the date the form was launched.",
+            "feedback": "The launch date does not test the routing decision.",
+            "isBest": false
+          },
+          {
+            "id": "alt-d4-b",
+            "text": "Choose owners for realistic cases using the rule card, receive explanations, and retry.",
+            "feedback": "Best response. This practices the target decision under realistic reference conditions.",
+            "isBest": true
+          },
+          {
+            "id": "alt-d4-c",
+            "text": "Watch a celebratory rollout video without making a decision.",
+            "feedback": "The video may communicate a change, but it does not provide routing practice.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "alt-k4",
+        "prompt": "A learner picks the wrong owner. What is the most useful immediate response?",
+        "options": [
+          {
+            "id": "alt-k4-a",
+            "text": "Display only a red cross."
+          },
+          {
+            "id": "alt-k4-b",
+            "text": "End the course."
+          },
+          {
+            "id": "alt-k4-c",
+            "text": "Explain the relevant routing rule and offer a new attempt."
+          }
+        ],
+        "correctOptionId": "alt-k4-c",
+        "rationale": "The learner needs actionable information and an opportunity to use it."
+      },
+      "durationMinutes": 4
+    },
+    {
+      "id": "alt-l5",
+      "title": "5. Plan transfer and measure what changed",
+      "content": "Allow 4 minutes. Course completion is an implementation measure. It does not establish that handoffs improved, or that any improvement was caused by the course. A useful plan separates learning evidence, workplace behavior, and conditions that enable the behavior.\n\nWorked example: before the fictional rollout, inspect a comparable sample of handoffs for all three required elements. During training, collect decision-check results. After rollout, inspect another comparable sample and record missing elements. Ask supervisors whether staff can access the owner list, have time to complete the form, and receive consistent expectations. A simultaneous form redesign could also explain changes in performance.\n\nGive the team a one-screen handoff checklist. Ask managers to review the first few attempts, correct errors privately, and route tool-access problems to the system owner. If staff can perform correctly in practice but lack production permissions, another explanation video will not grant those permissions.\n\nTransfer task, 60 seconds: write a plan containing one practice task, one support available at the point of work, one responsible person, and one observable behavior to review. Sample: “Agents route two practice cases; the team lead pins the rule card and reviews whether next week’s sampled handoffs name an owner.”",
+      "activity": {
+        "type": "decision",
+        "prompt": "Agents pass practice but cannot open the owner list in production. What should the rollout lead prioritize?",
+        "options": [
+          {
+            "id": "alt-d5-a",
+            "text": "Assign a longer repeat course to everyone.",
+            "feedback": "Repeated instruction does not resolve a permission barrier.",
+            "isBest": false
+          },
+          {
+            "id": "alt-d5-b",
+            "text": "Report completion as proof of successful adoption.",
+            "feedback": "Completion does not demonstrate that the production workflow is usable.",
+            "isBest": false
+          },
+          {
+            "id": "alt-d5-c",
+            "text": "Have the system owner resolve access and verify agents can use the list.",
+            "feedback": "Best response. Resolve the enabling condition, then check actual performance.",
+            "isBest": true
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "alt-k5",
+        "prompt": "Which evidence most directly indicates the target behavior?",
+        "options": [
+          {
+            "id": "alt-k5-a",
+            "text": "A sample of actual handoffs contains the required summary, owner, and next action."
+          },
+          {
+            "id": "alt-k5-b",
+            "text": "Everyone viewed the opening slide."
+          },
+          {
+            "id": "alt-k5-c",
+            "text": "The course has attractive colors."
+          }
+        ],
+        "correctOptionId": "alt-k5-a",
+        "rationale": "The target behavior is a complete handoff. Other measures can inform implementation or experience, but they do not establish that behavior."
+      },
+      "durationMinutes": 4
+    }
+  ],
+  "assessment": {
+    "passPercent": 75,
+    "questions": [
+      {
+        "id": "alt-a1",
+        "prompt": "A manager says every adult prefers completely independent learning. What is the best response?",
+        "options": [
+          {
+            "id": "alt-a1-a",
+            "text": "Build an unguided course for everyone."
+          },
+          {
+            "id": "alt-a1-b",
+            "text": "Check this group’s prior knowledge and support needs before choosing guidance."
+          },
+          {
+            "id": "alt-a1-c",
+            "text": "Remove all learner choice."
+          }
+        ],
+        "correctOptionId": "alt-a1-b",
+        "rationale": "Andragogy provides assumptions to investigate; age alone does not determine the right support."
+      },
+      {
+        "id": "alt-a2",
+        "prompt": "The new form reads its Owner field, while a veteran puts the owner only in notes. Choose the most useful intervention.",
+        "options": [
+          {
+            "id": "alt-a2-a",
+            "text": "Compare the two workflows and practice entering the owner in the correct field."
+          },
+          {
+            "id": "alt-a2-b",
+            "text": "Ask the veteran to repeat the old workflow faster."
+          },
+          {
+            "id": "alt-a2-c",
+            "text": "Assume the veteran is unwilling to learn."
+          }
+        ],
+        "correctOptionId": "alt-a2-a",
+        "rationale": "A contrast and retry address the specific outdated mental model without inventing a motivation problem."
+      },
+      {
+        "id": "alt-a3",
+        "prompt": "Which choice preserves a common performance standard?",
+        "options": [
+          {
+            "id": "alt-a3-a",
+            "text": "Allow confident users to skip all checks."
+          },
+          {
+            "id": "alt-a3-b",
+            "text": "Give every person an unrelated topic."
+          },
+          {
+            "id": "alt-a3-c",
+            "text": "Offer two relevant case contexts with the same required handoff fields."
+          }
+        ],
+        "correctOptionId": "alt-a3-c",
+        "rationale": "Context can vary while required behavior and assessment criteria remain consistent."
+      },
+      {
+        "id": "alt-a4",
+        "prompt": "A designer offers text and demonstration versions. Which explanation is appropriate?",
+        "options": [
+          {
+            "id": "alt-a4-a",
+            "text": "Each learner belongs permanently to one sensory learning type."
+          },
+          {
+            "id": "alt-a4-b",
+            "text": "Different formats can support access and revisiting task details."
+          },
+          {
+            "id": "alt-a4-c",
+            "text": "Text is always superior for every task."
+          }
+        ],
+        "correctOptionId": "alt-a4-b",
+        "rationale": "Choose formats for accessibility and task demands, not fixed learning-style categories."
+      },
+      {
+        "id": "alt-a5",
+        "prompt": "Which assessment is closest to an objective about selecting a next owner?",
+        "options": [
+          {
+            "id": "alt-a5-a",
+            "text": "Select an owner for a new case using the work rule card."
+          },
+          {
+            "id": "alt-a5-b",
+            "text": "Recall the launch date."
+          },
+          {
+            "id": "alt-a5-c",
+            "text": "Rate the animation quality."
+          }
+        ],
+        "correctOptionId": "alt-a5-a",
+        "rationale": "A case decision samples the required performance; the other options measure unrelated knowledge or experience."
+      },
+      {
+        "id": "alt-a6",
+        "prompt": "An agent understands the procedure but lacks system permissions. What is the primary next action?",
+        "options": [
+          {
+            "id": "alt-a6-a",
+            "text": "Repeat the definitions quiz."
+          },
+          {
+            "id": "alt-a6-b",
+            "text": "Label the agent resistant."
+          },
+          {
+            "id": "alt-a6-c",
+            "text": "Resolve access with the system owner and verify the workflow."
+          }
+        ],
+        "correctOptionId": "alt-a6-c",
+        "rationale": "The barrier is an enabling condition, not evidence of a knowledge deficit."
+      },
+      {
+        "id": "alt-a7",
+        "prompt": "Which feedback best supports correction?",
+        "options": [
+          {
+            "id": "alt-a7-a",
+            "text": "Wrong."
+          },
+          {
+            "id": "alt-a7-b",
+            "text": "The issue summary is clear; the next action is missing, so add what the receiving agent should do."
+          },
+          {
+            "id": "alt-a7-c",
+            "text": "You need a better attitude."
+          }
+        ],
+        "correctOptionId": "alt-a7-b",
+        "rationale": "The feedback names a successful element and a specific correction tied to the criterion."
+      },
+      {
+        "id": "alt-a8",
+        "prompt": "After training, handoff quality improves while the form is also redesigned. What can you conclude?",
+        "options": [
+          {
+            "id": "alt-a8-a",
+            "text": "Performance improved in the observed sample; more evidence is needed to isolate causes."
+          },
+          {
+            "id": "alt-a8-b",
+            "text": "Training alone caused the entire improvement."
+          },
+          {
+            "id": "alt-a8-c",
+            "text": "Completion statistics prove every agent is proficient."
+          }
+        ],
+        "correctOptionId": "alt-a8-a",
+        "rationale": "An observed change is useful evidence, but the concurrent form change prevents a simple causal attribution."
+      }
+    ],
+    "requiredCorrect": 6,
+    "estimatedMinutes": 5
+  },
+  "resources": [
+    {
+      "title": "Penn State: Overview and Theory, Mentoring Blueprint",
+      "url": "https://gradschool.psu.edu/student-support/mentoring/mentoring-blueprint-workbook/mentoring-blueprint-overview",
+      "note": "University application of andragogy, experience, self-direction, and relevance; informs lesson 1."
+    },
+    {
+      "title": "Penn State: ADTED 460, Adult Learning Theory and Andragogy",
+      "url": "https://courses.worldcampus.psu.edu/welcome/adted460/001/content/06_lesson/printlesson.html",
+      "note": "University discussion of the limits of any single adult-learning theory; informs lesson 1."
+    },
+    {
+      "title": "Carnegie Mellon: Learning Principles",
+      "url": "https://www.cmu.edu/teaching/principles/learning.html",
+      "note": "Research-informed university guidance on prior knowledge, motivation, practice, and feedback; informs lessons 2–4."
+    },
+    {
+      "title": "CDC: Captivating and Motivating Adult Learners",
+      "url": "https://www.cdc.gov/training-development/php/about/develop-training-captivating-and-motivating-adult-learners.html",
+      "note": "Public-health training design resource with a printable instructor guide. Further reading; not evidence that this sample produces specific results."
+    }
+  ],
+  "jobAid": [
+    "Define the work: What must someone do, under which conditions, to what standard?",
+    "Ask why it matters: Connect the learning to a task or consequence the audience recognizes.",
+    "Check experience: Identify useful existing knowledge and habits that no longer fit.",
+    "Calibrate support: Offer demonstrations or hints when needed; do not equate adult age with expertise.",
+    "Use bounded choice: Vary relevant examples while preserving required standards.",
+    "Practice the decision: Use realistic fictional cases and references available at work.",
+    "Give usable feedback: Name the error, explain the criterion, and allow another attempt.",
+    "Enable transfer: Confirm access, time, tools, manager support, and ownership of barriers.",
+    "Review evidence: Separate completion, demonstrated decisions, and actual work quality; avoid unsupported causal claims."
+  ],
+  "disclaimer": "Original portfolio sample for Lorne Hopkins’s independent eLearning platform. Harbor Service Desk, its rules, and all cases are fictional. This is a learning-design demonstration, not accredited study, professional certification, or proof of workplace competence. No organizational endorsement or measured efficacy is implied.",
+  "designNotes": {
+    "analyze": "Fictional need: incomplete handoffs after a process change. Audience has mixed experience. A production discovery phase would validate error patterns, access barriers, task standards, and accessibility needs.",
+    "design": "25 minutes: five lessons at about four minutes each and a five-minute assessment. Objectives 1–4 map to assessment items 1/3/4, 2/6, 5/7, and 8 respectively. Choose response quality rather than recall of theorists.",
+    "develop": "Original fictional examples; text-first content; meaningful option feedback; five formative checks; eight final items. Use semantic headings, labeled controls, visible focus, and feedback announced to assistive technology. No timers are required.",
+    "implement": "Suggested sequence is lessons 1–5, then assessment. Allow review and retries. Passing means at least 6 of 8 correct (75%) on this sample only. Present missed-item rationales and direct learners back to relevant lessons.",
+    "evaluate": "Pilot for clarity, timing, accessibility, ambiguous distractors, and whether learners can explain their decisions. In a real rollout, add an observed handoff rubric and check enabling conditions; do not infer ROI or causal impact from completion.",
+    "assessmentLimit": "Selected-response items sample design judgment. The transfer task is self-guided and unscored; a facilitator would need a rubric and review to establish production skill.",
+    "sourcesReviewed": "2026-10-09; source links identify conceptual background. All scenarios, questions, job aids, and worked examples are original."
+  },
+  "durationIsEstimate": true,
+  "durationNote": "Estimated at 25 minutes, including reading, decision practice, reflection, and assessment. Timing has not been learner-tested and will vary by pace."
+}

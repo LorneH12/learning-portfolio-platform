@@ -1,0 +1,567 @@
+{
+  "id": "ebitda-foundations",
+  "title": "EBITDA: Read the Number, Ask Better Questions",
+  "summary": "Build and check a simple EBITDA reconciliation, then explain why the result cannot answer every business question. An independent, scenario-based portfolio sample.",
+  "audience": "New people managers, project leads and non-finance business professionals who review operating results.",
+  "durationMinutes": 25,
+  "prerequisites": [
+    "Comfort adding and subtracting signed amounts.",
+    "Basic awareness that revenue minus expenses produces profit; no accounting qualification required."
+  ],
+  "problem": "Managers may mistake a positive EBITDA result for cash available to spend or accept inconsistent add-backs without examining the reconciliation.",
+  "objectives": [
+    {
+      "id": "e-o1",
+      "text": "Given a simplified income statement, calculate EBIT and EBITDA and reconcile both to net income without double-counting.",
+      "bloomLevel": "Apply"
+    },
+    {
+      "id": "e-o2",
+      "text": "Classify proposed adjustments as standard EBITDA components or additional adjustments in a supplied case.",
+      "bloomLevel": "Analyze"
+    },
+    {
+      "id": "e-o3",
+      "text": "Select and explain two reasons EBITDA can differ from operating cash flow or cash available for spending.",
+      "bloomLevel": "Analyze"
+    },
+    {
+      "id": "e-o4",
+      "text": "Evaluate a management claim and select an evidence-based response that uses the reconciliation and cash-flow information.",
+      "bloomLevel": "Evaluate"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "e-l1",
+      "title": "Start with the question",
+      "content": "Your team at fictional Northstar Workshop sees quarterly net income of $84,000 and EBITDA of $180,000. A colleague asks whether the difference means the business received another $96,000 in cash. Your job is to explain the bridge before drawing a conclusion.\n\nEBITDA means earnings before interest, taxes, depreciation and amortization. EBIT stops before the last two adjustments. These measures strip selected expenses out of earnings for a particular analytical view. They do not rewrite the business’s actual costs or bank balance.\n\nIn the SEC reporting context, EBITDA is a non-GAAP measure. When used as a performance measure, its reconciliation starts from GAAP net income. A calculation with additional adjustments needs a distinct label, such as Adjusted EBITDA. Source: e-r1.\n\nBefore calculating, name the question. “How do these specified expenses affect the earnings comparison?” fits this exercise. “Can we spend $180,000 today?” requires cash and obligation information. Write one question you would ask before agreeing to a new expenditure.",
+      "activity": {
+        "type": "decision",
+        "prompt": "Which response best addresses the colleague’s cash claim?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The extra $96,000 must be cash in the bank.",
+            "feedback": "Adding expenses back changes a metric; it does not create a cash receipt.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "First trace the earnings adjustments, then inspect cash flows and obligations.",
+            "feedback": "Best choice. The bridge explains the metric, while cash information supports a spending decision.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "EBITDA is meaningless, so ignore it.",
+            "feedback": "Too broad. A limited measure can be useful if its purpose and limitations are clear.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "e-k1",
+        "prompt": "Which question can an EBITDA bridge answer directly?",
+        "options": [
+          {
+            "id": "a",
+            "text": "How much cash can be distributed?"
+          },
+          {
+            "id": "b",
+            "text": "How do interest, income tax and D&amp;A explain the difference from net income?"
+          },
+          {
+            "id": "c",
+            "text": "Will customers pay on time?"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "The bridge explains selected earnings adjustments; it does not show payment timing or distributable cash.",
+        "objectiveIds": [
+          "e-o1"
+        ]
+      },
+      "durationMinutes": 3,
+      "objectiveIds": [
+        "e-o1",
+        "e-o4"
+      ]
+    },
+    {
+      "id": "e-l2",
+      "title": "Build the bridge in two directions",
+      "content": "Worked example: all Northstar figures are synthetic, in USD thousands, for the same quarter. Revenue is 600. Operating expenses excluding depreciation and amortization are 420. Depreciation is 30; amortization is 10. There is no other operating or non-operating income or expense. Interest expense is 20, there is no interest income, and income-tax expense is 36.\n\nTop down: 600 − 420 − 30 − 10 = 140 EBIT. Then 140 − 20 − 36 = 84 net income.\n\nBottom up: 84 net income + 20 interest + 36 income tax = 140 EBIT. Add 30 depreciation + 10 amortization = 180 EBITDA. The bridge difference is 96, not a cash deposit. Check: 180 − 30 − 10 − 20 − 36 = 84.\n\nEBITDA = EBIT + depreciation + amortization. In this simplified case, EBITDA = net income + interest expense + income-tax expense + depreciation + amortization. All add-backs were already deducted in net income. If a statement contains interest income, use the disclosed interest treatment consistently; removing net interest means adding expense and subtracting income. Other non-operating items can make EBIT different from operating income. Do not assume those terms always match.\n\nTake two minutes to rebuild the bridge on paper before continuing. Source for reconciliation basis: e-r1. The figures and calculations are original.",
+      "activity": {
+        "type": "worked-example",
+        "prompt": "A second synthetic quarter has net income 50, interest expense 12, income-tax expense 18 and D&amp;A 25, all in USD thousands. What is EBITDA?",
+        "options": [
+          {
+            "id": "a",
+            "text": "80",
+            "feedback": "80 is EBIT: 50 + 12 + 18. D&amp;A still needs to be added.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "105",
+            "feedback": "Correct: 50 + 12 + 18 + 25 = 105. Reverse the bridge to confirm.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "130",
+            "feedback": "D&amp;A has been added twice. Start at 50 and use each adjustment once.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "e-k2",
+        "prompt": "Northstar’s EBIT is 140 and D&amp;A is 40. What is EBITDA (USD thousands)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "100"
+          },
+          {
+            "id": "b",
+            "text": "140"
+          },
+          {
+            "id": "c",
+            "text": "180"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "EBITDA = 140 + 40 = 180. Interest and tax have already been excluded from EBIT.",
+        "objectiveIds": [
+          "e-o1"
+        ]
+      },
+      "durationMinutes": 5,
+      "objectiveIds": [
+        "e-o1"
+      ]
+    },
+    {
+      "id": "e-l3",
+      "title": "Check the add-backs",
+      "content": "Synthetic review file: Northstar’s cost-of-sales line already includes depreciation of 30. A draft spreadsheet adds back that 30 once, then adds it again because the cash-flow statement also lists depreciation. The second entry duplicates the same expense. Trace a number to its source instead of counting every place it appears.\n\nA new machine costs 90 in cash. That purchase is not depreciation of 90 for this quarter. Depreciation allocates an asset’s cost over its useful life; amortization typically allocates the cost of a finite-lived intangible. Adding those expenses back does not remove the need to buy or replace assets. Source: e-r2.\n\nUse income-tax expense recorded in the earnings figure, not a cash-tax payment. In a signed bridge, a tax benefit of 5 is −5, not +5. Ordinary payroll and property taxes remain operating expenses. Loan principal is also not interest expense.\n\nOriginal check: net income −10, interest expense 8, income-tax benefit 5, depreciation 12 and amortization 3 produces EBITDA = −10 + 8 − 5 + 12 + 3 = 8. If an analyst turns the benefit into +5, the answer is overstated by 10.\n\nExtra proposed add-backs for restructuring, stock compensation or routine software subscriptions are not part of the basic acronym. They require separate scrutiny and a different measure label; a new label alone does not make an adjustment appropriate. Source: e-r1.",
+      "activity": {
+        "type": "decision",
+        "prompt": "The draft adds a recurring software subscription of 6 to Northstar’s standard EBITDA of 180. What do you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Accept EBITDA of 186 because software is useful.",
+            "feedback": "Usefulness does not make an operating expense an EBITDA add-back.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Keep standard EBITDA at 180 and ask for the basis of any separately labeled extra adjustment.",
+            "feedback": "Correct. It is outside the basic components. Assess any adjusted measure critically rather than automatically accepting it.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Subtract the subscription from 180 again.",
+            "feedback": "The subscription was already expensed in the starting earnings. Subtracting it again would double-count.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "e-k3",
+        "prompt": "Net income is 20, interest expense 4, income-tax benefit 3 and D&amp;A 9. EBITDA is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "30"
+          },
+          {
+            "id": "b",
+            "text": "36"
+          },
+          {
+            "id": "c",
+            "text": "24"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "20 + 4 − 3 + 9 = 30. The tax benefit is removed with a negative adjustment.",
+        "objectiveIds": [
+          "e-o1",
+          "e-o2"
+        ]
+      },
+      "durationMinutes": 5,
+      "objectiveIds": [
+        "e-o1",
+        "e-o2"
+      ]
+    },
+    {
+      "id": "e-l4",
+      "title": "Profit measures are not cash balances",
+      "content": "Northstar’s original synthetic quarter has net income 84 and D&amp;A 40. Assume interest and tax expenses equal cash paid, there are no other noncash items, and operating working capital consumed 50 in cash. Its simplified operating cash flow is 84 + 40 − 50 = 74. EBITDA is still 180.\n\nWhy the gap? EBITDA excludes the interest and tax costs while this cash-flow example includes their payments. It also misses the 50 tied up in operating working capital. For example, customers may not yet have paid invoices, or cash may be tied up in inventory. Changes in receivables, inventory and payables can alter cash without altering EBITDA by the same amount. Source: e-r2.\n\nNow assume capital expenditures of 90. Operating cash flow less capital spending is 74 − 90 = −16 for this exercise. That calculation still is not the bank balance or a complete view of financing needs. The actual cash-flow statement separates operating, investing and financing movements; debt principal repayments are financing movements in this simplified U.S. example. Source: e-r3.\n\nPause and explain aloud: how could positive EBITDA coexist with a cash shortage? Include at least one timing issue and one real cash obligation. Do not use this deliberately simplified bridge as a universal cash-flow formula.",
+      "activity": {
+        "type": "decision",
+        "prompt": "The manager says, “EBITDA is 180, so the 90 machine purchase is easily funded.” Choose your next step.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Approve from EBITDA alone.",
+            "feedback": "The claim ignores payment timing and obligations.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Ask for current cash, cash forecast, capital spending and debt obligations before deciding.",
+            "feedback": "Best response. This is the evidence needed to assess funding; EBITDA alone cannot establish it.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Say the company is insolvent because the example has −16 after capital spending.",
+            "feedback": "A single simplified period does not establish insolvency. Financing and starting cash are still unknown.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "e-k4",
+        "prompt": "Which can reduce operating cash flow without reducing current-period EBITDA by the same amount?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Collecting all invoices immediately"
+          },
+          {
+            "id": "b",
+            "text": "A rise in unpaid customer invoices, all else equal"
+          },
+          {
+            "id": "c",
+            "text": "Adding back depreciation on a worksheet"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Accrual revenue can be recorded before collection. More cash tied up in receivables can reduce operating cash flow relative to earnings.",
+        "objectiveIds": [
+          "e-o3"
+        ]
+      },
+      "durationMinutes": 4,
+      "objectiveIds": [
+        "e-o3",
+        "e-o4"
+      ]
+    },
+    {
+      "id": "e-l5",
+      "title": "Challenge a claim with useful evidence",
+      "content": "Decision scenario: Northstar’s dashboard reads “EBITDA rose 20%; the business is financially stronger.” You discover that the current number includes a newly excluded recurring expense, while last quarter did not. The cash forecast also shows a large supplier payment next week.\n\nStep 1: ask for a like-for-like bridge, period and definition. Step 2: identify extra adjustments separately. Step 3: compare the relevant cash information before making a liquidity claim. Step 4: explain what you know, what you do not know and the next evidence needed.\n\nOriginal model response: “The published figures use different adjustments, so the 20% change is not yet a like-for-like comparison. Please show both periods on the same basis and explain the added exclusion. We also need the cash forecast before concluding that next week’s supplier payment is funded.”\n\nFor a real reporting decision, involve the finance team. SEC guidance addresses non-GAAP labeling, potentially misleading adjustments and prominence of comparable GAAP information in covered disclosures. This sample is not a disclosure-compliance checklist. Source: e-r1.\n\nPractice: write a two-sentence reply to the manager. Your reply should name one reconciliation request and one cash question, without claiming that EBITDA is useless.",
+      "activity": {
+        "type": "scenario",
+        "prompt": "What happens next in the scenario?",
+        "options": [
+          {
+            "id": "a",
+            "text": "You request a consistent bridge and a cash forecast.",
+            "feedback": "The analyst finds that the comparable change is smaller. The cash forecast identifies a funding question for the finance team. You have improved the decision without overclaiming.",
+            "isBest": true
+          },
+          {
+            "id": "b",
+            "text": "You repeat the 20% headline.",
+            "feedback": "The meeting proceeds using an inconsistent comparison, and the supplier payment risk remains unexamined. Return to the bridge.",
+            "isBest": false
+          },
+          {
+            "id": "c",
+            "text": "You remove every noncash expense from the company’s records.",
+            "feedback": "A management measure does not authorize changing accounting records. Keep the records and review the analytical adjustments.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "e-k5",
+        "prompt": "Two companies report different Adjusted EBITDA definitions. What is the strongest comparison approach?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Compare headline amounts without adjustments"
+          },
+          {
+            "id": "b",
+            "text": "Assume the higher amount means more cash"
+          },
+          {
+            "id": "c",
+            "text": "Inspect reconciliations and establish a consistent basis where possible"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "Different exclusions can create an apparent performance gap. Read the bridges and retain the limits of comparability.",
+        "objectiveIds": [
+          "e-o2",
+          "e-o4"
+        ]
+      },
+      "durationMinutes": 3,
+      "objectiveIds": [
+        "e-o2",
+        "e-o4"
+      ]
+    }
+  ],
+  "disclaimer": "Educational portfolio sample only, using simplified synthetic figures and fictional organizations. Not personalized investment, accounting, tax or legal advice. U.S. GAAP/SEC terminology is used; other reporting contexts may differ. No professional certification or continuing-education credit is awarded.",
+  "resources": [
+    {
+      "id": "e-r1",
+      "title": "SEC: Non-GAAP Financial Measures, Questions 100.01, 100.05, 102.10, 103.01 and 103.02",
+      "url": "https://www.sec.gov/rules-regulations/staff-guidance/corporation-finance-interpretations/non-gaap-financial-measures",
+      "note": "Primary reference for EBITDA terminology, net-income reconciliation and non-GAAP presentation. Reviewed 2026-10-09."
+    },
+    {
+      "id": "e-r2",
+      "title": "SEC: Beginners’ Guide to Financial Statements",
+      "url": "https://www.sec.gov/investor/pubs/begfinstmtguide.htm",
+      "note": "Primary introductory reference for income, depreciation, cash flow and working-capital differences. Reviewed 2026-10-09."
+    },
+    {
+      "id": "e-r3",
+      "title": "SEC: What is a statement of cash flows?",
+      "url": "https://www.sec.gov/files/cash-flow-statement-bblocks.pdf",
+      "note": "Primary educational reference for cash-flow statement categories and indirect-method adjustments. Reviewed 2026-10-09."
+    }
+  ],
+  "jobAid": [
+    "1. Confirm the period, units, entity and starting net-income amount. Use a consistent definition.",
+    "2. Simplified case: EBIT = net income + interest expense + income-tax expense. EBITDA = EBIT + depreciation + amortization. Check signs and interest-income treatment in the actual reconciliation.",
+    "3. Add back only amounts already deducted in the starting earnings figure. Do not add D&amp;A twice when it is embedded in cost of sales or another line.",
+    "4. Income-tax expense is not necessarily cash tax paid. A tax benefit has a negative sign in the bridge. Payroll and property taxes are not income-tax add-backs.",
+    "5. Depreciation/amortization expense is different from buying an asset, paying loan principal or repaying debt.",
+    "6. Ask about working capital, capital spending, interest, tax and debt repayments before interpreting liquidity. Read the cash-flow statement.",
+    "7. Separate EBITDA from Adjusted EBITDA. Inspect every extra adjustment and compare definitions across companies and periods."
+  ],
+  "assessment": {
+    "passPercent": 80,
+    "requiredCorrect": 6,
+    "totalQuestions": 7,
+    "estimatedMinutes": 5,
+    "instructions": "Select one answer per question. Earn at least 6 of 7 correct (85.7%, the first attainable score at or above 80%). Review rationales and retry after revisiting the relevant lessons. Completion is a portfolio practice result, not professional certification.",
+    "questions": [
+      {
+        "id": "e-q1",
+        "prompt": "Synthetic company: net income 72, interest expense 18, income-tax expense 30, depreciation 25, amortization 5 (USD thousands). What is EBITDA?",
+        "options": [
+          {
+            "id": "a",
+            "text": "120"
+          },
+          {
+            "id": "b",
+            "text": "150"
+          },
+          {
+            "id": "c",
+            "text": "180"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "72 + 18 + 30 + 25 + 5 = 150. EBIT is 120.",
+        "objectiveIds": [
+          "e-o1"
+        ]
+      },
+      {
+        "id": "e-q2",
+        "prompt": "EBIT is 90. Depreciation is 12 and amortization 8. What is EBITDA?",
+        "options": [
+          {
+            "id": "a",
+            "text": "70"
+          },
+          {
+            "id": "b",
+            "text": "90"
+          },
+          {
+            "id": "c",
+            "text": "110"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "90 + 12 + 8 = 110; do not add interest or tax again.",
+        "objectiveIds": [
+          "e-o1"
+        ]
+      },
+      {
+        "id": "e-q3",
+        "prompt": "Which proposed standard EBITDA add-back is incorrect?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Depreciation already included in cost of sales, counted once"
+          },
+          {
+            "id": "b",
+            "text": "Amortization already deducted in net income"
+          },
+          {
+            "id": "c",
+            "text": "The full cash purchase price of a new machine"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "A capital purchase is not the same as the period’s depreciation expense.",
+        "objectiveIds": [
+          "e-o2"
+        ]
+      },
+      {
+        "id": "e-q4",
+        "prompt": "Net income 40 includes an income-tax benefit of 6. Interest expense is 4 and D&amp;A is 10. EBITDA equals:",
+        "options": [
+          {
+            "id": "a",
+            "text": "48"
+          },
+          {
+            "id": "b",
+            "text": "60"
+          },
+          {
+            "id": "c",
+            "text": "44"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "40 + 4 − 6 + 10 = 48. A benefit is removed by subtracting it.",
+        "objectiveIds": [
+          "e-o1"
+        ]
+      },
+      {
+        "id": "e-q5",
+        "prompt": "EBITDA is positive but many customers have not paid and equipment replacement is due. Which conclusion is supported?",
+        "options": [
+          {
+            "id": "a",
+            "text": "There must be enough cash for replacement"
+          },
+          {
+            "id": "b",
+            "text": "Cash availability needs separate analysis"
+          },
+          {
+            "id": "c",
+            "text": "The unpaid invoices must be removed from revenue"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Receivable timing and capital expenditures matter to cash; EBITDA alone cannot settle the funding question.",
+        "objectiveIds": [
+          "e-o3"
+        ]
+      },
+      {
+        "id": "e-q6",
+        "prompt": "An analyst removes recurring software fees in addition to interest, tax and D&amp;A. What should you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Accept the amount as standard EBITDA"
+          },
+          {
+            "id": "b",
+            "text": "Treat it as an extra adjustment, scrutinize the rationale and require a distinct measure label"
+          },
+          {
+            "id": "c",
+            "text": "Add the fees back a second time"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "The exclusion goes beyond standard EBITDA. Labeling does not by itself make the adjustment appropriate.",
+        "objectiveIds": [
+          "e-o2"
+        ]
+      },
+      {
+        "id": "e-q7",
+        "prompt": "A slide reports “EBITDA increased, therefore next month’s loan principal payment is covered.” Your best response is:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Agree because principal is included in EBITDA"
+          },
+          {
+            "id": "b",
+            "text": "Check the earnings reconciliation, available cash and cash forecast including debt payments"
+          },
+          {
+            "id": "c",
+            "text": "Subtract amortization once more to prove coverage"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "The claim jumps from an earnings metric to liquidity. Principal and cash timing require additional evidence.",
+        "objectiveIds": [
+          "e-o3",
+          "e-o4"
+        ]
+      }
+    ]
+  },
+  "durationIsEstimate": true,
+  "durationNote": "Estimated 25 minutes including practice and assessment; not measured with learners. Pilot timing pending.",
+  "version": "1.0.0",
+  "sourceReviewDate": "2026-10-09",
+  "sampleLabel": "Independent portfolio sample",
+  "completionCriteria": "Visit all lessons and score at least 80% on the seven-item assessment (6 correct required). Untimed; retries permitted.",
+  "designNotes": {
+    "analysis": "Audience and performance problem are provisional design assumptions for this portfolio sample, not findings from a conducted client needs analysis. Validate with target learners before organizational rollout.",
+    "design": "Five concise lessons, original worked cases, decision feedback and seven aligned assessment items. Estimated 25 minutes includes learner practice; untimed and self-paced.",
+    "development": "Original text and scenarios; primary-source links reviewed 2026-10-09. JSON and Markdown deliverables share stable IDs. Feedback is explanatory rather than answer-only.",
+    "implementation": "Portfolio demonstration. Provide keyboard-operable options, visible focus, readable feedback and no color-only correctness cue. Display scope and attribution before launch. Course runtime and accessibility require separate platform testing.",
+    "evaluation": "Formative checks offer immediate retry. Summative pass is 6/7. Pilot with 3–5 representative learners, ask them to think aloud, review distractors and timing, then revise. Workplace transfer is not measured by this sample alone.",
+    "alignment": {
+      "e-o1": [
+        "e-q1",
+        "e-q2",
+        "e-q4"
+      ],
+      "e-o2": [
+        "e-q3",
+        "e-q6"
+      ],
+      "e-o3": [
+        "e-q5",
+        "e-q7"
+      ],
+      "e-o4": [
+        "e-q7"
+      ]
+    }
+  },
+  "qa": {
+    "status": "Content validation complete; platform integration and human pilot pending",
+    "checks": [
+      "All lesson and question IDs unique within course.",
+      "All correct answer IDs point to an available option.",
+      "Every question has one keyed answer and an explanatory rationale.",
+      "Every lesson includes practice and a formative check.",
+      "Estimated lesson time plus summative time equals 25 minutes.",
+      "Synthetic examples and limits stated explicitly.",
+      "Primary references included; no copied proprietary worksheets, graphics or assessment scales.",
+      "No real learner, employee or financial data used."
+    ]
+  }
+}
