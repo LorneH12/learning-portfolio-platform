@@ -12,9 +12,33 @@
     "durationMinutes": 25
   },
   {
+    "id": "blooms-taxonomy",
+    "title": "Bloom’s Taxonomy: Match the Learning to the Work",
+    "summary": "A 25-minute portfolio sample: use the revised taxonomy to classify workplace tasks, sharpen objectives, and align practice with assessment.",
+    "durationMinutes": 25
+  },
+  {
+    "id": "confluence-cloud",
+    "title": "Confluence Cloud: Publish a Runbook People Can Use",
+    "summary": "Convert scattered handover notes into a findable, reviewed support runbook with a safe audience and a maintenance plan. Estimated completion time: 28 minutes, including practice and assessment; learner pace varies.",
+    "durationMinutes": 28
+  },
+  {
     "id": "ebitda-foundations",
     "title": "EBITDA: Read the Number, Ask Better Questions",
     "summary": "Build and check a simple EBITDA reconciliation, then explain why the result cannot answer every business question. An independent, scenario-based portfolio sample.",
     "durationMinutes": 25
+  },
+  {
+    "id": "jira-cloud",
+    "title": "Jira Cloud: Turn a Bug Report into Ready-to-Test Work",
+    "summary": "Take a vague report through duplicate checking, reproducible evidence, ownership, a blocked handoff, and evidence-based closure. Estimated completion time: 28 minutes, including practice and assessment; learner pace varies.",
+    "durationMinutes": 28
+  },
+  {
+    "id": "sap-fieldglass",
+    "title": "SAP Fieldglass: Review Time Sheets with Confidence",
+    "summary": "Practice a buyer-side supervisor’s review: match the record, reconcile hours, return a precise correction, and verify the next workflow state. Estimated completion time: 28 minutes, including practice and assessment; learner pace varies.",
+    "durationMinutes": 28
   }
 ]

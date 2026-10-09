@@ -1,0 +1,490 @@
+{
+  "id": "sap-fieldglass",
+  "title": "SAP Fieldglass: Review Time Sheets with Confidence",
+  "summary": "Practice a buyer-side supervisor’s review: match the record, reconcile hours, return a precise correction, and verify the next workflow state. Estimated completion time: 28 minutes, including practice and assessment; learner pace varies.",
+  "audience": "New buyer-side contingent-workforce supervisors who approve submitted time sheets. Performance problem: approving the weekly total without checking daily evidence can delay correction and invoicing.",
+  "durationMinutes": 28,
+  "prerequisites": [
+    "Basic browser navigation. No paid account or production access required.",
+    "Use the fictional evidence supplied here; do not enter real worker, customer, or employer data."
+  ],
+  "objectives": [
+    {
+      "id": "O1",
+      "text": "Select the correct submitted time sheet using worker, assignment, and period identifiers.",
+      "bloomLevel": "Apply"
+    },
+    {
+      "id": "O2",
+      "text": "Reconcile a submitted standard time sheet against daily evidence and a supplied coding rule.",
+      "bloomLevel": "Analyze"
+    },
+    {
+      "id": "O3",
+      "text": "Choose approval, rejection, or escalation and write an actionable reason.",
+      "bloomLevel": "Evaluate"
+    },
+    {
+      "id": "O4",
+      "text": "Verify the workflow outcome and recognize when an invoiced record needs a revision process.",
+      "bloomLevel": "Apply"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "fg-1",
+      "title": "Start with the right record",
+      "content": "Time: 3 minutes. You are the fictional supervisor at Northstar Services. Your task is to review Avery Chen’s standard time sheet for the week of 5–9 October 2026, assignment NS-204. The training company uses task code DEL for delivery and TRN for training. These codes and review rules are invented for this sample.\n\nBefore touching a decision control, establish worker, assignment, period, status, and your authority. A familiar name is not enough: the same worker might have more than one assignment. Compare the sheet’s identifiers to the request and the approved assignment record. Open the detail record rather than deciding from an email subject.\n\nIn SAP Fieldglass, submitted time sheets can be reached through Work Items or the Time Sheet list. Exact labels and available actions depend on role and configuration. This simulation asks for the review decision without connecting to Fieldglass.\n\nWorked example: TS-104 shows Avery, NS-204, 5–9 October, Submitted. TS-099 shows the same person and period but assignment NS-188. Select TS-104, then compare its daily lines. If you cannot establish approval authority, contact the designated program-office contact; do not borrow another account.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "Which record should you open for this request?",
+        "options": [
+          {
+            "id": "a",
+            "text": "TS-099 because the name and week match.",
+            "feedback": "The assignment differs. Name and period alone do not establish the correct record.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "TS-104 because worker, assignment, and week match.",
+            "feedback": "Correct. You have matched all three identifiers before reviewing the details.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Whichever record appears first.",
+            "feedback": "Sorting is not evidence of identity or approval authority.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "fg-k1",
+        "prompt": "Which combination identifies this review target?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Worker name only"
+          },
+          {
+            "id": "b",
+            "text": "Weekly total and supplier"
+          },
+          {
+            "id": "c",
+            "text": "Worker, assignment, and period"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "The review request identifies all three. Verify status and authority next."
+      }
+    },
+    {
+      "id": "fg-2",
+      "title": "Reconcile daily detail, not only totals",
+      "content": "Time: 4 minutes. Training policy: bill only verified worked hours; use DEL for delivery and TRN for training; any overtime needs the specified approval evidence before supervisor approval. This is a fictional policy, not an SAP rule or employment-law instruction.\n\nUse this evidence packet: Monday 8 DEL; Tuesday 8 DEL; Wednesday 6 DEL plus 2 TRN; Thursday 8 DEL; Friday 6 DEL. The verified weekly total is 38 hours. TS-104 instead shows 8 DEL each weekday, totaling 40.\n\nWorked review: first compare dates. Monday and Tuesday agree. Wednesday’s total of 8 agrees, but 2 hours are on the wrong task. Thursday agrees. Friday is overstated by 2 hours. The correct breakdown is 36 DEL and 2 TRN, totaling 38. A total-only check would miss Wednesday’s coding error even if Friday had been corrected.\n\nTreat discrepancies as questions about evidence, not proof of intent. If source records disagree, pause the decision and ask the responsible person for clarification. Do not invent a reason for the difference or silently adjust someone else’s time. Record only the minimum factual detail needed for correction.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "The weekly total is corrected to 38, but Wednesday still shows 8 DEL. What now?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Approve because the weekly total matches.",
+            "feedback": "The total now matches, but coding still conflicts with the evidence.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Request Wednesday’s 6 DEL plus 2 TRN correction.",
+            "feedback": "Correct. Accuracy includes allocation as well as total hours.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Change all days to TRN.",
+            "feedback": "That replaces one error with several unsupported entries.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "fg-k2",
+        "prompt": "What is the verified coding breakdown?",
+        "options": [
+          {
+            "id": "a",
+            "text": "38 DEL, 0 TRN"
+          },
+          {
+            "id": "b",
+            "text": "36 DEL, 2 TRN"
+          },
+          {
+            "id": "c",
+            "text": "40 DEL, 2 TRN"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Monday, Tuesday, Thursday: 24 DEL; Wednesday and Friday: 12 DEL; Wednesday training: 2 TRN."
+      }
+    },
+    {
+      "id": "fg-3",
+      "title": "Choose the action and explain the correction",
+      "content": "Time: 4 minutes. Decide from the evidence: approve an accurate, eligible submission; reject an editable submitted sheet that needs correction under the local process; escalate unclear evidence or missing authority before deciding. In Fieldglass, rejection requires a reason and allows correction and resubmission. The available route is configured locally.\n\nFor TS-104, use a factual reason that tells the submitter what to check. Strong sample: ‘For 5–9 October, compare Wednesday with the training record: 6 hours DEL and 2 TRN. Friday’s verified work record shows 6 DEL rather than 8. Please correct and resubmit; expected total 38.’\n\nWhy this works: it names the period, the two discrepancies, the supporting records, and the requested next step. It avoids personal criticism and does not expose unrelated information. ‘Wrong hours’ creates another round of clarification. ‘You padded your time’ makes an unsupported allegation.\n\nBefore confirming a rejection, check that you are still in TS-104. In the sample, choose Reject and the precise reason. In a real tenant, use the approved reason category and comment fields your organization provides; do not assume the sample’s text is a configured category.\n\nLearner-authored practice (3 minutes): Write a 2–3 sentence rejection reason for synthetic TS-205, assignment NS-305, week 12–16 October. Tuesday shows 9 DEL but the verified record shows 7 DEL. Thursday totals 8 hours but should be split 6 DEL and 2 TRN, rather than 8 DEL. All other lines match. Identify the record and discrepancies, ask for correction and resubmission, and avoid assigning blame. Compare your text with the rubric before continuing.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "Choose the most useful rejection reason.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Wrong. Fix it.",
+            "feedback": "Too vague: the submitter cannot tell which dates or codes to examine.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "You exaggerated your hours.",
+            "feedback": "This asserts motive that the evidence does not establish.",
+            "isBest": false
+          },
+          {
+            "id": "c",
+            "text": "Check Wednesday’s DEL/TRN split and Friday’s 6 verified hours; correct and resubmit for 38 total.",
+            "feedback": "Correct. It identifies the discrepancies and next action without blame.",
+            "isBest": true
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "fg-k3",
+        "prompt": "Two reliable source records disagree about Friday. What is the best next step?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Approve the larger amount"
+          },
+          {
+            "id": "b",
+            "text": "Clarify the discrepancy through the approved contact before deciding"
+          },
+          {
+            "id": "c",
+            "text": "Reject with an accusation"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Unresolved evidence requires clarification. Do not manufacture a correct value."
+      }
+    },
+    {
+      "id": "fg-4",
+      "title": "Review the resubmission and verify the outcome",
+      "content": "Time: 3 minutes. Avery resubmits TS-104. Do not assume a correction request guarantees a correct result. Reopen the relevant record, confirm the period and assignment, and repeat the comparison for changed lines and the overall total.\n\nThe corrected packet shows 8 DEL, 8 DEL, 6 DEL + 2 TRN, 8 DEL, and 6 DEL. Total: 38. All supporting evidence now agrees and no unresolved exception remains under the sample policy. Choose approval in the simulation.\n\nAfter a decision, inspect the displayed status and available history or confirmation. A click is an attempt, not proof that the intended state was reached. Approval routing is configured by the buyer and may require additional approvers. Your approval does not itself prove that an invoice has been paid.\n\nWorked handoff: ‘Supervisor review completed for TS-104, 5–9 October: 38 hours verified. System shows the next approval stage.’ This is accurate if that is what the record displays. Avoid saying ‘payment completed’ unless a separate authorized payment record actually supports it. If an error message appears, inspect the current record before retrying to avoid a duplicate or contradictory action.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "After your approval, the screen indicates another approval stage. What do you report?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Payment is complete.",
+            "feedback": "Approval is not proof of payment.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "My review is complete; the record remains in the next approval stage.",
+            "feedback": "Correct. The report distinguishes your action from the wider process.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "The application failed because the status is not final.",
+            "feedback": "A configured approval route may legitimately contain multiple stages.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "fg-k4",
+        "prompt": "What should you do after submitting an approval?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Verify the displayed status or history"
+          },
+          {
+            "id": "b",
+            "text": "Immediately approve every remaining sheet"
+          },
+          {
+            "id": "c",
+            "text": "Tell the supplier payment has arrived"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "Verify the outcome and communicate only the state supported by the record."
+      }
+    },
+    {
+      "id": "fg-5",
+      "title": "Handle the exception you cannot simply undo",
+      "content": "Time: 3 minutes. A colleague discovers a different error in fictional TS-088, which has already been invoiced. The ordinary submitted-sheet correction path is no longer the right assumption. SAP documents a revised-time-sheet process for eligible cases; configuration and the worker or supplier’s role affect who can perform it.\n\nYour supervisor task is to preserve a clear handoff: record identifier, affected date and line, original value, verified proposed value, and source evidence. Ask the designated program office or supplier contact to use the approved revision process. Avoid creating a second ordinary time sheet for the same work merely to offset the error.\n\nWorked exception: TS-088 Friday DEL shows 8, supported record shows 6, status Invoiced. Handoff: ‘Please review the approved revision route for TS-088; Friday differs by 2 DEL hours. Source record attached in the authorized system.’ In this public sample, no attachment or real worker data is transmitted.\n\nClose the loop by checking that the responsible owner accepted the correction request. A submitted request is not a completed financial adjustment. The assessment now combines identification, reconciliation, decision quality, and truthful status reporting.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "TS-088 is already invoiced. Which response is safest?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Delete the original record and start over.",
+            "feedback": "That bypasses the approved correction and audit process.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Create another normal sheet with negative hours.",
+            "feedback": "An improvised offset may cause additional errors.",
+            "isBest": false
+          },
+          {
+            "id": "c",
+            "text": "Provide the discrepancy evidence to the authorized owner for the revision process.",
+            "feedback": "Correct. Use the eligible, configured correction route rather than improvising.",
+            "isBest": true
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "fg-k5",
+        "prompt": "Which detail is essential in a revision handoff?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A guess about why the worker erred"
+          },
+          {
+            "id": "b",
+            "text": "Affected record, line, verified difference, and evidence"
+          },
+          {
+            "id": "c",
+            "text": "Only the worker’s first name"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Specific record and evidence details let the authorized owner investigate without speculation."
+      }
+    }
+  ],
+  "assessment": {
+    "passPercent": 80,
+    "questions": [
+      {
+        "id": "fg-a1",
+        "prompt": "The right worker has two assignments in the same week. Which sheet do you review?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The newer sheet"
+          },
+          {
+            "id": "b",
+            "text": "The sheet matching the requested assignment and period"
+          },
+          {
+            "id": "c",
+            "text": "Both without checking"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Match the full review target; recency does not resolve assignment identity."
+      },
+      {
+        "id": "fg-a2",
+        "prompt": "Evidence is 8, 8, 8, 8, and 6 hours. What total should you expect?",
+        "options": [
+          {
+            "id": "a",
+            "text": "38"
+          },
+          {
+            "id": "b",
+            "text": "40"
+          },
+          {
+            "id": "c",
+            "text": "36"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "Four 8-hour days plus 6 equals 38."
+      },
+      {
+        "id": "fg-a3",
+        "prompt": "A total matches but 2 training hours are charged to delivery. What should happen under the sample policy?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Approve the total"
+          },
+          {
+            "id": "b",
+            "text": "Remove the training hours"
+          },
+          {
+            "id": "c",
+            "text": "Request the coding correction"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "Correct allocation is required even when the total is right."
+      },
+      {
+        "id": "fg-a4",
+        "prompt": "Which correction note is actionable?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Bad submission"
+          },
+          {
+            "id": "b",
+            "text": "Please compare Friday with the verified 6-hour record, correct the current 8 hours, and resubmit"
+          },
+          {
+            "id": "c",
+            "text": "You always get this wrong"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "It identifies date, discrepancy, evidence, and next action."
+      },
+      {
+        "id": "fg-a5",
+        "prompt": "An invoiced sheet has a confirmed error. What is the next route?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Authorized revised-time-sheet process"
+          },
+          {
+            "id": "b",
+            "text": "Delete it without review"
+          },
+          {
+            "id": "c",
+            "text": "Approve it again"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "The normal rejection assumption no longer applies to an invoiced sheet."
+      },
+      {
+        "id": "fg-a6",
+        "prompt": "A successful supervisor approval proves what?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The worker has been paid"
+          },
+          {
+            "id": "b",
+            "text": "Every approval stage is finished"
+          },
+          {
+            "id": "c",
+            "text": "Your approval was recorded, subject to the displayed workflow state"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "Payment and final routing are separate outcomes that need separate evidence."
+      }
+    ],
+    "requiredCorrect": 5
+  },
+  "resources": [
+    {
+      "title": "SAP Fieldglass: Time and Expense Management",
+      "url": "https://help.sap.com/doc/71f244da2f304aa1828dda707734b09f/Cloud/en-US/SAP_FG_Time_and_Expense_Management.pdf",
+      "note": "See sections 2.1, 2.3, and 2.6 for navigation, decisions, and revisions. Source supports product behavior; sample review policy and arithmetic are original. Official documentation reviewed 2026-10-09."
+    },
+    {
+      "title": "SAP Fieldglass: Approval Groups",
+      "url": "https://help.sap.com/docs/SAP_Fieldglass/26592f9ffa0b4a9c9646db5877c5eb5f/efe3ca1673e1445f95bd336f4ca3acfc.html",
+      "note": "Approval routes are configured, not universal. Official documentation reviewed 2026-10-09."
+    }
+  ],
+  "jobAid": [
+    "Match worker + assignment + period; confirm status and authority.",
+    "Compare each date, task code, hours, and relevant exception evidence.",
+    "Reconcile both weekly total and allocation.",
+    "If inaccurate, give a factual, specific correction reason under your local process.",
+    "If uncertain, clarify evidence or authority before deciding.",
+    "On resubmission, recheck; after action, verify the actual workflow state.",
+    "For invoiced errors, hand off to the authorized revision route. Never improvise an offset."
+  ],
+  "disclaimer": "Independent instructional-design portfolio sample prepared for Lorne Hopkins. Original learning scenarios with synthetic people, organizations, records, and policies. This is a decision simulation, not a live vendor application, official vendor course, certification, or evidence of vendor endorsement. SAP, SAP Fieldglass, Jira, Confluence, and Atlassian are trademarks of their respective owners. Local configuration, permissions, subscriptions, and interface releases vary. Follow your organization’s approved process in production.",
+  "designNotes": {
+    "analysis": {
+      "performanceProblem": "approving the weekly total without checking daily evidence can delay correction and invoicing.",
+      "assumptions": "Role-specific novice users; no baseline learner research or client validation has been performed. All organizations, examples, policies, and results are synthetic.",
+      "needsValidation": "Before workplace deployment, interview a process owner and two target learners, confirm common errors, access roles, local vocabulary, and policy requirements."
+    },
+    "design": {
+      "strategy": "Task-centered worked example followed by progressively independent decision practice. Feedback explains consequences, not just correctness.",
+      "timingMinutes": {
+        "orientationAndObjectives": 2,
+        "lessonsAndPractice": 17,
+        "assessment": 5,
+        "jobAidAndTransfer": 1,
+        "learnerAuthoredPractice": 3
+      },
+      "alignment": {
+        "O1": [
+          "fg-1",
+          "fg-a1"
+        ],
+        "O2": [
+          "fg-2",
+          "fg-a2",
+          "fg-a3"
+        ],
+        "O3": [
+          "fg-3",
+          "fg-a4",
+          "Learner-authored practice + performanceTask rubric"
+        ],
+        "O4": [
+          "fg-4",
+          "fg-5",
+          "fg-a5",
+          "fg-a6"
+        ]
+      },
+      "mastery": "80% of six equally weighted questions requires at least five correct (83.3%). A portfolio knowledge check is not authorization to perform production work.",
+      "durationEstimate": "Estimated 28 minutes including a three-minute learner-authored task; not pilot-tested. Learner pace varies."
+    },
+    "development": {
+      "artifact": "Five original text-led lessons, five decision scenarios with option-specific feedback, five formative checks, six scored questions with rationales, and a concise job aid.",
+      "accessibility": "Use semantic headings, keyboard-operable choices, visible focus, text feedback, and readable contrast in the delivery player. Do not rely on color or timing alone. Test the implemented player with keyboard and screen reader before release.",
+      "sourcePolicy": "Official product docs establish limited platform facts. Synthetic policies, examples, case decisions, and instructional writing are original. No vendor screenshots, course assets, client data, or claimed client results are included.",
+      "versionNote": "Source review date: 2026-10-09. Labels, permissions, configuration, and subscriptions can change; this is not a pixel-perfect application simulation."
+    },
+    "implementation": {
+      "delivery": "Self-paced public portfolio sample. No sign-in, purchase, production-system action, or live data is required.",
+      "launchChecks": "Validate JSON and option keys; test choice feedback, score calculation, retry, progress navigation, links, mobile readability, and accessibility in the final player. A content file alone does not establish runtime behavior.",
+      "facilitatorOption": "Ask learners to explain the evidence behind one incorrect choice and identify the equivalent role or process in their own organization without sharing confidential details."
+    },
+    "evaluation": {
+      "formative": "Track scenario misconceptions during a pilot; ask learners to restate the next action in their own words. Use feedback for revision, not ranking.",
+      "summative": "Six selected-response questions sampling the taught decisions; show rationale after submission. On nonmastery, recommend the linked topic and a fresh attempt.",
+      "transfer": "In an authorized sandbox, observe one complete role task against the job aid. Suggested pilot measures: correct record or destination, sufficient evidence, correct decision, and verified outcome.",
+      "honesty": "No learning gains, completion rates, client impact, certifications, or workplace outcomes have been measured or claimed.",
+      "masteryLimit": "Passing the multiple-choice quiz does not demonstrate independent writing skill, production-system proficiency, or workplace mastery. Review the learner-authored artifact with its rubric and separately observe an authorized sandbox task."
+    },
+    "performanceTask": "The writing element of O3 is practiced through the original rejection reason in fg-3. Score one point each for (1) correct sheet/assignment/period, (2) Tuesday 9-to-7 DEL discrepancy, (3) Thursday 6 DEL + 2 TRN allocation, and (4) factual correction-and-resubmission request without blame. Suggested practice criterion: 4/4. A facilitator or learner uses this rubric; the multiple-choice quiz assesses selection and recognition, not writing mastery."
+  },
+  "durationIsEstimate": true,
+  "durationNote": "Estimated 28 minutes including a three-minute learner-authored task; not pilot-tested. Learner pace varies."
+}

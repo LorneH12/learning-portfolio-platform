@@ -1,0 +1,369 @@
+{
+  "courseId": "adkar-change-foundations",
+  "title": "People Through Change: An ADKAR® Introduction",
+  "schemaVersion": 1,
+  "generatedDate": "2026-10-09",
+  "mediaStatus": "rendered",
+  "lessons": [
+    {
+      "courseId": "adkar-change-foundations",
+      "lessonId": "a-l1",
+      "title": "A new tool is not yet a new habit",
+      "video": "assets/media/adkar-change-foundations/a-l1.mp4",
+      "poster": "assets/media/adkar-change-foundations/a-l1.jpg",
+      "captions": "assets/media/adkar-change-foundations/a-l1.vtt",
+      "transcript": "Fictional Cedar Service is replacing email handoffs with a shared ticket queue. The desired behavior is specific: before ending a shift, each coordinator assigns every open ticket to an owner and records the next action. Installing the tool does not establish that behavior.\n\nProsci’s ADKAR model concerns individual change. Its five elements are Awareness, Desire, Knowledge, Ability and Reinforcement. In brief: understand the reason; choose to engage; learn what to do; demonstrate it; keep it going. The model is one part of a wider change-management approach.\n\nThis sample uses original conversations to explore those distinctions. It is not an official diagnostic instrument. Treat a possible barrier as a hypothesis to discuss, rather than a score that defines someone.\n\nWorked example: a coordinator can explain the new handoff steps but has never completed them in the live workflow. You have some evidence of knowledge. You do not yet have evidence that the person can carry out the behavior in realistic conditions. Record exactly what you observed before choosing a response.\n\nNow it's your turn. Which success statement is most observable for Cedar Service? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 77.416667,
+      "durationSeconds": 77.416667,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 4437927,
+      "sha256": "8f1c5ba934c244219c6a4e9b13b8ee1356183699725f0f78fb2198ca534ce5f3",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Define the new behavior",
+          "startSeconds": 0,
+          "endSeconds": 17.511333333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Five elements of individual change",
+          "startSeconds": 17.511333333333333,
+          "endSeconds": 36.20133333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Treat barriers as hypotheses",
+          "startSeconds": 36.20133333333334,
+          "endSeconds": 49.872666666666674,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Knowing is not yet doing",
+          "startSeconds": 49.872666666666674,
+          "endSeconds": 68.58400000000002,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 68.58400000000002,
+          "endSeconds": 77.41266666666668,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--adkar-change-foundations--a-l1.mp4",
+      "captionsUrl": "media--adkar-change-foundations--a-l1.vtt",
+      "posterUrl": "media--adkar-change-foundations--a-l1.jpg"
+    },
+    {
+      "courseId": "adkar-change-foundations",
+      "lessonId": "a-l2",
+      "title": "Explore purpose and concerns",
+      "video": "assets/media/adkar-change-foundations/a-l2.mp4",
+      "poster": "assets/media/adkar-change-foundations/a-l2.jpg",
+      "captions": "assets/media/adkar-change-foundations/a-l2.vtt",
+      "transcript": "Two original conversations, two different needs:\n\nAlex: “Why are we changing? My emails have always worked.” Ask what Alex knows about missed handoffs. Show an anonymized, accurate example and explain how the new queue addresses the problem. Ask Alex to explain the reason back in their own words. The likely gap is Awareness.\n\nPriya: “I understand the missed-handoff problem. I worry the queue will become a public ranking of who works fastest.” Priya has stated a reason for the change and a concern about participating. The likely gap is Desire. Acknowledge the concern, clarify verified data-use rules and invite specific questions. Do not promise that tracking will never be used for performance management unless that is actually approved and true.\n\nAwareness of a rationale does not guarantee willingness. Desire cannot be forced by repeating a slogan. An individual’s concerns may expose a real design issue. Sources for the element distinctions: a-r1 and a-r2; conversations and recommended responses are original.\n\nPractice a 45-second reply to Priya. Include a neutral question and one fact you would verify. Avoid assuming that reluctance means laziness.\n\nNow it's your turn. Priya raises the ranking concern. What do you say first? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 84.583333,
+      "durationSeconds": 84.583333,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 4861346,
+      "sha256": "3f6e989615a8737053fe4a1b5230bd28dbfc4a58ec113ba0b3a6c9e61924595e",
+      "sourceParagraphs": 5,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Listen for different needs",
+          "startSeconds": 0,
+          "endSeconds": 3.442,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Make the reason clear",
+          "startSeconds": 3.442,
+          "endSeconds": 20.814666666666668,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Explore the concern honestly",
+          "startSeconds": 20.814666666666668,
+          "endSeconds": 47.55266666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Understanding does not guarantee willingness",
+          "startSeconds": 47.55266666666667,
+          "endSeconds": 66.09333333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Practice a respectful response",
+          "startSeconds": 66.09333333333333,
+          "endSeconds": 75.626,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 5,
+          "title": "Your turn: make the decision",
+          "startSeconds": 75.626,
+          "endSeconds": 84.54533333333335,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--adkar-change-foundations--a-l2.mp4",
+      "captionsUrl": "media--adkar-change-foundations--a-l2.vtt",
+      "posterUrl": "media--adkar-change-foundations--a-l2.jpg"
+    },
+    {
+      "courseId": "adkar-change-foundations",
+      "lessonId": "a-l3",
+      "title": "Separate knowing from doing",
+      "video": "assets/media/adkar-change-foundations/a-l3.mp4",
+      "poster": "assets/media/adkar-change-foundations/a-l3.jpg",
+      "captions": "assets/media/adkar-change-foundations/a-l3.vtt",
+      "transcript": "Mateo: “I support the queue, but I don’t know when to use Assign versus Transfer.” A short, role-specific demonstration followed by a worked example targets Knowledge. Ask Mateo to explain which action fits a sample ticket and why.\n\nNia: “I can explain every step. In the evening shift my account cannot assign tickets, and I have no cover to practice.” Another slide deck will not fix the permission problem or create practice time. Help resolve authorized access through the proper support route, then provide protected practice and feedback. These conditions block Ability.\n\nThe difference is the evidence: being able to explain a task is not the same as completing it. Observed performance matters. These are fictional cases, not Prosci assessment items.\n\nOriginal worked practice: give Mateo a sample ticket with no owner and an unresolved question. Demonstrate assigning an owner and writing a next action once. Then let Mateo complete a new ticket without hints. If the explanation is accurate but the action fails, ask what happened and inspect the environment before prescribing more instruction.\n\nConsider accessibility: the practice route should work with the tools and accommodations the person needs. A system obstacle is not a character flaw.\n\nNow it's your turn. Nia explains the steps correctly but her account cannot assign tickets. Choose the most useful immediate response. Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 91.375,
+      "durationSeconds": 91.375,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5620492,
+      "sha256": "8df8a4a8c4ea51fbcf8449f5f29470565094babe8d2f3fd96914ac51dc463ae5",
+      "sourceParagraphs": 5,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Target the procedural gap",
+          "startSeconds": 0,
+          "endSeconds": 15.308666666666666,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Remove barriers to performance",
+          "startSeconds": 15.308666666666666,
+          "endSeconds": 36.772000000000006,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Look for performance evidence",
+          "startSeconds": 36.772000000000006,
+          "endSeconds": 48.20333333333335,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Demonstrate, then fade the help",
+          "startSeconds": 48.20333333333335,
+          "endSeconds": 69.73066666666668,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Make practice accessible",
+          "startSeconds": 69.73066666666668,
+          "endSeconds": 79.30066666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 5,
+          "title": "Your turn: make the decision",
+          "startSeconds": 79.30066666666667,
+          "endSeconds": 91.35600000000001,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--adkar-change-foundations--a-l3.mp4",
+      "captionsUrl": "media--adkar-change-foundations--a-l3.vtt",
+      "posterUrl": "media--adkar-change-foundations--a-l3.jpg"
+    },
+    {
+      "courseId": "adkar-change-foundations",
+      "lessonId": "a-l4",
+      "title": "Support the behavior after launch",
+      "video": "assets/media/adkar-change-foundations/a-l4.mp4",
+      "poster": "assets/media/adkar-change-foundations/a-l4.jpg",
+      "captions": "assets/media/adkar-change-foundations/a-l4.vtt",
+      "transcript": "Cedar’s team uses the queue correctly for a week. Then a supervisor starts accepting email handoffs again because it feels faster. Coordinators follow the supervisor’s example, even though they remember the new steps.\n\nReinforcement concerns sustaining change. An original Cedar response is to ask why the shortcut returned, fix any genuine friction, agree on the handoff standard and recognize accurate work. Do not reward raw ticket counts if that encourages rushed or incomplete handoffs.\n\nMeasure the behavior you intended. For this practice case, inspect a small agreed sample of handoffs for an owner and usable next action. Pair the result with a short conversation about obstacles. Training-completion rate measures attendance or completion, not the quality of handoffs.\n\nOriginal follow-through plan: the shift lead checks five agreed sample handoffs on Friday, notes whether both required fields are useful, asks the team what slowed them down and reviews the next step the following Tuesday. The sample size and dates are practice choices, not validated thresholds. Avoid publishing individual rankings or collecting unnecessary personal details.\n\nA drop in use can also signal a new workload, tool or motivation barrier. Ask again rather than assuming the original problem is solved forever.\n\nNow it's your turn. Correct queue use falls after supervisors accept email again. Which plan is strongest? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 93.291667,
+      "durationSeconds": 93.291667,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5188600,
+      "sha256": "ee4893fb4476d87c02d38eb88173839620216c2d552af1422e1a1be5c619de48",
+      "sourceParagraphs": 5,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "When shortcuts return",
+          "startSeconds": 0,
+          "endSeconds": 13.415333333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Reinforce the intended behavior",
+          "startSeconds": 13.415333333333333,
+          "endSeconds": 31.28933333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Measure the handoff itself",
+          "startSeconds": 31.28933333333333,
+          "endSeconds": 48.870000000000005,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Set a specific review loop",
+          "startSeconds": 48.870000000000005,
+          "endSeconds": 72.58933333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Recheck changing conditions",
+          "startSeconds": 72.58933333333334,
+          "endSeconds": 82.33000000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 5,
+          "title": "Your turn: make the decision",
+          "startSeconds": 82.33000000000001,
+          "endSeconds": 93.2546666666667,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--adkar-change-foundations--a-l4.mp4",
+      "captionsUrl": "media--adkar-change-foundations--a-l4.vtt",
+      "posterUrl": "media--adkar-change-foundations--a-l4.jpg"
+    },
+    {
+      "courseId": "adkar-change-foundations",
+      "lessonId": "a-l5",
+      "title": "Coach the next step",
+      "video": "assets/media/adkar-change-foundations/a-l5.mp4",
+      "poster": "assets/media/adkar-change-foundations/a-l5.jpg",
+      "captions": "assets/media/adkar-change-foundations/a-l5.vtt",
+      "transcript": "Integrated original scenario: Jordan understands the reason for the shared queue and wants fewer missed handoffs. Jordan completes the tutorial accurately but cannot finish a real handoff while answering phones. A manager proposes a mandatory repeat of the tutorial.\n\nFirst decision: ask Jordan to walk through a recent handoff. You learn that the phone interrupts every attempt and there is no shift overlap. The earliest evidenced barrier is practical Ability, rather than missing purpose, willingness or procedural knowledge. This is a hypothesis based on the facts given, not a diagnosis of Jordan.\n\nSecond decision: agree a short, covered practice period and investigate a workable handoff interval with the shift lead. Observe the next realistic attempt. If Jordan completes it accurately with coverage, that supports the workload hypothesis. If Jordan cannot choose the right action even with time and access, revisit Knowledge.\n\nThird decision: after initial success, check whether the arrangement survives a busy shift. Sustained success needs follow-through. Source for focusing on the earliest unmet element: a-r1. The scenario sequence and support plan are original.\n\nCreate your own four-part plan: behavior, support, observation and review date. Example: “Jordan records an owner and next action on each open ticket. The shift lead arranges five minutes of coverage. We review one realistic handoff together tomorrow, then discuss whether the approach worked during Friday’s busy shift.” Avoid including real confidential employee information in your practice response.\n\nNow it's your turn. Branch decision: after coverage is provided, Jordan completes the practice ticket accurately. What next? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 111.541667,
+      "durationSeconds": 111.541667,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5651879,
+      "sha256": "7841b29a468a637844f7549f9223535a13f9536f5a691910a2dd3d525dbbcdb4",
+      "sourceParagraphs": 5,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "A tutorial meets real interruptions",
+          "startSeconds": 0,
+          "endSeconds": 17.084666666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Test the workload hypothesis",
+          "startSeconds": 17.084666666666667,
+          "endSeconds": 37.75866666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Observe a supported attempt",
+          "startSeconds": 37.75866666666667,
+          "endSeconds": 58.13400000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Check the busy shift",
+          "startSeconds": 58.13400000000001,
+          "endSeconds": 73.58133333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Build your four-part support plan",
+          "startSeconds": 73.58133333333333,
+          "endSeconds": 99.37533333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 5,
+          "title": "Your turn: make the decision",
+          "startSeconds": 99.37533333333333,
+          "endSeconds": 111.516,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--adkar-change-foundations--a-l5.mp4",
+      "captionsUrl": "media--adkar-change-foundations--a-l5.vtt",
+      "posterUrl": "media--adkar-change-foundations--a-l5.jpg"
+    }
+  ],
+  "contentFidelity": "All source paragraphs narrated; citation tokens omitted from speech. Authoritative source content and assessments remain unchanged.",
+  "accessibility": "Burned captions plus equivalent VTT and plain transcript. Leave optional VTT track off by default to avoid duplicate visible captions.",
+  "qualityLimitations": [
+    "No human listening audition or end-to-end playback; runtime lacks audio input. Independent ASR, signal analysis, decoded video, sampled frames, source mapping and caption layout checks performed."
+  ],
+  "music": "none",
+  "distribution": "Original synthetic scenarios and original instructional diagrams. No real-person face/voice cloning."
+}

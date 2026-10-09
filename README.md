@@ -1,11 +1,13 @@
 # Independent learning portfolio platform
 
-Original standalone educational portfolio samples. No vendor endorsement or certification.
+Original educational samples with fictional workplace scenarios. No vendor endorsement or certification.
 
-This repository publishes a static player and local browser authoring preview. The initial EBITDA sample has five lessons and twenty Read panels. Video remains unavailable until captioned assets are integrated.
+7 courses, five lessons per course, with Read panels, captioned lesson films, transcripts, practice feedback and editable course JSON. Public progress and author drafts stay in the learner browser. There is no operational public LMS, learner account system or shared LRS.
 
-Progress and author drafts stay in your browser. This public preview has no operational LMS, server-side learner account, or LRS. SCORM 1.2 packages are candidates: real LMS interoperability is not yet verified. Eight development tests pass; full accessibility and learner pilot testing remain pending.
+SCORM 1.2 exports are package candidates; actual LMS interoperability is not yet verified. Automated tests cover grading, fake SCORM API behavior, visible rubrics, local queue persistence, HTTP byte ranges and video bookmark restoration. Full accessibility and human learner testing remain pending.
 
-The modular editable project is included as platform-source.zip. Unzip into a new directory, install Node.js 24, run npm ci, npm test, npm run build, then npm start for the loopback development service. Never expose that unauthenticated synthetic development service publicly.
+Playback never autostarts. Read/Watch changes retain lesson, panel, practice response and video bookmark. A learner explicitly marks lessons reviewed; watching every second is not required. All lessons plus the assessment pass threshold are required for course completion. Writing practice is not auto-scored.
 
-Public files use flattened asset names to support the initial browser upload. Original separate public/content/scripts/tests folders are retained inside the source archive. Dependency licenses are included. No private databases, credentials, or employer assets are included.
+Download platform-source.zip and extract into a new folder beside these published files. Run node scripts/restore-published-media.mjs to restore the separately published MP4/JPG assets, then npm ci, npm test, npm run build, and npm start with Node 24. Source folders separate public, content, scripts and tests. Do not expose the unauthenticated synthetic local service publicly.
+
+Flat asset names support browser-based repository upload. Dependency licenses are included. No databases, credentials or private employer assets are published.

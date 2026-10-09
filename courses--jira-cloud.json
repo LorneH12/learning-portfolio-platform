@@ -1,0 +1,502 @@
+{
+  "id": "jira-cloud",
+  "title": "Jira Cloud: Turn a Bug Report into Ready-to-Test Work",
+  "summary": "Take a vague report through duplicate checking, reproducible evidence, ownership, a blocked handoff, and evidence-based closure. Estimated completion time: 28 minutes, including practice and assessment; learner pace varies.",
+  "audience": "New product-support analysts and delivery-team contributors. Performance problem: vague duplicate tickets and premature Done statuses create avoidable clarification and rework.",
+  "durationMinutes": 28,
+  "prerequisites": [
+    "Basic browser navigation. No paid account or production access required.",
+    "Use the fictional evidence supplied here; do not enter real worker, customer, or employer data."
+  ],
+  "objectives": [
+    {
+      "id": "O1",
+      "text": "Distinguish a duplicate report from a new defect using behavior and context.",
+      "bloomLevel": "Analyze"
+    },
+    {
+      "id": "O2",
+      "text": "Construct a concise defect record with reproducible steps and observable acceptance criteria.",
+      "bloomLevel": "Apply"
+    },
+    {
+      "id": "O3",
+      "text": "Select an evidence-supported ownership and workflow action.",
+      "bloomLevel": "Evaluate"
+    },
+    {
+      "id": "O4",
+      "text": "Confirm completion against acceptance criteria before closing the loop.",
+      "bloomLevel": "Evaluate"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ji-1",
+      "title": "Search before creating",
+      "content": "Time: 3 minutes. You support the fictional Harbor app. A colleague reports: ‘The export is broken.’ Your task is to produce work that a developer and tester can act on without guessing. Ask for the affected action, environment, expected result, observed result, frequency, and impact. Use synthetic examples only.\n\nEvidence packet: in Harbor demo build 2.4, select the October orders, choose CSV export, and open the file. The screen lists 12 rows but the export contains 10. It happens on two attempts with the same sample dataset. Search the correct Jira space for export, CSV, missing rows, and similar reports; clear unintended filters if results look incomplete. Available search views vary by tenant.\n\nWorked duplicate review: HBR-71 concerns a PDF layout problem. HBR-84 describes a CSV export omitting the last two rows in demo build 2.4. HBR-84 is a strong match; inspect its context and status before creating another record. If it represents the same defect, add relevant new evidence through your team’s process. Similar wording alone does not prove identical cause.\n\nCurrent Atlassian Cloud documentation uses work item and space; older interfaces may say issue and project.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "HBR-84 has the same dataset, build, and missing rows. What is the best next step?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Create a new item immediately.",
+            "feedback": "This risks duplicate work before checking the existing record.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Inspect HBR-84 and add relevant evidence if it is the same defect.",
+            "feedback": "Correct. Compare behavior and context, then maintain a coherent record.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Delete HBR-71.",
+            "feedback": "A different PDF defect can remain valid; similarity is not deletion authority.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "ji-k1",
+        "prompt": "Which evidence most strongly suggests a duplicate?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The same word export"
+          },
+          {
+            "id": "b",
+            "text": "Matching behavior, context, and affected build"
+          },
+          {
+            "id": "c",
+            "text": "The oldest creation date"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Comparable symptoms and conditions are stronger evidence than a shared keyword."
+      }
+    },
+    {
+      "id": "ji-2",
+      "title": "Write a record another person can reproduce",
+      "content": "Time: 4 minutes. A second packet is distinct: the CSV includes every row but formats product codes as numbers. The synthetic code 00127 becomes 127. No matching item is found after checking the relevant space and filters. Create one defect record in the appropriate space using the locally configured work type.\n\nWorked record: Title: ‘CSV export removes leading zeros from product codes.’ Description: ‘Environment: Harbor demo 2.4, sample dataset DEMO-7. Steps: 1. Open DEMO-7. 2. Export CSV. 3. Inspect the raw CSV in a text viewer. Expected: product code remains 00127. Actual: raw output contains 127. Reproduced twice. Impact: downstream sample matching treats the code as a different identifier.’ Inspecting raw output helps distinguish export behavior from spreadsheet display formatting.\n\nAdd only sanitized evidence. Do not attach a real customer export to a public portfolio or broadly accessible ticket. Review required fields and defaults before creating. Atlassian’s current creation form may use Title where older versions use Summary.\n\nA clear record separates observation from hypothesis. ‘Serializer strips zeros’ may be a useful hypothesis, but it is not a confirmed root cause. Preserve that distinction so the team can investigate without inheriting an unsupported conclusion.\n\nLearner-authored practice (3 minutes): Draft a defect title, brief description, and two acceptance criteria from this new synthetic packet: Harbor demo 2.5; DEMO-9 lists 14 saved orders; applying the Pending filter should show 4 orders but shows 0; repeated twice after reopening; the raw sample data contains 4 Pending records. Include environment, reproduction steps, expected/actual results, and observable checks. Do not claim a root cause or invent customer impact. Compare your draft with the rubric before continuing.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "Which evidence should accompany the sample defect?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A full production customer export.",
+            "feedback": "That can disclose unnecessary private data.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "A synthetic before/after code and reproduction steps.",
+            "feedback": "Correct. It demonstrates the behavior with minimal, safe evidence.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Only the phrase export broken.",
+            "feedback": "The team still lacks a reproducible problem definition.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "ji-k2",
+        "prompt": "Why inspect the raw CSV rather than only a spreadsheet cell?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To distinguish source output from display formatting"
+          },
+          {
+            "id": "b",
+            "text": "To make the ticket longer"
+          },
+          {
+            "id": "c",
+            "text": "To avoid describing the environment"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "A spreadsheet may format identifiers differently; the raw output isolates the observed behavior."
+      }
+    },
+    {
+      "id": "ji-3",
+      "title": "Make acceptance and ownership explicit",
+      "content": "Time: 4 minutes. A record is useful when someone can determine whether the problem has been resolved. Replace ‘works correctly’ with observable acceptance criteria. For this sample: export DEMO-7; confirm raw CSV preserves 00127 and 00008 exactly; confirm an ordinary alphanumeric code A127 remains unchanged; confirm the row count matches the source. These are training criteria, not vendor-defined fields or product requirements.\n\nWork with the team’s triage process to set ownership and priority. Do not use the highest priority merely because the requester is frustrated. Record impact and urgency so the authorized triager can decide consistently. If you are not authorized to assign or change priority, provide the evidence to the responsible person.\n\nWorked handoff: ‘Reproduced in demo 2.4 with DEMO-7. Raw CSV drops leading zeros. Acceptance checks listed. Awaiting triage owner.’ This says what is known and who needs to act without promising a delivery date.\n\nBefore saving, confirm the space, work type, title, required fields, and access context. A work item key identifies the record; use that key in further discussions rather than creating disconnected copies. Do not assume that mentioning a person assigns ownership or guarantees they have seen the request.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "Which acceptance criterion is testable?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The export should be better.",
+            "feedback": "Better is subjective and gives no pass/fail test.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Export DEMO-7 and verify raw CSV preserves 00127 and 00008 exactly.",
+            "feedback": "Correct. A tester can observe the output and make a repeatable decision.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Finish this as soon as possible.",
+            "feedback": "That expresses urgency, not a verification criterion.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "ji-k3",
+        "prompt": "Who should set priority when local policy reserves it for triage?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Any person who wants faster service"
+          },
+          {
+            "id": "b",
+            "text": "The authorized triager using documented impact and urgency"
+          },
+          {
+            "id": "c",
+            "text": "Nobody; every item must be highest priority"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Follow the agreed role boundary and provide evidence instead of silently overriding it."
+      }
+    },
+    {
+      "id": "ji-4",
+      "title": "Represent progress and blockers honestly",
+      "content": "Time: 3 minutes. Jira work items move through a configured workflow. The statuses, transitions, permissions, and required fields may differ between spaces. This course uses the fictional sequence To Do → In Progress → Ready for Test → Done. It is a teaching model, not a required Jira default.\n\nThe developer starts investigating but cannot access the synthetic regression dataset. The problem is blocked, not finished. Keep the record in the locally appropriate nonfinal state. Add a concise update: ‘Investigation started. Blocker: DEMO-7 test fixture unavailable. Test-data owner to restore access; retest after access is confirmed.’ If your team has a designated blocked marker or relationship, use its approved convention. Do not invent a workflow status that your tenant does not provide.\n\nWorked decision: the fix is coded but has not been tested. If the configured workflow permits it and its prerequisites are satisfied, transition to Ready for Test and supply build and verification instructions. Do not choose Done solely because coding ended.\n\nAfter any transition, inspect the resulting status and required fields. If a transition is missing, consult the workflow or authorized administrator rather than changing configuration or asking to use someone else’s account.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "Code is complete, but acceptance checks have not run. What is the best handoff?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mark Done to improve the board.",
+            "feedback": "The stated completion evidence is missing.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Use the approved test-ready transition with build and test instructions.",
+            "feedback": "Correct. The state and handoff reflect actual progress.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Delete the acceptance criteria.",
+            "feedback": "That removes the standard for completion rather than meeting it.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "ji-k4",
+        "prompt": "A transition is unavailable. What should a contributor do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Bypass it using another account"
+          },
+          {
+            "id": "b",
+            "text": "Consult the configured process or authorized administrator"
+          },
+          {
+            "id": "c",
+            "text": "Assume Jira is broken and duplicate the item"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Transitions depend on workflow configuration and permissions."
+      }
+    },
+    {
+      "id": "ji-5",
+      "title": "Close with evidence, reopen with specificity",
+      "content": "Time: 3 minutes. The test build is ready. Run every supplied acceptance check rather than testing only the example that triggered the bug. In packet A, 00127 is preserved but 00008 becomes 8. The defect is not ready for Done. Record the failed case, build, expected value, actual value, and reproduction steps; return it through the team’s approved workflow.\n\nIn packet B, both leading-zero identifiers and A127 are preserved, row counts agree, and the required review is complete. The authorized contributor may use the configured completion transition. Write a brief verification summary: ‘Demo build 2.4.1: DEMO-7 cases 00127, 00008, and A127 passed; exported row count matches source.’ This does not claim every possible export has been tested.\n\nWorked final check: inspect the actual resulting status, keep the evidence on the same record, and provide its key to the requester through the approved channel. If new evidence later contradicts completion, follow the team’s reopen or new-defect policy.\n\nYour final practice is a judgment exercise: the best status is the one supported by current evidence, even when someone is pressing for closure. Accurate tracking helps the next person act and protects the team from hidden unfinished work.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "The second acceptance case still fails. Choose your update.",
+        "options": [
+          {
+            "id": "a",
+            "text": "All fixed; the main example passed.",
+            "feedback": "That hides a known failure.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Leave no comment and wait.",
+            "feedback": "The next owner will not know what failed or why.",
+            "isBest": false
+          },
+          {
+            "id": "c",
+            "text": "Record the failing case and return it through the approved workflow.",
+            "feedback": "Correct. Specific evidence supports an actionable continuation.",
+            "isBest": true
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "ji-k5",
+        "prompt": "What supports completion in this sample?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Coding ended"
+          },
+          {
+            "id": "b",
+            "text": "Every stated acceptance check and required review passed"
+          },
+          {
+            "id": "c",
+            "text": "The ticket has been open for a week"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Completion is evidence-based, not based only on effort or age."
+      }
+    }
+  ],
+  "assessment": {
+    "passPercent": 80,
+    "questions": [
+      {
+        "id": "ji-a1",
+        "prompt": "Two reports mention export. What determines whether you should combine them?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Matching underlying behavior and context"
+          },
+          {
+            "id": "b",
+            "text": "Their titles have the same length"
+          },
+          {
+            "id": "c",
+            "text": "Both requesters are impatient"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "Compare reproducible behavior, not just wording."
+      },
+      {
+        "id": "ji-a2",
+        "prompt": "Which is the strongest defect title?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Broken again"
+          },
+          {
+            "id": "b",
+            "text": "CSV export removes leading zeros from product codes"
+          },
+          {
+            "id": "c",
+            "text": "Urgent!!!"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "The title identifies the affected function and observable defect."
+      },
+      {
+        "id": "ji-a3",
+        "prompt": "Which phrase is a hypothesis rather than an observation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Raw CSV shows 127"
+          },
+          {
+            "id": "b",
+            "text": "Source code is 00127"
+          },
+          {
+            "id": "c",
+            "text": "The serializer must be defective"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "The proposed cause is not established by the output alone."
+      },
+      {
+        "id": "ji-a4",
+        "prompt": "Which acceptance criterion enables a repeatable check?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Looks right"
+          },
+          {
+            "id": "b",
+            "text": "Preserve 00127 exactly in raw CSV for DEMO-7"
+          },
+          {
+            "id": "c",
+            "text": "Make the user happy"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "It specifies the fixture, output, and expected value."
+      },
+      {
+        "id": "ji-a5",
+        "prompt": "The fix awaits testing. Which sample state is appropriate when its prerequisites are met?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Done"
+          },
+          {
+            "id": "b",
+            "text": "Archived"
+          },
+          {
+            "id": "c",
+            "text": "Ready for Test"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "The sample separates implementation from verification; use the local equivalent."
+      },
+      {
+        "id": "ji-a6",
+        "prompt": "Five of six required checks pass. What next?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Report the failed check and continue through the agreed workflow"
+          },
+          {
+            "id": "b",
+            "text": "Mark Done because most checks pass"
+          },
+          {
+            "id": "c",
+            "text": "Remove the last check"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "A known unmet criterion needs an explicit resolution, not silent closure."
+      }
+    ],
+    "requiredCorrect": 5
+  },
+  "resources": [
+    {
+      "title": "Create a work item and a subtask",
+      "url": "https://support.atlassian.com/jira-software-cloud/docs/create-a-work-item-and-a-subtask/",
+      "note": "Creation, required fields, and changing terminology. Official documentation reviewed 2026-10-09."
+    },
+    {
+      "title": "Search for work items in a space",
+      "url": "https://support.atlassian.com/jira-software-cloud/docs/search-for-work-items-in-a-project/",
+      "note": "Search and filter behavior varies by space type. Official documentation reviewed 2026-10-09."
+    },
+    {
+      "title": "What are Jira workflows?",
+      "url": "https://support.atlassian.com/jira-software-cloud/docs/what-are-jira-workflows/",
+      "note": "Statuses and transitions represent a configured process. Official documentation reviewed 2026-10-09."
+    },
+    {
+      "title": "Create and configure your work items",
+      "url": "https://support.atlassian.com/jira-software-cloud/docs/create-and-configure-your-work-items/",
+      "note": "Documents rollout differences; this is a conceptual simulation rather than a pixel-perfect UI tutorial. Official documentation reviewed 2026-10-09."
+    }
+  ],
+  "jobAid": [
+    "Search the right space; compare symptoms, build, and context before duplicating.",
+    "State environment, steps, expected result, actual result, frequency, and impact.",
+    "Separate observed evidence from suspected cause.",
+    "Use synthetic or approved sanitized evidence only.",
+    "Write acceptance criteria another person can test.",
+    "Follow local ownership, priority, and workflow rules.",
+    "Record blockers with an owner and next action; verify transitions.",
+    "Close only when agreed criteria pass; preserve specific verification evidence."
+  ],
+  "disclaimer": "Independent instructional-design portfolio sample prepared for Lorne Hopkins. Original learning scenarios with synthetic people, organizations, records, and policies. This is a decision simulation, not a live vendor application, official vendor course, certification, or evidence of vendor endorsement. SAP, SAP Fieldglass, Jira, Confluence, and Atlassian are trademarks of their respective owners. Local configuration, permissions, subscriptions, and interface releases vary. Follow your organization’s approved process in production.",
+  "designNotes": {
+    "analysis": {
+      "performanceProblem": "vague duplicate tickets and premature Done statuses create avoidable clarification and rework.",
+      "assumptions": "Role-specific novice users; no baseline learner research or client validation has been performed. All organizations, examples, policies, and results are synthetic.",
+      "needsValidation": "Before workplace deployment, interview a process owner and two target learners, confirm common errors, access roles, local vocabulary, and policy requirements."
+    },
+    "design": {
+      "strategy": "Task-centered worked example followed by progressively independent decision practice. Feedback explains consequences, not just correctness.",
+      "timingMinutes": {
+        "orientationAndObjectives": 2,
+        "lessonsAndPractice": 17,
+        "assessment": 5,
+        "jobAidAndTransfer": 1,
+        "learnerAuthoredPractice": 3
+      },
+      "alignment": {
+        "O1": [
+          "ji-1",
+          "ji-a1"
+        ],
+        "O2": [
+          "ji-2",
+          "ji-3",
+          "ji-a2",
+          "ji-a3",
+          "ji-a4",
+          "Learner-authored practice + performanceTask rubric"
+        ],
+        "O3": [
+          "ji-3",
+          "ji-4",
+          "ji-a5"
+        ],
+        "O4": [
+          "ji-5",
+          "ji-a6"
+        ]
+      },
+      "mastery": "80% of six equally weighted questions requires at least five correct (83.3%). A portfolio knowledge check is not authorization to perform production work.",
+      "durationEstimate": "Estimated 28 minutes including a three-minute learner-authored task; not pilot-tested. Learner pace varies."
+    },
+    "development": {
+      "artifact": "Five original text-led lessons, five decision scenarios with option-specific feedback, five formative checks, six scored questions with rationales, and a concise job aid.",
+      "accessibility": "Use semantic headings, keyboard-operable choices, visible focus, text feedback, and readable contrast in the delivery player. Do not rely on color or timing alone. Test the implemented player with keyboard and screen reader before release.",
+      "sourcePolicy": "Official product docs establish limited platform facts. Synthetic policies, examples, case decisions, and instructional writing are original. No vendor screenshots, course assets, client data, or claimed client results are included.",
+      "versionNote": "Source review date: 2026-10-09. Labels, permissions, configuration, and subscriptions can change; this is not a pixel-perfect application simulation."
+    },
+    "implementation": {
+      "delivery": "Self-paced public portfolio sample. No sign-in, purchase, production-system action, or live data is required.",
+      "launchChecks": "Validate JSON and option keys; test choice feedback, score calculation, retry, progress navigation, links, mobile readability, and accessibility in the final player. A content file alone does not establish runtime behavior.",
+      "facilitatorOption": "Ask learners to explain the evidence behind one incorrect choice and identify the equivalent role or process in their own organization without sharing confidential details."
+    },
+    "evaluation": {
+      "formative": "Track scenario misconceptions during a pilot; ask learners to restate the next action in their own words. Use feedback for revision, not ranking.",
+      "summative": "Six selected-response questions sampling the taught decisions; show rationale after submission. On nonmastery, recommend the linked topic and a fresh attempt.",
+      "transfer": "In an authorized sandbox, observe one complete role task against the job aid. Suggested pilot measures: correct record or destination, sufficient evidence, correct decision, and verified outcome.",
+      "honesty": "No learning gains, completion rates, client impact, certifications, or workplace outcomes have been measured or claimed.",
+      "masteryLimit": "Passing the multiple-choice quiz does not demonstrate independent writing skill, production-system proficiency, or workplace mastery. Review the learner-authored artifact with its rubric and separately observe an authorized sandbox task."
+    },
+    "performanceTask": "The construction element of O2 is practiced through the original defect draft in ji-2. Score one point each for (1) title states Pending filter returns no rows, (2) environment and DEMO-9 reproduction steps, (3) expected 4 versus actual 0 with repeatability, and (4) two observable criteria, such as Pending returns exactly its 4 records and clearing the filter returns all 14. Suggested practice criterion: 4/4 and no invented root cause or private data. A facilitator or learner uses the rubric; quiz items assess recognition, not independent record-construction mastery."
+  },
+  "durationIsEstimate": true,
+  "durationNote": "Estimated 28 minutes including a three-minute learner-authored task; not pilot-tested. Learner pace varies."
+}

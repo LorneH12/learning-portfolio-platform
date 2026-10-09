@@ -1,0 +1,348 @@
+{
+  "courseId": "confluence-cloud",
+  "title": "Confluence Cloud: Publish a Runbook People Can Use",
+  "schemaVersion": 1,
+  "generatedDate": "2026-10-09",
+  "mediaStatus": "rendered",
+  "lessons": [
+    {
+      "courseId": "confluence-cloud",
+      "lessonId": "co-1",
+      "title": "Define the reader’s job and find the home",
+      "video": "assets/media/confluence-cloud/co-1.mp4",
+      "poster": "assets/media/confluence-cloud/co-1.jpg",
+      "captions": "assets/media/confluence-cloud/co-1.vtt",
+      "transcript": "Time: 3 minutes. You own support knowledge for the fictional Harbor team. A new colleague must diagnose a delayed demo export without guessing whom to contact. Existing notes say: ‘Exports slow sometimes. Refresh. Ask Morgan.’ Your deliverable is a runbook that a new support analyst can follow using the synthetic training environment.\n\nBefore creating content, search the intended knowledge space for an existing export runbook. Compare scope and currency. Update a suitable canonical page through the team’s process rather than leaving two competing instructions. If none exists, identify a parent location where analysts already look for procedures.\n\nChoose a Confluence page for this exercise because the team wants a deliberate publishing checkpoint. Confluence also provides live docs, where changes appear as collaboration happens; do not treat those as unpublished page drafts. Current interface and content options may differ by rollout and subscription.\n\nWorked plan: reader = new support analyst; task = decide whether a demo export is still processing or requires escalation; location = Harbor Support / Runbooks; title = ‘Check a delayed demo export’; owner = Support Knowledge Owner; review trigger = workflow change. These names and locations are fictional.\n\nNow it's your turn. You find an existing current runbook with the same scope. What should you do? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 94.791667,
+      "durationSeconds": 94.791667,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5554467,
+      "sha256": "d6b562b498611eccbec3ebde516491fc27c7d26841092691004df65606cb39dc",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Define the reader's real job",
+          "startSeconds": 0,
+          "endSeconds": 22.306,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Find the canonical home first",
+          "startSeconds": 22.306,
+          "endSeconds": 42.489333333333335,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Choose the right publishing model",
+          "startSeconds": 42.489333333333335,
+          "endSeconds": 61.89933333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Plan the runbook before writing",
+          "startSeconds": 61.89933333333334,
+          "endSeconds": 85.18666666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 85.18666666666667,
+          "endSeconds": 94.76733333333333,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--confluence-cloud--co-1.mp4",
+      "captionsUrl": "media--confluence-cloud--co-1.vtt",
+      "posterUrl": "media--confluence-cloud--co-1.jpg"
+    },
+    {
+      "courseId": "confluence-cloud",
+      "lessonId": "co-2",
+      "title": "Write a procedure with observable decisions",
+      "video": "assets/media/confluence-cloud/co-2.mp4",
+      "poster": "assets/media/confluence-cloud/co-2.jpg",
+      "captions": "assets/media/confluence-cloud/co-2.vtt",
+      "transcript": "Time: 4 minutes. Use a small set of sections: Purpose; Before you start; Steps; Expected result; Stop and escalate; Owner and review date. Start each step with an action and describe what the reader should observe. Avoid instructions that depend on tribal knowledge such as ‘do the usual fix.’\n\nWorked runbook excerpt: ‘Purpose: check the status of a delayed demo export. Before you start: confirm this is the DEMO training environment and note the job identifier. 1. Open the demo export status view. 2. Match the job identifier. 3. Compare elapsed time with the training threshold of 10 minutes. 4. If Complete, use the approved download route. If Processing under 10 minutes, wait until the threshold and check once more. If Failed or still Processing at 10 minutes, record job ID, status, elapsed time, and the displayed non-sensitive error code; send to the demo support owner. Do not rerun a job unless the approved procedure directs it.’\n\nThe threshold and route are invented training policy, not Confluence functionality or operational advice for a real system. No real download or escalation occurs here.\n\nUse descriptive link text, heading hierarchy, and concise steps. Provide text equivalents for meaningful images. Screenshots can age quickly; describe the control’s purpose as well as its label.\n\nLearner-authored practice (3 minutes): Turn these new fictional notes into a 4–6 step mini-runbook: DEMO queue; check correct job ID; Complete means use approved sample download route; Processing under 5 minutes means recheck at 5; Failed or Processing at 5 means stop and contact the Demo Support role; include job ID, elapsed time, status, and non-sensitive error code; never rerun without authorization. Add a purpose and stop condition. This separate exercise uses a 5-minute rule; the main worked case retains its 10-minute rule. Compare your writing with the rubric before continuing.\n\nNow it's your turn. Which instruction best replaces “Ask Morgan”? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 131.4,
+      "durationSeconds": 131.4,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 6915600,
+      "sha256": "39f9c8e1940eb5a375224762af15cae197d70ea40251155f24c1f468d8c21d83",
+      "sourceParagraphs": 5,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Build an observable procedure",
+          "startSeconds": 0,
+          "endSeconds": 19.159333333333336,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Make each status lead somewhere",
+          "startSeconds": 19.159333333333336,
+          "endSeconds": 62.60133333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Keep training rules in context",
+          "startSeconds": 62.60133333333333,
+          "endSeconds": 74.006,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Write for access and durability",
+          "startSeconds": 74.006,
+          "endSeconds": 86.41866666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Write your own five-minute runbook",
+          "startSeconds": 86.41866666666667,
+          "endSeconds": 123.306,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 5,
+          "title": "Your turn: make the decision",
+          "startSeconds": 123.306,
+          "endSeconds": 131.38799999999998,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--confluence-cloud--co-2.mp4",
+      "captionsUrl": "media--confluence-cloud--co-2.vtt",
+      "posterUrl": "media--confluence-cloud--co-2.jpg"
+    },
+    {
+      "courseId": "confluence-cloud",
+      "lessonId": "co-3",
+      "title": "Check access before distributing the link",
+      "video": "assets/media/confluence-cloud/co-3.mp4",
+      "poster": "assets/media/confluence-cloud/co-3.jpg",
+      "captions": "assets/media/confluence-cloud/co-3.vtt",
+      "transcript": "Time: 4 minutes. A clear runbook is useless if the intended analyst cannot read it, and risky if an unintended audience can. Confluence access involves global and space permissions plus content restrictions. Restrictions can narrow access; adding a person to a content-level list does not automatically supply missing space access. Inspect the actual audience and inherited constraints using the tools available to your role.\n\nWorked access case: the draft is under a manager-only parent. The intended Support Analysts group cannot view that location. Copying the link into the team chat does not fix access. Ask the authorized owner to place the content in the approved support hierarchy or correct the relevant access settings under policy, then test with an intended reader. Do not enable public access merely to make a link work.\n\nUse the least access needed for the task. In this sample, analysts need to read the published procedure; a small owner group maintains it. Permission models and restriction controls can vary by plan and configuration. Never assume a screenshot from another tenant represents your controls.\n\nDraft status and an ‘In review’ label are communication cues, not reliable substitutes for access controls. Keep credentials, personal data, and production records out of this public portfolio exercise.\n\nNow it's your turn. An analyst cannot open the page because its parent is restricted. What next? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 95.7,
+      "durationSeconds": 95.7,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5102359,
+      "sha256": "6c145519a9b3511186b2dd834466273ccc9e3fb1499339081c7b5c30cc497f8a",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Inspect the complete access context",
+          "startSeconds": 0,
+          "endSeconds": 28.10333333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "A link does not grant access",
+          "startSeconds": 28.10333333333333,
+          "endSeconds": 53.604,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Give each role the access needed",
+          "startSeconds": 53.604,
+          "endSeconds": 71.67533333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Separate status cues from security",
+          "startSeconds": 71.67533333333334,
+          "endSeconds": 85.384,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 85.384,
+          "endSeconds": 95.69000000000001,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--confluence-cloud--co-3.mp4",
+      "captionsUrl": "media--confluence-cloud--co-3.vtt",
+      "posterUrl": "media--confluence-cloud--co-3.jpg"
+    },
+    {
+      "courseId": "confluence-cloud",
+      "lessonId": "co-4",
+      "title": "Review, publish, and test the reader experience",
+      "video": "assets/media/confluence-cloud/co-4.mp4",
+      "poster": "assets/media/confluence-cloud/co-4.jpg",
+      "captions": "assets/media/confluence-cloud/co-4.vtt",
+      "transcript": "Time: 3 minutes. Perform a short usability review before publishing. Give a reviewer the fictional delayed-export packet and the draft. Ask them to identify the next action at 6 minutes, 12 minutes, and Failed status without explaining the procedure verbally. Any point where they must guess is an opportunity to improve the text.\n\nWorked review finding: the reviewer cannot identify the support owner because the draft uses a first name only. Replace that with the approved role or stable team contact destination. Check each link and remove placeholder destinations before a production release. In this sample, destinations remain clearly identified as fictional rather than fabricated live links.\n\nPublish the page when the authorized review is complete; later edits use the available update or publish action. Check the rendered page, heading order, links, and intended audience. A saved editing session is not evidence that the published page shows the changes. A content status label can explain maturity but does not by itself prove a substantive review occurred.\n\nVerify with an intended reader or an approved access-check process. Do not ask for someone’s credentials. A final message should link the canonical page and summarize what changed, using only the audience and communication authorization your organization provides.\n\nNow it's your turn. Your edit is saved, but the reader sees the old instructions. What should you check first? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 95.375,
+      "durationSeconds": 95.375,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5222098,
+      "sha256": "0f525b1f9268280d155d3381def1ff08458cf17ea3dead29227da5d21db4be1e",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Test decisions without verbal rescue",
+          "startSeconds": 0,
+          "endSeconds": 20.892666666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Replace ambiguity with stable destinations",
+          "startSeconds": 20.892666666666667,
+          "endSeconds": 44.31866666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Verify the published result",
+          "startSeconds": 44.31866666666667,
+          "endSeconds": 67.53133333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Confirm the intended reader can use it",
+          "startSeconds": 67.53133333333334,
+          "endSeconds": 84.95733333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 84.95733333333334,
+          "endSeconds": 95.34866666666669,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--confluence-cloud--co-4.mp4",
+      "captionsUrl": "media--confluence-cloud--co-4.vtt",
+      "posterUrl": "media--confluence-cloud--co-4.jpg"
+    },
+    {
+      "courseId": "confluence-cloud",
+      "lessonId": "co-5",
+      "title": "Maintain the canonical answer",
+      "video": "assets/media/confluence-cloud/co-5.mp4",
+      "poster": "assets/media/confluence-cloud/co-5.jpg",
+      "captions": "assets/media/confluence-cloud/co-5.vtt",
+      "transcript": "Time: 3 minutes. Publication begins a maintenance responsibility. The runbook should name an owner and a review trigger. A review date alone is insufficient when the underlying process changes sooner. In this sample, the owner reviews after any export workflow change and at the next scheduled team knowledge review.\n\nWorked change: the training team changes its escalation threshold from 10 minutes to 15. Confirm that the change is authorized. Update every affected reference: Before you start, decision step, worked example, and stop-condition section. Re-run the 6-minute, 12-minute, 15-minute, and Failed-status cases. Record a concise change note so readers understand the new behavior.\n\nPages support version history, which helps investigate what changed. History is evidence of edits, not a substitute for checking that the current procedure is correct. If an earlier version seems preferable, compare its content and seek the appropriate review rather than blindly restoring stale instructions.\n\nWhen the procedure becomes obsolete, follow the space’s approved archive and replacement-link process. Keep the canonical destination clear. The end goal is successful work: a new analyst can find the runbook, follow its decisions, and stop safely without needing the author to fill in missing steps.\n\nNow it's your turn. The threshold changes to 15 minutes. Which update plan is best? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 91.708333,
+      "durationSeconds": 91.708333,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5235899,
+      "sha256": "8c0d02ce1b60d0a33275fe3b85b696f93ce664a6c5c78c301e8da9844dcc3b49",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Make maintenance someone's responsibility",
+          "startSeconds": 0,
+          "endSeconds": 20.124666666666666,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Update the whole decision chain",
+          "startSeconds": 20.124666666666666,
+          "endSeconds": 44.11066666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Use history as evidence",
+          "startSeconds": 44.11066666666667,
+          "endSeconds": 63.414,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Keep one clear canonical destination",
+          "startSeconds": 63.414,
+          "endSeconds": 82.29066666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 82.29066666666667,
+          "endSeconds": 91.70066666666666,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--confluence-cloud--co-5.mp4",
+      "captionsUrl": "media--confluence-cloud--co-5.vtt",
+      "posterUrl": "media--confluence-cloud--co-5.jpg"
+    }
+  ],
+  "contentFidelity": "All source paragraphs narrated; citation tokens omitted from speech. Authoritative source content and assessments remain unchanged.",
+  "accessibility": "Burned captions plus equivalent VTT and plain transcript. Leave optional VTT track off by default to avoid duplicate visible captions.",
+  "qualityLimitations": [
+    "No human listening audition or end-to-end playback; runtime lacks audio input. Independent ASR, signal analysis, decoded video, sampled frames, source mapping and caption layout checks performed."
+  ],
+  "music": "none",
+  "distribution": "Original synthetic scenarios and original instructional diagrams. No real-person face/voice cloning."
+}

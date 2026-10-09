@@ -1,0 +1,348 @@
+{
+  "courseId": "sap-fieldglass",
+  "title": "SAP Fieldglass: Review Time Sheets with Confidence",
+  "schemaVersion": 1,
+  "generatedDate": "2026-10-09",
+  "mediaStatus": "rendered",
+  "lessons": [
+    {
+      "courseId": "sap-fieldglass",
+      "lessonId": "fg-1",
+      "title": "Start with the right record",
+      "video": "assets/media/sap-fieldglass/fg-1.mp4",
+      "poster": "assets/media/sap-fieldglass/fg-1.jpg",
+      "captions": "assets/media/sap-fieldglass/fg-1.vtt",
+      "transcript": "Time: 3 minutes. You are the fictional supervisor at Northstar Services. Your task is to review Avery Chen’s standard time sheet for the week of 5–9 October 2026, assignment NS-204. The training company uses task code DEL for delivery and TRN for training. These codes and review rules are invented for this sample.\n\nBefore touching a decision control, establish worker, assignment, period, status, and your authority. A familiar name is not enough: the same worker might have more than one assignment. Compare the sheet’s identifiers to the request and the approved assignment record. Open the detail record rather than deciding from an email subject.\n\nIn SAP Fieldglass, submitted time sheets can be reached through Work Items or the Time Sheet list. Exact labels and available actions depend on role and configuration. This simulation asks for the review decision without connecting to Fieldglass.\n\nWorked example: TS-104 shows Avery, NS-204, 5–9 October, Submitted. TS-099 shows the same person and period but assignment NS-188. Select TS-104, then compare its daily lines. If you cannot establish approval authority, contact the designated program-office contact; do not borrow another account.\n\nNow it's your turn. Which record should you open for this request? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 93.6,
+      "durationSeconds": 93.6,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 4847694,
+      "sha256": "db34defa2751e394dfe7cf81da8531f000443c851284dde647c2aecf9f71f78c",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Establish the review request",
+          "startSeconds": 0,
+          "endSeconds": 23.55933333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Verify identity and authority first",
+          "startSeconds": 23.55933333333333,
+          "endSeconds": 44.02,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Find the submitted detail record",
+          "startSeconds": 44.02,
+          "endSeconds": 59.995333333333335,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Compare two similar records",
+          "startSeconds": 59.995333333333335,
+          "endSeconds": 85.85333333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 85.85333333333334,
+          "endSeconds": 93.59400000000001,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--sap-fieldglass--fg-1.mp4",
+      "captionsUrl": "media--sap-fieldglass--fg-1.vtt",
+      "posterUrl": "media--sap-fieldglass--fg-1.jpg"
+    },
+    {
+      "courseId": "sap-fieldglass",
+      "lessonId": "fg-2",
+      "title": "Reconcile daily detail, not only totals",
+      "video": "assets/media/sap-fieldglass/fg-2.mp4",
+      "poster": "assets/media/sap-fieldglass/fg-2.jpg",
+      "captions": "assets/media/sap-fieldglass/fg-2.vtt",
+      "transcript": "Time: 4 minutes. Training policy: bill only verified worked hours; use DEL for delivery and TRN for training; any overtime needs the specified approval evidence before supervisor approval. This is a fictional policy, not an SAP rule or employment-law instruction.\n\nUse this evidence packet: Monday 8 DEL; Tuesday 8 DEL; Wednesday 6 DEL plus 2 TRN; Thursday 8 DEL; Friday 6 DEL. The verified weekly total is 38 hours. TS-104 instead shows 8 DEL each weekday, totaling 40.\n\nWorked review: first compare dates. Monday and Tuesday agree. Wednesday’s total of 8 agrees, but 2 hours are on the wrong task. Thursday agrees. Friday is overstated by 2 hours. The correct breakdown is 36 DEL and 2 TRN, totaling 38. A total-only check would miss Wednesday’s coding error even if Friday had been corrected.\n\nTreat discrepancies as questions about evidence, not proof of intent. If source records disagree, pause the decision and ask the responsible person for clarification. Do not invent a reason for the difference or silently adjust someone else’s time. Record only the minimum factual detail needed for correction.\n\nNow it's your turn. The weekly total is corrected to 38, but Wednesday still shows 8 DEL. What now? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 92.25,
+      "durationSeconds": 92.25,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5544281,
+      "sha256": "ec63863210449f545a6d268a9ee2292400222d382b1ed90cac89688d614d3f73",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Apply the fictional review policy",
+          "startSeconds": 0,
+          "endSeconds": 19.154,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Compare submission with source detail",
+          "startSeconds": 19.154,
+          "endSeconds": 38.69200000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Find both kinds of discrepancy",
+          "startSeconds": 38.69200000000001,
+          "endSeconds": 61.30200000000002,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Ask about discrepancies without blame",
+          "startSeconds": 61.30200000000002,
+          "endSeconds": 81.14400000000002,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 81.14400000000002,
+          "endSeconds": 92.23933333333336,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--sap-fieldglass--fg-2.mp4",
+      "captionsUrl": "media--sap-fieldglass--fg-2.vtt",
+      "posterUrl": "media--sap-fieldglass--fg-2.jpg"
+    },
+    {
+      "courseId": "sap-fieldglass",
+      "lessonId": "fg-3",
+      "title": "Choose the action and explain the correction",
+      "video": "assets/media/sap-fieldglass/fg-3.mp4",
+      "poster": "assets/media/sap-fieldglass/fg-3.jpg",
+      "captions": "assets/media/sap-fieldglass/fg-3.vtt",
+      "transcript": "Time: 4 minutes. Decide from the evidence: approve an accurate, eligible submission; reject an editable submitted sheet that needs correction under the local process; escalate unclear evidence or missing authority before deciding. In Fieldglass, rejection requires a reason and allows correction and resubmission. The available route is configured locally.\n\nFor TS-104, use a factual reason that tells the submitter what to check. Strong sample: ‘For 5–9 October, compare Wednesday with the training record: 6 hours DEL and 2 TRN. Friday’s verified work record shows 6 DEL rather than 8. Please correct and resubmit; expected total 38.’\n\nWhy this works: it names the period, the two discrepancies, the supporting records, and the requested next step. It avoids personal criticism and does not expose unrelated information. ‘Wrong hours’ creates another round of clarification. ‘You padded your time’ makes an unsupported allegation.\n\nBefore confirming a rejection, check that you are still in TS-104. In the sample, choose Reject and the precise reason. In a real tenant, use the approved reason category and comment fields your organization provides; do not assume the sample’s text is a configured category.\n\nLearner-authored practice (3 minutes): Write a 2–3 sentence rejection reason for synthetic TS-205, assignment NS-305, week 12–16 October. Tuesday shows 9 DEL but the verified record shows 7 DEL. Thursday totals 8 hours but should be split 6 DEL and 2 TRN, rather than 8 DEL. All other lines match. Identify the record and discrepancies, ask for correction and resubmission, and avoid assigning blame. Compare your text with the rubric before continuing.\n\nNow it's your turn. Choose the most useful rejection reason. Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 124.958333,
+      "durationSeconds": 124.958333,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5837220,
+      "sha256": "18a671ee0fcf3bc085a592dcf575673536333816207c5a091a6aca2b8070beac",
+      "sourceParagraphs": 5,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Choose the evidence-supported route",
+          "startSeconds": 0,
+          "endSeconds": 23.767333333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Write a precise correction request",
+          "startSeconds": 23.767333333333333,
+          "endSeconds": 44.97466666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Explain the issue without accusation",
+          "startSeconds": 44.97466666666667,
+          "endSeconds": 63.91000000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Recheck the target before confirming",
+          "startSeconds": 63.91000000000001,
+          "endSeconds": 82.27466666666669,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Write a fresh rejection reason",
+          "startSeconds": 82.27466666666669,
+          "endSeconds": 117.2526666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 5,
+          "title": "Your turn: make the decision",
+          "startSeconds": 117.2526666666667,
+          "endSeconds": 124.95066666666669,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--sap-fieldglass--fg-3.mp4",
+      "captionsUrl": "media--sap-fieldglass--fg-3.vtt",
+      "posterUrl": "media--sap-fieldglass--fg-3.jpg"
+    },
+    {
+      "courseId": "sap-fieldglass",
+      "lessonId": "fg-4",
+      "title": "Review the resubmission and verify the outcome",
+      "video": "assets/media/sap-fieldglass/fg-4.mp4",
+      "poster": "assets/media/sap-fieldglass/fg-4.jpg",
+      "captions": "assets/media/sap-fieldglass/fg-4.vtt",
+      "transcript": "Time: 3 minutes. Avery resubmits TS-104. Do not assume a correction request guarantees a correct result. Reopen the relevant record, confirm the period and assignment, and repeat the comparison for changed lines and the overall total.\n\nThe corrected packet shows 8 DEL, 8 DEL, 6 DEL + 2 TRN, 8 DEL, and 6 DEL. Total: 38. All supporting evidence now agrees and no unresolved exception remains under the sample policy. Choose approval in the simulation.\n\nAfter a decision, inspect the displayed status and available history or confirmation. A click is an attempt, not proof that the intended state was reached. Approval routing is configured by the buyer and may require additional approvers. Your approval does not itself prove that an invoice has been paid.\n\nWorked handoff: ‘Supervisor review completed for TS-104, 5–9 October: 38 hours verified. System shows the next approval stage.’ This is accurate if that is what the record displays. Avoid saying ‘payment completed’ unless a separate authorized payment record actually supports it. If an error message appears, inspect the current record before retrying to avoid a duplicate or contradictory action.\n\nNow it's your turn. After your approval, the screen indicates another approval stage. What do you report? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 90.083333,
+      "durationSeconds": 90.083333,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 4653672,
+      "sha256": "56c004cc129dae422608e3be5086fd6f1297a0b02b4af30e4fcbb34f017f6bd4",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Treat resubmission as a new review",
+          "startSeconds": 0,
+          "endSeconds": 16.279333333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Reconcile the corrected packet",
+          "startSeconds": 16.279333333333334,
+          "endSeconds": 33.43333333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Verify the state after the decision",
+          "startSeconds": 33.43333333333334,
+          "endSeconds": 52.20866666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Report only the supported outcome",
+          "startSeconds": 52.20866666666667,
+          "endSeconds": 79.66666666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 79.66666666666667,
+          "endSeconds": 90.07933333333334,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--sap-fieldglass--fg-4.mp4",
+      "captionsUrl": "media--sap-fieldglass--fg-4.vtt",
+      "posterUrl": "media--sap-fieldglass--fg-4.jpg"
+    },
+    {
+      "courseId": "sap-fieldglass",
+      "lessonId": "fg-5",
+      "title": "Handle the exception you cannot simply undo",
+      "video": "assets/media/sap-fieldglass/fg-5.mp4",
+      "poster": "assets/media/sap-fieldglass/fg-5.jpg",
+      "captions": "assets/media/sap-fieldglass/fg-5.vtt",
+      "transcript": "Time: 3 minutes. A colleague discovers a different error in fictional TS-088, which has already been invoiced. The ordinary submitted-sheet correction path is no longer the right assumption. SAP documents a revised-time-sheet process for eligible cases; configuration and the worker or supplier’s role affect who can perform it.\n\nYour supervisor task is to preserve a clear handoff: record identifier, affected date and line, original value, verified proposed value, and source evidence. Ask the designated program office or supplier contact to use the approved revision process. Avoid creating a second ordinary time sheet for the same work merely to offset the error.\n\nWorked exception: TS-088 Friday DEL shows 8, supported record shows 6, status Invoiced. Handoff: ‘Please review the approved revision route for TS-088; Friday differs by 2 DEL hours. Source record attached in the authorized system.’ In this public sample, no attachment or real worker data is transmitted.\n\nClose the loop by checking that the responsible owner accepted the correction request. A submitted request is not a completed financial adjustment. The assessment now combines identification, reconciliation, decision quality, and truthful status reporting.\n\nNow it's your turn. TS-088 is already invoiced. Which response is safest? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 95.541667,
+      "durationSeconds": 95.541667,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 4903901,
+      "sha256": "8c894a8ee55c0ff7e0f69af50b2a99686857a064b431a436f8eb68c9a5a566a5",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Recognize the invoiced-sheet exception",
+          "startSeconds": 0,
+          "endSeconds": 22.700666666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Prepare the authorized correction handoff",
+          "startSeconds": 22.700666666666667,
+          "endSeconds": 45.63066666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Describe the specific invoiced discrepancy",
+          "startSeconds": 45.63066666666667,
+          "endSeconds": 69.07266666666668,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Confirm ownership without overstating completion",
+          "startSeconds": 69.07266666666668,
+          "endSeconds": 85.64533333333335,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 85.64533333333335,
+          "endSeconds": 95.50333333333334,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--sap-fieldglass--fg-5.mp4",
+      "captionsUrl": "media--sap-fieldglass--fg-5.vtt",
+      "posterUrl": "media--sap-fieldglass--fg-5.jpg"
+    }
+  ],
+  "contentFidelity": "All source paragraphs narrated; citation tokens omitted from speech. Authoritative source content and assessments remain unchanged.",
+  "accessibility": "Burned captions plus equivalent VTT and plain transcript. Leave optional VTT track off by default to avoid duplicate visible captions.",
+  "qualityLimitations": [
+    "No human listening audition or end-to-end playback; runtime lacks audio input. Independent ASR, signal analysis, decoded video, sampled frames, source mapping and caption layout checks performed."
+  ],
+  "music": "none",
+  "distribution": "Original synthetic scenarios and original instructional diagrams. No real-person face/voice cloning."
+}

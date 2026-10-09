@@ -1,0 +1,499 @@
+{
+  "id": "blooms-taxonomy",
+  "title": "Bloom’s Taxonomy: Match the Learning to the Work",
+  "summary": "A 25-minute portfolio sample: use the revised taxonomy to classify workplace tasks, sharpen objectives, and align practice with assessment.",
+  "audience": "Instructional designers, subject-matter experts, trainers, and L&D managers. Performance problem: a fictional ticket-triage course promises judgment but tests only term recognition.",
+  "durationMinutes": 25,
+  "prerequisites": [
+    "No formal prerequisite. Familiarity with a workplace task is helpful."
+  ],
+  "objectives": [
+    {
+      "id": "bt-o1",
+      "text": "Classify a described cognitive task using the six categories in the 2001 revised taxonomy.",
+      "bloomLevel": "Understand"
+    },
+    {
+      "id": "bt-o2",
+      "text": "Given a vague goal, select a measurable objective with a behavior, condition, and success criterion.",
+      "bloomLevel": "Apply"
+    },
+    {
+      "id": "bt-o3",
+      "text": "Identify whether an assessment asks for the same kind of thinking as its objective.",
+      "bloomLevel": "Analyze"
+    },
+    {
+      "id": "bt-o4",
+      "text": "Select an aligned objective–practice–assessment plan for a workplace decision.",
+      "bloomLevel": "Evaluate"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "bt-l1",
+      "title": "1. Read the revised taxonomy accurately",
+      "content": "Allow 4 minutes. Bloom’s original cognitive taxonomy was published in 1956. This sample uses the 2001 revision associated with Anderson and Krathwohl: Remember, Understand, Apply, Analyze, Evaluate, and Create. The revision uses action-oriented category names and places Create after Evaluate. Do not silently mix these labels with the original list. University of Illinois Chicago and Iowa State provide background in Sources.\n\nA compact guide: Remember retrieves information; Understand makes meaning; Apply uses a procedure; Analyze examines parts and relationships; Evaluate judges against criteria; Create develops a coherent new product or plan. The revised framework also distinguishes factual, conceptual, procedural, and metacognitive knowledge. A task involves both what knowledge is used and what a learner does with it.\n\nWorked example: recalling the definition of an urgent ticket is Remember; explaining the distinction between urgent and routine is Understand; using a triage rule on a case is Apply. These are different tasks, even if every screen contains the word “priority.”\n\nThe taxonomy is a classification aid. Choosing the highest-sounding label does not automatically improve training. In this sample, use the category that best describes the actual performance you need. A routine procedure can appropriately require Apply.",
+      "activity": {
+        "type": "decision",
+        "prompt": "A stakeholder asks you to label a routine record-entry task “Create” because it sounds more advanced. What should you do?",
+        "options": [
+          {
+            "id": "bt-d1-a",
+            "text": "Use Create on every objective.",
+            "feedback": "The label would overstate what the task requires.",
+            "isBest": false
+          },
+          {
+            "id": "bt-d1-b",
+            "text": "Classify the actual cognitive work; executing a specified entry procedure is generally Apply.",
+            "feedback": "Best response. Fit the category to the required action and context.",
+            "isBest": true
+          },
+          {
+            "id": "bt-d1-c",
+            "text": "Remove all objectives.",
+            "feedback": "Objectives are still useful for clarifying the intended performance.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "bt-k1",
+        "prompt": "Which list belongs to the 2001 revised cognitive taxonomy?",
+        "options": [
+          {
+            "id": "bt-k1-a",
+            "text": "Knowledge, Comprehension, Application, Analysis, Synthesis, Evaluation."
+          },
+          {
+            "id": "bt-k1-b",
+            "text": "Remember, Understand, Apply, Analyze, Evaluate, Create."
+          },
+          {
+            "id": "bt-k1-c",
+            "text": "Recall, Attend, Repeat, Reward, Pass, Certify."
+          }
+        ],
+        "correctOptionId": "bt-k1-b",
+        "rationale": "The revised list uses these six process categories; the first option uses original taxonomy labels."
+      },
+      "durationMinutes": 4
+    },
+    {
+      "id": "bt-l2",
+      "title": "2. Classify the task, not just its verb",
+      "content": "Allow 4 minutes. A verb alone can conceal the thinking required. “Identify” might mean recognizing a memorized definition or separating relevant evidence from irrelevant details in an unfamiliar case. Read the content, conditions, reference materials, novelty, and required reasoning before assigning a category.\n\nWorked example: fictional rule card: tickets blocking the entire team’s login are urgent; a single user’s cosmetic display problem is routine. Selecting priority by executing this rule is Apply. Examining several incident reports to distinguish shared causes from isolated symptoms is Analyze. Judging two escalation proposals against response-time and capacity criteria is Evaluate. Developing a new triage plan with its own coherent workflow is Create.\n\nKnowledge matters too. The exact queue name is factual knowledge. The relationship between impact and urgency is conceptual. How to perform triage is procedural. Recognizing that your own confidence is low and choosing an appropriate checking strategy involves metacognitive knowledge. These dimensions describe the task, not the intelligence or worth of the learner.\n\nThirty-second check: choose a familiar task and finish “The learner must use ___ knowledge to ___.” If unsure about the category, write the actual evidence you would need to observe before choosing a label.",
+      "activity": {
+        "type": "decision",
+        "prompt": "A quiz says “Analyze this term” but asks learners to select its memorized definition. How should you review it?",
+        "options": [
+          {
+            "id": "bt-d2-a",
+            "text": "Call it Analyze because the prompt uses that word.",
+            "feedback": "The word does not create analytical demand.",
+            "isBest": false
+          },
+          {
+            "id": "bt-d2-b",
+            "text": "Call every multiple-choice item Remember.",
+            "feedback": "The response format alone does not determine cognitive demand; a case-based item can require reasoning.",
+            "isBest": false
+          },
+          {
+            "id": "bt-d2-c",
+            "text": "Classify the actual demand as recognition of a definition and revise if analysis is required.",
+            "feedback": "Best response. Examine the work required, then address any mismatch.",
+            "isBest": true
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "bt-k2",
+        "prompt": "A learner judges two plans against an explicit quality rubric. Which category best describes that task?",
+        "options": [
+          {
+            "id": "bt-k2-a",
+            "text": "Evaluate."
+          },
+          {
+            "id": "bt-k2-b",
+            "text": "Remember."
+          },
+          {
+            "id": "bt-k2-c",
+            "text": "Apply only because all work involves an action."
+          }
+        ],
+        "correctOptionId": "bt-k2-a",
+        "rationale": "Judgment against stated criteria is characteristic of Evaluate."
+      },
+      "durationMinutes": 4
+    },
+    {
+      "id": "bt-l3",
+      "title": "3. Turn an intention into an observable objective",
+      "content": "Allow 4 minutes. “Understand triage” communicates a broad intention but does not specify the evidence to collect. For this sample, make three elements explicit: the observable behavior, the conditions under which it happens, and the acceptable standard. Carnegie Mellon’s learning-objective guidance supports writing objectives that point to an assessable performance.\n\nWorked example: “Given the current rule card and four fictional support tickets, assign a priority to each ticket with at least three correct.” Behavior: assign priorities. Condition: four cases and the rule card. Standard: three of four correct. The numbers are illustrative design choices, not a validated safety threshold. A real organization must set standards appropriate to its risks.\n\nAvoid piling incompatible performances into one objective. “List definitions, build an escalation workflow, and motivate colleagues” needs separate evidence. Also avoid false precision: a strict time limit is appropriate only when speed is genuinely part of the job and the measurement is fair.\n\nDrafting pause, 60 seconds: rewrite “Know the handoff process.” Sample response: “Given a fictional handoff and the required-field checklist, identify all missing required elements.” Add a criterion that reflects the use case. Your draft is a self-check, not an automatically verified performance.",
+      "activity": {
+        "type": "decision",
+        "prompt": "Which objective is most ready to guide a case-based assessment?",
+        "options": [
+          {
+            "id": "bt-d3-a",
+            "text": "Appreciate excellent customer service.",
+            "feedback": "The intention needs observable evidence and clearer scope.",
+            "isBest": false
+          },
+          {
+            "id": "bt-d3-b",
+            "text": "Given the rule card and four ticket cases, assign priorities with at least three correct.",
+            "feedback": "Best response. Behavior, conditions, and criterion are explicit.",
+            "isBest": true
+          },
+          {
+            "id": "bt-d3-c",
+            "text": "Learn everything about ticketing quickly.",
+            "feedback": "This does not define the expected behavior or acceptable standard.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "bt-k3",
+        "prompt": "In “Given a rule card, classify four tickets with three correct,” what is the condition?",
+        "options": [
+          {
+            "id": "bt-k3-a",
+            "text": "Three correct."
+          },
+          {
+            "id": "bt-k3-b",
+            "text": "Classify."
+          },
+          {
+            "id": "bt-k3-c",
+            "text": "Given a rule card."
+          }
+        ],
+        "correctOptionId": "bt-k3-c",
+        "rationale": "The rule card is part of the conditions; classify is the behavior and three correct is the criterion."
+      },
+      "durationMinutes": 4
+    },
+    {
+      "id": "bt-l4",
+      "title": "4. Align objective, practice, and evidence",
+      "content": "Allow 4 minutes. Alignment means the objective names the intended performance, practice prepares learners for it, and assessment elicits evidence of it. Carnegie Mellon’s alignment guidance illustrates why recall-only tests do not establish an analytical objective.\n\nWorked example: objective “Judge an escalation proposal against impact, staffing, and response-time criteria.” Practice: compare two sample proposals, see a worked critique, then judge a third using those criteria. Assessment: select the strongest judgment of a new proposal and its reason. This selected-response assessment samples judgment; an independently written critique would provide additional evidence of the learner’s reasoning.\n\nMisaligned version: the same objective, followed only by a slide defining escalation and a quiz asking for the definition. The problem is not that definitions are useless. They may be necessary preparation. The problem is that the promised performance is never practiced or assessed.\n\nIf the objective is Create, choosing somebody else’s plan is insufficient evidence of original production. Ask the learner to produce an artifact and assess it against transparent criteria. Do not claim that the multiple-choice assessment in this sample verifies creation skill; its objectives deliberately focus on classification and selection.",
+      "activity": {
+        "type": "decision",
+        "prompt": "Your objective requires producing a new onboarding plan. The test asks learners to pick the best of three finished plans. What is the best revision?",
+        "options": [
+          {
+            "id": "bt-d4-a",
+            "text": "Keep the test and claim it proves creation.",
+            "feedback": "Selection does not demonstrate that the learner can independently produce a plan.",
+            "isBest": false
+          },
+          {
+            "id": "bt-d4-b",
+            "text": "Add more definitions to the same test.",
+            "feedback": "More recall items do not supply the missing production evidence.",
+            "isBest": false
+          },
+          {
+            "id": "bt-d4-c",
+            "text": "Ask learners to produce a plan and assess it against explicit criteria; retain plan comparisons as practice.",
+            "feedback": "Best response. The assessment now elicits the performance named by the objective.",
+            "isBest": true
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "bt-k4",
+        "prompt": "Which trio is best aligned to applying a routing procedure?",
+        "options": [
+          {
+            "id": "bt-k4-a",
+            "text": "Objective: route cases; practice: route worked and new cases; assessment: route another case using the procedure."
+          },
+          {
+            "id": "bt-k4-b",
+            "text": "Objective: route cases; practice: watch a branding video; assessment: name the logo color."
+          },
+          {
+            "id": "bt-k4-c",
+            "text": "Objective: create a procedure; practice: memorize queue names; assessment: recall one name."
+          }
+        ],
+        "correctOptionId": "bt-k4-a",
+        "rationale": "The first trio consistently elicits and supports the required routing performance."
+      },
+      "durationMinutes": 4
+    },
+    {
+      "id": "bt-l5",
+      "title": "5. Review a small curriculum as an L&D partner",
+      "content": "Allow 4 minutes. A review can be practical and brief. Start with the work requirement. Read each objective, find its practice, and identify the evidence that would show success. Flag a gap when the assessment cannot support the claim. Use Bloom’s language to explain the mismatch, not to rank people or decorate slides.\n\nWorked example: a manager requests a 20-minute change module for ticket triage. Requirement: use the new rule card correctly. Draft A has six definition screens and a terminology quiz. Draft B has a brief rule explanation, a worked example, two supported cases, a new-case check, and a job aid. Choose B for this requirement. Keep definitions only where they enable the decision. A rollout communication about why the process is changing may still be needed, but communication and demonstrated skill answer different questions.\n\nReview task, 60 seconds: sketch one objective, one practice task, and one assessment task for something you teach. Underline the same required action in all three. Note one tool or reference available during work that should also be available during practice.\n\nFinish by stating the limit of your evidence. Passing a short sample check supports a narrow conclusion about these decisions. It is not a professional credential or proof of full workplace proficiency.",
+      "activity": {
+        "type": "decision",
+        "prompt": "A sponsor says an 80% terminology score proves readiness to triage unfamiliar cases. What should you recommend?",
+        "options": [
+          {
+            "id": "bt-d5-a",
+            "text": "Add realistic triage evidence before making the readiness claim.",
+            "feedback": "Best response. Readiness for case decisions needs evidence of those decisions.",
+            "isBest": true
+          },
+          {
+            "id": "bt-d5-b",
+            "text": "Accept the claim because the score is high.",
+            "feedback": "A high score on a different task does not establish the required performance.",
+            "isBest": false
+          },
+          {
+            "id": "bt-d5-c",
+            "text": "Make the terminology questions longer.",
+            "feedback": "Length does not repair the mismatch in cognitive demand.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "bt-k5",
+        "prompt": "What should a curriculum review prioritize?",
+        "options": [
+          {
+            "id": "bt-k5-a",
+            "text": "Using Create in every objective."
+          },
+          {
+            "id": "bt-k5-b",
+            "text": "Matching the required performance with practice and assessment evidence."
+          },
+          {
+            "id": "bt-k5-c",
+            "text": "Making every lesson equally long regardless of purpose."
+          }
+        ],
+        "correctOptionId": "bt-k5-b",
+        "rationale": "The review should establish a defensible relationship between what is promised, practiced, and assessed."
+      },
+      "durationMinutes": 4
+    }
+  ],
+  "assessment": {
+    "passPercent": 75,
+    "questions": [
+      {
+        "id": "bt-a1",
+        "prompt": "Which category follows Evaluate in the revised taxonomy’s usual sequence?",
+        "options": [
+          {
+            "id": "bt-a1-a",
+            "text": "Synthesis."
+          },
+          {
+            "id": "bt-a1-b",
+            "text": "Create."
+          },
+          {
+            "id": "bt-a1-c",
+            "text": "Comprehension."
+          }
+        ],
+        "correctOptionId": "bt-a1-b",
+        "rationale": "The revised sequence ends with Evaluate and Create; Synthesis and Comprehension are original labels."
+      },
+      {
+        "id": "bt-a2",
+        "prompt": "A learner executes a supplied routing procedure on a ticket. What category best fits?",
+        "options": [
+          {
+            "id": "bt-a2-a",
+            "text": "Apply."
+          },
+          {
+            "id": "bt-a2-b",
+            "text": "Create."
+          },
+          {
+            "id": "bt-a2-c",
+            "text": "Remember only."
+          }
+        ],
+        "correctOptionId": "bt-a2-a",
+        "rationale": "Using the supplied procedure is Apply; no new procedure is being produced."
+      },
+      {
+        "id": "bt-a3",
+        "prompt": "A prompt says “Evaluate” but asks only for a memorized queue name. What should the reviewer conclude?",
+        "options": [
+          {
+            "id": "bt-a3-a",
+            "text": "The verb establishes Evaluate."
+          },
+          {
+            "id": "bt-a3-b",
+            "text": "All queue tasks are Create."
+          },
+          {
+            "id": "bt-a3-c",
+            "text": "The actual demand is factual recall or recognition, despite the label."
+          }
+        ],
+        "correctOptionId": "bt-a3-c",
+        "rationale": "Classification follows the cognitive work required, not a decorative verb."
+      },
+      {
+        "id": "bt-a4",
+        "prompt": "Which objective best specifies observable performance?",
+        "options": [
+          {
+            "id": "bt-a4-a",
+            "text": "Understand reporting."
+          },
+          {
+            "id": "bt-a4-b",
+            "text": "Given a report and a checklist, identify every missing required section."
+          },
+          {
+            "id": "bt-a4-c",
+            "text": "Become a strong professional."
+          }
+        ],
+        "correctOptionId": "bt-a4-b",
+        "rationale": "This objective names a behavior, a condition, and a criterion."
+      },
+      {
+        "id": "bt-a5",
+        "prompt": "A learner distinguishes common causes from unrelated details across several reports. Which category best fits?",
+        "options": [
+          {
+            "id": "bt-a5-a",
+            "text": "Analyze."
+          },
+          {
+            "id": "bt-a5-b",
+            "text": "Remember."
+          },
+          {
+            "id": "bt-a5-c",
+            "text": "Create, because there are several reports."
+          }
+        ],
+        "correctOptionId": "bt-a5-a",
+        "rationale": "Examining parts and their relationships is Analyze; quantity alone does not make a task Create."
+      },
+      {
+        "id": "bt-a6",
+        "prompt": "An objective requires designing a new process. Which evidence most directly supports it?",
+        "options": [
+          {
+            "id": "bt-a6-a",
+            "text": "A terminology score."
+          },
+          {
+            "id": "bt-a6-b",
+            "text": "A satisfaction rating."
+          },
+          {
+            "id": "bt-a6-c",
+            "text": "A learner-produced process assessed against explicit criteria."
+          }
+        ],
+        "correctOptionId": "bt-a6-c",
+        "rationale": "Creation requires evidence of the produced artifact, not merely recognition or satisfaction."
+      },
+      {
+        "id": "bt-a7",
+        "prompt": "Staff must judge escalation proposals against impact, staffing, and response-time criteria. Which complete objective–practice–assessment plan best fits?",
+        "options": [
+          {
+            "id": "bt-a7-a",
+            "text": "Objective: judge proposals against the three criteria. Practice: memorize queue names. Assessment: recall the definition of escalation."
+          },
+          {
+            "id": "bt-a7-b",
+            "text": "Objective: judge proposals against the three criteria. Practice: compare proposals using those criteria and receive feedback. Assessment: select and justify the strongest judgment of a new proposal using the same criteria."
+          },
+          {
+            "id": "bt-a7-c",
+            "text": "Objective: produce a new escalation workflow. Practice: watch a welcome video. Assessment: rate satisfaction with the video."
+          }
+        ],
+        "correctOptionId": "bt-a7-b",
+        "rationale": "The second plan aligns the required judgment, criterion-based practice, and evidence from a new proposal. The first substitutes recall for judgment; the third promises creation but assesses satisfaction.",
+        "objectiveIds": [
+          "bt-o4"
+        ]
+      },
+      {
+        "id": "bt-a8",
+        "prompt": "A learner recognizes when their own understanding is weak and selects a checking strategy. Which knowledge dimension is most directly involved?",
+        "options": [
+          {
+            "id": "bt-a8-a",
+            "text": "Metacognitive."
+          },
+          {
+            "id": "bt-a8-b",
+            "text": "Factual only."
+          },
+          {
+            "id": "bt-a8-c",
+            "text": "A seventh cognitive-process category called Confidence."
+          }
+        ],
+        "correctOptionId": "bt-a8-a",
+        "rationale": "Metacognitive knowledge concerns awareness and regulation of one’s own thinking; it is a knowledge dimension, not a seventh process category."
+      }
+    ],
+    "requiredCorrect": 6,
+    "estimatedMinutes": 5
+  },
+  "resources": [
+    {
+      "title": "University of Illinois Chicago: Bloom’s Taxonomy of Educational Objectives",
+      "url": "https://teaching.uic.edu/cate-teaching-guides/syllabus-course-design/blooms-taxonomy-of-educational-objectives/",
+      "note": "University guide to the original and revised frameworks and the knowledge dimension; informs lessons 1–2."
+    },
+    {
+      "title": "Iowa State University: Bloom’s Taxonomy",
+      "url": "https://celt.iastate.edu/prepare-and-teach/design-your-course/blooms-taxonomy/",
+      "note": "University overview of the 2001 revision and its use in learning goals and assessment; informs lesson 1."
+    },
+    {
+      "title": "Carnegie Mellon: Articulate Your Learning Objectives",
+      "url": "https://www.cmu.edu/teaching/designteach/design/learningobjectives.html",
+      "note": "University guidance on measurable objectives; informs lesson 3."
+    },
+    {
+      "title": "Carnegie Mellon: Align Assessments, Objectives, Instructional Strategies",
+      "url": "https://www.cmu.edu/teaching/assessment/basics/alignment.html",
+      "note": "University guidance and examples for alignment; informs lessons 4–5."
+    }
+  ],
+  "jobAid": [
+    "Name the required job performance before choosing a taxonomy category.",
+    "Use the revised labels consistently: Remember, Understand, Apply, Analyze, Evaluate, Create.",
+    "Read the whole task: content, conditions, references, reasoning, and expected output.",
+    "Specify the knowledge involved: factual, conceptual, procedural, or metacognitive.",
+    "Write the objective with an observable behavior, relevant conditions, and an appropriate success criterion.",
+    "Give practice that prepares learners for the required cognitive work.",
+    "Require evidence of the same performance: selection alone does not demonstrate original creation.",
+    "Use realistic references in assessment when those references are available on the job.",
+    "State assessment limits and add observed or produced work when the claim requires it."
+  ],
+  "disclaimer": "Original portfolio sample for Lorne Hopkins’s independent eLearning platform. All service-desk cases and thresholds are illustrative. This is not accredited study, a professional certification, or proof of workplace competence. Referenced institutions do not endorse this sample.",
+  "designNotes": {
+    "analyze": "Fictional need: a triage course promises application or judgment but tests recognition. Audience includes designers, subject experts, and managers who need a shared review language.",
+    "design": "25 minutes: five lessons at about four minutes and a five-minute assessment. Objectives 1–4 map to items 1/2/3/5/8, 4, 6, and 7 respectively. Objectives focus on selecting and analyzing design choices, not claiming independently demonstrated creation.",
+    "develop": "Original case decisions, worked examples, five formative checks, eight final items, and a portable job aid. Use semantic headings, keyboard-operable options, visible focus, and accessible feedback announcements.",
+    "implement": "Recommended lesson order 1–5. Permit review and retries. Passing is at least 6 of 8 correct (75%); show rationales and suggested review lessons after submission. Do not award a credential based on this sample.",
+    "evaluate": "Pilot timing and question clarity, check item-to-objective mapping, and ask reviewers to explain why an assessment is aligned. For production design competence, require a learner-authored objective–practice–assessment plan scored with a rubric.",
+    "assessmentLimit": "This selected-response assessment checks classification and design decisions. Optional written pauses are unscored self-practice, so completion does not establish independent course-design proficiency.",
+    "sourcesReviewed": "2026-10-09. Conceptual sources are cited; scenarios, prompts, feedback, and job aids are original."
+  },
+  "durationIsEstimate": true,
+  "durationNote": "Estimated at 25 minutes, including reading, decision practice, reflection, and assessment. Timing has not been learner-tested and will vary by pace."
+}

@@ -1,0 +1,3889 @@
+{
+  "schema_version": "1.1",
+  "date": "2026-10-09",
+  "source": "https://chatgpt.com/share/6ac89674-b160-83e8-a509-83d8b762ffb6",
+  "authorization_note": "Lorne authorized implementation and public launch on October 9, 2026, with no spending. Service access and permission requirements remain applicable.",
+  "status": "planning_and_acceptance_specification_not_test_results",
+  "scorm": {
+    "baseline": "SCORM 1.2, single SCO",
+    "optional": "SCORM 2004 3rd Edition; only label supported after separate real-LMS test",
+    "reason": "Moodle official documentation states SCORM 1.2 support and no SCORM 2004 support."
+  },
+  "xapi": {
+    "baseline": "xAPI 1.0.3 statements over authenticated HTTPS to an actual LRS",
+    "real_time_target": "Online healthy service: persisted statement retrievable within 5 seconds; target is project acceptance criterion, not guaranteed free-tier SLA.",
+    "privacy": "Pseudonymous account actor with project-controlled homePage; no names/email/free-text PII in demo records.",
+    "deduplication": "Stable UUID statement.id; replay same event does not produce duplicate attempt counts."
+  },
+  "requirements": [
+    {
+      "id": "R01",
+      "requirement": "Seven independent course samples, each in a new publicly published repository; preserve existing builds.",
+      "origin": "explicit_user",
+      "priority": "must",
+      "status": "unverified",
+      "acceptance_tests": [
+        "T01",
+        "T02"
+      ],
+      "authorization_status": "Historical explicit requirement combined with current full-build/publication authorization; authorization handoff accepted. Completion remains unverified until actual independent repositories and commits are checked.",
+      "source_message_id": "f879820a-3d9f-4c96-afac-360858aa8991",
+      "source_url": "https://chatgpt.com/share/6ac89674-b160-83e8-a509-83d8b762ffb6",
+      "source_quote": "Each training will be its own repository and published publicly."
+    },
+    {
+      "id": "R02",
+      "requirement": "Shared reusable player with isolated content, CSS, JavaScript, assets and easy brand replacement.",
+      "origin": "explicit_user",
+      "priority": "must",
+      "status": "unverified",
+      "acceptance_tests": [
+        "T03",
+        "T04"
+      ]
+    },
+    {
+      "id": "R03",
+      "requirement": "Authoring platform, course player and LMS/LRS are operational deliverables, not only static mockups.",
+      "origin": "explicit_user",
+      "priority": "must",
+      "status": "unverified",
+      "acceptance_tests": [
+        "T05",
+        "T06",
+        "T07"
+      ]
+    },
+    {
+      "id": "R04",
+      "requirement": "Real-time xAPI data capture persists on a backend and is verifiably retrieved.",
+      "origin": "explicit_user",
+      "priority": "must",
+      "status": "unverified",
+      "acceptance_tests": [
+        "T07",
+        "T08",
+        "T09"
+      ]
+    },
+    {
+      "id": "R05",
+      "requirement": "SCORM compatibility: SCORM 1.2 single-SCO is the implementation baseline; SCORM 2004 3rd Edition is a separate optional export gate.",
+      "origin": "project_design_decision",
+      "priority": "must",
+      "status": "unverified",
+      "acceptance_tests": [
+        "T10",
+        "T11"
+      ]
+    },
+    {
+      "id": "R06",
+      "requirement": "Accessibility acceptance target WCAG 2.2 A/AA, tested across complete learner and authoring paths; no untested certification claim.",
+      "origin": "project_design_decision",
+      "priority": "must",
+      "status": "unverified",
+      "acceptance_tests": [
+        "T12",
+        "T13",
+        "T14"
+      ]
+    },
+    {
+      "id": "R07",
+      "requirement": "ADDIE evidence links audience/performance problem/objective/practice/assessment/evaluation per course.",
+      "origin": "explicit_user_and_operationalization",
+      "priority": "must",
+      "status": "unverified",
+      "acceptance_tests": [
+        "T15",
+        "T16"
+      ]
+    },
+    {
+      "id": "R08",
+      "requirement": "Former-employer branding is requested; publish only verified authorized assets, otherwise original neutral brand configuration with clear independent-demo attribution.",
+      "origin": "explicit_user_and_publication_safeguard",
+      "priority": "must",
+      "status": "unverified",
+      "acceptance_tests": [
+        "T17"
+      ]
+    },
+    {
+      "id": "R09",
+      "requirement": "No spending, paid add-ons, overages or card-dependent trials. Backend hosting must have verified zero-cost hard limits.",
+      "origin": "explicit_user_constraint",
+      "priority": "must",
+      "status": "unverified",
+      "acceptance_tests": [
+        "T18"
+      ]
+    },
+    {
+      "id": "R10",
+      "requirement": "No credentials, sensitive data, learner records or original reference photographs in public source or artifacts.",
+      "origin": "privacy_security_design",
+      "priority": "must",
+      "status": "unverified",
+      "acceptance_tests": [
+        "T19",
+        "T20"
+      ]
+    },
+    {
+      "id": "R11",
+      "requirement": "Reference-inspired home/modules/pages/assessment/completion with accessible progress, settings and equivalent text/media paths.",
+      "origin": "reference_inspired_design",
+      "priority": "must",
+      "status": "unverified",
+      "acceptance_tests": [
+        "T03",
+        "T12",
+        "T14"
+      ]
+    },
+    {
+      "id": "R12",
+      "requirement": "Public release requires actual deployed links, functioning authoring roundtrip, tracking evidence, documentation, rollback and honest limitations.",
+      "origin": "project_release_gate",
+      "priority": "must",
+      "status": "unverified",
+      "acceptance_tests": [
+        "T21",
+        "T22"
+      ]
+    }
+  ],
+  "course_analysis": [
+    {
+      "id": "adkar-change-foundations",
+      "title": "People Through Change: An ADKAR® Introduction",
+      "source_file": "business/adkar-change-foundations.json",
+      "source_sha256": "8d713c5e25d608c1d6d798f135469f97827851f4789e6281852e9399b675cdb0",
+      "learner_segment": "New managers, team leads and project contributors supporting a workplace process change.",
+      "performance_problem": "Teams sometimes prescribe more training for every adoption problem, overlooking unclear purpose, concerns, practical barriers or a lack of follow-through.",
+      "objectives": [
+        {
+          "id": "a-o1",
+          "text": "Distinguish the five ADKAR elements in brief workplace examples.",
+          "bloomLevel": "Understand"
+        },
+        {
+          "id": "a-o2",
+          "text": "Analyze a fictional employee conversation and identify the earliest likely unmet element using stated evidence.",
+          "bloomLevel": "Analyze"
+        },
+        {
+          "id": "a-o3",
+          "text": "Select a support action matched to the observed barrier and explain why an alternative is less useful.",
+          "bloomLevel": "Apply"
+        },
+        {
+          "id": "a-o4",
+          "text": "Draft a small follow-through plan specifying a behavior, support action, observation and review date.",
+          "bloomLevel": "Create"
+        }
+      ],
+      "objective_alignment": [
+        {
+          "objective_id": "a-o1",
+          "objective_text": "Distinguish the five ADKAR elements in brief workplace examples.",
+          "bloom_level": "Understand",
+          "lesson_ids": [
+            "a-l1",
+            "a-l2",
+            "a-l3",
+            "a-l4"
+          ],
+          "assessment_item_ids": [
+            "a-q1",
+            "a-q3",
+            "a-q5"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "a-o2",
+          "objective_text": "Analyze a fictional employee conversation and identify the earliest likely unmet element using stated evidence.",
+          "bloom_level": "Analyze",
+          "lesson_ids": [
+            "a-l2",
+            "a-l3",
+            "a-l5"
+          ],
+          "assessment_item_ids": [
+            "a-q1",
+            "a-q2",
+            "a-q4",
+            "a-q7"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "a-o3",
+          "objective_text": "Select a support action matched to the observed barrier and explain why an alternative is less useful.",
+          "bloom_level": "Apply",
+          "lesson_ids": [
+            "a-l2",
+            "a-l3",
+            "a-l4",
+            "a-l5"
+          ],
+          "assessment_item_ids": [
+            "a-q2",
+            "a-q3",
+            "a-q4",
+            "a-q5",
+            "a-q7"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "a-o4",
+          "objective_text": "Draft a small follow-through plan specifying a behavior, support action, observation and review date.",
+          "bloom_level": "Create",
+          "lesson_ids": [
+            "a-l4",
+            "a-l5"
+          ],
+          "assessment_item_ids": [
+            "a-q6"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        }
+      ],
+      "lesson_activities": [
+        {
+          "id": "a-l1",
+          "title": "A new tool is not yet a new habit",
+          "activity": {
+            "type": "decision",
+            "prompt": "Which success statement is most observable for Cedar Service?",
+            "options": [
+              {
+                "id": "a",
+                "text": "People are excited about transformation.",
+                "feedback": "This may matter, but it does not specify a work behavior you can inspect.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Everyone received a launch email.",
+                "feedback": "Message delivery is an activity, not evidence of the new handoff behavior.",
+                "isBest": false
+              },
+              {
+                "id": "c",
+                "text": "At shift end, each open ticket has an owner and a recorded next action.",
+                "feedback": "Best choice. It identifies the action, setting and evidence.",
+                "isBest": true
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "a-k1",
+            "prompt": "Which element concerns carrying out new skills in practice?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Awareness"
+              },
+              {
+                "id": "b",
+                "text": "Ability"
+              },
+              {
+                "id": "c",
+                "text": "Reinforcement"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Ability concerns demonstrated performance. Hearing about a process or recalling it is different evidence.",
+            "objectiveIds": [
+              "a-o1"
+            ]
+          }
+        },
+        {
+          "id": "a-l2",
+          "title": "Explore purpose and concerns",
+          "activity": {
+            "type": "scenario",
+            "prompt": "Priya raises the ranking concern. What do you say first?",
+            "options": [
+              {
+                "id": "a",
+                "text": "“You just need the tutorial again.”",
+                "feedback": "A tutorial addresses steps, not the stated concern. Priya may feel unheard.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "“What use of the ticket data concerns you? Let’s check the actual policy before I answer.”",
+                "feedback": "Best choice. You listen, identify the issue and avoid an unsupported promise.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "“Nobody will ever use those numbers for evaluation.”",
+                "feedback": "This assurance could be false. Verify policy and communicate honestly.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "a-k2",
+            "prompt": "Alex cannot explain why the handoff is changing. What is the earliest likely support need?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Explain the reason and check understanding"
+              },
+              {
+                "id": "b",
+                "text": "Schedule a reward ceremony"
+              },
+              {
+                "id": "c",
+                "text": "Assign an advanced keyboard-shortcut exercise"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "The stated evidence points to a purpose gap. Address that before assuming later-stage support is the main need.",
+            "objectiveIds": [
+              "a-o2",
+              "a-o3"
+            ]
+          }
+        },
+        {
+          "id": "a-l3",
+          "title": "Separate knowing from doing",
+          "activity": {
+            "type": "decision",
+            "prompt": "Nia explains the steps correctly but her account cannot assign tickets. Choose the most useful immediate response.",
+            "options": [
+              {
+                "id": "a",
+                "text": "Repeat the same explanation more slowly.",
+                "feedback": "The evidence points to execution conditions, not a missing explanation.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Escalate the access issue through the approved support route and arrange supported practice.",
+                "feedback": "Correct. Remove the practical barrier before using a realistic demonstration to check performance.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Mark Nia as unwilling.",
+                "feedback": "The observation does not support that conclusion. Avoid attributing motive.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "a-k3",
+            "prompt": "Which is the strongest evidence of Ability for this scenario?",
+            "options": [
+              {
+                "id": "a",
+                "text": "A correct description of the steps"
+              },
+              {
+                "id": "b",
+                "text": "Attendance at training"
+              },
+              {
+                "id": "c",
+                "text": "Completing an accurate handoff in a realistic practice ticket"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "A realistic demonstration supplies direct performance evidence. Description and attendance alone do not.",
+            "objectiveIds": [
+              "a-o1",
+              "a-o2"
+            ]
+          }
+        },
+        {
+          "id": "a-l4",
+          "title": "Support the behavior after launch",
+          "activity": {
+            "type": "decision",
+            "prompt": "Correct queue use falls after supervisors accept email again. Which plan is strongest?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Send one celebratory email and close the project.",
+                "feedback": "Celebration alone leaves the mixed signal in place.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Review why email returned, align supervisor behavior and check handoff quality again next week.",
+                "feedback": "Best choice. It examines the cause, changes the environment and checks whether the intended behavior persists.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Publish a lowest-performer list.",
+                "feedback": "Public ranking can harm trust and does not address the conflicting workflow.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "a-k4",
+            "prompt": "Which observation most directly checks the intended outcome?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Number of launch messages sent"
+              },
+              {
+                "id": "b",
+                "text": "Percentage of sampled handoffs with an owner and usable next action"
+              },
+              {
+                "id": "c",
+                "text": "Number of slides in the tutorial"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "The measure directly reflects the desired work behavior. The others measure communication or training inputs.",
+            "objectiveIds": [
+              "a-o3",
+              "a-o4"
+            ]
+          }
+        },
+        {
+          "id": "a-l5",
+          "title": "Coach the next step",
+          "activity": {
+            "type": "scenario",
+            "prompt": "Branch decision: after coverage is provided, Jordan completes the practice ticket accurately. What next?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Declare permanent adoption proven.",
+                "feedback": "One successful attempt is useful evidence, but does not establish sustainment.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Check a later realistic handoff and discuss whether coverage remains workable.",
+                "feedback": "Best choice. You have performance evidence; now test whether the support and behavior continue under realistic conditions.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Insist on repeating training anyway.",
+                "feedback": "More of the same training is not supported by the current evidence. Revisit it if a knowledge gap appears.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "a-k5",
+            "prompt": "Which plan is most complete?",
+            "options": [
+              {
+                "id": "a",
+                "text": "“Jordan needs a better attitude.”"
+              },
+              {
+                "id": "b",
+                "text": "“Send everyone the slides.”"
+              },
+              {
+                "id": "c",
+                "text": "“Agree coverage, observe an accurate handoff tomorrow, and review busy-shift use on Friday.”"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "It names support, observable evidence and review timing. A full plan also states the target behavior explicitly.",
+            "objectiveIds": [
+              "a-o2",
+              "a-o3",
+              "a-o4"
+            ]
+          }
+        }
+      ],
+      "assessment": {
+        "passPercent": 80,
+        "requiredCorrect": 6,
+        "totalQuestions": 7,
+        "estimatedMinutes": 5,
+        "instructions": "Select one answer per question. Pass with at least 6 of 7 correct (85.7%, the first attainable score at or above 80%). Review explanations and retry as needed. This practice result is not a Prosci certification or validated change-readiness assessment.",
+        "questions": [
+          {
+            "id": "a-q1",
+            "prompt": "Sam asks, “What problem is the new process meant to solve?” Which element is most directly implicated?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Awareness"
+              },
+              {
+                "id": "b",
+                "text": "Ability"
+              },
+              {
+                "id": "c",
+                "text": "Reinforcement"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "The question asks about the reason for change.",
+            "objectiveIds": [
+              "a-o1",
+              "a-o2"
+            ]
+          },
+          {
+            "id": "a-q2",
+            "prompt": "Leila understands the reason but worries about a real loss of flexibility. Best first response?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Repeat the launch slogan"
+              },
+              {
+                "id": "b",
+                "text": "Ask about the impact and explore the concern honestly"
+              },
+              {
+                "id": "c",
+                "text": "Assume she does not understand the tutorial"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Listen to the participation concern and verify the facts. More procedural instruction does not address the stated issue.",
+            "objectiveIds": [
+              "a-o2",
+              "a-o3"
+            ]
+          },
+          {
+            "id": "a-q3",
+            "prompt": "Omar wants to use the queue but does not know how to reassign a ticket. Most appropriate support?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Role-specific instruction with a worked example and check"
+              },
+              {
+                "id": "b",
+                "text": "Public recognition for adoption"
+              },
+              {
+                "id": "c",
+                "text": "A reminder of the project name"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "The stated gap is procedural knowledge; instruction and a check target it.",
+            "objectiveIds": [
+              "a-o1",
+              "a-o3"
+            ]
+          },
+          {
+            "id": "a-q4",
+            "prompt": "A colleague explains the steps accurately but an inaccessible control prevents completion. Best response?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Label the colleague unwilling"
+              },
+              {
+                "id": "b",
+                "text": "Ignore the issue because training is complete"
+              },
+              {
+                "id": "c",
+                "text": "Address the accessibility barrier and provide supported practice"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "The barrier is in performing the task under available conditions. Knowledge alone cannot remove it.",
+            "objectiveIds": [
+              "a-o2",
+              "a-o3"
+            ]
+          },
+          {
+            "id": "a-q5",
+            "prompt": "A month after successful use, the team returns to old habits because leaders accept both processes inconsistently. Best next action?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Align expectations, examine friction and check the new behavior again"
+              },
+              {
+                "id": "b",
+                "text": "Send a course-completion certificate"
+              },
+              {
+                "id": "c",
+                "text": "Assume initial knowledge has disappeared"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "This responds to inconsistent reinforcement while checking for other causes.",
+            "objectiveIds": [
+              "a-o1",
+              "a-o3"
+            ]
+          },
+          {
+            "id": "a-q6",
+            "prompt": "Which plan provides the clearest follow-through?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Improve adoption soon"
+              },
+              {
+                "id": "b",
+                "text": "Check morale sometime"
+              },
+              {
+                "id": "c",
+                "text": "Arrange coverage, observe one complete handoff tomorrow and review busy-shift use Friday"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "It specifies support, evidence and timing; connect it to the defined handoff behavior.",
+            "objectiveIds": [
+              "a-o4"
+            ]
+          },
+          {
+            "id": "a-q7",
+            "prompt": "A learner says, “Everyone finished training, so the change has succeeded.” Best evaluation?",
+            "options": [
+              {
+                "id": "a",
+                "text": "True: completion proves sustained performance"
+              },
+              {
+                "id": "b",
+                "text": "Incomplete: observe real behavior and whether it continues, and ask about remaining barriers"
+              },
+              {
+                "id": "c",
+                "text": "False: training never helps"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Completion is an input or learning milestone. Successful work and sustainment need additional evidence.",
+            "objectiveIds": [
+              "a-o2",
+              "a-o3"
+            ]
+          }
+        ]
+      },
+      "criterion": "6/7 correct; configured passPercent 80%; actual first attainable passing score 85.7%.",
+      "completion_criteria": "Visit all lessons and score at least 80% on the seven-item assessment (6 correct required). Untimed; retries permitted.",
+      "performance_task_rubric": "The create-level a-o4 objective is practiced in the lesson-five written plan. Its multiple-choice assessment items test recognition only. A facilitator can score the plan with one point each for explicit behavior, matched support, observable evidence and review date; 3/4 with behavior present is the suggested practice criterion. No automated claim that the learner has mastered creation.",
+      "assessment_limit": "Selected-response pass does not establish independent workplace competence.",
+      "design_notes": {
+        "analysis": "Audience and performance problem are provisional design assumptions for this portfolio sample, not findings from a conducted client needs analysis. Validate with target learners before organizational rollout.",
+        "design": "Five concise lessons, original worked cases, decision feedback and seven aligned assessment items. Estimated 25 minutes includes learner practice; untimed and self-paced.",
+        "development": "Original text and scenarios; primary-source links reviewed 2026-10-09. JSON and Markdown deliverables share stable IDs. Feedback is explanatory rather than answer-only.",
+        "implementation": "Portfolio demonstration. Provide keyboard-operable options, visible focus, readable feedback and no color-only correctness cue. Display scope and attribution before launch. Course runtime and accessibility require separate platform testing.",
+        "evaluation": "Formative checks offer immediate retry. Summative pass is 6/7. Pilot with 3–5 representative learners, ask them to think aloud, review distractors and timing, then revise. Workplace transfer is not measured by this sample alone.",
+        "alignment": {
+          "a-o1": [
+            "a-q1",
+            "a-q3",
+            "a-q5"
+          ],
+          "a-o2": [
+            "a-q1",
+            "a-q2",
+            "a-q4",
+            "a-q7"
+          ],
+          "a-o3": [
+            "a-q2",
+            "a-q3",
+            "a-q4",
+            "a-q5",
+            "a-q7"
+          ],
+          "a-o4": [
+            "a-q6"
+          ]
+        },
+        "performanceTask": "The create-level a-o4 objective is practiced in the lesson-five written plan. Its multiple-choice assessment items test recognition only. A facilitator can score the plan with one point each for explicit behavior, matched support, observable evidence and review date; 3/4 with behavior present is the suggested practice criterion. No automated claim that the learner has mastered creation."
+      },
+      "assumption_status": "Authored portfolio persona and fictional performance need; no baseline learner research or workplace validation performed."
+    },
+    {
+      "id": "ebitda-foundations",
+      "title": "EBITDA: Read the Number, Ask Better Questions",
+      "source_file": "business/ebitda-foundations.json",
+      "source_sha256": "4feb740740a6fe11bb94d70fd0fa77256e3167dc6f987c442a6717a3cf9cb58b",
+      "learner_segment": "New people managers, project leads and non-finance business professionals who review operating results.",
+      "performance_problem": "Managers may mistake a positive EBITDA result for cash available to spend or accept inconsistent add-backs without examining the reconciliation.",
+      "objectives": [
+        {
+          "id": "e-o1",
+          "text": "Given a simplified income statement, calculate EBIT and EBITDA and reconcile both to net income without double-counting.",
+          "bloomLevel": "Apply"
+        },
+        {
+          "id": "e-o2",
+          "text": "Classify proposed adjustments as standard EBITDA components or additional adjustments in a supplied case.",
+          "bloomLevel": "Analyze"
+        },
+        {
+          "id": "e-o3",
+          "text": "Select and explain two reasons EBITDA can differ from operating cash flow or cash available for spending.",
+          "bloomLevel": "Analyze"
+        },
+        {
+          "id": "e-o4",
+          "text": "Evaluate a management claim and select an evidence-based response that uses the reconciliation and cash-flow information.",
+          "bloomLevel": "Evaluate"
+        }
+      ],
+      "objective_alignment": [
+        {
+          "objective_id": "e-o1",
+          "objective_text": "Given a simplified income statement, calculate EBIT and EBITDA and reconcile both to net income without double-counting.",
+          "bloom_level": "Apply",
+          "lesson_ids": [
+            "e-l1",
+            "e-l2",
+            "e-l3"
+          ],
+          "assessment_item_ids": [
+            "e-q1",
+            "e-q2",
+            "e-q4"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "e-o2",
+          "objective_text": "Classify proposed adjustments as standard EBITDA components or additional adjustments in a supplied case.",
+          "bloom_level": "Analyze",
+          "lesson_ids": [
+            "e-l3",
+            "e-l5"
+          ],
+          "assessment_item_ids": [
+            "e-q3",
+            "e-q6"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "e-o3",
+          "objective_text": "Select and explain two reasons EBITDA can differ from operating cash flow or cash available for spending.",
+          "bloom_level": "Analyze",
+          "lesson_ids": [
+            "e-l4"
+          ],
+          "assessment_item_ids": [
+            "e-q5",
+            "e-q7"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "e-o4",
+          "objective_text": "Evaluate a management claim and select an evidence-based response that uses the reconciliation and cash-flow information.",
+          "bloom_level": "Evaluate",
+          "lesson_ids": [
+            "e-l1",
+            "e-l4",
+            "e-l5"
+          ],
+          "assessment_item_ids": [
+            "e-q7"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        }
+      ],
+      "lesson_activities": [
+        {
+          "id": "e-l1",
+          "title": "Start with the question",
+          "activity": {
+            "type": "decision",
+            "prompt": "Which response best addresses the colleague’s cash claim?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The extra $96,000 must be cash in the bank.",
+                "feedback": "Adding expenses back changes a metric; it does not create a cash receipt.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "First trace the earnings adjustments, then inspect cash flows and obligations.",
+                "feedback": "Best choice. The bridge explains the metric, while cash information supports a spending decision.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "EBITDA is meaningless, so ignore it.",
+                "feedback": "Too broad. A limited measure can be useful if its purpose and limitations are clear.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "e-k1",
+            "prompt": "Which question can an EBITDA bridge answer directly?",
+            "options": [
+              {
+                "id": "a",
+                "text": "How much cash can be distributed?"
+              },
+              {
+                "id": "b",
+                "text": "How do interest, income tax and D&A explain the difference from net income?"
+              },
+              {
+                "id": "c",
+                "text": "Will customers pay on time?"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "The bridge explains selected earnings adjustments; it does not show payment timing or distributable cash.",
+            "objectiveIds": [
+              "e-o1"
+            ]
+          }
+        },
+        {
+          "id": "e-l2",
+          "title": "Build the bridge in two directions",
+          "activity": {
+            "type": "worked-example",
+            "prompt": "A second synthetic quarter has net income 50, interest expense 12, income-tax expense 18 and D&A 25, all in USD thousands. What is EBITDA?",
+            "options": [
+              {
+                "id": "a",
+                "text": "80",
+                "feedback": "80 is EBIT: 50 + 12 + 18. D&A still needs to be added.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "105",
+                "feedback": "Correct: 50 + 12 + 18 + 25 = 105. Reverse the bridge to confirm.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "130",
+                "feedback": "D&A has been added twice. Start at 50 and use each adjustment once.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "e-k2",
+            "prompt": "Northstar’s EBIT is 140 and D&A is 40. What is EBITDA (USD thousands)?",
+            "options": [
+              {
+                "id": "a",
+                "text": "100"
+              },
+              {
+                "id": "b",
+                "text": "140"
+              },
+              {
+                "id": "c",
+                "text": "180"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "EBITDA = 140 + 40 = 180. Interest and tax have already been excluded from EBIT.",
+            "objectiveIds": [
+              "e-o1"
+            ]
+          }
+        },
+        {
+          "id": "e-l3",
+          "title": "Check the add-backs",
+          "activity": {
+            "type": "decision",
+            "prompt": "The draft adds a recurring software subscription of 6 to Northstar’s standard EBITDA of 180. What do you do?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Accept EBITDA of 186 because software is useful.",
+                "feedback": "Usefulness does not make an operating expense an EBITDA add-back.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Keep standard EBITDA at 180 and ask for the basis of any separately labeled extra adjustment.",
+                "feedback": "Correct. It is outside the basic components. Assess any adjusted measure critically rather than automatically accepting it.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Subtract the subscription from 180 again.",
+                "feedback": "The subscription was already expensed in the starting earnings. Subtracting it again would double-count.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "e-k3",
+            "prompt": "Net income is 20, interest expense 4, income-tax benefit 3 and D&A 9. EBITDA is:",
+            "options": [
+              {
+                "id": "a",
+                "text": "30"
+              },
+              {
+                "id": "b",
+                "text": "36"
+              },
+              {
+                "id": "c",
+                "text": "24"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "20 + 4 − 3 + 9 = 30. The tax benefit is removed with a negative adjustment.",
+            "objectiveIds": [
+              "e-o1",
+              "e-o2"
+            ]
+          }
+        },
+        {
+          "id": "e-l4",
+          "title": "Profit measures are not cash balances",
+          "activity": {
+            "type": "decision",
+            "prompt": "The manager says, “EBITDA is 180, so the 90 machine purchase is easily funded.” Choose your next step.",
+            "options": [
+              {
+                "id": "a",
+                "text": "Approve from EBITDA alone.",
+                "feedback": "The claim ignores payment timing and obligations.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Ask for current cash, cash forecast, capital spending and debt obligations before deciding.",
+                "feedback": "Best response. This is the evidence needed to assess funding; EBITDA alone cannot establish it.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Say the company is insolvent because the example has −16 after capital spending.",
+                "feedback": "A single simplified period does not establish insolvency. Financing and starting cash are still unknown.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "e-k4",
+            "prompt": "Which can reduce operating cash flow without reducing current-period EBITDA by the same amount?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Collecting all invoices immediately"
+              },
+              {
+                "id": "b",
+                "text": "A rise in unpaid customer invoices, all else equal"
+              },
+              {
+                "id": "c",
+                "text": "Adding back depreciation on a worksheet"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Accrual revenue can be recorded before collection. More cash tied up in receivables can reduce operating cash flow relative to earnings.",
+            "objectiveIds": [
+              "e-o3"
+            ]
+          }
+        },
+        {
+          "id": "e-l5",
+          "title": "Challenge a claim with useful evidence",
+          "activity": {
+            "type": "scenario",
+            "prompt": "What happens next in the scenario?",
+            "options": [
+              {
+                "id": "a",
+                "text": "You request a consistent bridge and a cash forecast.",
+                "feedback": "The analyst finds that the comparable change is smaller. The cash forecast identifies a funding question for the finance team. You have improved the decision without overclaiming.",
+                "isBest": true
+              },
+              {
+                "id": "b",
+                "text": "You repeat the 20% headline.",
+                "feedback": "The meeting proceeds using an inconsistent comparison, and the supplier payment risk remains unexamined. Return to the bridge.",
+                "isBest": false
+              },
+              {
+                "id": "c",
+                "text": "You remove every noncash expense from the company’s records.",
+                "feedback": "A management measure does not authorize changing accounting records. Keep the records and review the analytical adjustments.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "e-k5",
+            "prompt": "Two companies report different Adjusted EBITDA definitions. What is the strongest comparison approach?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Compare headline amounts without adjustments"
+              },
+              {
+                "id": "b",
+                "text": "Assume the higher amount means more cash"
+              },
+              {
+                "id": "c",
+                "text": "Inspect reconciliations and establish a consistent basis where possible"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "Different exclusions can create an apparent performance gap. Read the bridges and retain the limits of comparability.",
+            "objectiveIds": [
+              "e-o2",
+              "e-o4"
+            ]
+          }
+        }
+      ],
+      "assessment": {
+        "passPercent": 80,
+        "requiredCorrect": 6,
+        "totalQuestions": 7,
+        "estimatedMinutes": 5,
+        "instructions": "Select one answer per question. Earn at least 6 of 7 correct (85.7%, the first attainable score at or above 80%). Review rationales and retry after revisiting the relevant lessons. Completion is a portfolio practice result, not professional certification.",
+        "questions": [
+          {
+            "id": "e-q1",
+            "prompt": "Synthetic company: net income 72, interest expense 18, income-tax expense 30, depreciation 25, amortization 5 (USD thousands). What is EBITDA?",
+            "options": [
+              {
+                "id": "a",
+                "text": "120"
+              },
+              {
+                "id": "b",
+                "text": "150"
+              },
+              {
+                "id": "c",
+                "text": "180"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "72 + 18 + 30 + 25 + 5 = 150. EBIT is 120.",
+            "objectiveIds": [
+              "e-o1"
+            ]
+          },
+          {
+            "id": "e-q2",
+            "prompt": "EBIT is 90. Depreciation is 12 and amortization 8. What is EBITDA?",
+            "options": [
+              {
+                "id": "a",
+                "text": "70"
+              },
+              {
+                "id": "b",
+                "text": "90"
+              },
+              {
+                "id": "c",
+                "text": "110"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "90 + 12 + 8 = 110; do not add interest or tax again.",
+            "objectiveIds": [
+              "e-o1"
+            ]
+          },
+          {
+            "id": "e-q3",
+            "prompt": "Which proposed standard EBITDA add-back is incorrect?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Depreciation already included in cost of sales, counted once"
+              },
+              {
+                "id": "b",
+                "text": "Amortization already deducted in net income"
+              },
+              {
+                "id": "c",
+                "text": "The full cash purchase price of a new machine"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "A capital purchase is not the same as the period’s depreciation expense.",
+            "objectiveIds": [
+              "e-o2"
+            ]
+          },
+          {
+            "id": "e-q4",
+            "prompt": "Net income 40 includes an income-tax benefit of 6. Interest expense is 4 and D&A is 10. EBITDA equals:",
+            "options": [
+              {
+                "id": "a",
+                "text": "48"
+              },
+              {
+                "id": "b",
+                "text": "60"
+              },
+              {
+                "id": "c",
+                "text": "44"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "40 + 4 − 6 + 10 = 48. A benefit is removed by subtracting it.",
+            "objectiveIds": [
+              "e-o1"
+            ]
+          },
+          {
+            "id": "e-q5",
+            "prompt": "EBITDA is positive but many customers have not paid and equipment replacement is due. Which conclusion is supported?",
+            "options": [
+              {
+                "id": "a",
+                "text": "There must be enough cash for replacement"
+              },
+              {
+                "id": "b",
+                "text": "Cash availability needs separate analysis"
+              },
+              {
+                "id": "c",
+                "text": "The unpaid invoices must be removed from revenue"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Receivable timing and capital expenditures matter to cash; EBITDA alone cannot settle the funding question.",
+            "objectiveIds": [
+              "e-o3"
+            ]
+          },
+          {
+            "id": "e-q6",
+            "prompt": "An analyst removes recurring software fees in addition to interest, tax and D&A. What should you do?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Accept the amount as standard EBITDA"
+              },
+              {
+                "id": "b",
+                "text": "Treat it as an extra adjustment, scrutinize the rationale and require a distinct measure label"
+              },
+              {
+                "id": "c",
+                "text": "Add the fees back a second time"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "The exclusion goes beyond standard EBITDA. Labeling does not by itself make the adjustment appropriate.",
+            "objectiveIds": [
+              "e-o2"
+            ]
+          },
+          {
+            "id": "e-q7",
+            "prompt": "A slide reports “EBITDA increased, therefore next month’s loan principal payment is covered.” Your best response is:",
+            "options": [
+              {
+                "id": "a",
+                "text": "Agree because principal is included in EBITDA"
+              },
+              {
+                "id": "b",
+                "text": "Check the earnings reconciliation, available cash and cash forecast including debt payments"
+              },
+              {
+                "id": "c",
+                "text": "Subtract amortization once more to prove coverage"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "The claim jumps from an earnings metric to liquidity. Principal and cash timing require additional evidence.",
+            "objectiveIds": [
+              "e-o3",
+              "e-o4"
+            ]
+          }
+        ]
+      },
+      "criterion": "6/7 correct; configured passPercent 80%; actual first attainable passing score 85.7%.",
+      "completion_criteria": "Visit all lessons and score at least 80% on the seven-item assessment (6 correct required). Untimed; retries permitted.",
+      "performance_task_rubric": null,
+      "assessment_limit": "Selected-response pass does not establish independent workplace competence.",
+      "design_notes": {
+        "analysis": "Audience and performance problem are provisional design assumptions for this portfolio sample, not findings from a conducted client needs analysis. Validate with target learners before organizational rollout.",
+        "design": "Five concise lessons, original worked cases, decision feedback and seven aligned assessment items. Estimated 25 minutes includes learner practice; untimed and self-paced.",
+        "development": "Original text and scenarios; primary-source links reviewed 2026-10-09. JSON and Markdown deliverables share stable IDs. Feedback is explanatory rather than answer-only.",
+        "implementation": "Portfolio demonstration. Provide keyboard-operable options, visible focus, readable feedback and no color-only correctness cue. Display scope and attribution before launch. Course runtime and accessibility require separate platform testing.",
+        "evaluation": "Formative checks offer immediate retry. Summative pass is 6/7. Pilot with 3–5 representative learners, ask them to think aloud, review distractors and timing, then revise. Workplace transfer is not measured by this sample alone.",
+        "alignment": {
+          "e-o1": [
+            "e-q1",
+            "e-q2",
+            "e-q4"
+          ],
+          "e-o2": [
+            "e-q3",
+            "e-q6"
+          ],
+          "e-o3": [
+            "e-q5",
+            "e-q7"
+          ],
+          "e-o4": [
+            "e-q7"
+          ]
+        }
+      },
+      "assumption_status": "Authored portfolio persona and fictional performance need; no baseline learner research or workplace validation performed."
+    },
+    {
+      "id": "adult-learning-theory",
+      "title": "Adult Learning Theory: Design for the People Doing the Work",
+      "source_file": "learning/adult-learning-theory.json",
+      "source_sha256": "38338b2395e3987fc42fc35c799c6238629e1506040208659521150a670e767d",
+      "learner_segment": "New instructional designers, change practitioners, team leads, and L&D managers responsible for workplace training.",
+      "performance_problem": "a fictional service team completes mandatory training but continues to send incomplete handoffs.",
+      "objectives": [
+        {
+          "id": "alt-o1",
+          "text": "Given a learner profile, select a design response that treats andragogy as a set of assumptions to investigate rather than universal adult traits.",
+          "bloomLevel": "Apply"
+        },
+        {
+          "id": "alt-o2",
+          "text": "Given a rollout case, distinguish a knowledge or skill gap from a tool, time, or permission barrier.",
+          "bloomLevel": "Analyze"
+        },
+        {
+          "id": "alt-o3",
+          "text": "Select practice and feedback that address a stated handoff performance criterion.",
+          "bloomLevel": "Evaluate"
+        },
+        {
+          "id": "alt-o4",
+          "text": "Choose a transfer-support and evaluation plan that measures work performance without claiming that completion proves impact.",
+          "bloomLevel": "Evaluate"
+        }
+      ],
+      "objective_alignment": [
+        {
+          "objective_id": "alt-o1",
+          "objective_text": "Given a learner profile, select a design response that treats andragogy as a set of assumptions to investigate rather than universal adult traits.",
+          "bloom_level": "Apply",
+          "lesson_ids": [
+            "alt-l1",
+            "alt-l2",
+            "alt-l3"
+          ],
+          "assessment_item_ids": [
+            "alt-a1",
+            "alt-a3",
+            "alt-a4"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "alt-o2",
+          "objective_text": "Given a rollout case, distinguish a knowledge or skill gap from a tool, time, or permission barrier.",
+          "bloom_level": "Analyze",
+          "lesson_ids": [
+            "alt-l1",
+            "alt-l2",
+            "alt-l5"
+          ],
+          "assessment_item_ids": [
+            "alt-a2",
+            "alt-a6"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "alt-o3",
+          "objective_text": "Select practice and feedback that address a stated handoff performance criterion.",
+          "bloom_level": "Evaluate",
+          "lesson_ids": [
+            "alt-l4"
+          ],
+          "assessment_item_ids": [
+            "alt-a5",
+            "alt-a7"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "alt-o4",
+          "objective_text": "Choose a transfer-support and evaluation plan that measures work performance without claiming that completion proves impact.",
+          "bloom_level": "Evaluate",
+          "lesson_ids": [
+            "alt-l5"
+          ],
+          "assessment_item_ids": [
+            "alt-a8"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        }
+      ],
+      "lesson_activities": [
+        {
+          "id": "alt-l1",
+          "title": "1. Begin with the work, then test your assumptions",
+          "activity": {
+            "type": "decision",
+            "prompt": "A capable new supervisor asks for a step-by-step demonstration before practicing. What should you do?",
+            "options": [
+              {
+                "id": "alt-d1-a",
+                "text": "Remove the demonstration because adults should direct themselves.",
+                "feedback": "Self-direction is an assumption to investigate. Withholding needed support creates an unnecessary obstacle.",
+                "isBest": false
+              },
+              {
+                "id": "alt-d1-b",
+                "text": "Offer a short demonstration, then supported practice and a choice of relevant cases.",
+                "feedback": "Best response. This respects the learner’s request while preserving a chance to perform the task.",
+                "isBest": true
+              },
+              {
+                "id": "alt-d1-c",
+                "text": "Replace all practice with a lecture.",
+                "feedback": "A demonstration can help, but observing alone does not show whether the learner can complete the task.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "alt-k1",
+            "prompt": "Which statement is the most defensible starting point?",
+            "options": [
+              {
+                "id": "alt-k1-a",
+                "text": "All adults need the same amount of independence."
+              },
+              {
+                "id": "alt-k1-b",
+                "text": "Adults never benefit from explicit instruction."
+              },
+              {
+                "id": "alt-k1-c",
+                "text": "Investigate learners’ readiness and experience before deciding how much guidance to provide."
+              }
+            ],
+            "correctOptionId": "alt-k1-c",
+            "rationale": "Design decisions should follow evidence about this audience and task, rather than a rule based only on age."
+          }
+        },
+        {
+          "id": "alt-l2",
+          "title": "2. Use experience without preserving errors",
+          "activity": {
+            "type": "decision",
+            "prompt": "An experienced agent’s demonstration reveals an outdated shortcut. Choose the strongest response.",
+            "options": [
+              {
+                "id": "alt-d2-a",
+                "text": "Use contrasting old/new examples, explain the consequence, and let the agent retry.",
+                "feedback": "Best response. It uses existing knowledge as a starting point and makes the changed requirement visible.",
+                "isBest": true
+              },
+              {
+                "id": "alt-d2-b",
+                "text": "Tell the agent that past experience is irrelevant.",
+                "feedback": "Discarding all experience loses valid knowledge and gives no precise correction.",
+                "isBest": false
+              },
+              {
+                "id": "alt-d2-c",
+                "text": "Approve the shortcut because the agent has more experience.",
+                "feedback": "Experience is valuable, but the shortcut still needs checking against the current process.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "alt-k2",
+            "prompt": "Which feedback best addresses the actual error?",
+            "options": [
+              {
+                "id": "alt-k2-a",
+                "text": "Try harder next time."
+              },
+              {
+                "id": "alt-k2-b",
+                "text": "Your summary is clear; put the next owner in the Owner field so routing can use it."
+              },
+              {
+                "id": "alt-k2-c",
+                "text": "You are an expert, so your answer is acceptable."
+              }
+            ],
+            "correctOptionId": "alt-k2-b",
+            "rationale": "Specific feedback identifies what was successful, what must change, and why the correction matters."
+          }
+        },
+        {
+          "id": "alt-l3",
+          "title": "3. Offer relevant choices and the support to succeed",
+          "activity": {
+            "type": "decision",
+            "prompt": "You have novices and experienced agents in one session. Which plan best balances choice and common expectations?",
+            "options": [
+              {
+                "id": "alt-d3-a",
+                "text": "Let experienced staff skip verification based on their confidence.",
+                "feedback": "Confidence alone does not establish performance with the changed process.",
+                "isBest": false
+              },
+              {
+                "id": "alt-d3-b",
+                "text": "Make every learner read every explanation twice.",
+                "feedback": "Uniform repetition ignores what learners already can do.",
+                "isBest": false
+              },
+              {
+                "id": "alt-d3-c",
+                "text": "Offer optional scaffolds and relevant case choices, with the same required performance check.",
+                "feedback": "Best response. Support can vary while the required standard stays clear.",
+                "isBest": true
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "alt-k3",
+            "prompt": "Why provide a text alternative to a demonstration?",
+            "options": [
+              {
+                "id": "alt-k3-a",
+                "text": "To support access and let learners revisit task details."
+              },
+              {
+                "id": "alt-k3-b",
+                "text": "To assign permanent learning-style labels."
+              },
+              {
+                "id": "alt-k3-c",
+                "text": "To eliminate the need for practice."
+              }
+            ],
+            "correctOptionId": "alt-k3-a",
+            "rationale": "A text alternative supports accessibility and flexible use. It does not diagnose a learning style or replace performance practice."
+          }
+        },
+        {
+          "id": "alt-l4",
+          "title": "4. Make practice resemble the decision",
+          "activity": {
+            "type": "decision",
+            "prompt": "The objective is to route handoffs using a rule card. Which practice is best aligned?",
+            "options": [
+              {
+                "id": "alt-d4-a",
+                "text": "Memorize the date the form was launched.",
+                "feedback": "The launch date does not test the routing decision.",
+                "isBest": false
+              },
+              {
+                "id": "alt-d4-b",
+                "text": "Choose owners for realistic cases using the rule card, receive explanations, and retry.",
+                "feedback": "Best response. This practices the target decision under realistic reference conditions.",
+                "isBest": true
+              },
+              {
+                "id": "alt-d4-c",
+                "text": "Watch a celebratory rollout video without making a decision.",
+                "feedback": "The video may communicate a change, but it does not provide routing practice.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "alt-k4",
+            "prompt": "A learner picks the wrong owner. What is the most useful immediate response?",
+            "options": [
+              {
+                "id": "alt-k4-a",
+                "text": "Display only a red cross."
+              },
+              {
+                "id": "alt-k4-b",
+                "text": "End the course."
+              },
+              {
+                "id": "alt-k4-c",
+                "text": "Explain the relevant routing rule and offer a new attempt."
+              }
+            ],
+            "correctOptionId": "alt-k4-c",
+            "rationale": "The learner needs actionable information and an opportunity to use it."
+          }
+        },
+        {
+          "id": "alt-l5",
+          "title": "5. Plan transfer and measure what changed",
+          "activity": {
+            "type": "decision",
+            "prompt": "Agents pass practice but cannot open the owner list in production. What should the rollout lead prioritize?",
+            "options": [
+              {
+                "id": "alt-d5-a",
+                "text": "Assign a longer repeat course to everyone.",
+                "feedback": "Repeated instruction does not resolve a permission barrier.",
+                "isBest": false
+              },
+              {
+                "id": "alt-d5-b",
+                "text": "Report completion as proof of successful adoption.",
+                "feedback": "Completion does not demonstrate that the production workflow is usable.",
+                "isBest": false
+              },
+              {
+                "id": "alt-d5-c",
+                "text": "Have the system owner resolve access and verify agents can use the list.",
+                "feedback": "Best response. Resolve the enabling condition, then check actual performance.",
+                "isBest": true
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "alt-k5",
+            "prompt": "Which evidence most directly indicates the target behavior?",
+            "options": [
+              {
+                "id": "alt-k5-a",
+                "text": "A sample of actual handoffs contains the required summary, owner, and next action."
+              },
+              {
+                "id": "alt-k5-b",
+                "text": "Everyone viewed the opening slide."
+              },
+              {
+                "id": "alt-k5-c",
+                "text": "The course has attractive colors."
+              }
+            ],
+            "correctOptionId": "alt-k5-a",
+            "rationale": "The target behavior is a complete handoff. Other measures can inform implementation or experience, but they do not establish that behavior."
+          }
+        }
+      ],
+      "assessment": {
+        "passPercent": 75,
+        "questions": [
+          {
+            "id": "alt-a1",
+            "prompt": "A manager says every adult prefers completely independent learning. What is the best response?",
+            "options": [
+              {
+                "id": "alt-a1-a",
+                "text": "Build an unguided course for everyone."
+              },
+              {
+                "id": "alt-a1-b",
+                "text": "Check this group’s prior knowledge and support needs before choosing guidance."
+              },
+              {
+                "id": "alt-a1-c",
+                "text": "Remove all learner choice."
+              }
+            ],
+            "correctOptionId": "alt-a1-b",
+            "rationale": "Andragogy provides assumptions to investigate; age alone does not determine the right support."
+          },
+          {
+            "id": "alt-a2",
+            "prompt": "The new form reads its Owner field, while a veteran puts the owner only in notes. Choose the most useful intervention.",
+            "options": [
+              {
+                "id": "alt-a2-a",
+                "text": "Compare the two workflows and practice entering the owner in the correct field."
+              },
+              {
+                "id": "alt-a2-b",
+                "text": "Ask the veteran to repeat the old workflow faster."
+              },
+              {
+                "id": "alt-a2-c",
+                "text": "Assume the veteran is unwilling to learn."
+              }
+            ],
+            "correctOptionId": "alt-a2-a",
+            "rationale": "A contrast and retry address the specific outdated mental model without inventing a motivation problem."
+          },
+          {
+            "id": "alt-a3",
+            "prompt": "Which choice preserves a common performance standard?",
+            "options": [
+              {
+                "id": "alt-a3-a",
+                "text": "Allow confident users to skip all checks."
+              },
+              {
+                "id": "alt-a3-b",
+                "text": "Give every person an unrelated topic."
+              },
+              {
+                "id": "alt-a3-c",
+                "text": "Offer two relevant case contexts with the same required handoff fields."
+              }
+            ],
+            "correctOptionId": "alt-a3-c",
+            "rationale": "Context can vary while required behavior and assessment criteria remain consistent."
+          },
+          {
+            "id": "alt-a4",
+            "prompt": "A designer offers text and demonstration versions. Which explanation is appropriate?",
+            "options": [
+              {
+                "id": "alt-a4-a",
+                "text": "Each learner belongs permanently to one sensory learning type."
+              },
+              {
+                "id": "alt-a4-b",
+                "text": "Different formats can support access and revisiting task details."
+              },
+              {
+                "id": "alt-a4-c",
+                "text": "Text is always superior for every task."
+              }
+            ],
+            "correctOptionId": "alt-a4-b",
+            "rationale": "Choose formats for accessibility and task demands, not fixed learning-style categories."
+          },
+          {
+            "id": "alt-a5",
+            "prompt": "Which assessment is closest to an objective about selecting a next owner?",
+            "options": [
+              {
+                "id": "alt-a5-a",
+                "text": "Select an owner for a new case using the work rule card."
+              },
+              {
+                "id": "alt-a5-b",
+                "text": "Recall the launch date."
+              },
+              {
+                "id": "alt-a5-c",
+                "text": "Rate the animation quality."
+              }
+            ],
+            "correctOptionId": "alt-a5-a",
+            "rationale": "A case decision samples the required performance; the other options measure unrelated knowledge or experience."
+          },
+          {
+            "id": "alt-a6",
+            "prompt": "An agent understands the procedure but lacks system permissions. What is the primary next action?",
+            "options": [
+              {
+                "id": "alt-a6-a",
+                "text": "Repeat the definitions quiz."
+              },
+              {
+                "id": "alt-a6-b",
+                "text": "Label the agent resistant."
+              },
+              {
+                "id": "alt-a6-c",
+                "text": "Resolve access with the system owner and verify the workflow."
+              }
+            ],
+            "correctOptionId": "alt-a6-c",
+            "rationale": "The barrier is an enabling condition, not evidence of a knowledge deficit."
+          },
+          {
+            "id": "alt-a7",
+            "prompt": "Which feedback best supports correction?",
+            "options": [
+              {
+                "id": "alt-a7-a",
+                "text": "Wrong."
+              },
+              {
+                "id": "alt-a7-b",
+                "text": "The issue summary is clear; the next action is missing, so add what the receiving agent should do."
+              },
+              {
+                "id": "alt-a7-c",
+                "text": "You need a better attitude."
+              }
+            ],
+            "correctOptionId": "alt-a7-b",
+            "rationale": "The feedback names a successful element and a specific correction tied to the criterion."
+          },
+          {
+            "id": "alt-a8",
+            "prompt": "After training, handoff quality improves while the form is also redesigned. What can you conclude?",
+            "options": [
+              {
+                "id": "alt-a8-a",
+                "text": "Performance improved in the observed sample; more evidence is needed to isolate causes."
+              },
+              {
+                "id": "alt-a8-b",
+                "text": "Training alone caused the entire improvement."
+              },
+              {
+                "id": "alt-a8-c",
+                "text": "Completion statistics prove every agent is proficient."
+              }
+            ],
+            "correctOptionId": "alt-a8-a",
+            "rationale": "An observed change is useful evidence, but the concurrent form change prevents a simple causal attribution."
+          }
+        ],
+        "requiredCorrect": 6,
+        "estimatedMinutes": 5
+      },
+      "criterion": "6/8 correct; configured passPercent 75%; actual first attainable passing score 75.0%.",
+      "completion_criteria": "Course sequence, review and retry behavior must be verified in the implemented runtime; assessment threshold is specified separately.",
+      "performance_task_rubric": null,
+      "assessment_limit": "Selected-response items sample design judgment. The transfer task is self-guided and unscored; a facilitator would need a rubric and review to establish production skill.",
+      "design_notes": {
+        "analyze": "Fictional need: incomplete handoffs after a process change. Audience has mixed experience. A production discovery phase would validate error patterns, access barriers, task standards, and accessibility needs.",
+        "design": "25 minutes: five lessons at about four minutes each and a five-minute assessment. Objectives 1–4 map to assessment items 1/3/4, 2/6, 5/7, and 8 respectively. Choose response quality rather than recall of theorists.",
+        "develop": "Original fictional examples; text-first content; meaningful option feedback; five formative checks; eight final items. Use semantic headings, labeled controls, visible focus, and feedback announced to assistive technology. No timers are required.",
+        "implement": "Suggested sequence is lessons 1–5, then assessment. Allow review and retries. Passing means at least 6 of 8 correct (75%) on this sample only. Present missed-item rationales and direct learners back to relevant lessons.",
+        "evaluate": "Pilot for clarity, timing, accessibility, ambiguous distractors, and whether learners can explain their decisions. In a real rollout, add an observed handoff rubric and check enabling conditions; do not infer ROI or causal impact from completion.",
+        "assessmentLimit": "Selected-response items sample design judgment. The transfer task is self-guided and unscored; a facilitator would need a rubric and review to establish production skill.",
+        "sourcesReviewed": "2026-10-09; source links identify conceptual background. All scenarios, questions, job aids, and worked examples are original."
+      },
+      "assumption_status": "Authored portfolio persona and fictional performance need; no baseline learner research or workplace validation performed."
+    },
+    {
+      "id": "blooms-taxonomy",
+      "title": "Bloom’s Taxonomy: Match the Learning to the Work",
+      "source_file": "learning/blooms-taxonomy.json",
+      "source_sha256": "881001f0e4e46ff965a917ca0505a082a8fcb73d075a3130319e1c39a884d197",
+      "learner_segment": "Instructional designers, subject-matter experts, trainers, and L&D managers.",
+      "performance_problem": "a fictional ticket-triage course promises judgment but tests only term recognition.",
+      "objectives": [
+        {
+          "id": "bt-o1",
+          "text": "Classify a described cognitive task using the six categories in the 2001 revised taxonomy.",
+          "bloomLevel": "Understand"
+        },
+        {
+          "id": "bt-o2",
+          "text": "Given a vague goal, select a measurable objective with a behavior, condition, and success criterion.",
+          "bloomLevel": "Apply"
+        },
+        {
+          "id": "bt-o3",
+          "text": "Identify whether an assessment asks for the same kind of thinking as its objective.",
+          "bloomLevel": "Analyze"
+        },
+        {
+          "id": "bt-o4",
+          "text": "Select an aligned objective–practice–assessment plan for a workplace decision.",
+          "bloomLevel": "Evaluate"
+        }
+      ],
+      "objective_alignment": [
+        {
+          "objective_id": "bt-o1",
+          "objective_text": "Classify a described cognitive task using the six categories in the 2001 revised taxonomy.",
+          "bloom_level": "Understand",
+          "lesson_ids": [
+            "bt-l1",
+            "bt-l2"
+          ],
+          "assessment_item_ids": [
+            "bt-a1",
+            "bt-a2",
+            "bt-a3",
+            "bt-a5",
+            "bt-a8"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "bt-o2",
+          "objective_text": "Given a vague goal, select a measurable objective with a behavior, condition, and success criterion.",
+          "bloom_level": "Apply",
+          "lesson_ids": [
+            "bt-l3"
+          ],
+          "assessment_item_ids": [
+            "bt-a4"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "bt-o3",
+          "objective_text": "Identify whether an assessment asks for the same kind of thinking as its objective.",
+          "bloom_level": "Analyze",
+          "lesson_ids": [
+            "bt-l4"
+          ],
+          "assessment_item_ids": [
+            "bt-a6"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "bt-o4",
+          "objective_text": "Select an aligned objective–practice–assessment plan for a workplace decision.",
+          "bloom_level": "Evaluate",
+          "lesson_ids": [
+            "bt-l5"
+          ],
+          "assessment_item_ids": [
+            "bt-a7"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        }
+      ],
+      "lesson_activities": [
+        {
+          "id": "bt-l1",
+          "title": "1. Read the revised taxonomy accurately",
+          "activity": {
+            "type": "decision",
+            "prompt": "A stakeholder asks you to label a routine record-entry task “Create” because it sounds more advanced. What should you do?",
+            "options": [
+              {
+                "id": "bt-d1-a",
+                "text": "Use Create on every objective.",
+                "feedback": "The label would overstate what the task requires.",
+                "isBest": false
+              },
+              {
+                "id": "bt-d1-b",
+                "text": "Classify the actual cognitive work; executing a specified entry procedure is generally Apply.",
+                "feedback": "Best response. Fit the category to the required action and context.",
+                "isBest": true
+              },
+              {
+                "id": "bt-d1-c",
+                "text": "Remove all objectives.",
+                "feedback": "Objectives are still useful for clarifying the intended performance.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "bt-k1",
+            "prompt": "Which list belongs to the 2001 revised cognitive taxonomy?",
+            "options": [
+              {
+                "id": "bt-k1-a",
+                "text": "Knowledge, Comprehension, Application, Analysis, Synthesis, Evaluation."
+              },
+              {
+                "id": "bt-k1-b",
+                "text": "Remember, Understand, Apply, Analyze, Evaluate, Create."
+              },
+              {
+                "id": "bt-k1-c",
+                "text": "Recall, Attend, Repeat, Reward, Pass, Certify."
+              }
+            ],
+            "correctOptionId": "bt-k1-b",
+            "rationale": "The revised list uses these six process categories; the first option uses original taxonomy labels."
+          }
+        },
+        {
+          "id": "bt-l2",
+          "title": "2. Classify the task, not just its verb",
+          "activity": {
+            "type": "decision",
+            "prompt": "A quiz says “Analyze this term” but asks learners to select its memorized definition. How should you review it?",
+            "options": [
+              {
+                "id": "bt-d2-a",
+                "text": "Call it Analyze because the prompt uses that word.",
+                "feedback": "The word does not create analytical demand.",
+                "isBest": false
+              },
+              {
+                "id": "bt-d2-b",
+                "text": "Call every multiple-choice item Remember.",
+                "feedback": "The response format alone does not determine cognitive demand; a case-based item can require reasoning.",
+                "isBest": false
+              },
+              {
+                "id": "bt-d2-c",
+                "text": "Classify the actual demand as recognition of a definition and revise if analysis is required.",
+                "feedback": "Best response. Examine the work required, then address any mismatch.",
+                "isBest": true
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "bt-k2",
+            "prompt": "A learner judges two plans against an explicit quality rubric. Which category best describes that task?",
+            "options": [
+              {
+                "id": "bt-k2-a",
+                "text": "Evaluate."
+              },
+              {
+                "id": "bt-k2-b",
+                "text": "Remember."
+              },
+              {
+                "id": "bt-k2-c",
+                "text": "Apply only because all work involves an action."
+              }
+            ],
+            "correctOptionId": "bt-k2-a",
+            "rationale": "Judgment against stated criteria is characteristic of Evaluate."
+          }
+        },
+        {
+          "id": "bt-l3",
+          "title": "3. Turn an intention into an observable objective",
+          "activity": {
+            "type": "decision",
+            "prompt": "Which objective is most ready to guide a case-based assessment?",
+            "options": [
+              {
+                "id": "bt-d3-a",
+                "text": "Appreciate excellent customer service.",
+                "feedback": "The intention needs observable evidence and clearer scope.",
+                "isBest": false
+              },
+              {
+                "id": "bt-d3-b",
+                "text": "Given the rule card and four ticket cases, assign priorities with at least three correct.",
+                "feedback": "Best response. Behavior, conditions, and criterion are explicit.",
+                "isBest": true
+              },
+              {
+                "id": "bt-d3-c",
+                "text": "Learn everything about ticketing quickly.",
+                "feedback": "This does not define the expected behavior or acceptable standard.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "bt-k3",
+            "prompt": "In “Given a rule card, classify four tickets with three correct,” what is the condition?",
+            "options": [
+              {
+                "id": "bt-k3-a",
+                "text": "Three correct."
+              },
+              {
+                "id": "bt-k3-b",
+                "text": "Classify."
+              },
+              {
+                "id": "bt-k3-c",
+                "text": "Given a rule card."
+              }
+            ],
+            "correctOptionId": "bt-k3-c",
+            "rationale": "The rule card is part of the conditions; classify is the behavior and three correct is the criterion."
+          }
+        },
+        {
+          "id": "bt-l4",
+          "title": "4. Align objective, practice, and evidence",
+          "activity": {
+            "type": "decision",
+            "prompt": "Your objective requires producing a new onboarding plan. The test asks learners to pick the best of three finished plans. What is the best revision?",
+            "options": [
+              {
+                "id": "bt-d4-a",
+                "text": "Keep the test and claim it proves creation.",
+                "feedback": "Selection does not demonstrate that the learner can independently produce a plan.",
+                "isBest": false
+              },
+              {
+                "id": "bt-d4-b",
+                "text": "Add more definitions to the same test.",
+                "feedback": "More recall items do not supply the missing production evidence.",
+                "isBest": false
+              },
+              {
+                "id": "bt-d4-c",
+                "text": "Ask learners to produce a plan and assess it against explicit criteria; retain plan comparisons as practice.",
+                "feedback": "Best response. The assessment now elicits the performance named by the objective.",
+                "isBest": true
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "bt-k4",
+            "prompt": "Which trio is best aligned to applying a routing procedure?",
+            "options": [
+              {
+                "id": "bt-k4-a",
+                "text": "Objective: route cases; practice: route worked and new cases; assessment: route another case using the procedure."
+              },
+              {
+                "id": "bt-k4-b",
+                "text": "Objective: route cases; practice: watch a branding video; assessment: name the logo color."
+              },
+              {
+                "id": "bt-k4-c",
+                "text": "Objective: create a procedure; practice: memorize queue names; assessment: recall one name."
+              }
+            ],
+            "correctOptionId": "bt-k4-a",
+            "rationale": "The first trio consistently elicits and supports the required routing performance."
+          }
+        },
+        {
+          "id": "bt-l5",
+          "title": "5. Review a small curriculum as an L&D partner",
+          "activity": {
+            "type": "decision",
+            "prompt": "A sponsor says an 80% terminology score proves readiness to triage unfamiliar cases. What should you recommend?",
+            "options": [
+              {
+                "id": "bt-d5-a",
+                "text": "Add realistic triage evidence before making the readiness claim.",
+                "feedback": "Best response. Readiness for case decisions needs evidence of those decisions.",
+                "isBest": true
+              },
+              {
+                "id": "bt-d5-b",
+                "text": "Accept the claim because the score is high.",
+                "feedback": "A high score on a different task does not establish the required performance.",
+                "isBest": false
+              },
+              {
+                "id": "bt-d5-c",
+                "text": "Make the terminology questions longer.",
+                "feedback": "Length does not repair the mismatch in cognitive demand.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "bt-k5",
+            "prompt": "What should a curriculum review prioritize?",
+            "options": [
+              {
+                "id": "bt-k5-a",
+                "text": "Using Create in every objective."
+              },
+              {
+                "id": "bt-k5-b",
+                "text": "Matching the required performance with practice and assessment evidence."
+              },
+              {
+                "id": "bt-k5-c",
+                "text": "Making every lesson equally long regardless of purpose."
+              }
+            ],
+            "correctOptionId": "bt-k5-b",
+            "rationale": "The review should establish a defensible relationship between what is promised, practiced, and assessed."
+          }
+        }
+      ],
+      "assessment": {
+        "passPercent": 75,
+        "questions": [
+          {
+            "id": "bt-a1",
+            "prompt": "Which category follows Evaluate in the revised taxonomy’s usual sequence?",
+            "options": [
+              {
+                "id": "bt-a1-a",
+                "text": "Synthesis."
+              },
+              {
+                "id": "bt-a1-b",
+                "text": "Create."
+              },
+              {
+                "id": "bt-a1-c",
+                "text": "Comprehension."
+              }
+            ],
+            "correctOptionId": "bt-a1-b",
+            "rationale": "The revised sequence ends with Evaluate and Create; Synthesis and Comprehension are original labels."
+          },
+          {
+            "id": "bt-a2",
+            "prompt": "A learner executes a supplied routing procedure on a ticket. What category best fits?",
+            "options": [
+              {
+                "id": "bt-a2-a",
+                "text": "Apply."
+              },
+              {
+                "id": "bt-a2-b",
+                "text": "Create."
+              },
+              {
+                "id": "bt-a2-c",
+                "text": "Remember only."
+              }
+            ],
+            "correctOptionId": "bt-a2-a",
+            "rationale": "Using the supplied procedure is Apply; no new procedure is being produced."
+          },
+          {
+            "id": "bt-a3",
+            "prompt": "A prompt says “Evaluate” but asks only for a memorized queue name. What should the reviewer conclude?",
+            "options": [
+              {
+                "id": "bt-a3-a",
+                "text": "The verb establishes Evaluate."
+              },
+              {
+                "id": "bt-a3-b",
+                "text": "All queue tasks are Create."
+              },
+              {
+                "id": "bt-a3-c",
+                "text": "The actual demand is factual recall or recognition, despite the label."
+              }
+            ],
+            "correctOptionId": "bt-a3-c",
+            "rationale": "Classification follows the cognitive work required, not a decorative verb."
+          },
+          {
+            "id": "bt-a4",
+            "prompt": "Which objective best specifies observable performance?",
+            "options": [
+              {
+                "id": "bt-a4-a",
+                "text": "Understand reporting."
+              },
+              {
+                "id": "bt-a4-b",
+                "text": "Given a report and a checklist, identify every missing required section."
+              },
+              {
+                "id": "bt-a4-c",
+                "text": "Become a strong professional."
+              }
+            ],
+            "correctOptionId": "bt-a4-b",
+            "rationale": "This objective names a behavior, a condition, and a criterion."
+          },
+          {
+            "id": "bt-a5",
+            "prompt": "A learner distinguishes common causes from unrelated details across several reports. Which category best fits?",
+            "options": [
+              {
+                "id": "bt-a5-a",
+                "text": "Analyze."
+              },
+              {
+                "id": "bt-a5-b",
+                "text": "Remember."
+              },
+              {
+                "id": "bt-a5-c",
+                "text": "Create, because there are several reports."
+              }
+            ],
+            "correctOptionId": "bt-a5-a",
+            "rationale": "Examining parts and their relationships is Analyze; quantity alone does not make a task Create."
+          },
+          {
+            "id": "bt-a6",
+            "prompt": "An objective requires designing a new process. Which evidence most directly supports it?",
+            "options": [
+              {
+                "id": "bt-a6-a",
+                "text": "A terminology score."
+              },
+              {
+                "id": "bt-a6-b",
+                "text": "A satisfaction rating."
+              },
+              {
+                "id": "bt-a6-c",
+                "text": "A learner-produced process assessed against explicit criteria."
+              }
+            ],
+            "correctOptionId": "bt-a6-c",
+            "rationale": "Creation requires evidence of the produced artifact, not merely recognition or satisfaction."
+          },
+          {
+            "id": "bt-a7",
+            "prompt": "Staff must judge escalation proposals against impact, staffing, and response-time criteria. Which complete objective–practice–assessment plan best fits?",
+            "options": [
+              {
+                "id": "bt-a7-a",
+                "text": "Objective: judge proposals against the three criteria. Practice: memorize queue names. Assessment: recall the definition of escalation."
+              },
+              {
+                "id": "bt-a7-b",
+                "text": "Objective: judge proposals against the three criteria. Practice: compare proposals using those criteria and receive feedback. Assessment: select and justify the strongest judgment of a new proposal using the same criteria."
+              },
+              {
+                "id": "bt-a7-c",
+                "text": "Objective: produce a new escalation workflow. Practice: watch a welcome video. Assessment: rate satisfaction with the video."
+              }
+            ],
+            "correctOptionId": "bt-a7-b",
+            "rationale": "The second plan aligns the required judgment, criterion-based practice, and evidence from a new proposal. The first substitutes recall for judgment; the third promises creation but assesses satisfaction.",
+            "objectiveIds": [
+              "bt-o4"
+            ]
+          },
+          {
+            "id": "bt-a8",
+            "prompt": "A learner recognizes when their own understanding is weak and selects a checking strategy. Which knowledge dimension is most directly involved?",
+            "options": [
+              {
+                "id": "bt-a8-a",
+                "text": "Metacognitive."
+              },
+              {
+                "id": "bt-a8-b",
+                "text": "Factual only."
+              },
+              {
+                "id": "bt-a8-c",
+                "text": "A seventh cognitive-process category called Confidence."
+              }
+            ],
+            "correctOptionId": "bt-a8-a",
+            "rationale": "Metacognitive knowledge concerns awareness and regulation of one’s own thinking; it is a knowledge dimension, not a seventh process category."
+          }
+        ],
+        "requiredCorrect": 6,
+        "estimatedMinutes": 5
+      },
+      "criterion": "6/8 correct; configured passPercent 75%; actual first attainable passing score 75.0%.",
+      "completion_criteria": "Course sequence, review and retry behavior must be verified in the implemented runtime; assessment threshold is specified separately.",
+      "performance_task_rubric": null,
+      "assessment_limit": "This selected-response assessment checks classification and design decisions. Optional written pauses are unscored self-practice, so completion does not establish independent course-design proficiency.",
+      "design_notes": {
+        "analyze": "Fictional need: a triage course promises application or judgment but tests recognition. Audience includes designers, subject experts, and managers who need a shared review language.",
+        "design": "25 minutes: five lessons at about four minutes and a five-minute assessment. Objectives 1–4 map to items 1/2/3/5/8, 4, 6, and 7 respectively. Objectives focus on selecting and analyzing design choices, not claiming independently demonstrated creation.",
+        "develop": "Original case decisions, worked examples, five formative checks, eight final items, and a portable job aid. Use semantic headings, keyboard-operable options, visible focus, and accessible feedback announcements.",
+        "implement": "Recommended lesson order 1–5. Permit review and retries. Passing is at least 6 of 8 correct (75%); show rationales and suggested review lessons after submission. Do not award a credential based on this sample.",
+        "evaluate": "Pilot timing and question clarity, check item-to-objective mapping, and ask reviewers to explain why an assessment is aligned. For production design competence, require a learner-authored objective–practice–assessment plan scored with a rubric.",
+        "assessmentLimit": "This selected-response assessment checks classification and design decisions. Optional written pauses are unscored self-practice, so completion does not establish independent course-design proficiency.",
+        "sourcesReviewed": "2026-10-09. Conceptual sources are cited; scenarios, prompts, feedback, and job aids are original."
+      },
+      "assumption_status": "Authored portfolio persona and fictional performance need; no baseline learner research or workplace validation performed."
+    },
+    {
+      "id": "confluence-cloud",
+      "title": "Confluence Cloud: Publish a Runbook People Can Use",
+      "source_file": "tools/confluence-cloud.json",
+      "source_sha256": "8aa4c64027385e9d30c3a128dcc026f31d32353c221a4a063f1f51da1c75a487",
+      "learner_segment": "New team knowledge owners, service coordinators, and support leads.",
+      "performance_problem": "staff follow stale instructions, cannot find the current page, or receive links they cannot open.",
+      "objectives": [
+        {
+          "id": "O1",
+          "text": "Choose a page location and structure that support a specific user task.",
+          "bloomLevel": "Apply"
+        },
+        {
+          "id": "O2",
+          "text": "Transform ambiguous notes into a testable procedure with stop and escalation conditions.",
+          "bloomLevel": "Create"
+        },
+        {
+          "id": "O3",
+          "text": "Check intended audience against space, content, and inherited access constraints.",
+          "bloomLevel": "Analyze"
+        },
+        {
+          "id": "O4",
+          "text": "Publish and verify a reviewed page, then maintain it with ownership and review evidence.",
+          "bloomLevel": "Evaluate"
+        }
+      ],
+      "objective_alignment": [
+        {
+          "objective_id": "O1",
+          "objective_text": "Choose a page location and structure that support a specific user task.",
+          "bloom_level": "Apply",
+          "lesson_ids": [
+            "co-1"
+          ],
+          "assessment_item_ids": [
+            "co-a1"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "O2",
+          "objective_text": "Transform ambiguous notes into a testable procedure with stop and escalation conditions.",
+          "bloom_level": "Create",
+          "lesson_ids": [
+            "co-2"
+          ],
+          "assessment_item_ids": [
+            "co-a2",
+            "co-a3"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": [
+            "Learner-authored practice + performanceTask rubric"
+          ]
+        },
+        {
+          "objective_id": "O3",
+          "objective_text": "Check intended audience against space, content, and inherited access constraints.",
+          "bloom_level": "Analyze",
+          "lesson_ids": [
+            "co-3"
+          ],
+          "assessment_item_ids": [
+            "co-a4"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "O4",
+          "objective_text": "Publish and verify a reviewed page, then maintain it with ownership and review evidence.",
+          "bloom_level": "Evaluate",
+          "lesson_ids": [
+            "co-4",
+            "co-5"
+          ],
+          "assessment_item_ids": [
+            "co-a5",
+            "co-a6"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        }
+      ],
+      "lesson_activities": [
+        {
+          "id": "co-1",
+          "title": "Define the reader’s job and find the home",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "You find an existing current runbook with the same scope. What should you do?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Create an unrelated copy with a similar title.",
+                "feedback": "Competing pages make it harder to identify the authoritative instructions.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Review and update the canonical page through its ownership process.",
+                "feedback": "Correct. Preserve one clear source when its scope still fits.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Delete it without reading.",
+                "feedback": "You have not established that it should be removed or that you may delete it.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "co-k1",
+            "prompt": "Why use a page rather than a live doc for this sample?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The team wants a deliberate publishing checkpoint"
+              },
+              {
+                "id": "b",
+                "text": "Live docs cannot contain text"
+              },
+              {
+                "id": "c",
+                "text": "Pages automatically prove approval"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "The content choice supports the requested workflow; publishing does not itself prove review or approval."
+          }
+        },
+        {
+          "id": "co-2",
+          "title": "Write a procedure with observable decisions",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "Which instruction best replaces “Ask Morgan”?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Ask whoever is around.",
+                "feedback": "The owner and evidence requirements remain unclear.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "At the stated stop condition, contact the named support role with job ID, status, elapsed time, and non-sensitive error code.",
+                "feedback": "Correct. The reader knows when to stop, where to go, and what evidence to provide.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Keep rerunning until it works.",
+                "feedback": "Repeated jobs may create additional problems and ignore the stop condition.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "co-k2",
+            "prompt": "The demo job is Processing at 12 minutes. What does the sample procedure require?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Restart repeatedly"
+              },
+              {
+                "id": "b",
+                "text": "Use the stated escalation route with the specified evidence"
+              },
+              {
+                "id": "c",
+                "text": "Wait indefinitely"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "The invented 10-minute threshold has been exceeded; follow the documented stop condition."
+          }
+        },
+        {
+          "id": "co-3",
+          "title": "Check access before distributing the link",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "An analyst cannot open the page because its parent is restricted. What next?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Make the page public.",
+                "feedback": "That broadens access without establishing that public exposure is appropriate.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Send the same link again.",
+                "feedback": "A repeated URL cannot resolve a permission boundary.",
+                "isBest": false
+              },
+              {
+                "id": "c",
+                "text": "Have the authorized owner inspect the location and access constraints, then verify with an intended reader.",
+                "feedback": "Correct. Resolve the actual access issue through the approved process.",
+                "isBest": true
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "co-k3",
+            "prompt": "Does sending a page link guarantee the recipient can read it?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Yes"
+              },
+              {
+                "id": "b",
+                "text": "Only if its title is descriptive"
+              },
+              {
+                "id": "c",
+                "text": "No; their effective access still matters"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "Links point to content; they do not automatically grant all required permissions."
+          }
+        },
+        {
+          "id": "co-4",
+          "title": "Review, publish, and test the reader experience",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "Your edit is saved, but the reader sees the old instructions. What should you check first?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Whether the intended page changes have been published or updated.",
+                "feedback": "Correct. Saving draft changes and publishing the reader-facing version are different steps.",
+                "isBest": true
+              },
+              {
+                "id": "b",
+                "text": "Whether the reader can lend you their password.",
+                "feedback": "Never request another person’s credentials.",
+                "isBest": false
+              },
+              {
+                "id": "c",
+                "text": "Whether the title needs more exclamation marks.",
+                "feedback": "That does not address which version is visible.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "co-k4",
+            "prompt": "Which review most directly tests usability?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Counting how many headings exist"
+              },
+              {
+                "id": "b",
+                "text": "Asking a new reader to choose actions from realistic cases using only the draft"
+              },
+              {
+                "id": "c",
+                "text": "Having the author say the page looks good"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Observed reader performance reveals ambiguity that an author may overlook."
+          }
+        },
+        {
+          "id": "co-5",
+          "title": "Maintain the canonical answer",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "The threshold changes to 15 minutes. Which update plan is best?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Change only the page title.",
+                "feedback": "The actual decision instructions would remain stale.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Update all affected steps and examples, retest the decision cases, then publish the reviewed change.",
+                "feedback": "Correct. Consistent content and renewed testing support safe reuse.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Leave 10 and 15 in different sections so readers can choose.",
+                "feedback": "Contradictory instructions force the reader to guess.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "co-k5",
+            "prompt": "What should trigger a runbook review before its scheduled date?",
+            "options": [
+              {
+                "id": "a",
+                "text": "An underlying workflow change"
+              },
+              {
+                "id": "b",
+                "text": "A colleague’s preference for another font"
+              },
+              {
+                "id": "c",
+                "text": "Nothing; only the calendar matters"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "A material process change can make the instructions wrong immediately."
+          }
+        }
+      ],
+      "assessment": {
+        "passPercent": 80,
+        "questions": [
+          {
+            "id": "co-a1",
+            "prompt": "A current page already covers the same procedure. What is the strongest approach?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Create three duplicates"
+              },
+              {
+                "id": "b",
+                "text": "Maintain the canonical page through its owner"
+              },
+              {
+                "id": "c",
+                "text": "Delete the existing page immediately"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "A clear authoritative destination reduces contradictory guidance."
+          },
+          {
+            "id": "co-a2",
+            "prompt": "Which step is most usable?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Check stuff"
+              },
+              {
+                "id": "b",
+                "text": "Do the usual fix"
+              },
+              {
+                "id": "c",
+                "text": "Match the job ID, read the status, and apply the stated decision rule"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "It provides an action, observation, and decision basis."
+          },
+          {
+            "id": "co-a3",
+            "prompt": "In the original sample rule, Processing has lasted 12 minutes. What should the learner do?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Use the specified escalation route"
+              },
+              {
+                "id": "b",
+                "text": "Rerun repeatedly"
+              },
+              {
+                "id": "c",
+                "text": "Download any file available"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "The sample threshold is 10 minutes and the prescribed stop condition is met."
+          },
+          {
+            "id": "co-a4",
+            "prompt": "The page sits under a restricted parent. What should happen before distribution?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Assume sharing the URL grants access"
+              },
+              {
+                "id": "b",
+                "text": "Verify intended-reader access and resolve constraints through the authorized owner"
+              },
+              {
+                "id": "c",
+                "text": "Make everything public"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Access must be checked in its actual hierarchy and policy context."
+          },
+          {
+            "id": "co-a5",
+            "prompt": "What proves the reader-facing page includes your revision?",
+            "options": [
+              {
+                "id": "a",
+                "text": "A saved draft exists"
+              },
+              {
+                "id": "b",
+                "text": "You typed the change"
+              },
+              {
+                "id": "c",
+                "text": "The change was published and verified in the rendered reader view"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "Publication and verification establish what readers can actually see."
+          },
+          {
+            "id": "co-a6",
+            "prompt": "The process changes next week, before the review date. What is appropriate?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Wait for the date regardless"
+              },
+              {
+                "id": "b",
+                "text": "Review and update affected instructions now through the owner"
+              },
+              {
+                "id": "c",
+                "text": "Keep both contradictory procedures"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Process changes are meaningful review triggers independent of the calendar."
+          }
+        ],
+        "requiredCorrect": 5
+      },
+      "criterion": "5/6 correct; configured passPercent 80%; actual first attainable passing score 83.3%.",
+      "completion_criteria": "Course sequence, review and retry behavior must be verified in the implemented runtime; assessment threshold is specified separately.",
+      "performance_task_rubric": "The create-level O2 is practiced through the original mini-runbook in co-2. Score one point each for (1) purpose and DEMO/job-ID prerequisite, (2) ordered observable actions, (3) complete branches for Complete, Processing under 5, and Failed/Processing at 5, and (4) explicit stop, support role, evidence packet, and no unauthorized rerun. Suggested practice criterion: 4/4. Use the exercise-specific 5-minute rule, not the main case’s 10-minute rule. A facilitator or learner scores the artifact; the quiz assesses decision recognition, not independent authoring mastery.",
+      "assessment_limit": "Passing the multiple-choice quiz does not demonstrate independent writing skill, production-system proficiency, or workplace mastery. Review the learner-authored artifact with its rubric and separately observe an authorized sandbox task.",
+      "design_notes": {
+        "analysis": {
+          "performanceProblem": "staff follow stale instructions, cannot find the current page, or receive links they cannot open.",
+          "assumptions": "Role-specific novice users; no baseline learner research or client validation has been performed. All organizations, examples, policies, and results are synthetic.",
+          "needsValidation": "Before workplace deployment, interview a process owner and two target learners, confirm common errors, access roles, local vocabulary, and policy requirements."
+        },
+        "design": {
+          "strategy": "Task-centered worked example followed by progressively independent decision practice. Feedback explains consequences, not just correctness.",
+          "timingMinutes": {
+            "orientationAndObjectives": 2,
+            "lessonsAndPractice": 17,
+            "assessment": 5,
+            "jobAidAndTransfer": 1,
+            "learnerAuthoredPractice": 3
+          },
+          "alignment": {
+            "O1": [
+              "co-1",
+              "co-a1"
+            ],
+            "O2": [
+              "co-2",
+              "co-a2",
+              "co-a3",
+              "Learner-authored practice + performanceTask rubric"
+            ],
+            "O3": [
+              "co-3",
+              "co-a4"
+            ],
+            "O4": [
+              "co-4",
+              "co-5",
+              "co-a5",
+              "co-a6"
+            ]
+          },
+          "mastery": "80% of six equally weighted questions requires at least five correct (83.3%). A portfolio knowledge check is not authorization to perform production work.",
+          "durationEstimate": "Estimated 28 minutes including a three-minute learner-authored task; not pilot-tested. Learner pace varies."
+        },
+        "development": {
+          "artifact": "Five original text-led lessons, five decision scenarios with option-specific feedback, five formative checks, six scored questions with rationales, and a concise job aid.",
+          "accessibility": "Use semantic headings, keyboard-operable choices, visible focus, text feedback, and readable contrast in the delivery player. Do not rely on color or timing alone. Test the implemented player with keyboard and screen reader before release.",
+          "sourcePolicy": "Official product docs establish limited platform facts. Synthetic policies, examples, case decisions, and instructional writing are original. No vendor screenshots, course assets, client data, or claimed client results are included.",
+          "versionNote": "Source review date: 2026-10-09. Labels, permissions, configuration, and subscriptions can change; this is not a pixel-perfect application simulation."
+        },
+        "implementation": {
+          "delivery": "Self-paced public portfolio sample. No sign-in, purchase, production-system action, or live data is required.",
+          "launchChecks": "Validate JSON and option keys; test choice feedback, score calculation, retry, progress navigation, links, mobile readability, and accessibility in the final player. A content file alone does not establish runtime behavior.",
+          "facilitatorOption": "Ask learners to explain the evidence behind one incorrect choice and identify the equivalent role or process in their own organization without sharing confidential details."
+        },
+        "evaluation": {
+          "formative": "Track scenario misconceptions during a pilot; ask learners to restate the next action in their own words. Use feedback for revision, not ranking.",
+          "summative": "Six selected-response questions sampling the taught decisions; show rationale after submission. On nonmastery, recommend the linked topic and a fresh attempt.",
+          "transfer": "In an authorized sandbox, observe one complete role task against the job aid. Suggested pilot measures: correct record or destination, sufficient evidence, correct decision, and verified outcome.",
+          "honesty": "No learning gains, completion rates, client impact, certifications, or workplace outcomes have been measured or claimed.",
+          "masteryLimit": "Passing the multiple-choice quiz does not demonstrate independent writing skill, production-system proficiency, or workplace mastery. Review the learner-authored artifact with its rubric and separately observe an authorized sandbox task."
+        },
+        "performanceTask": "The create-level O2 is practiced through the original mini-runbook in co-2. Score one point each for (1) purpose and DEMO/job-ID prerequisite, (2) ordered observable actions, (3) complete branches for Complete, Processing under 5, and Failed/Processing at 5, and (4) explicit stop, support role, evidence packet, and no unauthorized rerun. Suggested practice criterion: 4/4. Use the exercise-specific 5-minute rule, not the main case’s 10-minute rule. A facilitator or learner scores the artifact; the quiz assesses decision recognition, not independent authoring mastery."
+      },
+      "assumption_status": "Authored portfolio persona and fictional performance need; no baseline learner research or workplace validation performed."
+    },
+    {
+      "id": "jira-cloud",
+      "title": "Jira Cloud: Turn a Bug Report into Ready-to-Test Work",
+      "source_file": "tools/jira-cloud.json",
+      "source_sha256": "e18f82b4ce14a027fa2d7cef651d5744d5c57ac3eaf180ab226af82fe2b4dfac",
+      "learner_segment": "New product-support analysts and delivery-team contributors.",
+      "performance_problem": "vague duplicate tickets and premature Done statuses create avoidable clarification and rework.",
+      "objectives": [
+        {
+          "id": "O1",
+          "text": "Distinguish a duplicate report from a new defect using behavior and context.",
+          "bloomLevel": "Analyze"
+        },
+        {
+          "id": "O2",
+          "text": "Construct a concise defect record with reproducible steps and observable acceptance criteria.",
+          "bloomLevel": "Apply"
+        },
+        {
+          "id": "O3",
+          "text": "Select an evidence-supported ownership and workflow action.",
+          "bloomLevel": "Evaluate"
+        },
+        {
+          "id": "O4",
+          "text": "Confirm completion against acceptance criteria before closing the loop.",
+          "bloomLevel": "Evaluate"
+        }
+      ],
+      "objective_alignment": [
+        {
+          "objective_id": "O1",
+          "objective_text": "Distinguish a duplicate report from a new defect using behavior and context.",
+          "bloom_level": "Analyze",
+          "lesson_ids": [
+            "ji-1"
+          ],
+          "assessment_item_ids": [
+            "ji-a1"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "O2",
+          "objective_text": "Construct a concise defect record with reproducible steps and observable acceptance criteria.",
+          "bloom_level": "Apply",
+          "lesson_ids": [
+            "ji-2",
+            "ji-3"
+          ],
+          "assessment_item_ids": [
+            "ji-a2",
+            "ji-a3",
+            "ji-a4"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": [
+            "Learner-authored practice + performanceTask rubric"
+          ]
+        },
+        {
+          "objective_id": "O3",
+          "objective_text": "Select an evidence-supported ownership and workflow action.",
+          "bloom_level": "Evaluate",
+          "lesson_ids": [
+            "ji-3",
+            "ji-4"
+          ],
+          "assessment_item_ids": [
+            "ji-a5"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "O4",
+          "objective_text": "Confirm completion against acceptance criteria before closing the loop.",
+          "bloom_level": "Evaluate",
+          "lesson_ids": [
+            "ji-5"
+          ],
+          "assessment_item_ids": [
+            "ji-a6"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        }
+      ],
+      "lesson_activities": [
+        {
+          "id": "ji-1",
+          "title": "Search before creating",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "HBR-84 has the same dataset, build, and missing rows. What is the best next step?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Create a new item immediately.",
+                "feedback": "This risks duplicate work before checking the existing record.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Inspect HBR-84 and add relevant evidence if it is the same defect.",
+                "feedback": "Correct. Compare behavior and context, then maintain a coherent record.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Delete HBR-71.",
+                "feedback": "A different PDF defect can remain valid; similarity is not deletion authority.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "ji-k1",
+            "prompt": "Which evidence most strongly suggests a duplicate?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The same word export"
+              },
+              {
+                "id": "b",
+                "text": "Matching behavior, context, and affected build"
+              },
+              {
+                "id": "c",
+                "text": "The oldest creation date"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Comparable symptoms and conditions are stronger evidence than a shared keyword."
+          }
+        },
+        {
+          "id": "ji-2",
+          "title": "Write a record another person can reproduce",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "Which evidence should accompany the sample defect?",
+            "options": [
+              {
+                "id": "a",
+                "text": "A full production customer export.",
+                "feedback": "That can disclose unnecessary private data.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "A synthetic before/after code and reproduction steps.",
+                "feedback": "Correct. It demonstrates the behavior with minimal, safe evidence.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Only the phrase export broken.",
+                "feedback": "The team still lacks a reproducible problem definition.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "ji-k2",
+            "prompt": "Why inspect the raw CSV rather than only a spreadsheet cell?",
+            "options": [
+              {
+                "id": "a",
+                "text": "To distinguish source output from display formatting"
+              },
+              {
+                "id": "b",
+                "text": "To make the ticket longer"
+              },
+              {
+                "id": "c",
+                "text": "To avoid describing the environment"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "A spreadsheet may format identifiers differently; the raw output isolates the observed behavior."
+          }
+        },
+        {
+          "id": "ji-3",
+          "title": "Make acceptance and ownership explicit",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "Which acceptance criterion is testable?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The export should be better.",
+                "feedback": "Better is subjective and gives no pass/fail test.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Export DEMO-7 and verify raw CSV preserves 00127 and 00008 exactly.",
+                "feedback": "Correct. A tester can observe the output and make a repeatable decision.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Finish this as soon as possible.",
+                "feedback": "That expresses urgency, not a verification criterion.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "ji-k3",
+            "prompt": "Who should set priority when local policy reserves it for triage?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Any person who wants faster service"
+              },
+              {
+                "id": "b",
+                "text": "The authorized triager using documented impact and urgency"
+              },
+              {
+                "id": "c",
+                "text": "Nobody; every item must be highest priority"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Follow the agreed role boundary and provide evidence instead of silently overriding it."
+          }
+        },
+        {
+          "id": "ji-4",
+          "title": "Represent progress and blockers honestly",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "Code is complete, but acceptance checks have not run. What is the best handoff?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Mark Done to improve the board.",
+                "feedback": "The stated completion evidence is missing.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Use the approved test-ready transition with build and test instructions.",
+                "feedback": "Correct. The state and handoff reflect actual progress.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Delete the acceptance criteria.",
+                "feedback": "That removes the standard for completion rather than meeting it.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "ji-k4",
+            "prompt": "A transition is unavailable. What should a contributor do?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Bypass it using another account"
+              },
+              {
+                "id": "b",
+                "text": "Consult the configured process or authorized administrator"
+              },
+              {
+                "id": "c",
+                "text": "Assume Jira is broken and duplicate the item"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Transitions depend on workflow configuration and permissions."
+          }
+        },
+        {
+          "id": "ji-5",
+          "title": "Close with evidence, reopen with specificity",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "The second acceptance case still fails. Choose your update.",
+            "options": [
+              {
+                "id": "a",
+                "text": "All fixed; the main example passed.",
+                "feedback": "That hides a known failure.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Leave no comment and wait.",
+                "feedback": "The next owner will not know what failed or why.",
+                "isBest": false
+              },
+              {
+                "id": "c",
+                "text": "Record the failing case and return it through the approved workflow.",
+                "feedback": "Correct. Specific evidence supports an actionable continuation.",
+                "isBest": true
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "ji-k5",
+            "prompt": "What supports completion in this sample?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Coding ended"
+              },
+              {
+                "id": "b",
+                "text": "Every stated acceptance check and required review passed"
+              },
+              {
+                "id": "c",
+                "text": "The ticket has been open for a week"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Completion is evidence-based, not based only on effort or age."
+          }
+        }
+      ],
+      "assessment": {
+        "passPercent": 80,
+        "questions": [
+          {
+            "id": "ji-a1",
+            "prompt": "Two reports mention export. What determines whether you should combine them?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Matching underlying behavior and context"
+              },
+              {
+                "id": "b",
+                "text": "Their titles have the same length"
+              },
+              {
+                "id": "c",
+                "text": "Both requesters are impatient"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "Compare reproducible behavior, not just wording."
+          },
+          {
+            "id": "ji-a2",
+            "prompt": "Which is the strongest defect title?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Broken again"
+              },
+              {
+                "id": "b",
+                "text": "CSV export removes leading zeros from product codes"
+              },
+              {
+                "id": "c",
+                "text": "Urgent!!!"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "The title identifies the affected function and observable defect."
+          },
+          {
+            "id": "ji-a3",
+            "prompt": "Which phrase is a hypothesis rather than an observation?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Raw CSV shows 127"
+              },
+              {
+                "id": "b",
+                "text": "Source code is 00127"
+              },
+              {
+                "id": "c",
+                "text": "The serializer must be defective"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "The proposed cause is not established by the output alone."
+          },
+          {
+            "id": "ji-a4",
+            "prompt": "Which acceptance criterion enables a repeatable check?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Looks right"
+              },
+              {
+                "id": "b",
+                "text": "Preserve 00127 exactly in raw CSV for DEMO-7"
+              },
+              {
+                "id": "c",
+                "text": "Make the user happy"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "It specifies the fixture, output, and expected value."
+          },
+          {
+            "id": "ji-a5",
+            "prompt": "The fix awaits testing. Which sample state is appropriate when its prerequisites are met?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Done"
+              },
+              {
+                "id": "b",
+                "text": "Archived"
+              },
+              {
+                "id": "c",
+                "text": "Ready for Test"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "The sample separates implementation from verification; use the local equivalent."
+          },
+          {
+            "id": "ji-a6",
+            "prompt": "Five of six required checks pass. What next?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Report the failed check and continue through the agreed workflow"
+              },
+              {
+                "id": "b",
+                "text": "Mark Done because most checks pass"
+              },
+              {
+                "id": "c",
+                "text": "Remove the last check"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "A known unmet criterion needs an explicit resolution, not silent closure."
+          }
+        ],
+        "requiredCorrect": 5
+      },
+      "criterion": "5/6 correct; configured passPercent 80%; actual first attainable passing score 83.3%.",
+      "completion_criteria": "Course sequence, review and retry behavior must be verified in the implemented runtime; assessment threshold is specified separately.",
+      "performance_task_rubric": "The construction element of O2 is practiced through the original defect draft in ji-2. Score one point each for (1) title states Pending filter returns no rows, (2) environment and DEMO-9 reproduction steps, (3) expected 4 versus actual 0 with repeatability, and (4) two observable criteria, such as Pending returns exactly its 4 records and clearing the filter returns all 14. Suggested practice criterion: 4/4 and no invented root cause or private data. A facilitator or learner uses the rubric; quiz items assess recognition, not independent record-construction mastery.",
+      "assessment_limit": "Passing the multiple-choice quiz does not demonstrate independent writing skill, production-system proficiency, or workplace mastery. Review the learner-authored artifact with its rubric and separately observe an authorized sandbox task.",
+      "design_notes": {
+        "analysis": {
+          "performanceProblem": "vague duplicate tickets and premature Done statuses create avoidable clarification and rework.",
+          "assumptions": "Role-specific novice users; no baseline learner research or client validation has been performed. All organizations, examples, policies, and results are synthetic.",
+          "needsValidation": "Before workplace deployment, interview a process owner and two target learners, confirm common errors, access roles, local vocabulary, and policy requirements."
+        },
+        "design": {
+          "strategy": "Task-centered worked example followed by progressively independent decision practice. Feedback explains consequences, not just correctness.",
+          "timingMinutes": {
+            "orientationAndObjectives": 2,
+            "lessonsAndPractice": 17,
+            "assessment": 5,
+            "jobAidAndTransfer": 1,
+            "learnerAuthoredPractice": 3
+          },
+          "alignment": {
+            "O1": [
+              "ji-1",
+              "ji-a1"
+            ],
+            "O2": [
+              "ji-2",
+              "ji-3",
+              "ji-a2",
+              "ji-a3",
+              "ji-a4",
+              "Learner-authored practice + performanceTask rubric"
+            ],
+            "O3": [
+              "ji-3",
+              "ji-4",
+              "ji-a5"
+            ],
+            "O4": [
+              "ji-5",
+              "ji-a6"
+            ]
+          },
+          "mastery": "80% of six equally weighted questions requires at least five correct (83.3%). A portfolio knowledge check is not authorization to perform production work.",
+          "durationEstimate": "Estimated 28 minutes including a three-minute learner-authored task; not pilot-tested. Learner pace varies."
+        },
+        "development": {
+          "artifact": "Five original text-led lessons, five decision scenarios with option-specific feedback, five formative checks, six scored questions with rationales, and a concise job aid.",
+          "accessibility": "Use semantic headings, keyboard-operable choices, visible focus, text feedback, and readable contrast in the delivery player. Do not rely on color or timing alone. Test the implemented player with keyboard and screen reader before release.",
+          "sourcePolicy": "Official product docs establish limited platform facts. Synthetic policies, examples, case decisions, and instructional writing are original. No vendor screenshots, course assets, client data, or claimed client results are included.",
+          "versionNote": "Source review date: 2026-10-09. Labels, permissions, configuration, and subscriptions can change; this is not a pixel-perfect application simulation."
+        },
+        "implementation": {
+          "delivery": "Self-paced public portfolio sample. No sign-in, purchase, production-system action, or live data is required.",
+          "launchChecks": "Validate JSON and option keys; test choice feedback, score calculation, retry, progress navigation, links, mobile readability, and accessibility in the final player. A content file alone does not establish runtime behavior.",
+          "facilitatorOption": "Ask learners to explain the evidence behind one incorrect choice and identify the equivalent role or process in their own organization without sharing confidential details."
+        },
+        "evaluation": {
+          "formative": "Track scenario misconceptions during a pilot; ask learners to restate the next action in their own words. Use feedback for revision, not ranking.",
+          "summative": "Six selected-response questions sampling the taught decisions; show rationale after submission. On nonmastery, recommend the linked topic and a fresh attempt.",
+          "transfer": "In an authorized sandbox, observe one complete role task against the job aid. Suggested pilot measures: correct record or destination, sufficient evidence, correct decision, and verified outcome.",
+          "honesty": "No learning gains, completion rates, client impact, certifications, or workplace outcomes have been measured or claimed.",
+          "masteryLimit": "Passing the multiple-choice quiz does not demonstrate independent writing skill, production-system proficiency, or workplace mastery. Review the learner-authored artifact with its rubric and separately observe an authorized sandbox task."
+        },
+        "performanceTask": "The construction element of O2 is practiced through the original defect draft in ji-2. Score one point each for (1) title states Pending filter returns no rows, (2) environment and DEMO-9 reproduction steps, (3) expected 4 versus actual 0 with repeatability, and (4) two observable criteria, such as Pending returns exactly its 4 records and clearing the filter returns all 14. Suggested practice criterion: 4/4 and no invented root cause or private data. A facilitator or learner uses the rubric; quiz items assess recognition, not independent record-construction mastery."
+      },
+      "assumption_status": "Authored portfolio persona and fictional performance need; no baseline learner research or workplace validation performed."
+    },
+    {
+      "id": "sap-fieldglass",
+      "title": "SAP Fieldglass: Review Time Sheets with Confidence",
+      "source_file": "tools/sap-fieldglass.json",
+      "source_sha256": "fd3e8038b023a95f5e8799362c15cff5bbf10616687d3bf4c68bee21c1eb99f6",
+      "learner_segment": "New buyer-side contingent-workforce supervisors who approve submitted time sheets.",
+      "performance_problem": "approving the weekly total without checking daily evidence can delay correction and invoicing.",
+      "objectives": [
+        {
+          "id": "O1",
+          "text": "Select the correct submitted time sheet using worker, assignment, and period identifiers.",
+          "bloomLevel": "Apply"
+        },
+        {
+          "id": "O2",
+          "text": "Reconcile a submitted standard time sheet against daily evidence and a supplied coding rule.",
+          "bloomLevel": "Analyze"
+        },
+        {
+          "id": "O3",
+          "text": "Choose approval, rejection, or escalation and write an actionable reason.",
+          "bloomLevel": "Evaluate"
+        },
+        {
+          "id": "O4",
+          "text": "Verify the workflow outcome and recognize when an invoiced record needs a revision process.",
+          "bloomLevel": "Apply"
+        }
+      ],
+      "objective_alignment": [
+        {
+          "objective_id": "O1",
+          "objective_text": "Select the correct submitted time sheet using worker, assignment, and period identifiers.",
+          "bloom_level": "Apply",
+          "lesson_ids": [
+            "fg-1"
+          ],
+          "assessment_item_ids": [
+            "fg-a1"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "O2",
+          "objective_text": "Reconcile a submitted standard time sheet against daily evidence and a supplied coding rule.",
+          "bloom_level": "Analyze",
+          "lesson_ids": [
+            "fg-2"
+          ],
+          "assessment_item_ids": [
+            "fg-a2",
+            "fg-a3"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        },
+        {
+          "objective_id": "O3",
+          "objective_text": "Choose approval, rejection, or escalation and write an actionable reason.",
+          "bloom_level": "Evaluate",
+          "lesson_ids": [
+            "fg-3"
+          ],
+          "assessment_item_ids": [
+            "fg-a4"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": [
+            "Learner-authored practice + performanceTask rubric"
+          ]
+        },
+        {
+          "objective_id": "O4",
+          "objective_text": "Verify the workflow outcome and recognize when an invoiced record needs a revision process.",
+          "bloom_level": "Apply",
+          "lesson_ids": [
+            "fg-4",
+            "fg-5"
+          ],
+          "assessment_item_ids": [
+            "fg-a5",
+            "fg-a6"
+          ],
+          "mapping_basis": "Authored objectiveIds/designNotes alignment; learning-theory lesson links are editorial traceability inferred from lesson content.",
+          "additional_evidence": []
+        }
+      ],
+      "lesson_activities": [
+        {
+          "id": "fg-1",
+          "title": "Start with the right record",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "Which record should you open for this request?",
+            "options": [
+              {
+                "id": "a",
+                "text": "TS-099 because the name and week match.",
+                "feedback": "The assignment differs. Name and period alone do not establish the correct record.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "TS-104 because worker, assignment, and week match.",
+                "feedback": "Correct. You have matched all three identifiers before reviewing the details.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Whichever record appears first.",
+                "feedback": "Sorting is not evidence of identity or approval authority.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "fg-k1",
+            "prompt": "Which combination identifies this review target?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Worker name only"
+              },
+              {
+                "id": "b",
+                "text": "Weekly total and supplier"
+              },
+              {
+                "id": "c",
+                "text": "Worker, assignment, and period"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "The review request identifies all three. Verify status and authority next."
+          }
+        },
+        {
+          "id": "fg-2",
+          "title": "Reconcile daily detail, not only totals",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "The weekly total is corrected to 38, but Wednesday still shows 8 DEL. What now?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Approve because the weekly total matches.",
+                "feedback": "The total now matches, but coding still conflicts with the evidence.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Request Wednesday’s 6 DEL plus 2 TRN correction.",
+                "feedback": "Correct. Accuracy includes allocation as well as total hours.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "Change all days to TRN.",
+                "feedback": "That replaces one error with several unsupported entries.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "fg-k2",
+            "prompt": "What is the verified coding breakdown?",
+            "options": [
+              {
+                "id": "a",
+                "text": "38 DEL, 0 TRN"
+              },
+              {
+                "id": "b",
+                "text": "36 DEL, 2 TRN"
+              },
+              {
+                "id": "c",
+                "text": "40 DEL, 2 TRN"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Monday, Tuesday, Thursday: 24 DEL; Wednesday and Friday: 12 DEL; Wednesday training: 2 TRN."
+          }
+        },
+        {
+          "id": "fg-3",
+          "title": "Choose the action and explain the correction",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "Choose the most useful rejection reason.",
+            "options": [
+              {
+                "id": "a",
+                "text": "Wrong. Fix it.",
+                "feedback": "Too vague: the submitter cannot tell which dates or codes to examine.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "You exaggerated your hours.",
+                "feedback": "This asserts motive that the evidence does not establish.",
+                "isBest": false
+              },
+              {
+                "id": "c",
+                "text": "Check Wednesday’s DEL/TRN split and Friday’s 6 verified hours; correct and resubmit for 38 total.",
+                "feedback": "Correct. It identifies the discrepancies and next action without blame.",
+                "isBest": true
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "fg-k3",
+            "prompt": "Two reliable source records disagree about Friday. What is the best next step?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Approve the larger amount"
+              },
+              {
+                "id": "b",
+                "text": "Clarify the discrepancy through the approved contact before deciding"
+              },
+              {
+                "id": "c",
+                "text": "Reject with an accusation"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Unresolved evidence requires clarification. Do not manufacture a correct value."
+          }
+        },
+        {
+          "id": "fg-4",
+          "title": "Review the resubmission and verify the outcome",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "After your approval, the screen indicates another approval stage. What do you report?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Payment is complete.",
+                "feedback": "Approval is not proof of payment.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "My review is complete; the record remains in the next approval stage.",
+                "feedback": "Correct. The report distinguishes your action from the wider process.",
+                "isBest": true
+              },
+              {
+                "id": "c",
+                "text": "The application failed because the status is not final.",
+                "feedback": "A configured approval route may legitimately contain multiple stages.",
+                "isBest": false
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "fg-k4",
+            "prompt": "What should you do after submitting an approval?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Verify the displayed status or history"
+              },
+              {
+                "id": "b",
+                "text": "Immediately approve every remaining sheet"
+              },
+              {
+                "id": "c",
+                "text": "Tell the supplier payment has arrived"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "Verify the outcome and communicate only the state supported by the record."
+          }
+        },
+        {
+          "id": "fg-5",
+          "title": "Handle the exception you cannot simply undo",
+          "activity": {
+            "type": "decision-scenario",
+            "prompt": "TS-088 is already invoiced. Which response is safest?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Delete the original record and start over.",
+                "feedback": "That bypasses the approved correction and audit process.",
+                "isBest": false
+              },
+              {
+                "id": "b",
+                "text": "Create another normal sheet with negative hours.",
+                "feedback": "An improvised offset may cause additional errors.",
+                "isBest": false
+              },
+              {
+                "id": "c",
+                "text": "Provide the discrepancy evidence to the authorized owner for the revision process.",
+                "feedback": "Correct. Use the eligible, configured correction route rather than improvising.",
+                "isBest": true
+              }
+            ]
+          },
+          "knowledgeCheck": {
+            "id": "fg-k5",
+            "prompt": "Which detail is essential in a revision handoff?",
+            "options": [
+              {
+                "id": "a",
+                "text": "A guess about why the worker erred"
+              },
+              {
+                "id": "b",
+                "text": "Affected record, line, verified difference, and evidence"
+              },
+              {
+                "id": "c",
+                "text": "Only the worker’s first name"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Specific record and evidence details let the authorized owner investigate without speculation."
+          }
+        }
+      ],
+      "assessment": {
+        "passPercent": 80,
+        "questions": [
+          {
+            "id": "fg-a1",
+            "prompt": "The right worker has two assignments in the same week. Which sheet do you review?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The newer sheet"
+              },
+              {
+                "id": "b",
+                "text": "The sheet matching the requested assignment and period"
+              },
+              {
+                "id": "c",
+                "text": "Both without checking"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "Match the full review target; recency does not resolve assignment identity."
+          },
+          {
+            "id": "fg-a2",
+            "prompt": "Evidence is 8, 8, 8, 8, and 6 hours. What total should you expect?",
+            "options": [
+              {
+                "id": "a",
+                "text": "38"
+              },
+              {
+                "id": "b",
+                "text": "40"
+              },
+              {
+                "id": "c",
+                "text": "36"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "Four 8-hour days plus 6 equals 38."
+          },
+          {
+            "id": "fg-a3",
+            "prompt": "A total matches but 2 training hours are charged to delivery. What should happen under the sample policy?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Approve the total"
+              },
+              {
+                "id": "b",
+                "text": "Remove the training hours"
+              },
+              {
+                "id": "c",
+                "text": "Request the coding correction"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "Correct allocation is required even when the total is right."
+          },
+          {
+            "id": "fg-a4",
+            "prompt": "Which correction note is actionable?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Bad submission"
+              },
+              {
+                "id": "b",
+                "text": "Please compare Friday with the verified 6-hour record, correct the current 8 hours, and resubmit"
+              },
+              {
+                "id": "c",
+                "text": "You always get this wrong"
+              }
+            ],
+            "correctOptionId": "b",
+            "rationale": "It identifies date, discrepancy, evidence, and next action."
+          },
+          {
+            "id": "fg-a5",
+            "prompt": "An invoiced sheet has a confirmed error. What is the next route?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Authorized revised-time-sheet process"
+              },
+              {
+                "id": "b",
+                "text": "Delete it without review"
+              },
+              {
+                "id": "c",
+                "text": "Approve it again"
+              }
+            ],
+            "correctOptionId": "a",
+            "rationale": "The normal rejection assumption no longer applies to an invoiced sheet."
+          },
+          {
+            "id": "fg-a6",
+            "prompt": "A successful supervisor approval proves what?",
+            "options": [
+              {
+                "id": "a",
+                "text": "The worker has been paid"
+              },
+              {
+                "id": "b",
+                "text": "Every approval stage is finished"
+              },
+              {
+                "id": "c",
+                "text": "Your approval was recorded, subject to the displayed workflow state"
+              }
+            ],
+            "correctOptionId": "c",
+            "rationale": "Payment and final routing are separate outcomes that need separate evidence."
+          }
+        ],
+        "requiredCorrect": 5
+      },
+      "criterion": "5/6 correct; configured passPercent 80%; actual first attainable passing score 83.3%.",
+      "completion_criteria": "Course sequence, review and retry behavior must be verified in the implemented runtime; assessment threshold is specified separately.",
+      "performance_task_rubric": "The writing element of O3 is practiced through the original rejection reason in fg-3. Score one point each for (1) correct sheet/assignment/period, (2) Tuesday 9-to-7 DEL discrepancy, (3) Thursday 6 DEL + 2 TRN allocation, and (4) factual correction-and-resubmission request without blame. Suggested practice criterion: 4/4. A facilitator or learner uses this rubric; the multiple-choice quiz assesses selection and recognition, not writing mastery.",
+      "assessment_limit": "Passing the multiple-choice quiz does not demonstrate independent writing skill, production-system proficiency, or workplace mastery. Review the learner-authored artifact with its rubric and separately observe an authorized sandbox task.",
+      "design_notes": {
+        "analysis": {
+          "performanceProblem": "approving the weekly total without checking daily evidence can delay correction and invoicing.",
+          "assumptions": "Role-specific novice users; no baseline learner research or client validation has been performed. All organizations, examples, policies, and results are synthetic.",
+          "needsValidation": "Before workplace deployment, interview a process owner and two target learners, confirm common errors, access roles, local vocabulary, and policy requirements."
+        },
+        "design": {
+          "strategy": "Task-centered worked example followed by progressively independent decision practice. Feedback explains consequences, not just correctness.",
+          "timingMinutes": {
+            "orientationAndObjectives": 2,
+            "lessonsAndPractice": 17,
+            "assessment": 5,
+            "jobAidAndTransfer": 1,
+            "learnerAuthoredPractice": 3
+          },
+          "alignment": {
+            "O1": [
+              "fg-1",
+              "fg-a1"
+            ],
+            "O2": [
+              "fg-2",
+              "fg-a2",
+              "fg-a3"
+            ],
+            "O3": [
+              "fg-3",
+              "fg-a4",
+              "Learner-authored practice + performanceTask rubric"
+            ],
+            "O4": [
+              "fg-4",
+              "fg-5",
+              "fg-a5",
+              "fg-a6"
+            ]
+          },
+          "mastery": "80% of six equally weighted questions requires at least five correct (83.3%). A portfolio knowledge check is not authorization to perform production work.",
+          "durationEstimate": "Estimated 28 minutes including a three-minute learner-authored task; not pilot-tested. Learner pace varies."
+        },
+        "development": {
+          "artifact": "Five original text-led lessons, five decision scenarios with option-specific feedback, five formative checks, six scored questions with rationales, and a concise job aid.",
+          "accessibility": "Use semantic headings, keyboard-operable choices, visible focus, text feedback, and readable contrast in the delivery player. Do not rely on color or timing alone. Test the implemented player with keyboard and screen reader before release.",
+          "sourcePolicy": "Official product docs establish limited platform facts. Synthetic policies, examples, case decisions, and instructional writing are original. No vendor screenshots, course assets, client data, or claimed client results are included.",
+          "versionNote": "Source review date: 2026-10-09. Labels, permissions, configuration, and subscriptions can change; this is not a pixel-perfect application simulation."
+        },
+        "implementation": {
+          "delivery": "Self-paced public portfolio sample. No sign-in, purchase, production-system action, or live data is required.",
+          "launchChecks": "Validate JSON and option keys; test choice feedback, score calculation, retry, progress navigation, links, mobile readability, and accessibility in the final player. A content file alone does not establish runtime behavior.",
+          "facilitatorOption": "Ask learners to explain the evidence behind one incorrect choice and identify the equivalent role or process in their own organization without sharing confidential details."
+        },
+        "evaluation": {
+          "formative": "Track scenario misconceptions during a pilot; ask learners to restate the next action in their own words. Use feedback for revision, not ranking.",
+          "summative": "Six selected-response questions sampling the taught decisions; show rationale after submission. On nonmastery, recommend the linked topic and a fresh attempt.",
+          "transfer": "In an authorized sandbox, observe one complete role task against the job aid. Suggested pilot measures: correct record or destination, sufficient evidence, correct decision, and verified outcome.",
+          "honesty": "No learning gains, completion rates, client impact, certifications, or workplace outcomes have been measured or claimed.",
+          "masteryLimit": "Passing the multiple-choice quiz does not demonstrate independent writing skill, production-system proficiency, or workplace mastery. Review the learner-authored artifact with its rubric and separately observe an authorized sandbox task."
+        },
+        "performanceTask": "The writing element of O3 is practiced through the original rejection reason in fg-3. Score one point each for (1) correct sheet/assignment/period, (2) Tuesday 9-to-7 DEL discrepancy, (3) Thursday 6 DEL + 2 TRN allocation, and (4) factual correction-and-resubmission request without blame. Suggested practice criterion: 4/4. A facilitator or learner uses this rubric; the multiple-choice quiz assesses selection and recognition, not writing mastery."
+      },
+      "assumption_status": "Authored portfolio persona and fictional performance need; no baseline learner research or workplace validation performed."
+    }
+  ],
+  "reconciliation_date": "2026-10-09",
+  "curriculum_authority": "Current authored course JSONs; hashes below identify this governance checkpoint. Runtime results require separate evidence."
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-09",
+  "purpose": "Governance-only authored-curriculum reconciliation",
+  "sha256": {
+    "addie-plan.md": "8aff34ddcd495557419bf6d9cd17ec076db05f322b2303106b16a79610c79038",
+    "requirements.json": "47365fd8e385a0e0665f96a6fb59f0c11a97cc44cb43036c2e9056bea7ebbe40",
+    "curriculum-alignment.md": "55da7d4f19e37647847aa03bee26e4014f6fd6a62850015f3bc82a9d06888518",
+    "acceptance-tests.md": "4ed977c972313b28944f22d93712dcfe53c10c023342ebd35678b5e559bb1a38",
+    "reference-design-brief.md": "26dd4bff3b93e80dd7cd9bf45fd4b9c71cfcb7b33bb6ee5f420ce6907e6af061",
+    "architecture-decision.md": "3412fa9e3844910ca2e3ed46ab94c6f419f7429182951fccda045c6ce9380eb3",
+    "static-authoring-scorm-test.md": "30fa166d9e0aea324179e06be521d1f3d355470d09659350d00e7016aab42d9a",
+    "free-hosted-lrs-options.md": "4efb33d42b11210df6681f8da59ff7a8701dc036c5ea2cb9a0d4199edc312ad5",
+    "content-qa.md": "0f79f11b6961beb6051d30d155d5a58d1b9c576f02c782c95fed783623655d8d"
+  }
+}

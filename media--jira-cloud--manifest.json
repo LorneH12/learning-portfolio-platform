@@ -1,0 +1,348 @@
+{
+  "courseId": "jira-cloud",
+  "title": "Jira Cloud: Turn a Bug Report into Ready-to-Test Work",
+  "schemaVersion": 1,
+  "generatedDate": "2026-10-09",
+  "mediaStatus": "rendered",
+  "lessons": [
+    {
+      "courseId": "jira-cloud",
+      "lessonId": "ji-1",
+      "title": "Search before creating",
+      "video": "assets/media/jira-cloud/ji-1.mp4",
+      "poster": "assets/media/jira-cloud/ji-1.jpg",
+      "captions": "assets/media/jira-cloud/ji-1.vtt",
+      "transcript": "Time: 3 minutes. You support the fictional Harbor app. A colleague reports: ‘The export is broken.’ Your task is to produce work that a developer and tester can act on without guessing. Ask for the affected action, environment, expected result, observed result, frequency, and impact. Use synthetic examples only.\n\nEvidence packet: in Harbor demo build 2.4, select the October orders, choose CSV export, and open the file. The screen lists 12 rows but the export contains 10. It happens on two attempts with the same sample dataset. Search the correct Jira space for export, CSV, missing rows, and similar reports; clear unintended filters if results look incomplete. Available search views vary by tenant.\n\nWorked duplicate review: HBR-71 concerns a PDF layout problem. HBR-84 describes a CSV export omitting the last two rows in demo build 2.4. HBR-84 is a strong match; inspect its context and status before creating another record. If it represents the same defect, add relevant new evidence through your team’s process. Similar wording alone does not prove identical cause.\n\nCurrent Atlassian Cloud documentation uses work item and space; older interfaces may say issue and project.\n\nNow it's your turn. HBR-84 has the same dataset, build, and missing rows. What is the best next step? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 96.333333,
+      "durationSeconds": 96.333333,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5458678,
+      "sha256": "367e6f15a9cbd1344575c16d685d05e93a59a28b7e662000cef6b94f9b8ed70c",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Turn a vague report into evidence",
+          "startSeconds": 0,
+          "endSeconds": 20.722,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Search the correct context",
+          "startSeconds": 20.722,
+          "endSeconds": 48.356,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Compare candidate duplicates carefully",
+          "startSeconds": 48.356,
+          "endSeconds": 76.95,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Recognize changing interface language",
+          "startSeconds": 76.95,
+          "endSeconds": 85.04266666666668,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 85.04266666666668,
+          "endSeconds": 96.30866666666667,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--jira-cloud--ji-1.mp4",
+      "captionsUrl": "media--jira-cloud--ji-1.vtt",
+      "posterUrl": "media--jira-cloud--ji-1.jpg"
+    },
+    {
+      "courseId": "jira-cloud",
+      "lessonId": "ji-2",
+      "title": "Write a record another person can reproduce",
+      "video": "assets/media/jira-cloud/ji-2.mp4",
+      "poster": "assets/media/jira-cloud/ji-2.jpg",
+      "captions": "assets/media/jira-cloud/ji-2.vtt",
+      "transcript": "Time: 4 minutes. A second packet is distinct: the CSV includes every row but formats product codes as numbers. The synthetic code 00127 becomes 127. No matching item is found after checking the relevant space and filters. Create one defect record in the appropriate space using the locally configured work type.\n\nWorked record: Title: ‘CSV export removes leading zeros from product codes.’ Description: ‘Environment: Harbor demo 2.4, sample dataset DEMO-7. Steps: 1. Open DEMO-7. 2. Export CSV. 3. Inspect the raw CSV in a text viewer. Expected: product code remains 00127. Actual: raw output contains 127. Reproduced twice. Impact: downstream sample matching treats the code as a different identifier.’ Inspecting raw output helps distinguish export behavior from spreadsheet display formatting.\n\nAdd only sanitized evidence. Do not attach a real customer export to a public portfolio or broadly accessible ticket. Review required fields and defaults before creating. Atlassian’s current creation form may use Title where older versions use Summary.\n\nA clear record separates observation from hypothesis. ‘Serializer strips zeros’ may be a useful hypothesis, but it is not a confirmed root cause. Preserve that distinction so the team can investigate without inheriting an unsupported conclusion.\n\nLearner-authored practice (3 minutes): Draft a defect title, brief description, and two acceptance criteria from this new synthetic packet: Harbor demo 2.5; DEMO-9 lists 14 saved orders; applying the Pending filter should show 4 orders but shows 0; repeated twice after reopening; the raw sample data contains 4 Pending records. Include environment, reproduction steps, expected/actual results, and observable checks. Do not claim a root cause or invent customer impact. Compare your draft with the rubric before continuing.\n\nNow it's your turn. Which evidence should accompany the sample defect? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 140.375,
+      "durationSeconds": 140.375,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 7541711,
+      "sha256": "847d1962331727c4cac616f12af6157b542d825adf33d1175e011966afa8c0cd",
+      "sourceParagraphs": 5,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Establish a distinct defect",
+          "startSeconds": 0,
+          "endSeconds": 23.73,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Write a reproducible record",
+          "startSeconds": 23.73,
+          "endSeconds": 63.60933333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Share only sanitized evidence",
+          "startSeconds": 63.60933333333333,
+          "endSeconds": 80.67800000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Separate observation from root cause",
+          "startSeconds": 80.67800000000001,
+          "endSeconds": 97.03200000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Draft a new defect from evidence",
+          "startSeconds": 97.03200000000001,
+          "endSeconds": 132.38333333333335,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 5,
+          "title": "Your turn: make the decision",
+          "startSeconds": 132.38333333333335,
+          "endSeconds": 140.3586666666667,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--jira-cloud--ji-2.mp4",
+      "captionsUrl": "media--jira-cloud--ji-2.vtt",
+      "posterUrl": "media--jira-cloud--ji-2.jpg"
+    },
+    {
+      "courseId": "jira-cloud",
+      "lessonId": "ji-3",
+      "title": "Make acceptance and ownership explicit",
+      "video": "assets/media/jira-cloud/ji-3.mp4",
+      "poster": "assets/media/jira-cloud/ji-3.jpg",
+      "captions": "assets/media/jira-cloud/ji-3.vtt",
+      "transcript": "Time: 4 minutes. A record is useful when someone can determine whether the problem has been resolved. Replace ‘works correctly’ with observable acceptance criteria. For this sample: export DEMO-7; confirm raw CSV preserves 00127 and 00008 exactly; confirm an ordinary alphanumeric code A127 remains unchanged; confirm the row count matches the source. These are training criteria, not vendor-defined fields or product requirements.\n\nWork with the team’s triage process to set ownership and priority. Do not use the highest priority merely because the requester is frustrated. Record impact and urgency so the authorized triager can decide consistently. If you are not authorized to assign or change priority, provide the evidence to the responsible person.\n\nWorked handoff: ‘Reproduced in demo 2.4 with DEMO-7. Raw CSV drops leading zeros. Acceptance checks listed. Awaiting triage owner.’ This says what is known and who needs to act without promising a delivery date.\n\nBefore saving, confirm the space, work type, title, required fields, and access context. A work item key identifies the record; use that key in further discussions rather than creating disconnected copies. Do not assume that mentioning a person assigns ownership or guarantees they have seen the request.\n\nNow it's your turn. Which acceptance criterion is testable? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 97.458333,
+      "durationSeconds": 97.458333,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5915499,
+      "sha256": "a7c407e348c4ec8351bfb6f442d266dde83ab0a8df737ba316e6d0303f0e4ca0",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Define checks someone can observe",
+          "startSeconds": 0,
+          "endSeconds": 34.098,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Use the authorized triage process",
+          "startSeconds": 34.098,
+          "endSeconds": 55.04933333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Make the next responsibility visible",
+          "startSeconds": 55.04933333333334,
+          "endSeconds": 69.83533333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Check context and keep the key",
+          "startSeconds": 69.83533333333334,
+          "endSeconds": 89.77866666666668,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 89.77866666666668,
+          "endSeconds": 97.45533333333334,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--jira-cloud--ji-3.mp4",
+      "captionsUrl": "media--jira-cloud--ji-3.vtt",
+      "posterUrl": "media--jira-cloud--ji-3.jpg"
+    },
+    {
+      "courseId": "jira-cloud",
+      "lessonId": "ji-4",
+      "title": "Represent progress and blockers honestly",
+      "video": "assets/media/jira-cloud/ji-4.mp4",
+      "poster": "assets/media/jira-cloud/ji-4.jpg",
+      "captions": "assets/media/jira-cloud/ji-4.vtt",
+      "transcript": "Time: 3 minutes. Jira work items move through a configured workflow. The statuses, transitions, permissions, and required fields may differ between spaces. This course uses the fictional sequence To Do → In Progress → Ready for Test → Done. It is a teaching model, not a required Jira default.\n\nThe developer starts investigating but cannot access the synthetic regression dataset. The problem is blocked, not finished. Keep the record in the locally appropriate nonfinal state. Add a concise update: ‘Investigation started. Blocker: DEMO-7 test fixture unavailable. Test-data owner to restore access; retest after access is confirmed.’ If your team has a designated blocked marker or relationship, use its approved convention. Do not invent a workflow status that your tenant does not provide.\n\nWorked decision: the fix is coded but has not been tested. If the configured workflow permits it and its prerequisites are satisfied, transition to Ready for Test and supply build and verification instructions. Do not choose Done solely because coding ended.\n\nAfter any transition, inspect the resulting status and required fields. If a transition is missing, consult the workflow or authorized administrator rather than changing configuration or asking to use someone else’s account.\n\nNow it's your turn. Code is complete, but acceptance checks have not run. What is the best handoff? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 93.333333,
+      "durationSeconds": 93.333333,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 4994174,
+      "sha256": "c4f3f3977d475ed9f869be641bbf528afeded48d2f1be5d7a08d5bde626e116b",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Follow the configured workflow",
+          "startSeconds": 0,
+          "endSeconds": 19.65533333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Describe the blocker honestly",
+          "startSeconds": 19.65533333333333,
+          "endSeconds": 52.33466666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Hand off coded work for verification",
+          "startSeconds": 52.33466666666667,
+          "endSeconds": 68.56600000000002,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Inspect what the transition actually did",
+          "startSeconds": 68.56600000000002,
+          "endSeconds": 83.53333333333336,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 83.53333333333336,
+          "endSeconds": 93.32733333333339,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--jira-cloud--ji-4.mp4",
+      "captionsUrl": "media--jira-cloud--ji-4.vtt",
+      "posterUrl": "media--jira-cloud--ji-4.jpg"
+    },
+    {
+      "courseId": "jira-cloud",
+      "lessonId": "ji-5",
+      "title": "Close with evidence, reopen with specificity",
+      "video": "assets/media/jira-cloud/ji-5.mp4",
+      "poster": "assets/media/jira-cloud/ji-5.jpg",
+      "captions": "assets/media/jira-cloud/ji-5.vtt",
+      "transcript": "Time: 3 minutes. The test build is ready. Run every supplied acceptance check rather than testing only the example that triggered the bug. In packet A, 00127 is preserved but 00008 becomes 8. The defect is not ready for Done. Record the failed case, build, expected value, actual value, and reproduction steps; return it through the team’s approved workflow.\n\nIn packet B, both leading-zero identifiers and A127 are preserved, row counts agree, and the required review is complete. The authorized contributor may use the configured completion transition. Write a brief verification summary: ‘Demo build 2.4.1: DEMO-7 cases 00127, 00008, and A127 passed; exported row count matches source.’ This does not claim every possible export has been tested.\n\nWorked final check: inspect the actual resulting status, keep the evidence on the same record, and provide its key to the requester through the approved channel. If new evidence later contradicts completion, follow the team’s reopen or new-defect policy.\n\nYour final practice is a judgment exercise: the best status is the one supported by current evidence, even when someone is pressing for closure. Accurate tracking helps the next person act and protects the team from hidden unfinished work.\n\nNow it's your turn. The second acceptance case still fails. Choose your update. Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 99.25,
+      "durationSeconds": 99.25,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5378238,
+      "sha256": "6e40fb0e2f75caac2ad35239050cd74c41ee2d88a5f264fe414c45be6b1c280e",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Test every acceptance case",
+          "startSeconds": 0,
+          "endSeconds": 26.359333333333332,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Close only on supported evidence",
+          "startSeconds": 26.359333333333332,
+          "endSeconds": 58.633333333333326,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Check closure on the same record",
+          "startSeconds": 58.633333333333326,
+          "endSeconds": 74.838,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Let evidence determine the status",
+          "startSeconds": 74.838,
+          "endSeconds": 90.38133333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 90.38133333333333,
+          "endSeconds": 99.23666666666666,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--jira-cloud--ji-5.mp4",
+      "captionsUrl": "media--jira-cloud--ji-5.vtt",
+      "posterUrl": "media--jira-cloud--ji-5.jpg"
+    }
+  ],
+  "contentFidelity": "All source paragraphs narrated; citation tokens omitted from speech. Authoritative source content and assessments remain unchanged.",
+  "accessibility": "Burned captions plus equivalent VTT and plain transcript. Leave optional VTT track off by default to avoid duplicate visible captions.",
+  "qualityLimitations": [
+    "No human listening audition or end-to-end playback; runtime lacks audio input. Independent ASR, signal analysis, decoded video, sampled frames, source mapping and caption layout checks performed."
+  ],
+  "music": "none",
+  "distribution": "Original synthetic scenarios and original instructional diagrams. No real-person face/voice cloning."
+}

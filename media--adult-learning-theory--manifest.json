@@ -1,0 +1,334 @@
+{
+  "courseId": "adult-learning-theory",
+  "title": "Adult Learning Theory: Design for the People Doing the Work",
+  "schemaVersion": 1,
+  "generatedDate": "2026-10-09",
+  "mediaStatus": "rendered",
+  "lessons": [
+    {
+      "courseId": "adult-learning-theory",
+      "lessonId": "alt-l1",
+      "title": "1. Begin with the work, then test your assumptions",
+      "video": "assets/media/adult-learning-theory/alt-l1.mp4",
+      "poster": "assets/media/adult-learning-theory/alt-l1.jpg",
+      "captions": "assets/media/adult-learning-theory/alt-l1.vtt",
+      "transcript": "Allow 4 minutes, including the decision and check. Fictional case: Harbor Service Desk is introducing a shared handoff form. A usable handoff contains an issue summary, the next owner, and the next action. Ten sampled handoffs contain four missing owners. The manager requests a presentation about the new process. Before building it, ask what people must do and what prevents them from doing it.\n\nAndragogy, associated with Malcolm Knowles, offers assumptions concerning adults' need to know why, self-direction, experience, readiness, problem orientation, and motivation. These are useful questions for design, not guarantees about each adult. An experienced employee may be a novice with this tool; someone attending a mandatory session may need substantial guidance. Adult learning has multiple theoretical perspectives, and andragogy is not its single universal explanation. See the Penn State readings in Sources.\n\nWorked example: replace “They are adults, so let them explore” with “Can they already locate the owner list and submit a practice handoff?” Observe the task, ask about obstacles, and offer a guided example when needed. In this sample, the instructional goal is a complete handoff. Fixing access to the owner list belongs in the implementation plan too.\n\nNow it's your turn. A capable new supervisor asks for a step-by-step demonstration before practicing. What should you do? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 91.416667,
+      "durationSeconds": 91.416667,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 6647968,
+      "sha256": "499adcffeb70f5e18782b6d1c379d33a571c8b5b59c97e553b92c8d125a9f2c6",
+      "sourceParagraphs": 3,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Begin with the work problem",
+          "startSeconds": 0,
+          "endSeconds": 24.503333333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Use adult-learning assumptions carefully",
+          "startSeconds": 24.503333333333334,
+          "endSeconds": 57.876000000000005,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Check readiness through a real task",
+          "startSeconds": 57.876000000000005,
+          "endSeconds": 79.61133333333335,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Your turn: make the decision",
+          "startSeconds": 79.61133333333335,
+          "endSeconds": 91.4106666666667,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--adult-learning-theory--alt-l1.mp4",
+      "captionsUrl": "media--adult-learning-theory--alt-l1.vtt",
+      "posterUrl": "media--adult-learning-theory--alt-l1.jpg"
+    },
+    {
+      "courseId": "adult-learning-theory",
+      "lessonId": "alt-l2",
+      "title": "2. Use experience without preserving errors",
+      "video": "assets/media/adult-learning-theory/alt-l2.mp4",
+      "poster": "assets/media/adult-learning-theory/alt-l2.jpg",
+      "captions": "assets/media/adult-learning-theory/alt-l2.vtt",
+      "transcript": "Allow 4 minutes. Prior experience is useful evidence, but familiar habits can conflict with a changed workflow. Carnegie Mellon’s learning principles describe prior knowledge as potentially helpful or obstructive. A designer needs to uncover both useful knowledge and inaccurate assumptions.\n\nWorked example: a veteran agent says, “I put the owner’s name in the notes, as we always have.” In the fictional new process, routing reads the Owner field; notes do not trigger assignment. Start by asking the agent to show the old workflow. Identify what remains valid, such as a concise issue summary. Then contrast two handoffs with the same notes but different Owner fields. Have the learner predict which will route correctly and explain why.\n\nAvoid framing the veteran as resistant or assuming tenure equals mastery. The old behavior may have been correct under the previous system. Feedback can acknowledge the reasoning while correcting the action: “Your summary makes the issue clear. Routing now uses the Owner field, so select the owner there before submitting.”\n\nPause for 30 seconds: identify one thing that should stay the same and one thing that must change in a process you know. If using Harbor, preserve the issue summary and change how the owner is assigned.\n\nNow it's your turn. An experienced agent’s demonstration reveals an outdated shortcut. Choose the strongest response. Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 89.458333,
+      "durationSeconds": 89.458333,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 6989031,
+      "sha256": "21f066161bdbc0c9d0e032fd4ff6ecdd7e5ba1c5ede9c85acc7f86ec445a8a09",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Experience can help or hinder",
+          "startSeconds": 0,
+          "endSeconds": 18.775333333333332,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Show what changed in routing",
+          "startSeconds": 18.775333333333332,
+          "endSeconds": 45.89733333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Correct the action with respect",
+          "startSeconds": 45.89733333333334,
+          "endSeconds": 65.46200000000002,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Choose what stays and changes",
+          "startSeconds": 65.46200000000002,
+          "endSeconds": 78.01866666666669,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 78.01866666666669,
+          "endSeconds": 89.43400000000004,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--adult-learning-theory--alt-l2.mp4",
+      "captionsUrl": "media--adult-learning-theory--alt-l2.vtt",
+      "posterUrl": "media--adult-learning-theory--alt-l2.jpg"
+    },
+    {
+      "courseId": "adult-learning-theory",
+      "lessonId": "alt-l3",
+      "title": "3. Offer relevant choices and the support to succeed",
+      "video": "assets/media/adult-learning-theory/alt-l3.mp4",
+      "poster": "assets/media/adult-learning-theory/alt-l3.jpg",
+      "captions": "assets/media/adult-learning-theory/alt-l3.vtt",
+      "transcript": "Allow 4 minutes. Relevance is more than adding a workplace photograph. In this sample, it means practicing the decision that creates a usable handoff. Motivation may include doing useful work, confidence, recognition, or simply meeting an employment requirement. Do not assume everyone arrives enthusiastic or motivated in the same way.\n\nWorked example: replace a long department history with a short opening: “By the end, you will choose an owner and next action for a handoff so another agent can continue the case.” Let learners select a password-reset or order-status case. Both use the same required fields and performance criterion. Offer a text example, optional demonstration, and a readily available checklist. These options support access and task needs; they do not label people as fixed visual, auditory, or kinesthetic learners.\n\nChoice has boundaries. A learner may choose a relevant practice case, but cannot skip a required safety or privacy control. An experienced user may need less explanation, while a novice may need the complete walkthrough. Check performance rather than relying only on confidence ratings.\n\nMini-design task: choose a workplace example for a novice and one for an experienced colleague. Keep the assessed requirement identical. Write one sentence explaining why each example is relevant.\n\nNow it's your turn. You have novices and experienced agents in one session. Which plan best balances choice and common expectations? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 97.916667,
+      "durationSeconds": 97.916667,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 6648562,
+      "sha256": "920da5c23517e60d7a30a9648af6497e7951fa2270de5e75ea252965bab3c961",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Connect practice to useful work",
+          "startSeconds": 0,
+          "endSeconds": 21.895333333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Offer choice with a common goal",
+          "startSeconds": 21.895333333333333,
+          "endSeconds": 54.79333333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Keep choice within safe boundaries",
+          "startSeconds": 54.79333333333334,
+          "endSeconds": 72.86466666666668,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Design two routes to one requirement",
+          "startSeconds": 72.86466666666668,
+          "endSeconds": 85.57600000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 85.57600000000001,
+          "endSeconds": 97.90866666666669,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--adult-learning-theory--alt-l3.mp4",
+      "captionsUrl": "media--adult-learning-theory--alt-l3.vtt",
+      "posterUrl": "media--adult-learning-theory--alt-l3.jpg"
+    },
+    {
+      "courseId": "adult-learning-theory",
+      "lessonId": "alt-l4",
+      "title": "4. Make practice resemble the decision",
+      "video": "assets/media/adult-learning-theory/alt-l4.mp4",
+      "poster": "assets/media/adult-learning-theory/alt-l4.jpg",
+      "captions": "assets/media/adult-learning-theory/alt-l4.vtt",
+      "transcript": "Allow 4 minutes. A learner who can name the fields may still struggle to use them. Practice should expose the choice that matters, then provide feedback the learner can use in another attempt. Carnegie Mellon’s learning principles emphasize goal-directed practice and targeted feedback.\n\nWorked example: fictional request “A customer cannot access an invoice. The billing system is available, and the account has been verified.” The practice rule says invoice-access cases go to Billing Support; the next action is to check the invoice permission. A complete handoff states the issue, names Billing Support in the Owner field, and records that next action. Show one completed example, then ask the learner to resolve a different case using a short rule card.\n\nAn early attempt can include hints. A later attempt should remove unnecessary help while keeping tools people normally use at work. Explain the consequence of a wrong selection and invite a retry; “Incorrect” alone does not show how to improve.\n\nDecision practice here is deliberately low risk. Use fictional records, not actual customer information. The final multiple-choice assessment samples decisions; it does not verify live-system proficiency. A production rollout would also need observation of representative handoffs.\n\nNow it's your turn. The objective is to route handoffs using a rule card. Which practice is best aligned? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 90.958333,
+      "durationSeconds": 90.958333,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 4603605,
+      "sha256": "62b129dc9db4031b7cc6dbcf863b088dcd9f8918614ba47c9f5c314d179ae3d2",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Practice the actual decision",
+          "startSeconds": 0,
+          "endSeconds": 17.452666666666666,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Model a complete handoff",
+          "startSeconds": 17.452666666666666,
+          "endSeconds": 46.724000000000004,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Fade help without removing job tools",
+          "startSeconds": 46.724000000000004,
+          "endSeconds": 62.422000000000004,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Use safe practice and honest claims",
+          "startSeconds": 62.422000000000004,
+          "endSeconds": 80.47200000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 80.47200000000001,
+          "endSeconds": 90.94866666666668,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--adult-learning-theory--alt-l4.mp4",
+      "captionsUrl": "media--adult-learning-theory--alt-l4.vtt",
+      "posterUrl": "media--adult-learning-theory--alt-l4.jpg"
+    },
+    {
+      "courseId": "adult-learning-theory",
+      "lessonId": "alt-l5",
+      "title": "5. Plan transfer and measure what changed",
+      "video": "assets/media/adult-learning-theory/alt-l5.mp4",
+      "poster": "assets/media/adult-learning-theory/alt-l5.jpg",
+      "captions": "assets/media/adult-learning-theory/alt-l5.vtt",
+      "transcript": "Allow 4 minutes. Course completion is an implementation measure. It does not establish that handoffs improved, or that any improvement was caused by the course. A useful plan separates learning evidence, workplace behavior, and conditions that enable the behavior.\n\nWorked example: before the fictional rollout, inspect a comparable sample of handoffs for all three required elements. During training, collect decision-check results. After rollout, inspect another comparable sample and record missing elements. Ask supervisors whether staff can access the owner list, have time to complete the form, and receive consistent expectations. A simultaneous form redesign could also explain changes in performance.\n\nGive the team a one-screen handoff checklist. Ask managers to review the first few attempts, correct errors privately, and route tool-access problems to the system owner. If staff can perform correctly in practice but lack production permissions, another explanation video will not grant those permissions.\n\nTransfer task, 60 seconds: write a plan containing one practice task, one support available at the point of work, one responsible person, and one observable behavior to review. Sample: “Agents route two practice cases; the team lead pins the rule card and reviews whether next week’s sampled handoffs name an owner.”\n\nNow it's your turn. Agents pass practice but cannot open the owner list in production. What should the rollout lead prioritize? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 95.6,
+      "durationSeconds": 95.6,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 4906475,
+      "sha256": "e1bdd7d8691d60acd8491cda0164b170d59d38857cdaa7842856dd76dc69d3f4",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Separate completion from workplace improvement",
+          "startSeconds": 0,
+          "endSeconds": 16.706,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Compare evidence across the rollout",
+          "startSeconds": 16.706,
+          "endSeconds": 44.85200000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Support performance where it happens",
+          "startSeconds": 44.85200000000001,
+          "endSeconds": 63.408666666666676,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Write a practical transfer plan",
+          "startSeconds": 63.408666666666676,
+          "endSeconds": 84.2,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 84.2,
+          "endSeconds": 95.59400000000001,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--adult-learning-theory--alt-l5.mp4",
+      "captionsUrl": "media--adult-learning-theory--alt-l5.vtt",
+      "posterUrl": "media--adult-learning-theory--alt-l5.jpg"
+    }
+  ],
+  "contentFidelity": "All source paragraphs narrated; citation tokens omitted from speech. Authoritative source content and assessments remain unchanged.",
+  "accessibility": "Burned captions plus equivalent VTT and plain transcript. Leave optional VTT track off by default to avoid duplicate visible captions.",
+  "qualityLimitations": [
+    "No human listening audition or end-to-end playback; runtime lacks audio input. Independent ASR, signal analysis, decoded video, sampled frames, source mapping and caption layout checks performed."
+  ],
+  "music": "none",
+  "distribution": "Original synthetic scenarios and original instructional diagrams. No real-person face/voice cloning."
+}

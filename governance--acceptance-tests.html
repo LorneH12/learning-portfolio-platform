@@ -1,0 +1,139 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>acceptance tests | Learning studio</title><link rel="stylesheet" href="styles.css"><header><a href="index.html">Learning studio</a><a href="governance.html">Project governance</a></header><main><h1>acceptance tests</h1><h1>Release acceptance tests</h1>
+<p>Status: UNRUN. This is a test specification, not a passed QA report. Record actual release SHA, environment, tester, date, steps, observed result and evidence artifact for every run. Mandatory tests block claims of overall completion. Optional SCORM 2004 support must not be advertised until T11 passes.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Test and procedure</th>
+<th>Required result/evidence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>T01</td>
+<td>Inventory all seven course repositories and deployments; compare names, course IDs and content.</td>
+<td>Seven new independent repositories and seven working public course URLs; each has topic-specific instructional content, objectives, practice, feedback and assessment. Record exact URLs and commit SHAs.</td>
+</tr>
+<tr>
+<td>T02</td>
+<td>Compare pre-work/post-work inventory of existing repositories.</td>
+<td>Existing builds unchanged by this work; any authorized exceptions identified. No claim of preservation without baseline/diff evidence.</td>
+</tr>
+<tr>
+<td>T03</td>
+<td>Complete home → module → lesson → assessment → completion using each course. Exercise back, next, resume, help, settings and restart.</td>
+<td>Correct progress, no skipped required learning, sensible optional navigation, clear completion/pass distinction; no duplicate completion on refresh. Screenshots plus state assertions.</td>
+</tr>
+<tr>
+<td>T04</td>
+<td>Copy template into two different course repositories; alter content and brand configuration only.</td>
+<td>Distinct topic and original brand render without editing runtime logic. Separate HTML/CSS/JS/assets verified; shared runtime version pinned.</td>
+</tr>
+<tr>
+<td>T05</td>
+<td>In authoring UI, import a course, edit objective/page/question/feedback/brand, validate, save, close, reload, preview and export. Reimport export.</td>
+<td>Changes survive roundtrip; stable IDs and semantic content preserved; no secret bundled; invalid content rejected clearly. Actual exported artifact and comparison retained. JSON editor alone without this flow is not a passed authoring platform.</td>
+</tr>
+<tr>
+<td>T06</td>
+<td>On deployed LMS, register or use approved synthetic learner, enroll/assign course, launch, exit/resume and view completion report as authorized role.</td>
+<td>Working learner/course mapping and launch/reporting, access isolation and correct records. Static card gallery is insufficient.</td>
+</tr>
+<tr>
+<td>T07</td>
+<td>Launch synthetic learner session and generate initialized, experienced, answered, completed, passed/failed and terminated events as applicable. Capture network response and UUIDs; retrieve each by ID from backend.</td>
+<td>Valid xAPI 1.0.3 statement shapes; IDs/actor/activity/registration/result/timestamps match. Online healthy-service target: persisted GET within 5 seconds. Browser localStorage or a success toast does not qualify.</td>
+</tr>
+<tr>
+<td>T08</td>
+<td>Close browser; reopen fresh session and query same event IDs. Restart backend within authorized safe test scope; query again.</td>
+<td>Records survive browser closure and backend restart. Save redacted request/response evidence and storage environment. No reliance on ephemeral filesystem.</td>
+</tr>
+<tr>
+<td>T09</td>
+<td>Disconnect/reconnect, resend same UUID, send malformed data, simulate denied credentials and quota response; observe reporting counts.</td>
+<td>Stable IDs prevent duplicate counts; bounded safe retry/queue; malformed/unauthorized input rejected; visible pending/error state; offline events preserve occurrence time; no false claim that failed delivery was saved.</td>
+</tr>
+<tr>
+<td>T10</td>
+<td>Export SCORM 1.2 single-SCO ZIP; inspect root imsmanifest.xml and resources. Import into a real SCORM 1.2 LMS and launch. Exercise initialize, score, lesson status, location, suspend/resume, session time, commit and finish.</td>
+<td>Package imports; API initialized and errors checked; fail/complete/pass semantics correct; progress/attempt resume works after relaunch; LMS report agrees with course. Record LMS/version/ZIP/hash/results. Local fake API tests supplement but do not replace this.</td>
+</tr>
+<tr>
+<td>T11</td>
+<td>OPTIONAL: separately export SCORM 2004 3rd Edition and import in a supporting real LMS; test completion_status, success_status, scaled score, location, suspend, session time and termination.</td>
+<td>Version-specific schema/API used, not a relabeled SCORM 1.2 manifest. Completion distinct from success; all exercised behaviors pass. Moodle native SCORM 1.2 testing is not evidence for 2004. If not run, label 2004 unsupported/unverified.</td>
+</tr>
+<tr>
+<td>T12</td>
+<td>Manual keyboard-only traversal and screen-reader review of every component and representative complete courses, including authoring, dialogs, quiz errors, progress and completion.</td>
+<td>Semantic headings/landmarks, meaningful labels, correct names/roles/states, visible focus not obscured, logical focus order, focus restoration, no keyboard trap, announced feedback. Record browser and screen-reader versions and any limitations.</td>
+</tr>
+<tr>
+<td>T13</td>
+<td>Automated accessibility scan every page/state; manually test contrast, text resizing 200%, reflow at 320 CSS px/400% desktop zoom, text spacing, high contrast and target size.</td>
+<td>No known applicable WCAG 2.2 A/AA failures. Normal text ≥4.5:1, large text ≥3:1, meaningful UI indicators ≥3:1; targets satisfy 24×24 CSS-pixel rule or documented exception. Automated zero violations alone does not prove conformance.</td>
+</tr>
+<tr>
+<td>T14</td>
+<td>Complete all media-dependent objectives without sound, without video and with reduced motion; test captions/transcripts and timeout controls.</td>
+<td>Equivalent learning and assessment available; accurate captions and required visual-description support; no autoplay obstruction; pause/stop where required; warning and extension for timed sessions. Settings preferences persist accessibly.</td>
+</tr>
+<tr>
+<td>T15</td>
+<td>Audit objective → instruction → practice → assessment → feedback mapping for all seven courses.</td>
+<td>Every terminal objective directly assessed; task/cognitive demand matches; authentic examples, correct source-grounded explanations and useful distractor feedback. No course is merely title cards.</td>
+</tr>
+<tr>
+<td>T16</td>
+<td>Execute all answer paths, calculations, course-specific thresholds, applicable authored-rubric failures, retries and pass/fail endings against the current curriculum answer keys.</td>
+<td>Correct scores and rationales; no impossible pass, accidental answer disclosure or false completion. Synthetic evaluation clearly labeled; no fabricated learner outcomes.</td>
+</tr>
+<tr>
+<td>T17</td>
+<td>Review every public image/logo/font/video/text/license and course disclaimer.</td>
+<td>Rights/provenance documented, required attribution preserved. No original reference photographs, employee information, proprietary corporate training copy or unverified employer branding. Neutral original brands remain usable.</td>
+</tr>
+<tr>
+<td>T18</td>
+<td>Read selected hosting account limits and billing configuration; test quota/failure path within safe limits.</td>
+<td>Verified no-charge deployment, no paid trial/card/overage/auto-upgrade. Record limits, sleep/expiry, storage persistence and backup route. Unknown billing or inaccessible backend blocks complete launch.</td>
+</tr>
+<tr>
+<td>T19</td>
+<td>Secret scan repository/history/builds and inspect browser source/network plus public API routes. Test unauthenticated read/admin and cross-learner requests.</td>
+<td>No credentials/PII in public files; LRS admin/query rights protected; least privilege, HTTPS, input limits and safe CORS/rate limiting. Public write does not enable public record browsing. No security-certified claim from these limited tests.</td>
+</tr>
+<tr>
+<td>T20</td>
+<td>Inspect event payloads, dashboard rows and privacy notice; exercise approved export/retention workflow using synthetic records.</td>
+<td>Opaque actors only by default; no names/email/free-text PII; purpose/retention disclosure truthful; deletion not falsely claimed. Any permanent purge remains subject to action-specific approval.</td>
+</tr>
+<tr>
+<td>T21</td>
+<td>From fresh anonymous browser, open every release URL on desktop/mobile; test course exports, documentation and cold start.</td>
+<td>Public routes accessible with intended permissions, no broken links, clean load/error states, functioning persisted reporting where authorized, no secrets or private asset URLs. Record test results and limitations.</td>
+</tr>
+<tr>
+<td>T22</td>
+<td>Restore known-good release in safe preview and execute smoke tests; follow operator handover docs from clean environment.</td>
+<td>Reproducible setup, versioned schema/migration notes, export/backup path, rollback and quota runbook. Deployed release SHA and exact supported features documented.</td>
+</tr>
+</tbody></table>
+<h2>Evidence template</h2>
+<ul>
+<li>Test ID / requirement IDs:</li>
+<li>Release SHA and artifact hash:</li>
+<li>Actual environment, LMS/LRS versions and public URL:</li>
+<li>Timestamp / tester / browser-assistive technology:</li>
+<li>Inputs and steps:</li>
+<li>Expected result:</li>
+<li>Actual result:</li>
+<li>Redacted evidence artifact(s):</li>
+<li>Verdict: pass / fail / blocked / not run / not applicable with rationale:</li>
+<li>Defect and retest reference:</li>
+</ul>
+<h2>Completion language</h2>
+<p>“Working static course samples” requires T01/T03/T04 and applicable content/accessibility/security/publication tests. “Operational authoring + LMS/LRS portfolio platform” additionally requires authoring roundtrip, real LMS launches, persisted xAPI retrieval after restart and deployed integration. “SCORM compatible” must name the tested version and LMS. “WCAG 2.2 AA tested” must name scope and residual defects; do not call it independently certified. No passing results are asserted in this document.</p>
+<h2>Current authored scoring reference</h2>
+<p>Use curriculum-alignment.md and requirements.json, not preliminary generic thresholds. Business courses: 6/7; software courses: 5/6; learning-theory courses: 6/8. Written-task rubric review is separate from automated quiz scoring. These values are authored requirements, not proof of deployed scoring behavior.</p>
+</main><footer>Independent portfolio samples. No vendor endorsement or certification.</footer></html>

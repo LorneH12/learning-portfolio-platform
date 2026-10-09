@@ -1,0 +1,506 @@
+{
+  "id": "confluence-cloud",
+  "title": "Confluence Cloud: Publish a Runbook People Can Use",
+  "summary": "Convert scattered handover notes into a findable, reviewed support runbook with a safe audience and a maintenance plan. Estimated completion time: 28 minutes, including practice and assessment; learner pace varies.",
+  "audience": "New team knowledge owners, service coordinators, and support leads. Performance problem: staff follow stale instructions, cannot find the current page, or receive links they cannot open.",
+  "durationMinutes": 28,
+  "prerequisites": [
+    "Basic browser navigation. No paid account or production access required.",
+    "Use the fictional evidence supplied here; do not enter real worker, customer, or employer data."
+  ],
+  "objectives": [
+    {
+      "id": "O1",
+      "text": "Choose a page location and structure that support a specific user task.",
+      "bloomLevel": "Apply"
+    },
+    {
+      "id": "O2",
+      "text": "Transform ambiguous notes into a testable procedure with stop and escalation conditions.",
+      "bloomLevel": "Create"
+    },
+    {
+      "id": "O3",
+      "text": "Check intended audience against space, content, and inherited access constraints.",
+      "bloomLevel": "Analyze"
+    },
+    {
+      "id": "O4",
+      "text": "Publish and verify a reviewed page, then maintain it with ownership and review evidence.",
+      "bloomLevel": "Evaluate"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "co-1",
+      "title": "Define the reader’s job and find the home",
+      "content": "Time: 3 minutes. You own support knowledge for the fictional Harbor team. A new colleague must diagnose a delayed demo export without guessing whom to contact. Existing notes say: ‘Exports slow sometimes. Refresh. Ask Morgan.’ Your deliverable is a runbook that a new support analyst can follow using the synthetic training environment.\n\nBefore creating content, search the intended knowledge space for an existing export runbook. Compare scope and currency. Update a suitable canonical page through the team’s process rather than leaving two competing instructions. If none exists, identify a parent location where analysts already look for procedures.\n\nChoose a Confluence page for this exercise because the team wants a deliberate publishing checkpoint. Confluence also provides live docs, where changes appear as collaboration happens; do not treat those as unpublished page drafts. Current interface and content options may differ by rollout and subscription.\n\nWorked plan: reader = new support analyst; task = decide whether a demo export is still processing or requires escalation; location = Harbor Support / Runbooks; title = ‘Check a delayed demo export’; owner = Support Knowledge Owner; review trigger = workflow change. These names and locations are fictional.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "You find an existing current runbook with the same scope. What should you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Create an unrelated copy with a similar title.",
+            "feedback": "Competing pages make it harder to identify the authoritative instructions.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Review and update the canonical page through its ownership process.",
+            "feedback": "Correct. Preserve one clear source when its scope still fits.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Delete it without reading.",
+            "feedback": "You have not established that it should be removed or that you may delete it.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "co-k1",
+        "prompt": "Why use a page rather than a live doc for this sample?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The team wants a deliberate publishing checkpoint"
+          },
+          {
+            "id": "b",
+            "text": "Live docs cannot contain text"
+          },
+          {
+            "id": "c",
+            "text": "Pages automatically prove approval"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "The content choice supports the requested workflow; publishing does not itself prove review or approval."
+      }
+    },
+    {
+      "id": "co-2",
+      "title": "Write a procedure with observable decisions",
+      "content": "Time: 4 minutes. Use a small set of sections: Purpose; Before you start; Steps; Expected result; Stop and escalate; Owner and review date. Start each step with an action and describe what the reader should observe. Avoid instructions that depend on tribal knowledge such as ‘do the usual fix.’\n\nWorked runbook excerpt: ‘Purpose: check the status of a delayed demo export. Before you start: confirm this is the DEMO training environment and note the job identifier. 1. Open the demo export status view. 2. Match the job identifier. 3. Compare elapsed time with the training threshold of 10 minutes. 4. If Complete, use the approved download route. If Processing under 10 minutes, wait until the threshold and check once more. If Failed or still Processing at 10 minutes, record job ID, status, elapsed time, and the displayed non-sensitive error code; send to the demo support owner. Do not rerun a job unless the approved procedure directs it.’\n\nThe threshold and route are invented training policy, not Confluence functionality or operational advice for a real system. No real download or escalation occurs here.\n\nUse descriptive link text, heading hierarchy, and concise steps. Provide text equivalents for meaningful images. Screenshots can age quickly; describe the control’s purpose as well as its label.\n\nLearner-authored practice (3 minutes): Turn these new fictional notes into a 4–6 step mini-runbook: DEMO queue; check correct job ID; Complete means use approved sample download route; Processing under 5 minutes means recheck at 5; Failed or Processing at 5 means stop and contact the Demo Support role; include job ID, elapsed time, status, and non-sensitive error code; never rerun without authorization. Add a purpose and stop condition. This separate exercise uses a 5-minute rule; the main worked case retains its 10-minute rule. Compare your writing with the rubric before continuing.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "Which instruction best replaces “Ask Morgan”?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ask whoever is around.",
+            "feedback": "The owner and evidence requirements remain unclear.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "At the stated stop condition, contact the named support role with job ID, status, elapsed time, and non-sensitive error code.",
+            "feedback": "Correct. The reader knows when to stop, where to go, and what evidence to provide.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Keep rerunning until it works.",
+            "feedback": "Repeated jobs may create additional problems and ignore the stop condition.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "co-k2",
+        "prompt": "The demo job is Processing at 12 minutes. What does the sample procedure require?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Restart repeatedly"
+          },
+          {
+            "id": "b",
+            "text": "Use the stated escalation route with the specified evidence"
+          },
+          {
+            "id": "c",
+            "text": "Wait indefinitely"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "The invented 10-minute threshold has been exceeded; follow the documented stop condition."
+      }
+    },
+    {
+      "id": "co-3",
+      "title": "Check access before distributing the link",
+      "content": "Time: 4 minutes. A clear runbook is useless if the intended analyst cannot read it, and risky if an unintended audience can. Confluence access involves global and space permissions plus content restrictions. Restrictions can narrow access; adding a person to a content-level list does not automatically supply missing space access. Inspect the actual audience and inherited constraints using the tools available to your role.\n\nWorked access case: the draft is under a manager-only parent. The intended Support Analysts group cannot view that location. Copying the link into the team chat does not fix access. Ask the authorized owner to place the content in the approved support hierarchy or correct the relevant access settings under policy, then test with an intended reader. Do not enable public access merely to make a link work.\n\nUse the least access needed for the task. In this sample, analysts need to read the published procedure; a small owner group maintains it. Permission models and restriction controls can vary by plan and configuration. Never assume a screenshot from another tenant represents your controls.\n\nDraft status and an ‘In review’ label are communication cues, not reliable substitutes for access controls. Keep credentials, personal data, and production records out of this public portfolio exercise.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "An analyst cannot open the page because its parent is restricted. What next?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Make the page public.",
+            "feedback": "That broadens access without establishing that public exposure is appropriate.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Send the same link again.",
+            "feedback": "A repeated URL cannot resolve a permission boundary.",
+            "isBest": false
+          },
+          {
+            "id": "c",
+            "text": "Have the authorized owner inspect the location and access constraints, then verify with an intended reader.",
+            "feedback": "Correct. Resolve the actual access issue through the approved process.",
+            "isBest": true
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "co-k3",
+        "prompt": "Does sending a page link guarantee the recipient can read it?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes"
+          },
+          {
+            "id": "b",
+            "text": "Only if its title is descriptive"
+          },
+          {
+            "id": "c",
+            "text": "No; their effective access still matters"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "Links point to content; they do not automatically grant all required permissions."
+      }
+    },
+    {
+      "id": "co-4",
+      "title": "Review, publish, and test the reader experience",
+      "content": "Time: 3 minutes. Perform a short usability review before publishing. Give a reviewer the fictional delayed-export packet and the draft. Ask them to identify the next action at 6 minutes, 12 minutes, and Failed status without explaining the procedure verbally. Any point where they must guess is an opportunity to improve the text.\n\nWorked review finding: the reviewer cannot identify the support owner because the draft uses a first name only. Replace that with the approved role or stable team contact destination. Check each link and remove placeholder destinations before a production release. In this sample, destinations remain clearly identified as fictional rather than fabricated live links.\n\nPublish the page when the authorized review is complete; later edits use the available update or publish action. Check the rendered page, heading order, links, and intended audience. A saved editing session is not evidence that the published page shows the changes. A content status label can explain maturity but does not by itself prove a substantive review occurred.\n\nVerify with an intended reader or an approved access-check process. Do not ask for someone’s credentials. A final message should link the canonical page and summarize what changed, using only the audience and communication authorization your organization provides.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "Your edit is saved, but the reader sees the old instructions. What should you check first?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Whether the intended page changes have been published or updated.",
+            "feedback": "Correct. Saving draft changes and publishing the reader-facing version are different steps.",
+            "isBest": true
+          },
+          {
+            "id": "b",
+            "text": "Whether the reader can lend you their password.",
+            "feedback": "Never request another person’s credentials.",
+            "isBest": false
+          },
+          {
+            "id": "c",
+            "text": "Whether the title needs more exclamation marks.",
+            "feedback": "That does not address which version is visible.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "co-k4",
+        "prompt": "Which review most directly tests usability?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Counting how many headings exist"
+          },
+          {
+            "id": "b",
+            "text": "Asking a new reader to choose actions from realistic cases using only the draft"
+          },
+          {
+            "id": "c",
+            "text": "Having the author say the page looks good"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Observed reader performance reveals ambiguity that an author may overlook."
+      }
+    },
+    {
+      "id": "co-5",
+      "title": "Maintain the canonical answer",
+      "content": "Time: 3 minutes. Publication begins a maintenance responsibility. The runbook should name an owner and a review trigger. A review date alone is insufficient when the underlying process changes sooner. In this sample, the owner reviews after any export workflow change and at the next scheduled team knowledge review.\n\nWorked change: the training team changes its escalation threshold from 10 minutes to 15. Confirm that the change is authorized. Update every affected reference: Before you start, decision step, worked example, and stop-condition section. Re-run the 6-minute, 12-minute, 15-minute, and Failed-status cases. Record a concise change note so readers understand the new behavior.\n\nPages support version history, which helps investigate what changed. History is evidence of edits, not a substitute for checking that the current procedure is correct. If an earlier version seems preferable, compare its content and seek the appropriate review rather than blindly restoring stale instructions.\n\nWhen the procedure becomes obsolete, follow the space’s approved archive and replacement-link process. Keep the canonical destination clear. The end goal is successful work: a new analyst can find the runbook, follow its decisions, and stop safely without needing the author to fill in missing steps.",
+      "activity": {
+        "type": "decision-scenario",
+        "prompt": "The threshold changes to 15 minutes. Which update plan is best?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Change only the page title.",
+            "feedback": "The actual decision instructions would remain stale.",
+            "isBest": false
+          },
+          {
+            "id": "b",
+            "text": "Update all affected steps and examples, retest the decision cases, then publish the reviewed change.",
+            "feedback": "Correct. Consistent content and renewed testing support safe reuse.",
+            "isBest": true
+          },
+          {
+            "id": "c",
+            "text": "Leave 10 and 15 in different sections so readers can choose.",
+            "feedback": "Contradictory instructions force the reader to guess.",
+            "isBest": false
+          }
+        ]
+      },
+      "knowledgeCheck": {
+        "id": "co-k5",
+        "prompt": "What should trigger a runbook review before its scheduled date?",
+        "options": [
+          {
+            "id": "a",
+            "text": "An underlying workflow change"
+          },
+          {
+            "id": "b",
+            "text": "A colleague’s preference for another font"
+          },
+          {
+            "id": "c",
+            "text": "Nothing; only the calendar matters"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "A material process change can make the instructions wrong immediately."
+      }
+    }
+  ],
+  "assessment": {
+    "passPercent": 80,
+    "questions": [
+      {
+        "id": "co-a1",
+        "prompt": "A current page already covers the same procedure. What is the strongest approach?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Create three duplicates"
+          },
+          {
+            "id": "b",
+            "text": "Maintain the canonical page through its owner"
+          },
+          {
+            "id": "c",
+            "text": "Delete the existing page immediately"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "A clear authoritative destination reduces contradictory guidance."
+      },
+      {
+        "id": "co-a2",
+        "prompt": "Which step is most usable?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Check stuff"
+          },
+          {
+            "id": "b",
+            "text": "Do the usual fix"
+          },
+          {
+            "id": "c",
+            "text": "Match the job ID, read the status, and apply the stated decision rule"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "It provides an action, observation, and decision basis."
+      },
+      {
+        "id": "co-a3",
+        "prompt": "In the original sample rule, Processing has lasted 12 minutes. What should the learner do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Use the specified escalation route"
+          },
+          {
+            "id": "b",
+            "text": "Rerun repeatedly"
+          },
+          {
+            "id": "c",
+            "text": "Download any file available"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "The sample threshold is 10 minutes and the prescribed stop condition is met."
+      },
+      {
+        "id": "co-a4",
+        "prompt": "The page sits under a restricted parent. What should happen before distribution?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Assume sharing the URL grants access"
+          },
+          {
+            "id": "b",
+            "text": "Verify intended-reader access and resolve constraints through the authorized owner"
+          },
+          {
+            "id": "c",
+            "text": "Make everything public"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Access must be checked in its actual hierarchy and policy context."
+      },
+      {
+        "id": "co-a5",
+        "prompt": "What proves the reader-facing page includes your revision?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A saved draft exists"
+          },
+          {
+            "id": "b",
+            "text": "You typed the change"
+          },
+          {
+            "id": "c",
+            "text": "The change was published and verified in the rendered reader view"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "Publication and verification establish what readers can actually see."
+      },
+      {
+        "id": "co-a6",
+        "prompt": "The process changes next week, before the review date. What is appropriate?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Wait for the date regardless"
+          },
+          {
+            "id": "b",
+            "text": "Review and update affected instructions now through the owner"
+          },
+          {
+            "id": "c",
+            "text": "Keep both contradictory procedures"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Process changes are meaningful review triggers independent of the calendar."
+      }
+    ],
+    "requiredCorrect": 5
+  },
+  "resources": [
+    {
+      "title": "Create, update, and manage written content",
+      "url": "https://support.atlassian.com/confluence-cloud/docs/create-edit-and-publish-a-page/",
+      "note": "Page drafts, publishing, version history, and distinction from live docs. Official documentation reviewed 2026-10-09."
+    },
+    {
+      "title": "Manage permissions at the content level",
+      "url": "https://support.atlassian.com/confluence-cloud/docs/manage-permissions-on-the-page-level/",
+      "note": "Content access controls operate within broader permissions. Official documentation reviewed 2026-10-09."
+    },
+    {
+      "title": "Confluence permissions structure",
+      "url": "https://support.atlassian.com/confluence-cloud/docs/what-are-confluence-cloud-permissions-and-restrictions/",
+      "note": "Global, space, and content access considerations. Official documentation reviewed 2026-10-09."
+    },
+    {
+      "title": "Troubleshoot access problems to content",
+      "url": "https://support.atlassian.com/confluence-cloud/docs/troubleshoot-access-problems-to-content/",
+      "note": "Diagnosing inherited access constraints. Official documentation reviewed 2026-10-09."
+    },
+    {
+      "title": "Add a status to your content",
+      "url": "https://support.atlassian.com/confluence-cloud/docs/add-a-status-to-your-page-or-blog/",
+      "note": "Content maturity labels and visibility differ by content type. Official documentation reviewed 2026-10-09."
+    }
+  ],
+  "jobAid": [
+    "Define reader + job + successful outcome; search before creating a duplicate.",
+    "Choose the canonical space and parent; identify the maintenance owner.",
+    "Write prerequisites, numbered actions, expected results, stop conditions, and escalation evidence.",
+    "Use meaningful headings, descriptive links, and image text alternatives.",
+    "Verify the intended audience and inherited access; a link does not grant access.",
+    "Test realistic cases with a new reader; resolve ambiguity.",
+    "Publish the reviewed change; verify rendered content and reader access.",
+    "Review after process changes; keep examples, steps, ownership, and dates consistent."
+  ],
+  "disclaimer": "Independent instructional-design portfolio sample prepared for Lorne Hopkins. Original learning scenarios with synthetic people, organizations, records, and policies. This is a decision simulation, not a live vendor application, official vendor course, certification, or evidence of vendor endorsement. SAP, SAP Fieldglass, Jira, Confluence, and Atlassian are trademarks of their respective owners. Local configuration, permissions, subscriptions, and interface releases vary. Follow your organization’s approved process in production.",
+  "designNotes": {
+    "analysis": {
+      "performanceProblem": "staff follow stale instructions, cannot find the current page, or receive links they cannot open.",
+      "assumptions": "Role-specific novice users; no baseline learner research or client validation has been performed. All organizations, examples, policies, and results are synthetic.",
+      "needsValidation": "Before workplace deployment, interview a process owner and two target learners, confirm common errors, access roles, local vocabulary, and policy requirements."
+    },
+    "design": {
+      "strategy": "Task-centered worked example followed by progressively independent decision practice. Feedback explains consequences, not just correctness.",
+      "timingMinutes": {
+        "orientationAndObjectives": 2,
+        "lessonsAndPractice": 17,
+        "assessment": 5,
+        "jobAidAndTransfer": 1,
+        "learnerAuthoredPractice": 3
+      },
+      "alignment": {
+        "O1": [
+          "co-1",
+          "co-a1"
+        ],
+        "O2": [
+          "co-2",
+          "co-a2",
+          "co-a3",
+          "Learner-authored practice + performanceTask rubric"
+        ],
+        "O3": [
+          "co-3",
+          "co-a4"
+        ],
+        "O4": [
+          "co-4",
+          "co-5",
+          "co-a5",
+          "co-a6"
+        ]
+      },
+      "mastery": "80% of six equally weighted questions requires at least five correct (83.3%). A portfolio knowledge check is not authorization to perform production work.",
+      "durationEstimate": "Estimated 28 minutes including a three-minute learner-authored task; not pilot-tested. Learner pace varies."
+    },
+    "development": {
+      "artifact": "Five original text-led lessons, five decision scenarios with option-specific feedback, five formative checks, six scored questions with rationales, and a concise job aid.",
+      "accessibility": "Use semantic headings, keyboard-operable choices, visible focus, text feedback, and readable contrast in the delivery player. Do not rely on color or timing alone. Test the implemented player with keyboard and screen reader before release.",
+      "sourcePolicy": "Official product docs establish limited platform facts. Synthetic policies, examples, case decisions, and instructional writing are original. No vendor screenshots, course assets, client data, or claimed client results are included.",
+      "versionNote": "Source review date: 2026-10-09. Labels, permissions, configuration, and subscriptions can change; this is not a pixel-perfect application simulation."
+    },
+    "implementation": {
+      "delivery": "Self-paced public portfolio sample. No sign-in, purchase, production-system action, or live data is required.",
+      "launchChecks": "Validate JSON and option keys; test choice feedback, score calculation, retry, progress navigation, links, mobile readability, and accessibility in the final player. A content file alone does not establish runtime behavior.",
+      "facilitatorOption": "Ask learners to explain the evidence behind one incorrect choice and identify the equivalent role or process in their own organization without sharing confidential details."
+    },
+    "evaluation": {
+      "formative": "Track scenario misconceptions during a pilot; ask learners to restate the next action in their own words. Use feedback for revision, not ranking.",
+      "summative": "Six selected-response questions sampling the taught decisions; show rationale after submission. On nonmastery, recommend the linked topic and a fresh attempt.",
+      "transfer": "In an authorized sandbox, observe one complete role task against the job aid. Suggested pilot measures: correct record or destination, sufficient evidence, correct decision, and verified outcome.",
+      "honesty": "No learning gains, completion rates, client impact, certifications, or workplace outcomes have been measured or claimed.",
+      "masteryLimit": "Passing the multiple-choice quiz does not demonstrate independent writing skill, production-system proficiency, or workplace mastery. Review the learner-authored artifact with its rubric and separately observe an authorized sandbox task."
+    },
+    "performanceTask": "The create-level O2 is practiced through the original mini-runbook in co-2. Score one point each for (1) purpose and DEMO/job-ID prerequisite, (2) ordered observable actions, (3) complete branches for Complete, Processing under 5, and Failed/Processing at 5, and (4) explicit stop, support role, evidence packet, and no unauthorized rerun. Suggested practice criterion: 4/4. Use the exercise-specific 5-minute rule, not the main case’s 10-minute rule. A facilitator or learner scores the artifact; the quiz assesses decision recognition, not independent authoring mastery."
+  },
+  "durationIsEstimate": true,
+  "durationNote": "Estimated 28 minutes including a three-minute learner-authored task; not pilot-tested. Learner pace varies."
+}

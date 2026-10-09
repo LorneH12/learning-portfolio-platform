@@ -1,0 +1,362 @@
+{
+  "courseId": "ebitda-foundations",
+  "title": "EBITDA: Read the Number, Ask Better Questions",
+  "schemaVersion": 1,
+  "generatedDate": "2026-10-09",
+  "mediaStatus": "rendered",
+  "lessons": [
+    {
+      "courseId": "ebitda-foundations",
+      "lessonId": "e-l1",
+      "title": "Start with the question",
+      "video": "assets/media/ebitda-foundations/e-l1.mp4",
+      "poster": "assets/media/ebitda-foundations/e-l1.jpg",
+      "captions": "assets/media/ebitda-foundations/e-l1.vtt",
+      "transcript": "Your team at fictional Northstar Workshop sees quarterly net income of $84,000 and EBITDA of $180,000. A colleague asks whether the difference means the business received another $96,000 in cash. Your job is to explain the bridge before drawing a conclusion.\n\nEBITDA means earnings before interest, taxes, depreciation and amortization. EBIT stops before the last two adjustments. These measures strip selected expenses out of earnings for a particular analytical view. They do not rewrite the business’s actual costs or bank balance.\n\nIn the SEC reporting context, EBITDA is a non-GAAP measure. When used as a performance measure, its reconciliation starts from GAAP net income. A calculation with additional adjustments needs a distinct label, such as Adjusted EBITDA.\n\nBefore calculating, name the question. “How do these specified expenses affect the earnings comparison?” fits this exercise. “Can we spend $180,000 today?” requires cash and obligation information. Write one question you would ask before agreeing to a new expenditure.\n\nNow it's your turn. Which response best addresses the colleague’s cash claim? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 80.625,
+      "durationSeconds": 80.625,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 6568397,
+      "sha256": "200e86d622d65f3b7dd96d8f5e2cf9daa70a477e1cd82db1af746e99d5dea321",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "What does the difference mean?",
+          "startSeconds": 0,
+          "endSeconds": 20.07133333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Read the acronym carefully",
+          "startSeconds": 20.07133333333333,
+          "endSeconds": 37.95066666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Use a clear measure label",
+          "startSeconds": 37.95066666666667,
+          "endSeconds": 53.99000000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Choose the question first",
+          "startSeconds": 53.99000000000001,
+          "endSeconds": 72.25333333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 72.25333333333334,
+          "endSeconds": 80.6126666666667,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--ebitda-foundations--e-l1.mp4",
+      "captionsUrl": "media--ebitda-foundations--e-l1.vtt",
+      "posterUrl": "media--ebitda-foundations--e-l1.jpg"
+    },
+    {
+      "courseId": "ebitda-foundations",
+      "lessonId": "e-l2",
+      "title": "Build the bridge in two directions",
+      "video": "assets/media/ebitda-foundations/e-l2.mp4",
+      "poster": "assets/media/ebitda-foundations/e-l2.jpg",
+      "captions": "assets/media/ebitda-foundations/e-l2.vtt",
+      "transcript": "Worked example: all Northstar figures are synthetic, in USD thousands, for the same quarter. Revenue is 600. Operating expenses excluding depreciation and amortization are 420. Depreciation is 30; amortization is 10. There is no other operating or non-operating income or expense. Interest expense is 20, there is no interest income, and income-tax expense is 36.\n\nTop down: 600 − 420 − 30 − 10 = 140 EBIT. Then 140 − 20 − 36 = 84 net income.\n\nBottom up: 84 net income + 20 interest + 36 income tax = 140 EBIT. Add 30 depreciation + 10 amortization = 180 EBITDA. The bridge difference is 96, not a cash deposit. Check: 180 − 30 − 10 − 20 − 36 = 84.\n\nEBITDA = EBIT + depreciation + amortization. In this simplified case, EBITDA = net income + interest expense + income-tax expense + depreciation + amortization. All add-backs were already deducted in net income. If a statement contains interest income, use the disclosed interest treatment consistently; removing net interest means adding expense and subtracting income. Other non-operating items can make EBIT different from operating income. Do not assume those terms always match.\n\nTake two minutes to rebuild the bridge on paper before continuing. The figures and calculations are original.\n\nNow it's your turn. A second synthetic quarter has net income 50, interest expense 12, income-tax expense 18 and D&A 25, all in USD thousands. What is EBITDA? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 123.75,
+      "durationSeconds": 123.75,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 6854735,
+      "sha256": "6fe6db2f5af81f2152bde11e7c90647aefdea9d8786dca41260b04fe64fd5e0d",
+      "sourceParagraphs": 5,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Set the quarter's assumptions",
+          "startSeconds": 0,
+          "endSeconds": 27.895333333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Build the bridge top down",
+          "startSeconds": 27.895333333333333,
+          "endSeconds": 40.366666666666674,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Reconcile from the bottom up",
+          "startSeconds": 40.366666666666674,
+          "endSeconds": 63.28066666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Know what was deducted",
+          "startSeconds": 63.28066666666667,
+          "endSeconds": 97.76800000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Rebuild the bridge yourself",
+          "startSeconds": 97.76800000000001,
+          "endSeconds": 104.86333333333336,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 5,
+          "title": "Your turn: make the decision",
+          "startSeconds": 104.86333333333336,
+          "endSeconds": 123.74533333333336,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--ebitda-foundations--e-l2.mp4",
+      "captionsUrl": "media--ebitda-foundations--e-l2.vtt",
+      "posterUrl": "media--ebitda-foundations--e-l2.jpg"
+    },
+    {
+      "courseId": "ebitda-foundations",
+      "lessonId": "e-l3",
+      "title": "Check the add-backs",
+      "video": "assets/media/ebitda-foundations/e-l3.mp4",
+      "poster": "assets/media/ebitda-foundations/e-l3.jpg",
+      "captions": "assets/media/ebitda-foundations/e-l3.vtt",
+      "transcript": "Synthetic review file: Northstar’s cost-of-sales line already includes depreciation of 30. A draft spreadsheet adds back that 30 once, then adds it again because the cash-flow statement also lists depreciation. The second entry duplicates the same expense. Trace a number to its source instead of counting every place it appears.\n\nA new machine costs 90 in cash. That purchase is not depreciation of 90 for this quarter. Depreciation allocates an asset’s cost over its useful life; amortization typically allocates the cost of a finite-lived intangible. Adding those expenses back does not remove the need to buy or replace assets.\n\nUse income-tax expense recorded in the earnings figure, not a cash-tax payment. In a signed bridge, a tax benefit of 5 is −5, not +5. Ordinary payroll and property taxes remain operating expenses. Loan principal is also not interest expense.\n\nOriginal check: net income −10, interest expense 8, income-tax benefit 5, depreciation 12 and amortization 3 produces EBITDA = −10 + 8 − 5 + 12 + 3 = 8. If an analyst turns the benefit into +5, the answer is overstated by 10.\n\nExtra proposed add-backs for restructuring, stock compensation or routine software subscriptions are not part of the basic acronym. They require separate scrutiny and a different measure label; a new label alone does not make an adjustment appropriate.\n\nNow it's your turn. The draft adds a recurring software subscription of 6 to Northstar’s standard EBITDA of 180. What do you do? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 110.2,
+      "durationSeconds": 110.2,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 6420297,
+      "sha256": "218cf150f59d5432885ac20f7a7245c8ee039ae4c7b7c050af5afecc06975b27",
+      "sourceParagraphs": 5,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Count an expense only once",
+          "startSeconds": 0,
+          "endSeconds": 21.420666666666666,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Asset purchases still use cash",
+          "startSeconds": 21.420666666666666,
+          "endSeconds": 41.88133333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Keep the sign and category",
+          "startSeconds": 41.88133333333333,
+          "endSeconds": 59.888666666666666,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Check the signed example",
+          "startSeconds": 59.888666666666666,
+          "endSeconds": 80.85066666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Scrutinize extra adjustments",
+          "startSeconds": 80.85066666666667,
+          "endSeconds": 97.01266666666668,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 5,
+          "title": "Your turn: make the decision",
+          "startSeconds": 97.01266666666668,
+          "endSeconds": 110.17733333333335,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--ebitda-foundations--e-l3.mp4",
+      "captionsUrl": "media--ebitda-foundations--e-l3.vtt",
+      "posterUrl": "media--ebitda-foundations--e-l3.jpg"
+    },
+    {
+      "courseId": "ebitda-foundations",
+      "lessonId": "e-l4",
+      "title": "Profit measures are not cash balances",
+      "video": "assets/media/ebitda-foundations/e-l4.mp4",
+      "poster": "assets/media/ebitda-foundations/e-l4.jpg",
+      "captions": "assets/media/ebitda-foundations/e-l4.vtt",
+      "transcript": "Northstar’s original synthetic quarter has net income 84 and D&A 40. Assume interest and tax expenses equal cash paid, there are no other noncash items, and operating working capital consumed 50 in cash. Its simplified operating cash flow is 84 + 40 − 50 = 74. EBITDA is still 180.\n\nWhy the gap? EBITDA excludes the interest and tax costs while this cash-flow example includes their payments. It also misses the 50 tied up in operating working capital. For example, customers may not yet have paid invoices, or cash may be tied up in inventory. Changes in receivables, inventory and payables can alter cash without altering EBITDA by the same amount.\n\nNow assume capital expenditures of 90. Operating cash flow less capital spending is 74 − 90 = −16 for this exercise. That calculation still is not the bank balance or a complete view of financing needs. The actual cash-flow statement separates operating, investing and financing movements; debt principal repayments are financing movements in this simplified U.S. example.\n\nPause and explain aloud: how could positive EBITDA coexist with a cash shortage? Include at least one timing issue and one real cash obligation. Do not use this deliberately simplified bridge as a universal cash-flow formula.\n\nNow it's your turn. The manager says, “EBITDA is 180, so the 90 machine purchase is easily funded.” Choose your next step. Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 106.375,
+      "durationSeconds": 106.375,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 6228839,
+      "sha256": "09b365d9aead6e71e6a9ea752f291024df4c6425ee56f07169de476ea4f461f0",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Calculate the simplified cash flow",
+          "startSeconds": 0,
+          "endSeconds": 25.218,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Explain the earnings-to-cash gap",
+          "startSeconds": 25.218,
+          "endSeconds": 50.27066666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Include real capital spending",
+          "startSeconds": 50.27066666666667,
+          "endSeconds": 77.94200000000002,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Explain a positive-EBITDA cash shortage",
+          "startSeconds": 77.94200000000002,
+          "endSeconds": 93.4906666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 93.4906666666667,
+          "endSeconds": 106.35133333333336,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--ebitda-foundations--e-l4.mp4",
+      "captionsUrl": "media--ebitda-foundations--e-l4.vtt",
+      "posterUrl": "media--ebitda-foundations--e-l4.jpg"
+    },
+    {
+      "courseId": "ebitda-foundations",
+      "lessonId": "e-l5",
+      "title": "Challenge a claim with useful evidence",
+      "video": "assets/media/ebitda-foundations/e-l5.mp4",
+      "poster": "assets/media/ebitda-foundations/e-l5.jpg",
+      "captions": "assets/media/ebitda-foundations/e-l5.vtt",
+      "transcript": "Decision scenario: Northstar’s dashboard reads “EBITDA rose 20%; the business is financially stronger.” You discover that the current number includes a newly excluded recurring expense, while last quarter did not. The cash forecast also shows a large supplier payment next week.\n\nStep 1: ask for a like-for-like bridge, period and definition. Step 2: identify extra adjustments separately. Step 3: compare the relevant cash information before making a liquidity claim. Step 4: explain what you know, what you do not know and the next evidence needed.\n\nOriginal model response: “The published figures use different adjustments, so the 20% change is not yet a like-for-like comparison. Please show both periods on the same basis and explain the added exclusion. We also need the cash forecast before concluding that next week’s supplier payment is funded.”\n\nFor a real reporting decision, involve the finance team. SEC guidance addresses non-GAAP labeling, potentially misleading adjustments and prominence of comparable GAAP information in covered disclosures. This sample is not a disclosure-compliance checklist.\n\nPractice: write a two-sentence reply to the manager. Your reply should name one reconciliation request and one cash question, without claiming that EBITDA is useless.\n\nNow it's your turn. What happens next in the scenario? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 90.9,
+      "durationSeconds": 90.9,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5173747,
+      "sha256": "7ef9db11b1c42e106b43c07905b7a588e2d7a36de4ac6503dd63a5f3f35e42a2",
+      "sourceParagraphs": 5,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Question the improvement claim",
+          "startSeconds": 0,
+          "endSeconds": 19.020666666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Request the evidence in order",
+          "startSeconds": 19.020666666666667,
+          "endSeconds": 36.665333333333336,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Make a precise response",
+          "startSeconds": 36.665333333333336,
+          "endSeconds": 55.90466666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Involve the finance team",
+          "startSeconds": 55.90466666666667,
+          "endSeconds": 72.81866666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Write a useful two-sentence reply",
+          "startSeconds": 72.81866666666667,
+          "endSeconds": 83.69000000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 5,
+          "title": "Your turn: make the decision",
+          "startSeconds": 83.69000000000001,
+          "endSeconds": 90.87600000000002,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--ebitda-foundations--e-l5.mp4",
+      "captionsUrl": "media--ebitda-foundations--e-l5.vtt",
+      "posterUrl": "media--ebitda-foundations--e-l5.jpg"
+    }
+  ],
+  "contentFidelity": "All source paragraphs narrated; citation tokens omitted from speech. Authoritative source content and assessments remain unchanged.",
+  "accessibility": "Burned captions plus equivalent VTT and plain transcript. Leave optional VTT track off by default to avoid duplicate visible captions.",
+  "qualityLimitations": [
+    "No human listening audition or end-to-end playback; runtime lacks audio input. Independent ASR, signal analysis, decoded video, sampled frames, source mapping and caption layout checks performed."
+  ],
+  "music": "none",
+  "distribution": "Original synthetic scenarios and original instructional diagrams. No real-person face/voice cloning."
+}

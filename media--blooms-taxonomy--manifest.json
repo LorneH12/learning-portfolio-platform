@@ -1,0 +1,341 @@
+{
+  "courseId": "blooms-taxonomy",
+  "title": "Bloom’s Taxonomy: Match the Learning to the Work",
+  "schemaVersion": 1,
+  "generatedDate": "2026-10-09",
+  "mediaStatus": "rendered",
+  "lessons": [
+    {
+      "courseId": "blooms-taxonomy",
+      "lessonId": "bt-l1",
+      "title": "1. Read the revised taxonomy accurately",
+      "video": "assets/media/blooms-taxonomy/bt-l1.mp4",
+      "poster": "assets/media/blooms-taxonomy/bt-l1.jpg",
+      "captions": "assets/media/blooms-taxonomy/bt-l1.vtt",
+      "transcript": "Allow 4 minutes. Bloom’s original cognitive taxonomy was published in 1956. This sample uses the 2001 revision associated with Anderson and Krathwohl: Remember, Understand, Apply, Analyze, Evaluate, and Create. The revision uses action-oriented category names and places Create after Evaluate. Do not silently mix these labels with the original list. University of Illinois Chicago and Iowa State provide background in Sources.\n\nA compact guide: Remember retrieves information; Understand makes meaning; Apply uses a procedure; Analyze examines parts and relationships; Evaluate judges against criteria; Create develops a coherent new product or plan. The revised framework also distinguishes factual, conceptual, procedural, and metacognitive knowledge. A task involves both what knowledge is used and what a learner does with it.\n\nWorked example: recalling the definition of an urgent ticket is Remember; explaining the distinction between urgent and routine is Understand; using a triage rule on a case is Apply. These are different tasks, even if every screen contains the word “priority.”\n\nThe taxonomy is a classification aid. Choosing the highest-sounding label does not automatically improve training. In this sample, use the category that best describes the actual performance you need. A routine procedure can appropriately require Apply.\n\nNow it's your turn. A stakeholder asks you to label a routine record-entry task “Create” because it sounds more advanced. What should you do? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 104.416667,
+      "durationSeconds": 104.416667,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 6423920,
+      "sha256": "5bfd2da14f791a8272fa7ced2575fa0702c0aa45ec6d7ecdb5879c698aa7cfa2",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Use the revised taxonomy consistently",
+          "startSeconds": 0,
+          "endSeconds": 31.308666666666664,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Classify thinking and knowledge together",
+          "startSeconds": 31.308666666666664,
+          "endSeconds": 58.76133333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "One topic can require different thinking",
+          "startSeconds": 58.76133333333333,
+          "endSeconds": 75.71266666666668,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Choose the category the work needs",
+          "startSeconds": 75.71266666666668,
+          "endSeconds": 91.80000000000003,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 91.80000000000003,
+          "endSeconds": 104.41000000000004,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--blooms-taxonomy--bt-l1.mp4",
+      "captionsUrl": "media--blooms-taxonomy--bt-l1.vtt",
+      "posterUrl": "media--blooms-taxonomy--bt-l1.jpg"
+    },
+    {
+      "courseId": "blooms-taxonomy",
+      "lessonId": "bt-l2",
+      "title": "2. Classify the task, not just its verb",
+      "video": "assets/media/blooms-taxonomy/bt-l2.mp4",
+      "poster": "assets/media/blooms-taxonomy/bt-l2.jpg",
+      "captions": "assets/media/blooms-taxonomy/bt-l2.vtt",
+      "transcript": "Allow 4 minutes. A verb alone can conceal the thinking required. “Identify” might mean recognizing a memorized definition or separating relevant evidence from irrelevant details in an unfamiliar case. Read the content, conditions, reference materials, novelty, and required reasoning before assigning a category.\n\nWorked example: fictional rule card: tickets blocking the entire team’s login are urgent; a single user’s cosmetic display problem is routine. Selecting priority by executing this rule is Apply. Examining several incident reports to distinguish shared causes from isolated symptoms is Analyze. Judging two escalation proposals against response-time and capacity criteria is Evaluate. Developing a new triage plan with its own coherent workflow is Create.\n\nKnowledge matters too. The exact queue name is factual knowledge. The relationship between impact and urgency is conceptual. How to perform triage is procedural. Recognizing that your own confidence is low and choosing an appropriate checking strategy involves metacognitive knowledge. These dimensions describe the task, not the intelligence or worth of the learner.\n\nThirty-second check: choose a familiar task and finish “The learner must use ___ knowledge to ___.” If unsure about the category, write the actual evidence you would need to observe before choosing a label.\n\nNow it's your turn. A quiz says “Analyze this term” but asks learners to select its memorized definition. How should you review it? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 100.541667,
+      "durationSeconds": 100.541667,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5444782,
+      "sha256": "6138de1c77e059fabbb6d09972853ce16cd33ee8a443840b283beb4af70572a4",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Look beyond the verb",
+          "startSeconds": 0,
+          "endSeconds": 21.527333333333335,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Compare four genuine performances",
+          "startSeconds": 21.527333333333335,
+          "endSeconds": 52.89466666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Identify the knowledge dimension",
+          "startSeconds": 52.89466666666667,
+          "endSeconds": 76.18200000000002,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Describe the evidence before the label",
+          "startSeconds": 76.18200000000002,
+          "endSeconds": 88.32800000000002,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 88.32800000000002,
+          "endSeconds": 100.51133333333335,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--blooms-taxonomy--bt-l2.mp4",
+      "captionsUrl": "media--blooms-taxonomy--bt-l2.vtt",
+      "posterUrl": "media--blooms-taxonomy--bt-l2.jpg"
+    },
+    {
+      "courseId": "blooms-taxonomy",
+      "lessonId": "bt-l3",
+      "title": "3. Turn an intention into an observable objective",
+      "video": "assets/media/blooms-taxonomy/bt-l3.mp4",
+      "poster": "assets/media/blooms-taxonomy/bt-l3.jpg",
+      "captions": "assets/media/blooms-taxonomy/bt-l3.vtt",
+      "transcript": "Allow 4 minutes. “Understand triage” communicates a broad intention but does not specify the evidence to collect. For this sample, make three elements explicit: the observable behavior, the conditions under which it happens, and the acceptable standard. Carnegie Mellon’s learning-objective guidance supports writing objectives that point to a performance that can be assessed.\n\nWorked example: “Given the current rule card and four fictional support tickets, assign a priority to each ticket with at least three correct.” Behavior: assign priorities. Condition: four cases and the rule card. Standard: three of four correct. The numbers are illustrative design choices, not a validated safety threshold. A real organization must set standards appropriate to its risks.\n\nAvoid piling incompatible performances into one objective. “List definitions, build an escalation workflow, and motivate colleagues” needs separate evidence. Also avoid false precision: a strict time limit is appropriate only when speed is genuinely part of the job and the measurement is fair.\n\nDrafting pause, 60 seconds: rewrite “Know the handoff process.” Sample response: “Given a fictional handoff and the required-field checklist, identify all missing required elements.” Add a criterion that reflects the use case. Your draft is a self-check, not an automatically verified performance.\n\nNow it's your turn. Which objective is most ready to guide a case-based assessment? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 95.625,
+      "durationSeconds": 95.625,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 6832757,
+      "sha256": "c2bc32e1b981443250344d60f0fa1bc5d6182cf57a10c788f160d412560f4920",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Make the objective observable",
+          "startSeconds": 0,
+          "endSeconds": 23.660666666666668,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Inspect a complete objective",
+          "startSeconds": 23.660666666666668,
+          "endSeconds": 48.39333333333334,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Avoid overloaded or arbitrary objectives",
+          "startSeconds": 48.39333333333334,
+          "endSeconds": 67.48333333333335,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Rewrite a broad intention",
+          "startSeconds": 67.48333333333335,
+          "endSeconds": 86.90933333333335,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 86.90933333333335,
+          "endSeconds": 95.61000000000003,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--blooms-taxonomy--bt-l3.mp4",
+      "captionsUrl": "media--blooms-taxonomy--bt-l3.vtt",
+      "posterUrl": "media--blooms-taxonomy--bt-l3.jpg"
+    },
+    {
+      "courseId": "blooms-taxonomy",
+      "lessonId": "bt-l4",
+      "title": "4. Align objective, practice, and evidence",
+      "video": "assets/media/blooms-taxonomy/bt-l4.mp4",
+      "poster": "assets/media/blooms-taxonomy/bt-l4.jpg",
+      "captions": "assets/media/blooms-taxonomy/bt-l4.vtt",
+      "transcript": "Allow 4 minutes. Alignment means the objective names the intended performance, practice prepares learners for it, and assessment elicits evidence of it. Carnegie Mellon’s alignment guidance illustrates why recall-only tests do not establish an analytical objective.\n\nWorked example: objective “Judge an escalation proposal against impact, staffing, and response-time criteria.” Practice: compare two sample proposals, see a worked critique, then judge a third using those criteria. Assessment: select the strongest judgment of a new proposal and its reason. This selected-response assessment samples judgment; an independently written critique would provide additional evidence of the learner’s reasoning.\n\nMisaligned version: the same objective, followed only by a slide defining escalation and a quiz asking for the definition. The problem is not that definitions are useless. They may be necessary preparation. The problem is that the promised performance is never practiced or assessed.\n\nIf the objective is Create, choosing somebody else’s plan is insufficient evidence of original production. Ask the learner to produce an artifact and assess it against transparent criteria. Do not claim that the multiple-choice assessment in this sample verifies creation skill; its objectives deliberately focus on classification and selection.\n\nNow it's your turn. Your objective requires producing a new onboarding plan. The test asks learners to pick the best of three finished plans. What is the best revision? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 99.8,
+      "durationSeconds": 99.8,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 5257723,
+      "sha256": "72aba2e548cca255c6065785dbeb091bf2f14c2781f5644ef17f88f86799cc0e",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Align three parts of the design",
+          "startSeconds": 0,
+          "endSeconds": 17.212666666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Prepare and assess the same judgment",
+          "startSeconds": 17.212666666666667,
+          "endSeconds": 45.98800000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Spot the missing performance",
+          "startSeconds": 45.98800000000001,
+          "endSeconds": 64.01666666666667,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "Creation needs a learner-made artifact",
+          "startSeconds": 64.01666666666667,
+          "endSeconds": 86.15733333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 86.15733333333333,
+          "endSeconds": 99.79666666666667,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--blooms-taxonomy--bt-l4.mp4",
+      "captionsUrl": "media--blooms-taxonomy--bt-l4.vtt",
+      "posterUrl": "media--blooms-taxonomy--bt-l4.jpg"
+    },
+    {
+      "courseId": "blooms-taxonomy",
+      "lessonId": "bt-l5",
+      "title": "5. Review a small curriculum as an L&D partner",
+      "video": "assets/media/blooms-taxonomy/bt-l5.mp4",
+      "poster": "assets/media/blooms-taxonomy/bt-l5.jpg",
+      "captions": "assets/media/blooms-taxonomy/bt-l5.vtt",
+      "transcript": "Allow 4 minutes. A review can be practical and brief. Start with the work requirement. Read each objective, find its practice, and identify the evidence that would show success. Flag a gap when the assessment cannot support the claim. Use Bloom’s language to explain the mismatch, not to rank people or decorate slides.\n\nWorked example: a manager requests a 20-minute change module for ticket triage. Requirement: use the new rule card correctly. Draft A has six definition screens and a terminology quiz. Draft B has a brief rule explanation, a worked example, two supported cases, a new-case check, and a job aid. Choose B for this requirement. Keep definitions only where they enable the decision. A rollout communication about why the process is changing may still be needed, but communication and demonstrated skill answer different questions.\n\nReview task, 60 seconds: sketch one objective, one practice task, and one assessment task for something you teach. Underline the same required action in all three. Note one tool or reference available during work that should also be available during practice.\n\nFinish by stating the limit of your evidence. Passing a short sample check supports a narrow conclusion about these decisions. It is not a professional credential or proof of full workplace proficiency.\n\nNow it's your turn. A sponsor says an 80% terminology score proves readiness to triage unfamiliar cases. What should you recommend? Pause the video and make your choice in the activity below.\n",
+      "startSeconds": 0,
+      "endSeconds": 96.2,
+      "durationSeconds": 96.2,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "language": "en",
+      "burnedCaptions": true,
+      "vttDefault": false,
+      "sizeBytes": 6517446,
+      "sha256": "dc7efa9839a611fff64a06bae457049570816530ab41f9105ac1c2ef168bb9d0",
+      "sourceParagraphs": 4,
+      "activity": "Interactive activity remains on lesson page; video invites a pause and choice below.",
+      "syntheticMedia": true,
+      "paragraphs": [
+        {
+          "sourceParagraph": 0,
+          "title": "Review the evidence chain",
+          "startSeconds": 0,
+          "endSeconds": 19.959333333333333,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 1,
+          "title": "Compare two designs against the task",
+          "startSeconds": 19.959333333333333,
+          "endSeconds": 53.940000000000005,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 2,
+          "title": "Underline the common action",
+          "startSeconds": 53.940000000000005,
+          "endSeconds": 70.59800000000001,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 3,
+          "title": "State what the evidence supports",
+          "startSeconds": 70.59800000000001,
+          "endSeconds": 83.35200000000002,
+          "kind": "instruction"
+        },
+        {
+          "sourceParagraph": 4,
+          "title": "Your turn: make the decision",
+          "startSeconds": 83.35200000000002,
+          "endSeconds": 96.1966666666667,
+          "kind": "activity"
+        }
+      ],
+      "videoUrl": "media--blooms-taxonomy--bt-l5.mp4",
+      "captionsUrl": "media--blooms-taxonomy--bt-l5.vtt",
+      "posterUrl": "media--blooms-taxonomy--bt-l5.jpg"
+    }
+  ],
+  "contentFidelity": "All source paragraphs narrated; citation tokens omitted from speech. Authoritative source content and assessments remain unchanged.",
+  "accessibility": "Burned captions plus equivalent VTT and plain transcript. Leave optional VTT track off by default to avoid duplicate visible captions.",
+  "qualityLimitations": [
+    "No human listening audition or end-to-end playback; runtime lacks audio input. Independent ASR, signal analysis, decoded video, sampled frames, source mapping and caption layout checks performed."
+  ],
+  "music": "none",
+  "distribution": "Original synthetic scenarios and original instructional diagrams. No real-person face/voice cloning."
+}
