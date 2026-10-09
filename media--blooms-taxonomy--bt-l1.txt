@@ -1,0 +1,9 @@
+Allow 4 minutes. Bloom’s original cognitive taxonomy was published in 1956. This sample uses the 2001 revision associated with Anderson and Krathwohl: Remember, Understand, Apply, Analyze, Evaluate, and Create. The revision uses action-oriented category names and places Create after Evaluate. Do not silently mix these labels with the original list. University of Illinois Chicago and Iowa State provide background in Sources.
+
+A compact guide: Remember retrieves information; Understand makes meaning; Apply uses a procedure; Analyze examines parts and relationships; Evaluate judges against criteria; Create develops a coherent new product or plan. The revised framework also distinguishes factual, conceptual, procedural, and metacognitive knowledge. A task involves both what knowledge is used and what a learner does with it.
+
+Worked example: recalling the definition of an urgent ticket is Remember; explaining the distinction between urgent and routine is Understand; using a triage rule on a case is Apply. These are different tasks, even if every screen contains the word “priority.”
+
+The taxonomy is a classification aid. Choosing the highest-sounding label does not automatically improve training. In this sample, use the category that best describes the actual performance you need. A routine procedure can appropriately require Apply.
+
+Now it's your turn. A stakeholder asks you to label a routine record-entry task “Create” because it sounds more advanced. What should you do? Pause the video and make your choice in the activity below.

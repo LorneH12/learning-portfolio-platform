@@ -1,0 +1,9 @@
+Allow 4 minutes. “Understand triage” communicates a broad intention but does not specify the evidence to collect. For this sample, make three elements explicit: the observable behavior, the conditions under which it happens, and the acceptable standard. Carnegie Mellon’s learning-objective guidance supports writing objectives that point to a performance that can be assessed.
+
+Worked example: “Given the current rule card and four fictional support tickets, assign a priority to each ticket with at least three correct.” Behavior: assign priorities. Condition: four cases and the rule card. Standard: three of four correct. The numbers are illustrative design choices, not a validated safety threshold. A real organization must set standards appropriate to its risks.
+
+Avoid piling incompatible performances into one objective. “List definitions, build an escalation workflow, and motivate colleagues” needs separate evidence. Also avoid false precision: a strict time limit is appropriate only when speed is genuinely part of the job and the measurement is fair.
+
+Drafting pause, 60 seconds: rewrite “Know the handoff process.” Sample response: “Given a fictional handoff and the required-field checklist, identify all missing required elements.” Add a criterion that reflects the use case. Your draft is a self-check, not an automatically verified performance.
+
+Now it's your turn. Which objective is most ready to guide a case-based assessment? Pause the video and make your choice in the activity below.

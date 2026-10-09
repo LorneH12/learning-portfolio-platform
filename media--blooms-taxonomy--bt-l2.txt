@@ -1,0 +1,9 @@
+Allow 4 minutes. A verb alone can conceal the thinking required. “Identify” might mean recognizing a memorized definition or separating relevant evidence from irrelevant details in an unfamiliar case. Read the content, conditions, reference materials, novelty, and required reasoning before assigning a category.
+
+Worked example: fictional rule card: tickets blocking the entire team’s login are urgent; a single user’s cosmetic display problem is routine. Selecting priority by executing this rule is Apply. Examining several incident reports to distinguish shared causes from isolated symptoms is Analyze. Judging two escalation proposals against response-time and capacity criteria is Evaluate. Developing a new triage plan with its own coherent workflow is Create.
+
+Knowledge matters too. The exact queue name is factual knowledge. The relationship between impact and urgency is conceptual. How to perform triage is procedural. Recognizing that your own confidence is low and choosing an appropriate checking strategy involves metacognitive knowledge. These dimensions describe the task, not the intelligence or worth of the learner.
+
+Thirty-second check: choose a familiar task and finish “The learner must use ___ knowledge to ___.” If unsure about the category, write the actual evidence you would need to observe before choosing a label.
+
+Now it's your turn. A quiz says “Analyze this term” but asks learners to select its memorized definition. How should you review it? Pause the video and make your choice in the activity below.
