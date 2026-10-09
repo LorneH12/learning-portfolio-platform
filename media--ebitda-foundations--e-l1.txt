@@ -1,0 +1,9 @@
+Your team at fictional Northstar Workshop sees quarterly net income of $84,000 and EBITDA of $180,000. A colleague asks whether the difference means the business received another $96,000 in cash. Your job is to explain the bridge before drawing a conclusion.
+
+EBITDA means earnings before interest, taxes, depreciation and amortization. EBIT stops before the last two adjustments. These measures strip selected expenses out of earnings for a particular analytical view. They do not rewrite the business’s actual costs or bank balance.
+
+In the SEC reporting context, EBITDA is a non-GAAP measure. When used as a performance measure, its reconciliation starts from GAAP net income. A calculation with additional adjustments needs a distinct label, such as Adjusted EBITDA.
+
+Before calculating, name the question. “How do these specified expenses affect the earnings comparison?” fits this exercise. “Can we spend $180,000 today?” requires cash and obligation information. Write one question you would ask before agreeing to a new expenditure.
+
+Now it's your turn. Which response best addresses the colleague’s cash claim? Pause the video and make your choice in the activity below.

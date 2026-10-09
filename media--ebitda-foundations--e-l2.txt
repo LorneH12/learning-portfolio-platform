@@ -1,0 +1,11 @@
+Worked example: all Northstar figures are synthetic, in USD thousands, for the same quarter. Revenue is 600. Operating expenses excluding depreciation and amortization are 420. Depreciation is 30; amortization is 10. There is no other operating or non-operating income or expense. Interest expense is 20, there is no interest income, and income-tax expense is 36.
+
+Top down: 600 − 420 − 30 − 10 = 140 EBIT. Then 140 − 20 − 36 = 84 net income.
+
+Bottom up: 84 net income + 20 interest + 36 income tax = 140 EBIT. Add 30 depreciation + 10 amortization = 180 EBITDA. The bridge difference is 96, not a cash deposit. Check: 180 − 30 − 10 − 20 − 36 = 84.
+
+EBITDA = EBIT + depreciation + amortization. In this simplified case, EBITDA = net income + interest expense + income-tax expense + depreciation + amortization. All add-backs were already deducted in net income. If a statement contains interest income, use the disclosed interest treatment consistently; removing net interest means adding expense and subtracting income. Other non-operating items can make EBIT different from operating income. Do not assume those terms always match.
+
+Take two minutes to rebuild the bridge on paper before continuing. The figures and calculations are original.
+
+Now it's your turn. A second synthetic quarter has net income 50, interest expense 12, income-tax expense 18 and D&A 25, all in USD thousands. What is EBITDA? Pause the video and make your choice in the activity below.

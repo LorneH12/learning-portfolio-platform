@@ -1,0 +1,11 @@
+Decision scenario: Northstar’s dashboard reads “EBITDA rose 20%; the business is financially stronger.” You discover that the current number includes a newly excluded recurring expense, while last quarter did not. The cash forecast also shows a large supplier payment next week.
+
+Step 1: ask for a like-for-like bridge, period and definition. Step 2: identify extra adjustments separately. Step 3: compare the relevant cash information before making a liquidity claim. Step 4: explain what you know, what you do not know and the next evidence needed.
+
+Original model response: “The published figures use different adjustments, so the 20% change is not yet a like-for-like comparison. Please show both periods on the same basis and explain the added exclusion. We also need the cash forecast before concluding that next week’s supplier payment is funded.”
+
+For a real reporting decision, involve the finance team. SEC guidance addresses non-GAAP labeling, potentially misleading adjustments and prominence of comparable GAAP information in covered disclosures. This sample is not a disclosure-compliance checklist.
+
+Practice: write a two-sentence reply to the manager. Your reply should name one reconciliation request and one cash question, without claiming that EBITDA is useless.
+
+Now it's your turn. What happens next in the scenario? Pause the video and make your choice in the activity below.

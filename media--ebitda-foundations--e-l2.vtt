@@ -1,0 +1,74 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.123
+Worked example: all Northstar figures are synthetic, in USD thousands, for the same quarter.
+
+00:00:06.363 --> 00:00:07.856
+Revenue is 600.
+
+00:00:08.096 --> 00:00:13.600
+Operating expenses excluding depreciation and amortization are 420.
+
+00:00:13.840 --> 00:00:16.912
+Depreciation is 30; amortization is 10.
+
+00:00:17.152 --> 00:00:21.013
+There is no other operating or non-operating income or expense.
+
+00:00:21.253 --> 00:00:27.205
+Interest expense is 20, there is no interest income, and income-tax expense is 36.
+
+00:00:27.895 --> 00:00:34.615
+Top down: 600 − 420 − 30 − 10 = 140 EBIT.
+
+00:00:34.855 --> 00:00:39.677
+Then 140 − 20 − 36 = 84 net income.
+
+00:00:40.367 --> 00:00:47.620
+Bottom up: 84 net income + 20 interest + 36 income tax = 140 EBIT.
+
+00:00:47.860 --> 00:00:53.321
+Add 30 depreciation + 10 amortization = 180 EBITDA.
+
+00:00:53.561 --> 00:00:56.761
+The bridge difference is 96, not a cash deposit.
+
+00:00:57.001 --> 00:01:02.591
+Check: 180 − 30 − 10 − 20 − 36 = 84.
+
+00:01:03.281 --> 00:01:07.398
+EBITDA = EBIT + depreciation + amortization.
+
+00:01:07.638 --> 00:01:17.089
+In this simplified case, EBITDA = net income + interest expense + income-tax expense + depreciation + amortization.
+
+00:01:17.329 --> 00:01:20.230
+All add-backs were already deducted in net income.
+
+00:01:20.470 --> 00:01:30.198
+If a statement contains interest income, use the disclosed interest treatment consistently; removing net interest means adding expense and subtracting income.
+
+00:01:30.438 --> 00:01:34.705
+Other non-operating items can make EBIT different from operating income.
+
+00:01:34.945 --> 00:01:37.078
+Do not assume those terms always match.
+
+00:01:37.768 --> 00:01:41.416
+Take two minutes to rebuild the bridge on paper before continuing.
+
+00:01:41.656 --> 00:01:44.173
+The figures and calculations are original.
+
+00:01:44.863 --> 00:01:45.951
+Now it's your turn.
+
+00:01:46.191 --> 00:01:58.309
+A second synthetic quarter has net income 50, interest expense 12, income-tax expense 18 and D&A 25, all in USD thousands.
+
+00:01:58.549 --> 00:01:59.701
+What is EBITDA?
+
+00:01:59.941 --> 00:02:03.055
+Pause the video and make your choice in the activity below.
+

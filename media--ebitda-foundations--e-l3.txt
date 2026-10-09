@@ -1,0 +1,11 @@
+Synthetic review file: Northstar’s cost-of-sales line already includes depreciation of 30. A draft spreadsheet adds back that 30 once, then adds it again because the cash-flow statement also lists depreciation. The second entry duplicates the same expense. Trace a number to its source instead of counting every place it appears.
+
+A new machine costs 90 in cash. That purchase is not depreciation of 90 for this quarter. Depreciation allocates an asset’s cost over its useful life; amortization typically allocates the cost of a finite-lived intangible. Adding those expenses back does not remove the need to buy or replace assets.
+
+Use income-tax expense recorded in the earnings figure, not a cash-tax payment. In a signed bridge, a tax benefit of 5 is −5, not +5. Ordinary payroll and property taxes remain operating expenses. Loan principal is also not interest expense.
+
+Original check: net income −10, interest expense 8, income-tax benefit 5, depreciation 12 and amortization 3 produces EBITDA = −10 + 8 − 5 + 12 + 3 = 8. If an analyst turns the benefit into +5, the answer is overstated by 10.
+
+Extra proposed add-backs for restructuring, stock compensation or routine software subscriptions are not part of the basic acronym. They require separate scrutiny and a different measure label; a new label alone does not make an adjustment appropriate.
+
+Now it's your turn. The draft adds a recurring software subscription of 6 to Northstar’s standard EBITDA of 180. What do you do? Pause the video and make your choice in the activity below.

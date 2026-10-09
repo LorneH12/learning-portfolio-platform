@@ -1,0 +1,9 @@
+Northstar’s original synthetic quarter has net income 84 and D&A 40. Assume interest and tax expenses equal cash paid, there are no other noncash items, and operating working capital consumed 50 in cash. Its simplified operating cash flow is 84 + 40 − 50 = 74. EBITDA is still 180.
+
+Why the gap? EBITDA excludes the interest and tax costs while this cash-flow example includes their payments. It also misses the 50 tied up in operating working capital. For example, customers may not yet have paid invoices, or cash may be tied up in inventory. Changes in receivables, inventory and payables can alter cash without altering EBITDA by the same amount.
+
+Now assume capital expenditures of 90. Operating cash flow less capital spending is 74 − 90 = −16 for this exercise. That calculation still is not the bank balance or a complete view of financing needs. The actual cash-flow statement separates operating, investing and financing movements; debt principal repayments are financing movements in this simplified U.S. example.
+
+Pause and explain aloud: how could positive EBITDA coexist with a cash shortage? Include at least one timing issue and one real cash obligation. Do not use this deliberately simplified bridge as a universal cash-flow formula.
+
+Now it's your turn. The manager says, “EBITDA is 180, so the 90 machine purchase is easily funded.” Choose your next step. Pause the video and make your choice in the activity below.
