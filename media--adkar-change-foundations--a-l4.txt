@@ -1,0 +1,11 @@
+Cedar’s team uses the queue correctly for a week. Then a supervisor starts accepting email handoffs again because it feels faster. Coordinators follow the supervisor’s example, even though they remember the new steps.
+
+Reinforcement concerns sustaining change. An original Cedar response is to ask why the shortcut returned, fix any genuine friction, agree on the handoff standard and recognize accurate work. Do not reward raw ticket counts if that encourages rushed or incomplete handoffs.
+
+Measure the behavior you intended. For this practice case, inspect a small agreed sample of handoffs for an owner and usable next action. Pair the result with a short conversation about obstacles. Training-completion rate measures attendance or completion, not the quality of handoffs.
+
+Original follow-through plan: the shift lead checks five agreed sample handoffs on Friday, notes whether both required fields are useful, asks the team what slowed them down and reviews the next step the following Tuesday. The sample size and dates are practice choices, not validated thresholds. Avoid publishing individual rankings or collecting unnecessary personal details.
+
+A drop in use can also signal a new workload, tool or motivation barrier. Ask again rather than assuming the original problem is solved forever.
+
+Now it's your turn. Correct queue use falls after supervisors accept email again. Which plan is strongest? Pause the video and make your choice in the activity below.

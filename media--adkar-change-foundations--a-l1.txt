@@ -1,0 +1,9 @@
+Fictional Cedar Service is replacing email handoffs with a shared ticket queue. The desired behavior is specific: before ending a shift, each coordinator assigns every open ticket to an owner and records the next action. Installing the tool does not establish that behavior.
+
+Prosci’s ADKAR model concerns individual change. Its five elements are Awareness, Desire, Knowledge, Ability and Reinforcement. In brief: understand the reason; choose to engage; learn what to do; demonstrate it; keep it going. The model is one part of a wider change-management approach.
+
+This sample uses original conversations to explore those distinctions. It is not an official diagnostic instrument. Treat a possible barrier as a hypothesis to discuss, rather than a score that defines someone.
+
+Worked example: a coordinator can explain the new handoff steps but has never completed them in the live workflow. You have some evidence of knowledge. You do not yet have evidence that the person can carry out the behavior in realistic conditions. Record exactly what you observed before choosing a response.
+
+Now it's your turn. Which success statement is most observable for Cedar Service? Pause the video and make your choice in the activity below.

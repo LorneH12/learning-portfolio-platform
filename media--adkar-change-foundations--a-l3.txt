@@ -1,0 +1,11 @@
+Mateo: “I support the queue, but I don’t know when to use Assign versus Transfer.” A short, role-specific demonstration followed by a worked example targets Knowledge. Ask Mateo to explain which action fits a sample ticket and why.
+
+Nia: “I can explain every step. In the evening shift my account cannot assign tickets, and I have no cover to practice.” Another slide deck will not fix the permission problem or create practice time. Help resolve authorized access through the proper support route, then provide protected practice and feedback. These conditions block Ability.
+
+The difference is the evidence: being able to explain a task is not the same as completing it. Observed performance matters. These are fictional cases, not Prosci assessment items.
+
+Original worked practice: give Mateo a sample ticket with no owner and an unresolved question. Demonstrate assigning an owner and writing a next action once. Then let Mateo complete a new ticket without hints. If the explanation is accurate but the action fails, ask what happened and inspect the environment before prescribing more instruction.
+
+Consider accessibility: the practice route should work with the tools and accommodations the person needs. A system obstacle is not a character flaw.
+
+Now it's your turn. Nia explains the steps correctly but her account cannot assign tickets. Choose the most useful immediate response. Pause the video and make your choice in the activity below.
