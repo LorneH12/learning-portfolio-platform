@@ -1,0 +1,9 @@
+Allow 4 minutes. Prior experience is useful evidence, but familiar habits can conflict with a changed workflow. Carnegie Mellon’s learning principles describe prior knowledge as potentially helpful or obstructive. A designer needs to uncover both useful knowledge and inaccurate assumptions.
+
+Worked example: a veteran agent says, “I put the owner’s name in the notes, as we always have.” In the fictional new process, routing reads the Owner field; notes do not trigger assignment. Start by asking the agent to show the old workflow. Identify what remains valid, such as a concise issue summary. Then contrast two handoffs with the same notes but different Owner fields. Have the learner predict which will route correctly and explain why.
+
+Avoid framing the veteran as resistant or assuming tenure equals mastery. The old behavior may have been correct under the previous system. Feedback can acknowledge the reasoning while correcting the action: “Your summary makes the issue clear. Routing now uses the Owner field, so select the owner there before submitting.”
+
+Pause for 30 seconds: identify one thing that should stay the same and one thing that must change in a process you know. If using Harbor, preserve the issue summary and change how the owner is assigned.
+
+Now it's your turn. An experienced agent’s demonstration reveals an outdated shortcut. Choose the strongest response. Pause the video and make your choice in the activity below.

@@ -1,0 +1,7 @@
+Allow 4 minutes, including the decision and check. Fictional case: Harbor Service Desk is introducing a shared handoff form. A usable handoff contains an issue summary, the next owner, and the next action. Ten sampled handoffs contain four missing owners. The manager requests a presentation about the new process. Before building it, ask what people must do and what prevents them from doing it.
+
+Andragogy, associated with Malcolm Knowles, offers assumptions concerning adults' need to know why, self-direction, experience, readiness, problem orientation, and motivation. These are useful questions for design, not guarantees about each adult. An experienced employee may be a novice with this tool; someone attending a mandatory session may need substantial guidance. Adult learning has multiple theoretical perspectives, and andragogy is not its single universal explanation. See the Penn State readings in Sources.
+
+Worked example: replace “They are adults, so let them explore” with “Can they already locate the owner list and submit a practice handoff?” Observe the task, ask about obstacles, and offer a guided example when needed. In this sample, the instructional goal is a complete handoff. Fixing access to the owner list belongs in the implementation plan too.
+
+Now it's your turn. A capable new supervisor asks for a step-by-step demonstration before practicing. What should you do? Pause the video and make your choice in the activity below.

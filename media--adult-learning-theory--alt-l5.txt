@@ -1,0 +1,9 @@
+Allow 4 minutes. Course completion is an implementation measure. It does not establish that handoffs improved, or that any improvement was caused by the course. A useful plan separates learning evidence, workplace behavior, and conditions that enable the behavior.
+
+Worked example: before the fictional rollout, inspect a comparable sample of handoffs for all three required elements. During training, collect decision-check results. After rollout, inspect another comparable sample and record missing elements. Ask supervisors whether staff can access the owner list, have time to complete the form, and receive consistent expectations. A simultaneous form redesign could also explain changes in performance.
+
+Give the team a one-screen handoff checklist. Ask managers to review the first few attempts, correct errors privately, and route tool-access problems to the system owner. If staff can perform correctly in practice but lack production permissions, another explanation video will not grant those permissions.
+
+Transfer task, 60 seconds: write a plan containing one practice task, one support available at the point of work, one responsible person, and one observable behavior to review. Sample: “Agents route two practice cases; the team lead pins the rule card and reviews whether next week’s sampled handoffs name an owner.”
+
+Now it's your turn. Agents pass practice but cannot open the owner list in production. What should the rollout lead prioritize? Pause the video and make your choice in the activity below.

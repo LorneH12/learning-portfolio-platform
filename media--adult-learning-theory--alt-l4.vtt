@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.173
+Allow 4 minutes.
+
+00:00:01.413 --> 00:00:04.699
+A learner who can name the fields may still struggle to use them.
+
+00:00:04.939 --> 00:00:10.869
+Practice should expose the choice that matters, then provide feedback the learner can use in another attempt.
+
+00:00:11.109 --> 00:00:16.763
+Carnegie Mellon’s learning principles emphasize goal-directed practice and targeted feedback.
+
+00:00:17.453 --> 00:00:21.975
+Worked example: fictional request “A customer cannot access an invoice.
+
+00:00:22.215 --> 00:00:31.089
+The billing system is available, and the account has been verified.” The practice rule says invoice-access cases go to Billing Support; the next action
+
+00:00:31.089 --> 00:00:33.159
+is to check the invoice permission.
+
+00:00:33.399 --> 00:00:39.714
+A complete handoff states the issue, names Billing Support in the Owner field, and records that next action.
+
+00:00:39.954 --> 00:00:46.034
+Show one completed example, then ask the learner to resolve a different case using a short rule card.
+
+00:00:46.724 --> 00:00:48.623
+An early attempt can include hints.
+
+00:00:48.863 --> 00:00:54.516
+A later attempt should remove unnecessary help while keeping tools people normally use at work.
+
+00:00:54.756 --> 00:01:01.732
+Explain the consequence of a wrong selection and invite a retry; “Incorrect” alone does not show how to improve.
+
+00:01:02.422 --> 00:01:05.003
+Decision practice here is deliberately low risk.
+
+00:01:05.243 --> 00:01:08.486
+Use fictional records, not actual customer information.
+
+00:01:08.726 --> 00:01:15.126
+The final multiple-choice assessment samples decisions; it does not verify live-system proficiency.
+
+00:01:15.366 --> 00:01:19.782
+A production rollout would also need observation of representative handoffs.
+
+00:01:20.472 --> 00:01:21.560
+Now it's your turn.
+
+00:01:21.800 --> 00:01:24.957
+The objective is to route handoffs using a rule card.
+
+00:01:25.197 --> 00:01:26.904
+Which practice is best aligned?
+
+00:01:27.144 --> 00:01:30.259
+Pause the video and make your choice in the activity below.
+

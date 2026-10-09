@@ -1,0 +1,9 @@
+Allow 4 minutes. A learner who can name the fields may still struggle to use them. Practice should expose the choice that matters, then provide feedback the learner can use in another attempt. Carnegie Mellon’s learning principles emphasize goal-directed practice and targeted feedback.
+
+Worked example: fictional request “A customer cannot access an invoice. The billing system is available, and the account has been verified.” The practice rule says invoice-access cases go to Billing Support; the next action is to check the invoice permission. A complete handoff states the issue, names Billing Support in the Owner field, and records that next action. Show one completed example, then ask the learner to resolve a different case using a short rule card.
+
+An early attempt can include hints. A later attempt should remove unnecessary help while keeping tools people normally use at work. Explain the consequence of a wrong selection and invite a retry; “Incorrect” alone does not show how to improve.
+
+Decision practice here is deliberately low risk. Use fictional records, not actual customer information. The final multiple-choice assessment samples decisions; it does not verify live-system proficiency. A production rollout would also need observation of representative handoffs.
+
+Now it's your turn. The objective is to route handoffs using a rule card. Which practice is best aligned? Pause the video and make your choice in the activity below.
