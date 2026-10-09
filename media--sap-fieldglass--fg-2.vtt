@@ -1,0 +1,68 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.237
+Time: 4 minutes.
+
+00:00:01.477 --> 00:00:12.104
+Training policy: bill only verified worked hours; use DEL for delivery and TRN for training; any overtime needs the specified approval evidence before
+
+00:00:12.104 --> 00:00:13.531
+supervisor approval.
+
+00:00:13.771 --> 00:00:18.464
+This is a fictional policy, not an SAP rule or employment-law instruction.
+
+00:00:19.154 --> 00:00:29.821
+Use this evidence packet: Monday 8 DEL; Tuesday 8 DEL; Wednesday 6 DEL plus 2 TRN; Thursday 8 DEL; Friday 6 DEL.
+
+00:00:30.061 --> 00:00:32.813
+The verified weekly total is 38 hours.
+
+00:00:33.053 --> 00:00:38.002
+TS-104 instead shows 8 DEL each weekday, totaling 40.
+
+00:00:38.692 --> 00:00:40.761
+Worked review: first compare dates.
+
+00:00:41.001 --> 00:00:42.537
+Monday and Tuesday agree.
+
+00:00:42.777 --> 00:00:46.745
+Wednesday’s total of 8 agrees, but 2 hours are on the wrong task.
+
+00:00:46.985 --> 00:00:48.073
+Thursday agrees.
+
+00:00:48.313 --> 00:00:50.489
+Friday is overstated by 2 hours.
+
+00:00:50.729 --> 00:00:55.423
+The correct breakdown is 36 DEL and 2 TRN, totaling 38.
+
+00:00:55.663 --> 00:01:00.612
+A total-only check would miss Wednesday’s coding error even if Friday had been corrected.
+
+00:01:01.302 --> 00:01:05.398
+Treat discrepancies as questions about evidence, not proof of intent.
+
+00:01:05.638 --> 00:01:11.569
+If source records disagree, pause the decision and ask the responsible person for clarification.
+
+00:01:11.809 --> 00:01:16.438
+Do not invent a reason for the difference or silently adjust someone else’s time.
+
+00:01:16.678 --> 00:01:20.454
+Record only the minimum factual detail needed for correction.
+
+00:01:21.144 --> 00:01:22.232
+Now it's your turn.
+
+00:01:22.472 --> 00:01:27.165
+The weekly total is corrected to 38, but Wednesday still shows 8 DEL.
+
+00:01:27.405 --> 00:01:28.195
+What now?
+
+00:01:28.435 --> 00:01:31.549
+Pause the video and make your choice in the activity below.
+

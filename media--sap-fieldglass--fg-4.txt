@@ -1,0 +1,9 @@
+Time: 3 minutes. Avery resubmits TS-104. Do not assume a correction request guarantees a correct result. Reopen the relevant record, confirm the period and assignment, and repeat the comparison for changed lines and the overall total.
+
+The corrected packet shows 8 DEL, 8 DEL, 6 DEL + 2 TRN, 8 DEL, and 6 DEL. Total: 38. All supporting evidence now agrees and no unresolved exception remains under the sample policy. Choose approval in the simulation.
+
+After a decision, inspect the displayed status and available history or confirmation. A click is an attempt, not proof that the intended state was reached. Approval routing is configured by the buyer and may require additional approvers. Your approval does not itself prove that an invoice has been paid.
+
+Worked handoff: ‘Supervisor review completed for TS-104, 5–9 October: 38 hours verified. System shows the next approval stage.’ This is accurate if that is what the record displays. Avoid saying ‘payment completed’ unless a separate authorized payment record actually supports it. If an error message appears, inspect the current record before retrying to avoid a duplicate or contradictory action.
+
+Now it's your turn. After your approval, the screen indicates another approval stage. What do you report? Pause the video and make your choice in the activity below.

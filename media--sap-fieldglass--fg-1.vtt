@@ -1,0 +1,59 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.237
+Time: 3 minutes.
+
+00:00:01.477 --> 00:00:04.507
+You are the fictional supervisor at Northstar Services.
+
+00:00:04.747 --> 00:00:14.027
+Your task is to review Avery Chen’s standard time sheet for the week of 5–9 October 2026, assignment NS-204.
+
+00:00:14.267 --> 00:00:19.387
+The training company uses task code DEL for delivery and TRN for training.
+
+00:00:19.627 --> 00:00:22.869
+These codes and review rules are invented for this sample.
+
+00:00:23.559 --> 00:00:29.426
+Before touching a decision control, establish worker, assignment, period, status, and your authority.
+
+00:00:29.666 --> 00:00:34.295
+A familiar name is not enough: the same worker might have more than one assignment.
+
+00:00:34.535 --> 00:00:38.973
+Compare the sheet’s identifiers to the request and the approved assignment record.
+
+00:00:39.213 --> 00:00:43.330
+Open the detail record rather than deciding from an email subject.
+
+00:00:44.020 --> 00:00:49.929
+In SAP Fieldglass, submitted time sheets can be reached through Work Items or the Time Sheet list.
+
+00:00:50.169 --> 00:00:54.713
+Exact labels and available actions depend on role and configuration.
+
+00:00:54.953 --> 00:00:59.305
+This simulation asks for the review decision without connecting to Fieldglass.
+
+00:00:59.995 --> 00:01:06.865
+Worked example: TS-104 shows Avery, NS-204, 5–9 October, Submitted.
+
+00:01:07.105 --> 00:01:13.633
+TS-099 shows the same person and period but assignment NS-188.
+
+00:01:13.873 --> 00:01:17.435
+Select TS-104, then compare its daily lines.
+
+00:01:17.675 --> 00:01:25.163
+If you cannot establish approval authority, contact the designated program-office contact; do not borrow another account.
+
+00:01:25.853 --> 00:01:26.941
+Now it's your turn.
+
+00:01:27.181 --> 00:01:29.549
+Which record should you open for this request?
+
+00:01:29.789 --> 00:01:32.904
+Pause the video and make your choice in the activity below.
+

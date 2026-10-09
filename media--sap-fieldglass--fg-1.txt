@@ -1,0 +1,9 @@
+Time: 3 minutes. You are the fictional supervisor at Northstar Services. Your task is to review Avery Chen’s standard time sheet for the week of 5–9 October 2026, assignment NS-204. The training company uses task code DEL for delivery and TRN for training. These codes and review rules are invented for this sample.
+
+Before touching a decision control, establish worker, assignment, period, status, and your authority. A familiar name is not enough: the same worker might have more than one assignment. Compare the sheet’s identifiers to the request and the approved assignment record. Open the detail record rather than deciding from an email subject.
+
+In SAP Fieldglass, submitted time sheets can be reached through Work Items or the Time Sheet list. Exact labels and available actions depend on role and configuration. This simulation asks for the review decision without connecting to Fieldglass.
+
+Worked example: TS-104 shows Avery, NS-204, 5–9 October, Submitted. TS-099 shows the same person and period but assignment NS-188. Select TS-104, then compare its daily lines. If you cannot establish approval authority, contact the designated program-office contact; do not borrow another account.
+
+Now it's your turn. Which record should you open for this request? Pause the video and make your choice in the activity below.

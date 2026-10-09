@@ -1,0 +1,9 @@
+Time: 4 minutes. Training policy: bill only verified worked hours; use DEL for delivery and TRN for training; any overtime needs the specified approval evidence before supervisor approval. This is a fictional policy, not an SAP rule or employment-law instruction.
+
+Use this evidence packet: Monday 8 DEL; Tuesday 8 DEL; Wednesday 6 DEL plus 2 TRN; Thursday 8 DEL; Friday 6 DEL. The verified weekly total is 38 hours. TS-104 instead shows 8 DEL each weekday, totaling 40.
+
+Worked review: first compare dates. Monday and Tuesday agree. Wednesday’s total of 8 agrees, but 2 hours are on the wrong task. Thursday agrees. Friday is overstated by 2 hours. The correct breakdown is 36 DEL and 2 TRN, totaling 38. A total-only check would miss Wednesday’s coding error even if Friday had been corrected.
+
+Treat discrepancies as questions about evidence, not proof of intent. If source records disagree, pause the decision and ask the responsible person for clarification. Do not invent a reason for the difference or silently adjust someone else’s time. Record only the minimum factual detail needed for correction.
+
+Now it's your turn. The weekly total is corrected to 38, but Wednesday still shows 8 DEL. What now? Pause the video and make your choice in the activity below.

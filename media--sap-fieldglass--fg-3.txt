@@ -1,0 +1,11 @@
+Time: 4 minutes. Decide from the evidence: approve an accurate, eligible submission; reject an editable submitted sheet that needs correction under the local process; escalate unclear evidence or missing authority before deciding. In Fieldglass, rejection requires a reason and allows correction and resubmission. The available route is configured locally.
+
+For TS-104, use a factual reason that tells the submitter what to check. Strong sample: ‘For 5–9 October, compare Wednesday with the training record: 6 hours DEL and 2 TRN. Friday’s verified work record shows 6 DEL rather than 8. Please correct and resubmit; expected total 38.’
+
+Why this works: it names the period, the two discrepancies, the supporting records, and the requested next step. It avoids personal criticism and does not expose unrelated information. ‘Wrong hours’ creates another round of clarification. ‘You padded your time’ makes an unsupported allegation.
+
+Before confirming a rejection, check that you are still in TS-104. In the sample, choose Reject and the precise reason. In a real tenant, use the approved reason category and comment fields your organization provides; do not assume the sample’s text is a configured category.
+
+Learner-authored practice (3 minutes): Write a 2–3 sentence rejection reason for synthetic TS-205, assignment NS-305, week 12–16 October. Tuesday shows 9 DEL but the verified record shows 7 DEL. Thursday totals 8 hours but should be split 6 DEL and 2 TRN, rather than 8 DEL. All other lines match. Identify the record and discrepancies, ask for correction and resubmission, and avoid assigning blame. Compare your text with the rubric before continuing.
+
+Now it's your turn. Choose the most useful rejection reason. Pause the video and make your choice in the activity below.
