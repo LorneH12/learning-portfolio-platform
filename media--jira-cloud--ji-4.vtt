@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.237
+Time: 3 minutes.
+
+00:00:01.477 --> 00:00:04.464
+Jira work items move through a configured workflow.
+
+00:00:04.704 --> 00:00:09.888
+The statuses, transitions, permissions, and required fields may differ between spaces.
+
+00:00:10.128 --> 00:00:15.504
+This course uses the fictional sequence To Do → In Progress → Ready for Test → Done.
+
+00:00:15.744 --> 00:00:18.965
+It is a teaching model, not a required Jira default.
+
+00:00:19.655 --> 00:00:24.690
+The developer starts investigating but cannot access the synthetic regression dataset.
+
+00:00:24.930 --> 00:00:26.893
+The problem is blocked, not finished.
+
+00:00:27.133 --> 00:00:30.439
+Keep the record in the locally appropriate nonfinal state.
+
+00:00:30.679 --> 00:00:33.474
+Add a concise update: ‘Investigation started.
+
+00:00:33.714 --> 00:00:36.615
+Blocker: DEMO-7 test fixture unavailable.
+
+00:00:36.855 --> 00:00:47.671
+Test-data owner to restore access; retest after access is confirmed.’ If your team has a designated blocked marker or relationship, use its approved convention.
+
+00:00:47.911 --> 00:00:51.645
+Do not invent a workflow status that your tenant does not provide.
+
+00:00:52.335 --> 00:00:55.791
+Worked decision: the fix is coded but has not been tested.
+
+00:00:56.031 --> 00:01:05.033
+If the configured workflow permits it and its prerequisites are satisfied, transition to Ready for Test and supply build and verification instructions.
+
+00:01:05.273 --> 00:01:07.876
+Do not choose Done solely because coding ended.
+
+00:01:08.566 --> 00:01:13.025
+After any transition, inspect the resulting status and required fields.
+
+00:01:13.265 --> 00:01:22.843
+If a transition is missing, consult the workflow or authorized administrator rather than changing configuration or asking to use someone else’s account.
+
+00:01:23.533 --> 00:01:24.621
+Now it's your turn.
+
+00:01:24.861 --> 00:01:27.720
+Code is complete, but acceptance checks have not run.
+
+00:01:27.960 --> 00:01:29.283
+What is the best handoff?
+
+00:01:29.523 --> 00:01:32.637
+Pause the video and make your choice in the activity below.
+

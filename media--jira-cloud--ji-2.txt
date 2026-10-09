@@ -1,0 +1,11 @@
+Time: 4 minutes. A second packet is distinct: the CSV includes every row but formats product codes as numbers. The synthetic code 00127 becomes 127. No matching item is found after checking the relevant space and filters. Create one defect record in the appropriate space using the locally configured work type.
+
+Worked record: Title: ‘CSV export removes leading zeros from product codes.’ Description: ‘Environment: Harbor demo 2.4, sample dataset DEMO-7. Steps: 1. Open DEMO-7. 2. Export CSV. 3. Inspect the raw CSV in a text viewer. Expected: product code remains 00127. Actual: raw output contains 127. Reproduced twice. Impact: downstream sample matching treats the code as a different identifier.’ Inspecting raw output helps distinguish export behavior from spreadsheet display formatting.
+
+Add only sanitized evidence. Do not attach a real customer export to a public portfolio or broadly accessible ticket. Review required fields and defaults before creating. Atlassian’s current creation form may use Title where older versions use Summary.
+
+A clear record separates observation from hypothesis. ‘Serializer strips zeros’ may be a useful hypothesis, but it is not a confirmed root cause. Preserve that distinction so the team can investigate without inheriting an unsupported conclusion.
+
+Learner-authored practice (3 minutes): Draft a defect title, brief description, and two acceptance criteria from this new synthetic packet: Harbor demo 2.5; DEMO-9 lists 14 saved orders; applying the Pending filter should show 4 orders but shows 0; repeated twice after reopening; the raw sample data contains 4 Pending records. Include environment, reproduction steps, expected/actual results, and observable checks. Do not claim a root cause or invent customer impact. Compare your draft with the rubric before continuing.
+
+Now it's your turn. Which evidence should accompany the sample defect? Pause the video and make your choice in the activity below.

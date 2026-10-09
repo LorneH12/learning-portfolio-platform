@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.237
+Time: 4 minutes.
+
+00:00:01.477 --> 00:00:06.064
+A record is useful when someone can determine whether the problem has been resolved.
+
+00:00:06.304 --> 00:00:09.973
+Replace ‘works correctly’ with observable acceptance criteria.
+
+00:00:10.213 --> 00:00:25.182
+For this sample: export DEMO-7; confirm raw CSV preserves 00127 and 00008 exactly; confirm an ordinary alphanumeric code A127 remains unchanged; confirm
+
+00:00:25.182 --> 00:00:28.453
+the row count matches the source.
+
+00:00:28.693 --> 00:00:33.408
+These are training criteria, not vendor-defined fields or product requirements.
+
+00:00:34.098 --> 00:00:37.981
+Work with the team’s triage process to set ownership and priority.
+
+00:00:38.221 --> 00:00:42.658
+Do not use the highest priority merely because the requester is frustrated.
+
+00:00:42.898 --> 00:00:47.975
+Record impact and urgency so the authorized triager can decide consistently.
+
+00:00:48.215 --> 00:00:54.359
+If you are not authorized to assign or change priority, provide the evidence to the responsible person.
+
+00:00:55.049 --> 00:00:58.911
+Worked handoff: ‘Reproduced in demo 2.4 with DEMO-7.
+
+00:00:59.151 --> 00:01:01.348
+Raw CSV drops leading zeros.
+
+00:01:01.588 --> 00:01:03.081
+Acceptance checks listed.
+
+00:01:03.321 --> 00:01:09.145
+Awaiting triage owner.’ This says what is known and who needs to act without promising a delivery date.
+
+00:01:09.835 --> 00:01:15.446
+Before saving, confirm the space, work type, title, required fields, and access context.
+
+00:01:15.686 --> 00:01:23.110
+A work item key identifies the record; use that key in further discussions rather than creating disconnected copies.
+
+00:01:23.350 --> 00:01:29.089
+Do not assume that mentioning a person assigns ownership or guarantees they have seen the request.
+
+00:01:29.779 --> 00:01:30.867
+Now it's your turn.
+
+00:01:31.107 --> 00:01:33.411
+Which acceptance criterion is testable?
+
+00:01:33.651 --> 00:01:36.765
+Pause the video and make your choice in the activity below.
+

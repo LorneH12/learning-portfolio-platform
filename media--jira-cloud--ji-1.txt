@@ -1,0 +1,9 @@
+Time: 3 minutes. You support the fictional Harbor app. A colleague reports: ‘The export is broken.’ Your task is to produce work that a developer and tester can act on without guessing. Ask for the affected action, environment, expected result, observed result, frequency, and impact. Use synthetic examples only.
+
+Evidence packet: in Harbor demo build 2.4, select the October orders, choose CSV export, and open the file. The screen lists 12 rows but the export contains 10. It happens on two attempts with the same sample dataset. Search the correct Jira space for export, CSV, missing rows, and similar reports; clear unintended filters if results look incomplete. Available search views vary by tenant.
+
+Worked duplicate review: HBR-71 concerns a PDF layout problem. HBR-84 describes a CSV export omitting the last two rows in demo build 2.4. HBR-84 is a strong match; inspect its context and status before creating another record. If it represents the same defect, add relevant new evidence through your team’s process. Similar wording alone does not prove identical cause.
+
+Current Atlassian Cloud documentation uses work item and space; older interfaces may say issue and project.
+
+Now it's your turn. HBR-84 has the same dataset, build, and missing rows. What is the best next step? Pause the video and make your choice in the activity below.

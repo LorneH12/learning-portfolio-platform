@@ -1,0 +1,56 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.237
+Time: 3 minutes.
+
+00:00:01.477 --> 00:00:02.885
+The test build is ready.
+
+00:00:03.125 --> 00:00:08.544
+Run every supplied acceptance check rather than testing only the example that triggered the bug.
+
+00:00:08.784 --> 00:00:15.333
+In packet A, 00127 is preserved but 00008 becomes 8.
+
+00:00:15.573 --> 00:00:17.472
+The defect is not ready for Done.
+
+00:00:17.712 --> 00:00:25.669
+Record the failed case, build, expected value, actual value, and reproduction steps; return it through the team’s approved workflow.
+
+00:00:26.359 --> 00:00:35.490
+In packet B, both leading-zero identifiers and A127 are preserved, row counts agree, and the required review is complete.
+
+00:00:35.730 --> 00:00:39.762
+The authorized contributor may use the configured completion transition.
+
+00:00:40.002 --> 00:00:53.810
+Write a brief verification summary: ‘Demo build 2.4.1: DEMO-7 cases 00127, 00008, and A127 passed; exported row count matches source.’ This does not
+
+00:00:53.810 --> 00:00:57.943
+claim every possible export has been tested.
+
+00:00:58.633 --> 00:01:08.276
+Worked final check: inspect the actual resulting status, keep the evidence on the same record, and provide its key to the requester through the approved channel.
+
+00:01:08.516 --> 00:01:14.148
+If new evidence later contradicts completion, follow the team’s reopen or new-defect policy.
+
+00:01:14.838 --> 00:01:23.947
+Your final practice is a judgment exercise: the best status is the one supported by current evidence, even when someone is pressing for closure.
+
+00:01:24.187 --> 00:01:29.691
+Accurate tracking helps the next person act and protects the team from hidden unfinished work.
+
+00:01:30.381 --> 00:01:31.469
+Now it's your turn.
+
+00:01:31.709 --> 00:01:33.821
+The second acceptance case still fails.
+
+00:01:34.061 --> 00:01:35.192
+Choose your update.
+
+00:01:35.432 --> 00:01:38.547
+Pause the video and make your choice in the activity below.
+

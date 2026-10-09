@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.237
+Time: 3 minutes.
+
+00:00:01.477 --> 00:00:03.291
+You support the fictional Harbor app.
+
+00:00:03.531 --> 00:00:11.403
+A colleague reports: ‘The export is broken.’ Your task is to produce work that a developer and tester can act on without guessing.
+
+00:00:11.643 --> 00:00:17.979
+Ask for the affected action, environment, expected result, observed result, frequency, and impact.
+
+00:00:18.219 --> 00:00:20.032
+Use synthetic examples only.
+
+00:00:20.722 --> 00:00:28.679
+Evidence packet: in Harbor demo build 2.4, select the October orders, choose CSV export, and open the file.
+
+00:00:28.919 --> 00:00:32.226
+The screen lists 12 rows but the export contains 10.
+
+00:00:32.466 --> 00:00:35.730
+It happens on two attempts with the same sample dataset.
+
+00:00:35.970 --> 00:00:45.207
+Search the correct Jira space for export, CSV, missing rows, and similar reports; clear unintended filters if results look incomplete.
+
+00:00:45.447 --> 00:00:47.666
+Available search views vary by tenant.
+
+00:00:48.356 --> 00:00:53.881
+Worked duplicate review: HBR-71 concerns a PDF layout problem.
+
+00:00:54.121 --> 00:01:00.863
+HBR-84 describes a CSV export omitting the last two rows in demo build 2.4.
+
+00:01:01.103 --> 00:01:07.652
+HBR-84 is a strong match; inspect its context and status before creating another record.
+
+00:01:07.892 --> 00:01:12.756
+If it represents the same defect, add relevant new evidence through your team’s process.
+
+00:01:12.996 --> 00:01:16.260
+Similar wording alone does not prove identical cause.
+
+00:01:16.950 --> 00:01:24.353
+Current Atlassian Cloud documentation uses work item and space; older interfaces may say issue and project.
+
+00:01:25.043 --> 00:01:26.131
+Now it's your turn.
+
+00:01:26.371 --> 00:01:30.595
+HBR-84 has the same dataset, build, and missing rows.
+
+00:01:30.835 --> 00:01:32.264
+What is the best next step?
+
+00:01:32.504 --> 00:01:35.619
+Pause the video and make your choice in the activity below.
+

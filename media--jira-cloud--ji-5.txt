@@ -1,0 +1,9 @@
+Time: 3 minutes. The test build is ready. Run every supplied acceptance check rather than testing only the example that triggered the bug. In packet A, 00127 is preserved but 00008 becomes 8. The defect is not ready for Done. Record the failed case, build, expected value, actual value, and reproduction steps; return it through the team’s approved workflow.
+
+In packet B, both leading-zero identifiers and A127 are preserved, row counts agree, and the required review is complete. The authorized contributor may use the configured completion transition. Write a brief verification summary: ‘Demo build 2.4.1: DEMO-7 cases 00127, 00008, and A127 passed; exported row count matches source.’ This does not claim every possible export has been tested.
+
+Worked final check: inspect the actual resulting status, keep the evidence on the same record, and provide its key to the requester through the approved channel. If new evidence later contradicts completion, follow the team’s reopen or new-defect policy.
+
+Your final practice is a judgment exercise: the best status is the one supported by current evidence, even when someone is pressing for closure. Accurate tracking helps the next person act and protects the team from hidden unfinished work.
+
+Now it's your turn. The second acceptance case still fails. Choose your update. Pause the video and make your choice in the activity below.

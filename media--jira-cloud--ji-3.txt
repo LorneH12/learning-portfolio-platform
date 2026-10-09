@@ -1,0 +1,9 @@
+Time: 4 minutes. A record is useful when someone can determine whether the problem has been resolved. Replace ‘works correctly’ with observable acceptance criteria. For this sample: export DEMO-7; confirm raw CSV preserves 00127 and 00008 exactly; confirm an ordinary alphanumeric code A127 remains unchanged; confirm the row count matches the source. These are training criteria, not vendor-defined fields or product requirements.
+
+Work with the team’s triage process to set ownership and priority. Do not use the highest priority merely because the requester is frustrated. Record impact and urgency so the authorized triager can decide consistently. If you are not authorized to assign or change priority, provide the evidence to the responsible person.
+
+Worked handoff: ‘Reproduced in demo 2.4 with DEMO-7. Raw CSV drops leading zeros. Acceptance checks listed. Awaiting triage owner.’ This says what is known and who needs to act without promising a delivery date.
+
+Before saving, confirm the space, work type, title, required fields, and access context. A work item key identifies the record; use that key in further discussions rather than creating disconnected copies. Do not assume that mentioning a person assigns ownership or guarantees they have seen the request.
+
+Now it's your turn. Which acceptance criterion is testable? Pause the video and make your choice in the activity below.

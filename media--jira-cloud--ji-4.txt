@@ -1,0 +1,9 @@
+Time: 3 minutes. Jira work items move through a configured workflow. The statuses, transitions, permissions, and required fields may differ between spaces. This course uses the fictional sequence To Do → In Progress → Ready for Test → Done. It is a teaching model, not a required Jira default.
+
+The developer starts investigating but cannot access the synthetic regression dataset. The problem is blocked, not finished. Keep the record in the locally appropriate nonfinal state. Add a concise update: ‘Investigation started. Blocker: DEMO-7 test fixture unavailable. Test-data owner to restore access; retest after access is confirmed.’ If your team has a designated blocked marker or relationship, use its approved convention. Do not invent a workflow status that your tenant does not provide.
+
+Worked decision: the fix is coded but has not been tested. If the configured workflow permits it and its prerequisites are satisfied, transition to Ready for Test and supply build and verification instructions. Do not choose Done solely because coding ended.
+
+After any transition, inspect the resulting status and required fields. If a transition is missing, consult the workflow or authorized administrator rather than changing configuration or asking to use someone else’s account.
+
+Now it's your turn. Code is complete, but acceptance checks have not run. What is the best handoff? Pause the video and make your choice in the activity below.

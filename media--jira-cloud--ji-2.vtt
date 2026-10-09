@@ -1,0 +1,92 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.237
+Time: 4 minutes.
+
+00:00:01.477 --> 00:00:07.707
+A second packet is distinct: the CSV includes every row but formats product codes as numbers.
+
+00:00:07.947 --> 00:00:12.981
+The synthetic code 00127 becomes 127.
+
+00:00:13.221 --> 00:00:17.509
+No matching item is found after checking the relevant space and filters.
+
+00:00:17.749 --> 00:00:23.040
+Create one defect record in the appropriate space using the locally configured work type.
+
+00:00:23.730 --> 00:00:35.015
+Worked record: Title: ‘CSV export removes leading zeros from product codes.’ Description: ‘Environment: Harbor demo 2.4, sample dataset DEMO-7.
+
+00:00:35.255 --> 00:00:36.279
+Steps: 1.
+
+00:00:36.519 --> 00:00:38.290
+Open DEMO-7. 2.
+
+00:00:38.530 --> 00:00:40.365
+Export CSV. 3.
+
+00:00:40.605 --> 00:00:43.037
+Inspect the raw CSV in a text viewer.
+
+00:00:43.277 --> 00:00:46.797
+Expected: product code remains 00127.
+
+00:00:47.037 --> 00:00:50.130
+Actual: raw output contains 127.
+
+00:00:50.370 --> 00:00:51.565
+Reproduced twice.
+
+00:00:51.805 --> 00:01:01.670
+Impact: downstream sample matching treats the code as a different identifier.’ Inspecting raw output helps distinguish export behavior from spreadsheet
+
+00:01:01.670 --> 00:01:02.919
+display formatting.
+
+00:01:03.609 --> 00:01:05.423
+Add only sanitized evidence.
+
+00:01:05.663 --> 00:01:11.636
+Do not attach a real customer export to a public portfolio or broadly accessible ticket.
+
+00:01:11.876 --> 00:01:14.820
+Review required fields and defaults before creating.
+
+00:01:15.060 --> 00:01:19.988
+Atlassian’s current creation form may use Title where older versions use Summary.
+
+00:01:20.678 --> 00:01:30.470
+A clear record separates observation from hypothesis. ‘Serializer strips zeros’ may be a useful hypothesis, but it is not a confirmed root cause.
+
+00:01:30.710 --> 00:01:36.342
+Preserve that distinction so the team can investigate without inheriting an unsupported conclusion.
+
+00:01:37.032 --> 00:01:46.436
+Learner-authored practice (3 minutes): Draft a defect title, brief description, and two acceptance criteria from this new synthetic packet:
+
+00:01:46.436 --> 00:01:56.454
+Harbor demo 2.5; DEMO-9 lists 14 saved orders; applying the Pending filter should show 4 orders but shows 0; repeated twice after reopening; the raw
+
+00:01:56.454 --> 00:01:59.112
+sample data contains 4 Pending records.
+
+00:01:59.352 --> 00:02:05.197
+Include environment, reproduction steps, expected/actual results, and observable checks.
+
+00:02:05.437 --> 00:02:08.637
+Do not claim a root cause or invent customer impact.
+
+00:02:08.877 --> 00:02:11.693
+Compare your draft with the rubric before continuing.
+
+00:02:12.383 --> 00:02:13.471
+Now it's your turn.
+
+00:02:13.711 --> 00:02:16.314
+Which evidence should accompany the sample defect?
+
+00:02:16.554 --> 00:02:19.669
+Pause the video and make your choice in the activity below.
+
